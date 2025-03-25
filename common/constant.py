@@ -1,14 +1,10 @@
 import enum 
 
-
 class ROLE_TYPE(enum.Enum):
-  user = (enum.auto(), "사용자")
-  assistant = (enum.auto(), "LLM 모델")
+  user = (enum.auto(), "user")
+  assistant = (enum.auto(), "assistant")
+  system = (enum.auto(), "system")
 
 class HISTORY_INFO(enum.Enum):
-  role = (enum.auto(), "메세지 생성자")
-  content = (enum.auto(), "메세지")
-
-
-
-
+  role = (enum.auto(), "role")
+  content = (enum.auto(), "content")

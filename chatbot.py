@@ -3,11 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv() # .env 파일에 선언한 변수를 환경변수에 등록하는 함수 
 
-from history import init_history, add_history
-from display import print_history_message, print_message
-from input import get_prompt, choice_llms, choice_provider
+from common.screen.history import init_history, add_history
+from common.screen.display import print_history_message, print_message
+from common.screen.input import get_prompt, choice_llms, choice_provider
 from common.llm.call_provider import PROVIDER_TYPE, get_response_from_llm
-from common.constant import ROLE_TYPE
+from common.screen.constant import ROLE_TYPE
 
 st.title("Chatbot")
 

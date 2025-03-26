@@ -1,5 +1,5 @@
 import streamlit as st 
-from common.constant import ROLE_TYPE, HISTORY_INFO
+from common.screen.constant import ROLE_TYPE, HISTORY_INFO
 
 # 히스토리 초기화 
 def init_history():

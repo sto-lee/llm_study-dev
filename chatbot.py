@@ -4,7 +4,8 @@ from common.screen.utils import init_page, init_display
 from common.screen.history import add_history
 from common.screen.display import print_message
 from common.screen.input import get_prompt
-from common.llm.call_provider import PROVIDER_TYPE, get_response_from_llm
+from common.llm.call_provider import get_response_from_llm
+from common.llm.provider_type import PROVIDER_TYPE
 from common.screen.constant import ROLE_TYPE
 
 st.title("Chatbot")
@@ -27,11 +28,8 @@ if prompt is not None:
     assistant_message = print_message(ROLE_TYPE.assistant.name, 
                 get_response_from_llm(PROVIDER_TYPE[choiced_provider],
                                     messages=st.session_state.messages,
-                                    llm_name=choiced_llm),
-                is_streaming=True)
+                                    llm_name=choiced_llm))
 
     # AI 응답을 세션 상태에 추가
-    add_history(ROLE_TYPE.assistant, assistant_message)    
-    # AI 응답 표시
-    # print_message(ROLE_TYPE.assistant.name, assistant_message)
+    add_history(ROLE_TYPE.assistant, assistant_message)
 

@@ -1,6 +1,2 @@
-# LLM Study
-### chatbot 
-1. openai를 이용해서 chatbot 만들기 
-
-
-
+# LLM STUDY
+- LLM과 수집 데이터를 이용한 fine-tuning과 모델 챗봇 서비스 구현

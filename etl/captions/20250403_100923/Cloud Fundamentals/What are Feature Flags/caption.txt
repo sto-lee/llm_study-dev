@@ -1,0 +1,55 @@
+What if you could release a feature to different 
+groups of users without deployment? Is there a way   to effectively test features in production, and 
+immediately roll them back if needed? Hi, my name   is Dilan Orrino with IBM Cloud. I'll be answering 
+those questions by discussing feature flags,   or sometimes referred to as feature toggle, 
+or switches. Feature flags are conditions   that encompass feature code that allow you to 
+flip them on and off at will. Okay, let's use   an example. Let's say we've got an ice cream shop 
+franchise that's looking to expand to a new city   and we've got a banner that we want to display 
+on our website. We'll call this open banner. We only want to display this banner to users that 
+are nearby our new ice cream shop we can do this   by using feature flags. There's a 
+couple benefits to using feature flags.   Number one is we can actually turn 
+these on or off without deployment. Number two is we can actually 
+test directly in production. And number three we can segment our 
+users based on different attributes. Okay, there's a couple ways you can do this 
+one way is by using properties in JSON files   or config maps. There's a better way however 
+by using a feature flag service. There's a   couple benefits to using a feature flag service. 
+Number one is you can have essentially managed place for your features, or excuse me your feature 
+flags. Number two is you can turn these on and off   without modifying your properties in your future, in your 
+apps or web pages. And number three is you   get audit and usage data. It's harder to get 
+the audit and usage data by using JSON files. Okay, so now let's go back to our 
+example we've got our open banner   feature and now let's wrap it 
+with some feature flag code.   And so here's an example, kind of pseudo 
+code, that you can use if store open is enabled. Then we're going to show open banner   so this pseudocode represents our feature code 
+and the flag that potentially could encompass it.   Now let's actually put this in production 
+and make it show showcase to some users. So   now that we've got our feature in production 
+it's not usable to any users right now   this is an idea typically displayed with feature 
+flags called dark launch. Dark launch is when a   feature is in production but not visible to any 
+or all users or any or some users, excuse me. Now we want to introduce the idea of segments.   So we've already said that we only want 
+a certain number of people to view this,   people who are nearby our new shop. This will be 
+our segment A, and a segment is simply users or   groups of users that have attributes tied to them. 
+So this first one might have current location, and zip code. Attributes, this allows users who 
+are either currently in the location   or have already stipulated that they live nearby 
+to view this feature, but before we do that   we want to test the feature out on our 
+own employees. So we would have segment B   of our testers because we want them to be our 
+employees the attribute might be email ID. Now we can effectively test our feature 
+in production by flipping this toggle on.   So now this feature is on for our testers, 
+and say maybe something went wrong so we're   actually going to flip it off fix it, and 
+then we'll turn it back on for segment B   once we're satisfied that everything is 
+working well. Then we can flip this on   for our segment A now all this is done without 
+a deployment because our feature is already in   production. All we're doing is making it 
+visible or not visible to certain users   once it is in production. We can actually 
+add a little bit of automation to this   with our testers, we did it manually, we flipped 
+it on and off manually, but with feature flags we   can actually add a time element. So let's say we 
+only want this to be viewable for three weeks, two   weeks before grand opening, one week after grand 
+opening of our new shop. This will be flipped on   and then automatically turned off or not visible 
+for this segment of users after three weeks.   Okay, so now we're getting really good at using 
+feature flags so our feature flags are potentially   starting to stack up we might have a couple apps 
+and a couple websites with a couple different   types of features that are flagged. So we've got 
+maybe app one here, app two, and say a web page. With a feature flagging service we can actually 
+group these in collections so that we're a little   bit more organized with which feature flags are 
+tied to, which apps are web pages. So now today   we've learned about returning feature flags on 
+and off without deployment testing directly in   production, and then segmenting those features 
+based on the user attributes. Thank you for   watching. If you have questions, please drop us 
+a line below. If you want to see more videos like   this in the future, please like and subscribe. 
+And don't forget, you can grow your skills and   earn badges with IBM CloudLabs, which are free 
+browser-based interactive kubernetes labs.

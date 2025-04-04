@@ -1,0 +1,89 @@
+Hey there and thanks for stopping by. My name is 
+Bradley Knapp and I'm one of the Product Managers   here at IBM Cloud, and the question that we're 
+going to answer today is what is the difference   between DevOps and SRE? This is a question 
+that I hear on a fairly regular basis,   not just internally, but from external customers 
+as well. And it's one that we'd like to help you   walk through so that you can really figure out 
+what makes sense in your organization and I think   the answer is probably going to surprise you a 
+little bit. Before we get into the video that I   do want to encourage you to like and subscribe, if 
+you think that you're going to enjoy these things   just click on those buttons that way you 
+get notified every time we come out with   something new. So, with that let's get right 
+into the question and the question is DevOps versus SRE. And so, as we get into this, I think probably 
+the most important thing to understand   is this isn't a versus question. You don't have 
+to have one or the other. As a matter of fact,   I would argue and I think that many people would 
+agree that SRE is actually an essential component   of DevOps. And DevOps, a good properly implemented 
+DevOps method, leads to the necessity of SRE when   it comes time to deploy. There are two sides of 
+the same coin. And so, that's obviously going to   lead to a little bit of confusion because DevOps 
+is the development methodology, right. That's   it's all about integrating your development 
+teams and your operations teams. It's about   knocking down those silos between them. It's about 
+ensuring that everybody is singing off the same   song book and that's very important. And SRE is in 
+charge of automating all of the things and making   sure that you never go down. There are really two 
+parts of the same group, and so let's look at the   differences, right, because they do have some 
+differences. Probably the first and largest one   is that when we think about our DevOps site over 
+here, right, DevOps is about core development.   The DevOps guys, particularly your developers, 
+they are doing the core development,   they are answering the question "what do we 
+want to do?", they are working with product,   they're working with sales, they're working with 
+marketing to develop design and deploy. What is   it that we do? They're working on the core. SRE 
+on the other hand, they're not working on the   core. What they are working is the implementation 
+of the core, they are working on the deployment, and they are constantly giving feedback back 
+into that core development group to say "hey   something that you guys have designed isn't 
+working exactly the way that you think that it   is." So, if we were to break that down a little 
+bit more they are helping the DevOps group,   our SRE group is helping the DevOps group to 
+break down even more of those silos. If you   want to think about it this way DevOps is trying 
+to develop the answer to how do we solve this   problem, SRE is saying how do we deploy and 
+maintain and run to solve this problem it's   the theoretical versus the practical, and ideally 
+they're talking to each other every day, right,   because SRE should be logging defects, they should 
+be logging tickets back with development, but   probably most importantly they need to understand 
+that they have the same goals. These groups should   never be aligned against one another. And so, 
+they do have to have a common understanding.   Let's talk about one of the most important 
+parts, right, we're going to talk about failure because failure is not necessary failure, it's 
+just a way of life. It doesn't matter what you   deploy. It doesn't matter how well it 
+goes, it's going to happen. And so,   when we talk about failure everyone involved needs 
+to understand that there's going to be some level,   right. There is a failure budget, or an error 
+budget, where things are going to go wrong.   And what happens when things go wrong that's what 
+figures out whether or not your organization is   working because your SRE team when it comes 
+to failure, they're going to anticipate it,   they're going to monitor it, they're going to 
+log it, they're going to record everything,   and ideally they can identify a failure before 
+it happens. They're going to have predictive   analytics that are going to say "all right this 
+thing is going to go bad based on what we've seen   before." And so, SRE is responsible for mitigating 
+some of those failures through monitoring and   logging, and doing the preemptive parts, right. 
+So we'll do the monitors, we'll do the logs.   SRE is also going to lead all of your post actual 
+failure incident management, right. They're going   to get you through the incident to begin with and 
+then they're going to hot wash it when it's done.   They're going to lead that RCA, that root cause 
+analysis, and after they have that RCA completed,   and this is the most important part they 
+have to take that RCA data and bring it back   over into dev and get some tickets open. You 
+have to get dev online because you've gotta,   these are the guys who are gonna solve the 
+core problem, some RCAs might be solved by SRE   internally, right. They're gonna spend 50 percent 
+of their time writing, 50 of their time working,   and so some of that problem they may be able to 
+fix directly, but sometimes that's not the case,   right. Our RCA may have found a problem 
+that only dev can fix and that's all right,   that's not a big deal. They're going to get 
+that over here, dev is going to implement,   and then probably the most important part, 
+right, so you're going to get that new feature. Dev is going to get that pulled together. 
+They're going to get that new feature rolled out   and then they're going to pass that back 
+into SRE and they're going to say "hey   SRE, that problem that we had 
+we got a new feature for you."   And then our guys on the SRE side, what do 
+they do? They then have to take that feature and they have to figure out how to integrate it 
+into their monitoring and their logging efforts   to make sure that we don't get into 
+another RCA for the same kind of a problem.   So these groups, they are part and parcel 
+of the same bunch. You really can't have one   successful organization without another. And 
+when it comes to figuring out a distinction,   it's not something that you should spend a lot 
+of time with. There are different skill sets,   right. Core development DevOps, these are the guys 
+that really love writing software. SRE is a little   bit more of an investigative mindset, right. You 
+have to be willing to go and do that analysis,   figure out what things have gone wrong, automate 
+all of the things. But there's a lot that they   have in common. Everyone should be writing 
+automation, everyone should be getting rid of toil   as much as possible because we just don't have the 
+time to be doing manual tasks. When we can put the   computers in charge of it, right, computers are 
+not great at thinking on their own, but if you   need it to do the same thing over and over and 
+over again in exactly the same way you can't beat   computing for that. And so, automation is key, 
+you just have a slightly different mindset. DevOps   is going to automate deployment, they're going to 
+automate tasks, they're going to automate feature.   SRE is going to automate redundancy, and they're 
+going to automate manual tasks that they can turn   into programmatic tasks to keep the stack up. And 
+so, you know when we talk about DevOps versus SRE,   that's not the question, the question is 
+how do we build DevOps, how do we build SRE,   and how do we be sure that they are always talking 
+to each other because the institutional knowledge   that SRE has so much of if that doesn't get passed 
+back into your DevOps group. You're never going   to be successful, you're going to have a silo 
+here, and a silo here, and at the end of the day   both of these philosophies core, core component, 
+is getting rid of silos, freeing ourselves from   those silos is what is going to make us all more 
+successful. Thank you so much for stopping by   the channel today. If you have any questions or 
+comments, please feel free to share them with   us below. If you enjoyed this video and you 
+would like to see more like it in the future,   please do like the video and subscribe to us 
+so that we'll know to keep creating for you.

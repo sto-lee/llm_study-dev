@@ -1,0 +1,392 @@
+Malcom Gladwell: Hello, hello. Welcome to Smart
+Talks with IBM, a podcast from Pushkin Industries, iHeartRadio and IBM. I’m Malcolm Gladwell. This season, we’re continuing our conversation with New Creators, visionaries who are creatively applying technology in business to drive change — but with a focus on the transformative power of artificial intelligence and what it means to leverage AI as a game-changing multiplier for your business. Our guest today is Dr. David Cox, VP of AI models at IBM Research, and director of the MIT-IBM Watson AI Lab, a first-of-its-kind collaboration , industry-academic collaboration between IBM and MIT, focused on the fundamental researchof artificial intelligence. Over the course of decades, David Cox has watched as the AI revolution steadily grew from the simmering ideas of a few academics and technologists into the industrial boom we are experiencing today. Having dedicated
+his life to pushing the field of AI towards new horizons, David has both contributed to
+and presided over many of the major breakthroughs in artificial intelligence.
+In today’s episode, you’ll hear David explain some of the conceptual underpinnings
+of the current AI landscape—things like foundation models (in surprisingly comprehensible
+terms, I might add). We’ll also get into some of the amazing practical applications
+for AI in business, as well as what implications AI will have for the future of work and design.
+David spoke with Jacob Goldstein, host of the Pushkin podcast What’s Your Problem?
+A veteran business journalist, Jacob has reported for the Wall Street Journal, the Miami Herald,
+and was a longtime host of the NPR program “Planet Money.”
+Okay! Let’s get to the interview. Jacob Goldstein: Great. So tell me about your
+role at IBM. David Cox: So I wear two hats at IBM. So,
+one, I'm the IBM director of the MIT-IBM Watson AI lab. So that's a joint lab between IBM
+and MIT where we try and invent what's next in AI. It's been running for about five years.
+And then more recently, I started as the vice president for AI models. And I'm in charge
+of building, IBM's foundation models. You know, building these big models,
+generative models, that allow us to have all kinds of new, exciting capabilities in AI. Jacob Goldstein: So I want to talk to you a lot about foundation models, about generative AI, but before we get to that, let's just spend a minute on the, on the, IBM-MIT
+collaboration. Where did that partnership start? How did it originate? David Cox: Yeah, so actually, it turns out that MIT and IBM have been collaborating for
+a very long time in the area of AI. In fact, the term “artificial intelligence” was
+coined in a 1956 workshop that was held at Dartmouth, and it was actually organized by
+an IBMer, Nathaniel Rochester, who led the development of the IBM 701.
+So we've really been together in AI since the beginning. And as you know, AI kept accelerating
+more and more and more. I think there was a really interesting decision to say, “Let's
+make this a formal partnership.” So IBM in 2017 announced that it'd be committing
+close to a quarter billion dollars over 10 years.
+To have this joint lab with MIT—and we located ourselves right on the campus, and we've been
+developing very, very deep relationships where we can really get to know each other, work
+shoulder to shoulder, you know, conceiving what we should work on next and then executing
+the projects. And it's really, you know—very few entities like this exist between academia
+and industry. It's been a really fun last five years, to
+be a part of it. Jacob Goldstein: And what do you think are
+some of the most important outcomes of this collaboration between IBM and MIT? David Cox: Yeah, so we're really kind of the tip of the spear for, for IBM's AI strategy. So we're really looking at what, you know—what's coming ahead. And, you know, in areas like foundation models, you know, as the field changes. MIT people are interested in working
+on, you know—faculty, students and staff are interested in working on, “What's the
+latest thing?” “What's the next thing?” We at IBM Research are very much interested
+in the same. So we can kind of put out feelers: you know, interesting things that we, that
+we are, that we're seeing in our research, interesting things we're hearing in the field—we
+can go and chase those opportunities. So when something big comes, like the big change that's
+been happening lately with foundation models, we're ready to jump on it.
+That's really the purpose. That's the lab functioning the way it should. We're also
+really interested in how do we advance the AI that can help with climate change or build
+better materials and all these kinds of things that are, you know, a broader aperture, sometimes,
+than what we might consider just looking at the product portfolio of IBM.
+And that gives us a breadth where we can see connections that we might not have seen otherwise.
+We can think things that help out society and also help out our customers. Jacob Goldstein: So the last, whatever, six months, say, there has been this wild rise in the public's interest in AI, right? Clearly coming out of these generative AI models that
+are really accessible—you know, certainly ChatGPT, language models like that, as well
+as models that generate images, like Midjourney. I mean, can you just sort of briefly talk
+about the, the breakthroughs in AI that have made this moment feel so exciting, so revolutionary,
+for artificial intelligence? David Cox: Yeah. You know, I've been studying
+AI basically my entire adult life. Before I came to IBM. I was a professor at Harvard.
+I've been doing this a long time and I've gotten used to being surprised. It sounds
+like a joke, but it's—it's serious. Like I'm getting used to being surprised at the
+acceleration of the pace. Again, it tracks, actually, a long way back.
+You know, there's lots of things where there was an idea that just simmered—for a really
+long time. Some of the key math behind this—the stuff that we have today, which is amazing—there's
+an algorithm called “back propagation,” which is sort of key to training neural networks.
+That's been around, since the ’80s, in wide use. And really, what happened was it simmered
+for a long time, and then enough data and enough compute came.
+So we had enough data because, you know, we all started carrying multiple cameras around
+with us. Our mobile phones have all, you know, all these cameras, and this—we put everything on the internet
+and there's all this data out there. We caught a lucky break that there was something called
+a “graphics processing unit,” which, you know, turns out to be really useful for doing
+these kinds of algorithms— maybe even more useful than it is for doing graphics. (They're
+great at graphics too.) And things just kept kind of adding to the
+snowball. So we had deep learning, which is sort of a rebrand of neural networks that
+I mentioned, from the ’80s. And that was enabled, again, by data, because we digitalized
+the world, and compute, because we kept building faster and faster and more powerful computers. And then that allowed us to make this, this
+big breakthrough. And then, you know, more recently, using the same building blocks,
+that inexorable rise of more and more and more data met a technology called “self-supervised
+learning,” where—the key difference there—in traditional deep learning, you know, for classifying
+images, you know, like, “Is this a cat or is this a dog?” in a picture. Those technologies
+require supervision. So you have to take what you have and then you have to label it.
+So you have to take a picture of a cat and then you label it as a cat. And it, it turns
+out that, you know, that's very powerful, but it takes a lot of time to label cats and
+to label dogs. And, you know, there's only so many labels that exist in the world. So
+what really changed more recently is that we have self-supervised learning, where you
+don't have to have the labels. We can just take unannotated data. And what that does
+is it lets you use even more data. And that's really what drove this latest, sort of, rage.
+And then all of a sudden we start getting these, these really powerful models, and then—really
+this has been—you know, again, simmering technologies, right? This has been happening
+for a while. But one of the—and progressively getting more and more powerful. One of the
+things that really happened with ChatGPT and technologies like Stable Diffusion and Midjourney
+was that they made it visible to the public. You know, you put it out there; the public
+can touch and feel and they're, like, “Wow, not only is there a palpable change,” and
+“Wow, this, you know, I can talk to this thing, wow, this thing can generate an image.”
+Not only that, but everyone can touch and feel and try. My kids can use some of these
+AI art generation technologies. And that's really just launched—you know, it's like
+a propelled slingshot at us into a different regime in terms of the public awareness of
+these technologies. Jacob Goldstein: You mentioned earlier in
+the conversation “foundation models,” and I want to talk a little bit about that.
+I mean, can you just tell me, you know, what are foundation models for AI and why are they
+a big deal? David Cox: Yeah. So this term, “foundation
+model,” was coined by a group at Stanford, and I think it's actually a really apt term.
+Because remember, I said, you know, one of the big things that unlocked this latest excitement
+was the fact that we could use large amounts of unannotated data, we could train a model.
+We don't have to go through the painful effort of labeling each and every example. You know,
+you still need to have your model do something you want it to do. You still need to tell
+it what you want to do. You can't just have a model that doesn't, you know, have any purpose.
+But what a foundation model is—it provides a foundation, like a literal foundation. You
+can sort of stand on the shoulders of giants. You can have one of these massively trained
+models and then do a little bit on top. You know, you could use just a few examples of
+what you're looking for and you can get what, what you want from the model. In some cases,
+you don't need examples at all. So just a little bit on top now gets you the
+results that a huge amount of effort—you used to have to put in, you know, to get from
+the ground up to that, that, that level. Jacob Goldstein: I was trying to think of,
+of an analogy for sort of foundation models versus what came before. And I don't know
+that I came up with a good one, but the best I could do was this; I want you to tell me
+if it's plausible. It's like before foundation models, it was like you had these sort of
+single-use kitchen appliances. You could make a waffle iron if you wanted
+waffles, or you could make a toaster if you wanted to make toast. But a foundation model
+is like, like an oven with a range on top. So it's like this machine and you could just
+cook anything with this machine. David Cox: Yeah, that's, that's a great analogy.
+They're very versatile. The other piece of it too is that they dramatically lower the
+effort that it takes to do something that you want to do. And sometimes—I used to
+say, about the old world of AI, I would say, you know, the problem with automation is that
+it's too labor intensive. Which sounds like I'm making a joke. Jacob Goldstein: Indeed. Famously, if automation does one thing, it substitutes machines or computing power for labor. Right? So what does that mean to say AI is, or automation is, too labor intensive? David Cox: I'm actually—it sounds like I'm
+making a joke, but I'm actually serious. And what I mean is that the effort it took in the old regime to automate something was very, very high. So if I need to go and curate all
+this data, collect all this data, and then carefully label all these examples, that labeling
+itself might be incredibly expensive and time consuming. And we estimate anywhere between
+80 to 90% of the effort it takes to field an AI solution actually is just spent on data.
+So that, that has some consequences, which is, the threshold for bothering, you know,
+if you're going to only get a little bit of value back from something, are you going to
+go through this huge effort to curate all this data? And then when it comes time to
+train the model, you need highly skilled people that might be expensive or hard to find in
+the labor market. Are you really going to do something that's just a tiny little incremental
+thing? No, you're going to do the—only the highest-value things that warrant that level
+of investment. Jacob Goldstein: Because you have to essentially
+build the whole machine from scratch. And there aren't many things where it's worth
+that much work to build a machine that's only going to do one narrow thing. David Cox: That's right. And then you, you tackle the next problem and you basically have to start over and— there are some nuances here. Like for images, you can pretrain a
+model on some other task and change it around. So there are some examples of this like nonrecurring
+cost that we had in the old world too, but by and large, it's just a lot of effort. It's
+hard. It takes, a large level of skill to implement.
+One analogy that I like: think about it as, you know, you have a river of data, you know,
+running through your company or your institution; traditional AI solutions are kind of like
+building a dam on that river. You know, dams are very expensive things to build. They require
+highly specialized skills and lots of planning. And, you know, you're only going to put a
+dam on a river that's big enough—that you're going to get enough energy out of it that
+it was worth your trouble. You're gonna get a lot of value out of that dam if you have
+a river like that, you know, a river of data. But it's—actually, the vast majority of
+the water, you know, in your kingdom actually isn't in that river; it's in puddles and creeks
+and babbling brooks. And, and, you know, there's a lot of value left on the table, because
+it's like, well, I can't— there's nothing I can do about it. It's just that that's too,
+you know, low value. So it takes too much effort. So I'm just not
+going to do it. The return on investment just isn't there. So you just end up not automating
+things because it's too much of a pain. Now, what foundation models do is they say, “Well,
+actually, no; we can train a base model, a foundation that you can work on.”
+We don't—we don't care. We don't have to specify what the task is ahead of time. We
+just need to, like, learn about the domain of data. So if we want to build something
+that can understand English language, there's a ton of English-language text available out
+in the world. We can now train models on huge quantities of it.
+And then it learned the structure. It learned how language—you know, a good part of how
+language works, on all that unlabeled data. And then when you roll up with your task—you
+know, “I want to, you know, solve this particular problem,” you don't have to start from scratch.
+You're starting from a very, very, very high level.
+So that just gives you the ability to just, you know—now all of a sudden everything
+is accessible. All the puddles and creeks and babbling brooks and kettle ponds. You
+know, those are all accessible now. Um, and that's, that's very exciting. It just changes the equation on what kinds of problems you could use AI to solve. Jacob Goldstein: And so foundation models basically mean that automating some new task is much less labor intensive. The sort of marginal effort to do some new automation
+thing is much lower because you're building on top of the foundation model rather than
+starting from scratch. David Cox: Absolutely. Jacob Goldstein: So that is, like, the exciting good news. I do feel like there's, there's a little bit of a countervailing idea that's worth talking about here. And that is the
+idea that, even though there are these foundation models that are really powerful, that are
+relatively easy to build on top of, it's still the case, right, that there is not some one-size-fits-all
+foundation model. So, you know, what does that mean and why is that important to think
+about in this context? David Cox: Yeah. So we believe very strongly
+that there isn't just “one model to rule them all.” There's a number of reasons why
+that could be true. One, which I think is important and very relevant today, is how
+much energy these models can consume. So these models, you know, can get very, very large. So one thing that we're starting to see, or starting to believe, is that you probably shouldn't
+use one giant sledgehammer model to solve every single problem. You know, like we should
+pick the right-size model to solve the problem. We shouldn't necessarily assume that we need
+the biggest, baddest model for, for every little use case. We're also seeing that, you
+know, small models that are trained, like, to specialize on particular domains can actually
+outperform much bigger models. So bigger isn't always even better. Jacob Goldstein: So they're more efficient, and they do the thing you want them to do better as well. David Cox: That's right. So, Stanford, for
+instance—a group at Stanford trained a model. It was a 2.7 billion parameter model, which
+isn't terribly big by today's standards. They trained it just on the biomedical literature.
+You know, this is the kind of thing that universities will do. And what they showed was that this
+model was better at answering questions about the biomedical literature than some models
+that were, you know, 100 billion parameters. You know, many times larger.
+So it's a little bit like, asking an expert for help on something versus asking the smartest
+person you know. The smartest person you know may be very smart. But they're not gonna beat
+expertise. And then, as an added bonus, this is now a much smaller model. It's much more efficient to run. We are—you know, it's cheaper. So there's lots of different advantages there. So I think we're gonna see attention in the industry between vendors that say, “Hey, this is the one, big model,” and then others
+that say, “Well, actually,there's, there's, you know, lots of different tools we can use that all have this nice quality that we outlined at the beginning.” And then we should really pick the one that makes the most sense for the task at hand. Jacob Goldstein: So there's sustainability—basically, efficiency. Another, another kind of set of issues that come up a lot with AI are bias and hallucination. Can you talk a little
+bit about bias and hallucination—what they are and how you're working to, to mitigate
+those problems? David Cox: Yeah. So there, there are lots
+of issues still. As amazing as these technologies are—and they, they are amazing; Let's be
+very clear, lots of great things we're gonna enable with these kinds of technologies—bias
+isn't a new problem. So, basically we've seen this since
+the beginning of AI: if you train a model on data that has a bias in it, the model is
+going to recapitulate that bias when it provides its answers.
+So if every time, you know—if all the text you have says, is more likely to refer to
+female nurses and male scientists, then you're going to get models that—for instance, there
+was an example where a machine-learning-based translation system translated from Hungarian
+to English. Hungarian doesn't have gendered pronouns,
+English does. And when you, when you asked it to translate, it would translate “they
+are a nurse” to “she is a nurse.” And it would translate “they are a scientist”
+to “he is a scientist.” And that's not because the, the people who wrote the algorithm
+were building in bias, and coding in, like, “Oh, it’s gotta be this way.” It's because
+the data was like that. We have biases in our society, and they're
+reflected in our data and our text and our images everywhere, and then the models—they're
+just mapping from what they, what they've seen in their training data to, to the result
+that you're trying to get them to do and to give, and then these biases come out.
+So, there's a very active program of research. And, we do quite a bit of IBM research at
+MIT, but also all over the community and industry and academia, trying to figure out, “How
+do we explicitly remove these biases? How do we identify them? How do you know? How
+do we build tools that allow people to audit their systems to make sure they aren't biased?”
+So this is a really important thing. And, you know, again, this was here since the beginning,
+you know, of machine learning and AI. But foundation models and large language models
+and generative AI, um, just bring it into sharper, even sharper focus, because there's
+just so much data and it's, it's sort of building in, baking in, all of these different biases
+we have. So that, that's, that's absolutely, um, a
+problem that these models have. Another one that you mentioned was hallucinations. Um,
+so even the most impressive of our models will often just make stuff up. You know, the
+technical term that the field has chosen is “hallucination.” Um, to give you an example,
+I asked ChatGPT to create, you know, create a biography of David Cox at IBM.
+And, you know, it started off really well. You know, it identified that I was the director
+of the MIT-IBM Watson AI Lab and said a few words about that. And then it proceeded to
+create an authoritative but completely fake biography of me, where I was British, I was born in the UK, I went to British universities in the UK. Jacob Goldstein: The authority, right? It's
+the certainty that it, that is, is weird about it, right? It's, it's dead certain that you're
+from the UK, et cetera. David Cox: Absolutely, yeah. And it has all
+kinds of flourishes, like “I won awards in the UK.” So yeah, it's problematic, because
+it kind of pokes at a lot of weak spots in our human psychology, where if something sounds
+coherent, we're likely to assume it's true. We're not used to interacting with people
+who eloquently and authoritatively, you know, emit complete nonsense. Like—we could debate
+about that. Jacob Goldstein: Yeah. We can debate about
+that, but yes, its sort of blithe confidence, throws you off when you realize it's completely
+wrong, right? David Cox: That's right. And, we do have a
+little bit of like a Great and Powerful Oz sort of vibe going sometimes, where we're
+like, “Well, you know, the AI is all knowing and, and therefore whatever it says must be
+true.” But, but these things will make up stuff, very, aggressively. Um, and—you know,
+everyone can try asking it for their bio. You'll get something that—you'll always
+get something that's of the right form, that has the right tone, but you know, the facts
+just aren't necessarily there. So that, that's obviously a problem. We need to figure out
+how to close those gaps, fix those problems. There's lots of ways we could use them much
+more easily. Malcom Gladwell: I’d just like to say, faced
+with the awesome potential of what these technologies might do, it’s a bit encouraging to hear
+that even ChatGPT has a weakness for flamboyant, if fictional, versions of people’s lives.
+And while entertaining ourselves with ChatGPT and Midjourney is important, the way ordinary
+people use consumer-facing chatbots and generative AI is fundamentally different from the way
+enterprise businesses use AI. How can we harness the abilities of artificial intelligence to
+help us solve the problems we face in business and technology? Let’s listen on as David
+and Jacob continue their conversation. Jacob Goldstein: We've been talking in a somewhat
+abstract way about AI and the ways it can be used. Let's talk in a little bit more of
+a specific way. Can you just talk about some examples of business challenges that can be
+solved with, with automation, with this kind of automation we're talking about? David Cox: Yeah, so the sky's the limit. There's a whole set of different applications that, these models are really good at. And basically, it's a super set of everything
+we used to use AI for in business. So, you know, the simple kinds of things are like,
+“Hey, if I have text and I have, like, product reviews and I want to be able to tell if these
+are positive or negative, let's look at all the negative reviews so we can have a human
+look through them and see what was up.” Very common business use case. You can do
+it with traditional deep-learning-based AI. So there's things like that, that are, you
+know—it's very prosaic, sort of. We're already doing it. We've been doing it for a long time.
+Then you get situations that are, that were harder for the old AI. Like if I want to compress
+something. Like I want to—say I have a chat transcript, like a customer called in and
+they had a complaint. They call back. Okay, now a new person on the line needs to go read
+the old transcript to catch up. Wouldn't it be better if we could just summarize
+that? Just condense it all down? Quick little paragraph. You know, “Customer call, they
+were upset about this,” rather than having to read the blow-by-blow. There's just lots
+of settings like that, where summarization is really helpful. “Hey, you have a meeting.”
+I'd like to just automatically have that meeting—or that email, or whatever—I'd like to just
+have it condensed down so I can really quickly get to the heart of the matter. These models
+are really good at doing that. They're also really good at question answering. So if I
+want to find out what's—how many vacation days do I have, I can now interact in natural
+language with the system that can go and—that has access to our HR policies, and I can actually
+have a, you know, multiturn conversation where I can, you know—like I would have with,
+somebody, you know, an actual, HR professional or customer service representative.
+So a big part, of what this is doing is it's putting an interface—you know, when we think
+of computer interfaces, we're usually thinking about UI (user interface) elements, where
+I click on menus and there's buttons and all this stuff. Increasingly now we can just talk.
+Just in words, you can describe what you want. You want to answer, ask a question, you want
+to sort of command the system to do something, rather than having to learn how to do that,
+clicking buttons, which might be inefficient. Now we can just, sort of, spell it out. Jacob Goldstein: Interesting, right? The graphical user interface that we all sort of default to—that's not, like, the state of nature, right? That's a thing that was invented and
+just came to be the standard way that we interact with computers. And so you could imagine,
+as you're saying, like, chat, essentially, chatting with the machine could, could become
+a sort of standard user interface, just like the graphical user interface did, you know,
+over the past several decades. David Cox: Absolutely. And I think those kinds
+of conversational interfaces are going to be hugely important for increasing our productivity.
+It's just a lot easier if I don't have to learn how to use a tool, or I don't have to
+kind of have awkward, you know, interactions with my computer; I can just tell it what
+I want and it can understand. It could potentially even ask questions back to clarify, and—have
+those kinds of conversations. That can be extremely powerful. And in fact,
+one area where that's gonna, I think, be absolutely game-changing is in code, when we write code.
+Programming languages are a way for us to sort of— between our very sloppy way of
+talking and the very exact way that you need to command a computer to do what you want
+it to do. They're cumbersome to learn. They can—you know, you create very complex systems
+that are very hard to reason about. And we're already starting to see the ability to just
+write down what you want and the AI will generate the code for you.
+And I think we're just going to see a huge revolution of—like, we just converse. You
+know, we can have a conversation to say what we want and then the computer can actually
+not only do fixed actions and, and, and do things for us, but it can actually even write
+code to do new things, you know, and, and generate the software itself.
+Given how much software we have, how much, um, just like craving we have for software—like
+we'll never have enough software in our world—the ability to have AI systems is—as a helper
+in that, I think we're going to see a lot of, a lot of value there. Jacob Goldstein: So if you, if you think about the different ways AI might be applied to business — I mean, you've talked about a number of the sort of classic use cases. What are some of the more “out there” use cases? What are some, you know, unique ways you could
+imagine AI being applied to business? David Cox: Yeah, there's—um, really the
+sky's the limit. I mean, we have one project that I'm kind of a fan of, where, we actually
+were working with a mechanical engineering professor at MIT, working on a classic problem
+of how do you build linkage systems. Which are like, you know—imagine bars and joints
+and motors, you know, the things that— Jacob Goldstein: Building a thing, building
+a physical machine of kind. David Cox: Yeah, like, real, like, metal and,
+you know, and— Jacob Goldstein: Nineteenth century. Just
+old-school industrial revolution. David Cox: Yeah. Yeah. But, but, you know,
+the little arm that's holding up my microphone in front of me, the cranes that build your
+buildings, you know, parts of your engines—this is like classical stuff. It turns out that,
+you know, humans, if you want to build an advanced system, you decide what, like, curve
+you want to create. And then a human, together with a computer program, can build a five-
+or six-, bar linkage. And then that's kind of where you top out. It just gets too complicated
+to— Jacob Goldstein: Huh.
+David Cox: We built a generative AI system that can build 20-bar linkages. Like arbitrarily
+complex. So these are machines that are beyond the capability of a human to design themselves. Another example: we have, AI systems that can generate electronic circuits. You
+know, we, we had a project where we were working, where we were building better power converters,
+which allow our computers and our devices to be more efficient. Save energy. You
+know, less carbon output. I think the world around us has always been
+shaped by technology. If you look around, you know, just think about how many steps
+and how many people and how many designs went into the table and the chair and the lamp.
+It's really just astonishing. And that's already the fruit of, automation and computers and
+those kinds of tools. But we're going to see that increasingly be, you know—and it's
+just going to be everywhere around us. Everything we touch is going to have been
+helped in some way to get, get to you, by AI. Jacob Goldstein: You know, that is a pretty profound transformation that you're talking about in business. How do you think about the implications of that, both for the, business
+itself and also for, for employees? David Cox: Yeah. So I think for businesses,
+this is gonna cut costs, make new opportunities, delight customers. You know, like, there's
+just, you know—it's sort of all upside, right?  For the workers, I think the story
+is mostly good too. You know, like—how many things do you do in your day that you'd really
+rather not, right? And we're used to having things we don't like automated away. We didn't—if
+you didn't like walking many miles to work, like, you
+can have a car and you can drive there. Or we used to have a huge fraction, over 90%,of the US population engage in agriculture,and then we mechanized it. now very few people work in agriculture. A small number of people can do the work of a large number of people. And then, things like email, they've led to huge productivity enhancements, because I
+don't need to be writing letters and sending them in the mail. I can just instantly communicate
+with people. We just become more effective. Like, our jobs
+have transformed. whether it's a physical job like agriculture or it's—whether it's
+a knowledge worker job, where you're sending emails and, and communicating with people and coordinating teams, we've just gotten better. And, you know, the technology has just made us more productive. And this is just another
+example of that. Now, you know, there are people who worry that, you know, “We'll
+be so good at that that maybe jobs will be displaced,” and that's, that's a legitimate
+concern, but just like now, in agriculture, you know, it's not like suddenly we had 90%
+of the population unemployed. You know? People transitioned to, to other jobs. And the other
+thing that we found too is that our appetite for, for doing more things is—as humans,
+is sort of insatiable. So even if we can dramatically increase how much, you know, one human can
+do, um, that doesn't necessarily mean we're going to do a fixed amount of stuff. There's
+an appetite to have even more. So we're going to, you know, continue to grow—grow the
+pie. So I, I think at least, uh, certainly in the near term, you know, we're going to
+see a lot of drudgery go away from work. We're going to see people be able to
+be more effective at their jobs. You know, we will see some transformation in, in jobs
+and what they look like, but we've seen that before. And, the technology at least has the
+potential to make our lives a lot easier. Jacob Goldstein: So IBM recently launched
+watsonx, which includes watsonx.ai. Tell me about that. Tell me about, you know, what it is and the new possibilities that it opens up. David Cox: Yeah. So, watsonx, is obviously a bit of a new branding on the Watson brand.
+T. J. Watson—that was the founder of IBM. And our AI technologies have had the Watson
+brand; watsonx is a recognition that there's something new. There's, there's something
+that actually has changed the game. We've gone from this old world of, “Automation
+is too labor intensive” to this new world of possibilities, where it's much easier to
+use AI. And what watsonx does is it brings together tools for businesses to harness that
+power. So, watsonx.AI It includes, foundation models that our customers can use. It includes
+tools that make it easy to run, easy to deploy, easy to experiment.
+There's a watsonx.data component, which allows you to sort of organize and access your data.
+So what we're really trying to do is give our customers a cohesive set of tools to harness
+the value of these technologies and at the same time be able to manage— the risks and
+the things that you have to keep an eye on in an enterprise context. Jacob Goldstein: So we talk about the guests on this show as, as “New Creators,” by which we mean people who are creatively applying technology in business to drive change. And
+I'm curious how, how creativity plays a role in the research that you do. David Cox: I honestly, I think the creative aspects of this job—this is what makes this work exciting. I should say, the folks who work in my organization are doing the creating
+and I get to sort of— Jacob Goldstein: You're, you're doing the managing, so  They could do the creating. Yeah. David Cox: I'm helping them be their best. I do—I still get to get involved —in the weeds of the research, as much as I can. But,
+there's something really exciting about inventing. One of the nice things about doing invention
+and doing research on AI and industry is it's usually grounded in a real problem that somebody
+is having. You know, a customer wants to solve this problem, it's losing money, or there
+could be a new opportunity. You identify that problem and then you, you, you build something
+that's never been built before, to do that. And I think that's honestly the adrenaline
+rush that keeps all of us in this field. How do you do something that nobody else on earth
+has, has done before or tried before? So that, that kind of creativity—and, and there's
+also creativity as well in identifying what those problems are, being able to understand
+the places where, you know, the technology is close enough to solving a problem, and
+doing that matchmaking between problems that are now solvable. And in AI, where the field
+is moving so fast, there's this constantly growing horizon of things that we might be
+able to solve. So that matchmaking, I think, is also a really
+interesting, creative problem. So, I think that's why it's so much fun. And it's a fun
+environment we have here too—it's people drawing on whiteboards and, you know, writing
+on pages of math. And, uh— Jacob Goldstein: Like in a movie, like in
+a movie. David Cox: Yeah, straight from central casting. Jacob Goldstein: You drawing on—the drawing on the window, writing on the window with a Sharpie. David Cox: Absolutely. Jacob Goldstein: So, let's close with the really long view. How do you imagine AI and people working together 20 years from now? David Cox: Yeah, it's really hard to make predictions. The vision that I like, actually,—this
+came from an MIT economist named David Autor. Which was, “Imagine AI almost as a natural
+resource.” You know, it's like, we have—we know how natural resources work, right?
+Like there's an ore we can dig up out of the earth that comes from, you know—kind of
+springs from the earth.  We usually think of that in terms of physical stuff.
+With AI, you can almost think of it as, like, “There's a new kind of abundance, potentially
+20 years from now, where not only can we have things we can build or eat or use or burn
+or whatever. Now we have, you know, this ability to do things and understand things and do
+intellectual work.” And I think we can get to a world where automating things is just
+seamless; we're surrounded by the capability to augment ourselves—to, to get things done.
+And you could think of that in terms of, like, “Well, that's going to displace our jobs,
+because eventually the AI system is going to do everything we can do.” But you could
+also think of it in terms of, like, “Wow, that's just so much abundance that we now
+have. And really, how we use that abundance is, is sort of up to us.” You know, like,
+when you can—writing software is super easy and fast, and anybody can do it.
+Just think about all the things you can do now. Like, think about all the new activities.
+Think about all the ways we could use that to enrich our lives. That's where I like to
+see us in 20 years: you know, we can do just so much more than we were able to do before. Jacob Goldstein: Abundance. Great. Thank you
+so much for your time. David Cox: Yeah. It's been a pleasure. Thanks for inviting me. Malcolm Gladwell: What a far ranging deep conversation. I'm mesmerized by the vision David just described. A world where natural conversation between mankind and machines can generate creative solutions to our most complex problems. A world where we view AI not as our replacements, but as a powerful resource we can tap into and exponentially boost our innovation and productivity Thanks so much to Dr. David Cox for joining us on Smart Talks. We deeply appdicaite him sharing his huge breadth of AI Knowledge with us, and for explaining the transformative potential of foundations models in a way even I can understand. We eagerly await his next great breakthrough. Smart Talks with IBM is produced by Matt Romano, David Zha, Nisha Venkat, and Royston
+Beserve, with Jacob Goldstein. We’re edited by Lidia Jean Kott. Our engineers are Jason
+Gambrell, Sarah Bruguiere, and Ben Tolliday. Theme song by Gramoscope. Special thanks to Carly Migliori, Andy Kelly, Kathy Callaghan, and the EightBar and IBM teams, as well as the Pushkin marketing team.
+Smart Talks with IBM is a production of Pushkin Industries and Ruby Studio at iHeartMedia.
+To find more Pushkin podcasts, listen on the iHeartRadio app, Apple Podcasts, or wherever
+you listen to podcasts.

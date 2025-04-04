@@ -1,0 +1,27 @@
+Data security is everybody's business. 
+There are a number of security solutions   out there. There are a number of security 
+products driving these security solutions.   And certainly, the security 
+teams are always inundated with   too many alerts, too many products, 
+and too many solutions to keep up with.  Data security is a constantly evolving and 
+a moving target. So when we talk about the   challenges of data security, it's all about having 
+an understanding of what data an organization has,   understand what are some of the compliance 
+mandates the organization needs to comply with.   And more importantly, be able to get to a 
+more proactive state where organizations are   managing and remediating security threats as they 
+arise. And that's really where Zero Trust light   frameworks come into picture. Zero Trust ensures 
+that you are verifying everything and not really   banking on trusting anything without verification.
+Privacy and data security and governance are   interrelated. They are two phases 
+of the same coin in the sense that   privacy is something that you could drive with 
+having a robust data governance process and having   a very solid framework to enforce data governance 
+from a security point of view. And that's really   where data security solutions come in to play.
+IBM believes the current state of data security   can be improved. We believe the market from here 
+goes towards more of an open and interconnected   space where security solutions could talk to 
+each other and essentially enable security   orchestration and response in a more congenial and 
+more homogenous way. And IBM Security solutions   are built using some of the security first 
+principles like separation of duties, being   able to deliver data-centric security controls 
+and ultimately drive all this in a way that is   enabling security teams to manage data security 
+threats and prioritize actions and remediation.  What that provides is the ability 
+for organizations to have their teams   across the board from compliance to privacy, 
+from risk management to applications,   infrastructure to operations, all come together 
+to address business challenges and particularly   data security threats and events in a more 
+collaborative way. My name is Rajesh Venkatasubbu,   product manager at IBM Security, and responsible 
+for data security and guardian data protection.

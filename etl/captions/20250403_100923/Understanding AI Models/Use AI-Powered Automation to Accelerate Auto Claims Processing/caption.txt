@@ -1,0 +1,21 @@
+As hundreds of millions of people around the 
+globe get in their vehicles every day the absolute   last thing that anyone wants is to get in a car 
+crash. Unfortunately reality strikes and there   are millions of crashes around the globe every 
+day. These are stressful dangerous and extremely   costly in fact according to the association for 
+safe international road travel countries can pay   up to two to eight percent of their entire GDP on 
+the cost of crashes. So here's a business question   how can a modern insurance company step in 
+leverage data in AI and help alleviate some of the   time and stressors that their customers are paying 
+on all of these crashes. Let's say Caitlyn has   just been in an accident the last thing she wants 
+to worry about is a month-long claims process with   her insurance company. Luckily her insurer has an 
+automated claims processing workflow established   on their back end which means just minutes after 
+she's been rear-ended she's able to provide   some basic information to get the claims process 
+going. Another advantage is she's able to gather   and input the responsible parties information on 
+the spot without having to track him down later   leveraging her smartphone's camera she can 
+quickly document the damages and then select   the local shop she'd like the repairs done at. The 
+last step is to have the insurer call her an Uber   so that she can continue about her day crashes 
+are not fun although insurers today have the   ability to make the impact they have on their 
+customers less stressful and they do this by   ensuring that they have complete mastery of how 
+all of their data interacts with their customers.   And their customers experience with IBM 
+insurers can deliver modern customer   experiences like this example through a hybrid 
+cloud and AI platform deployable anywhere.   To dive deeper check out the linked videos and 
+ensure to like and subscribe to stay up to date.

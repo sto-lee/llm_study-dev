@@ -1,0 +1,126 @@
+So, I am Jason McGee and I am CTO for IBM Cloud platform. I'm Chris Nguyen, I'm CEO and Co-founder of LogDNA. So great to be here with you Chris, I think we just got a chance to talk about our
+partnership and what we're doing. Why don't you kick off with you know tell us
+a little bit about LogDNA and what you guys do, and then we'll talk about kind
+of our partnership together. Absolutely, thanks for having me this is a super fun
+moment. LogDNA, we help developers and engineers, DevOps teams monitoring and debug
+their production issues. We aggregate all the logs, whether it's from servers or OS
+and platforms and we put into a powerful platform that gives you 
+full visibility into your infrastructure which is pretty fun. That's great, yeah so,
+you know at IBM Cloud we're trying to build this platform for
+developers, and logging and observability are so important for
+developer productivity, and so you and I started work together a few years ago to
+kind of combine the best of what you guys were doing and bring it to the IBM
+Cloud platform. It's been really interesting to me when you tell me a
+little bit about like the growth that you guys have seen over the last
+year. It's been awesome, like we, I love being a customer of IKS and we see the scale and the flexibility that it made perfect sense
+when we met two years ago, your world and our world goes hand-in-hand. Right.
+And it's nice, we we were big believers in multicloud, we're big
+believers in Kubernetes, and it's nice that the bets we made two years ago
+actually paid off, and it's actually the future what we think about together.
+Right. I think what was nice is the simplicity of IBM Cloud match our
+simplicity of what we think about simple is also powerful from a usability
+perspective, from a scale, from a search, and it's very seamless. That's the best
+part, is the key to developers, and IBM Cloud with the power of LogDNA, so it's a
+great win-win scenario. Yeah, I mean, so let's talk about, kind of you as a client
+of IBM Cloud, you know one of the things that attracted me to LogDNA was
+really two things. One was this incredible user experience that you guys
+have built around developer need for understanding their environments, and two,
+especially two or three years ago, very forward-looking on, kubernetes as a
+platform for running things. So, you know what's worked well for you on
+IBM Cloud? What, do you know, what do you like about it?
+I think simplicity to scale. So when we think about scale we we do a lot, and
+again I don't know full information but we do a lot, and we have a pretty lean
+team that could manage that and scale. So, I think nowadays with the power of
+kubernetes you don't have to maintain it as much, right. So, there's like, I
+think you mentioned that 70/30 rule, in the past you know 70% is is spent
+on maintaining infrastructure, it's flipped now, right, and we love that. So it allowed
+us to deploy LogDNA on your infrastructure, pretty efficiently, and
+from a customer perspective it's easy to use and it matches with the best out
+there, so we love it and we're super proud to be to call ourselves customers.
+Yeah, and one of the things I think is really interesting is that they take logging
+as a use case. It's not maybe what people typically think of with
+kubernetes, you know, it's very data-intensive, lots of information, high
+ingest rates on logs coming in, a lot of processing, not where people really
+started with kubernetes. Any struggles they're like..? No. Do you feel that like, you
+know, I'm doing something on the edge or you know, did it..? I think we always had
+the foresight of the volume of days growing exponentially. So when you think
+about that, we had to think about building a platform that's able to
+ingest that well and store and search it. The second is because of the
+complexity, we knew the complexity because of DevOps, containers, kubernetes,
+it's gonna be complex and the data is going to be fragmented. So how do we make it simple,
+and I think our user experience is always magical, and it should always feel
+that way. Right. And the third, was like one size does not always fit all, so how do you
+capture the right platform for developers, versus DevOps, versus security,
+and that is hard to do, and it was a lot of foresight we did, I think we
+just hit our four-year birthday and we had that first foresight of like it
+should be a beautiful product and less is more. So you're up and running with
+kubernetes with two command lines which is pretty quick. Right. And you tested it.
+Yeah. Which is awesome and that's how it should always feel like, you have other
+things to focus on your priorities, and us handling the infrastructure monitoring
+aspect, observability, should be our core focus,
+that's the benefit of IBM customers. Yeah, so let's talk about our partnership a
+little bit, so logging it plays an important role for IBM. You know you are
+the embedded logging solution within our cloud. Yes. And you know I think the you
+and I have done a lot of work together to try to make that a seamless
+experience for our users, our joint users. You know one of the ways that I
+tried to push our partnership is IBM being a client of yours as well. Correct.
+We have this kind of joint relationship which I think is really powerful, and we
+use LogDNA tremendously within the cloud team, and in other parts of IBM to run our own systems. Yes. Right. And I think that's taught us a lot
+about you know how to operate at scale, you've pushed kubernetes service hard 
+which has been good as well. Talk to me a little bit about kind of the
+partnership angle and kind of how its benefited you guys. It's such a win-win
+scenario, So one, we're customers of IBM Cloud.
+Second, we get to embed OEM, our product to your customer base. Right. And your
+customers happens in two folds, it's your customer base that you have but also
+IBM is their own customer. Right. And it's such an honor when we see
+scale and that's the word that resonates a lot, and the reason why you have
+scale is customers that hit Watson uses us, Weather Channel uses us
+and that's a lot of logs, right, and it's being able to handle that infra
+which just talks about so much of like enterprise ready product. Yeah, right. Not
+just for IBM, but for IBM's customers as well and just it doesn't get more
+confidence there versus the other options that were out there. Yeah, one of
+my personal favorite moments is when I was at the Masters last year and walking
+through the Operations Center that IBM runs to run that event and and seeing
+the team there on the ground who I'd never met using LogDNA using IBM Cloud
+and kind of leveraging that is how they ran that event and all on their own, self
+service, they just consumed the platform. That's amazing, that's what we're seeing a
+lot of,  just internal teams using it just because it's easy if you're up and
+running within minutes. Yeah. And that's how it should always be, but also the
+data that you're capturing and the value of sending alerts. It's a lot of
+flexibility that's we think for first and foremost of
+our product and it jointly collaborates pretty well. Yeah, so what's next? What do
+is a big thing that you think you guys are focused on next that we can
+go do together? I think when we talk about like OpenShift is a great
+opportunit,y we talked about Cloud Paks is a great opportunity, and it's
+nice that the technology, our technology is aligned, super aligned with with your future
+path and it comes down to execution. I think being a lean team we get to
+focus on what matters most, but most importantly our core DNA has always been
+developers, and it's what do developers want, how do they get up to speed, and how
+do you just get them hooked so that we can land and expand over time. Yeah. That's a
+new movement that we both share together which is amazing. Yeah, I love
+the lean team. I remember when we first met and you know I have this really
+small focused team and the amount that, I think we all lose sight sometimes of you
+know with cloud, with public cloud, with technologies like kubernetes, but with
+all these things we were so used to talking about we lose sight of like
+how much people are able to accomplish with small teams using those platforms.
+It was awesome, a great communication between the teams. It was just a vote of
+confidence both ways because the fact that IBM was forward thinking to say who
+do we partner with, and also the fact that we were able to showcase our
+technology from scale as one perspective, flexible deployment, but I also love that
+we're fully compliant across the board. Yeah. It's PCI, GDPR, SOC 2, HIPAA,
+we were ready. Yeah. And then it doesn't get better alignment then having the
+right overlap. Especially with IBM's kind of focused customer base absolutely
+the industries that we're in like that was really critical that that layer of
+the platform which can contain a lot of sensitive data
+met those requirements and that was really key for us. Right. And I think we get to
+collaborate of what our future, our UI/UX looks like. Right. I look forward to
+how do you create predictive graphs, so instead of teams walking in setting up
+their own graphs if we know it's kubernetes here's a five graphs you need
+to know and where do you want the alerts being sent. So, we always
+think about building those magical moments and this should feel magical when developers use us. Yeah, well look Chris, I really appreciate the
+partnership that we've had. I'm excited for what we're doing. I think LogDNA has
+really proven to be a powerful platform for our
+customers and I'm excited for us to continue to collaborate together.
+Well thanks for collaborating and we're just getting started,
+that's the best part. Great, and for everybody else you know go check out LogDNA on logdna.com, or come to IBM Cloud and check out the offerings that we
+have there. Thank you very much. Thank you.

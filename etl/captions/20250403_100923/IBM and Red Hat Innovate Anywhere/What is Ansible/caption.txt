@@ -1,0 +1,113 @@
+As a developer I quickly got into the habit 
+of pushing to GitHub multiple times a day.   So, it surprises me when I hear that Operations 
+teams are tackling their infrastructure automation   with a lot of manual processes. Hey everyone, my 
+name is Sai Vennam, and today I want to talk about   Ansible. Ansible is an open source infrastructure 
+automation tool, initially developed by Red Hat   and enables you to tackle kind of all of the 
+major challenges that come with infrastructure.   It enables you to do so with code, or 
+in other terms infrastructure as code.   Now Ansible has three major kind of uses and I'll 
+start with the first one because this is generally   the one that people tend to gravitate to when 
+they hear infrastructure automation, and that's   the provisioning use case. So the first step of 
+kind of any infrastructure story, you've got to   have some infrastructure in the first place. So, 
+let's say that using Ansible we've already spun   up some environment, let's say it's a VPC and my 
+favorite cloud provider, and within this VPC I've   got three virtual machines. So, we'll say we've 
+got one, two, and then a third one as well. Now   these set of virtual machines are going to 
+essentially be our set of hosts. In the Ansible   world, we're going to call this an inventory. So, 
+it's basically the set of hosts that Ansible can   work against. So, what we're going to call this 
+is an inventory. Now within this inventory we can   actually create even more sub categorizations and 
+Ansible calls this patterns. So, let's say these   virtual machines have different, you know, 
+underlying tasks and use cases and services   that they're going to be running. So, these 
+first two virtual machines will call them web   because they're going to be used for 
+web servers, and then this last one we're going to call this DB because we're going 
+to run MySql database on it. So, there we go we've   got our infrastructure we've got that provision 
+kind of step already done, and I want to jump to   the second thing that Ansible is really good at 
+it's config management. And actually I'd say this   is kind of the main use case that most people 
+think about when they first start to use Ansible,   and this kind of refers to the ability to 
+configure your actual infrastructure. So a   simple example would be something like operating 
+system patches, or maybe making sure a certain   service is running, maybe installing some service 
+onto a virtual machine. So in our use case today,   let's focus on that, let's focus on how we can 
+do config management with these virtual machines.   Now one of the key tenets of Ansible is that 
+it's declarative. Now out there there's kind of   the notion that Ansible can be both declarative as 
+well as procedural or imperative, and the idea is   that, you know with Ansible you declare what you 
+want instead of focusing on how it gets there.   But in essence it can also be considered 
+procedural because the underlying tasks that run   are procedural in nature, but as a user of Ansible 
+you're taking advantage of the declarative aspect   of it meaning you define what you want rather 
+than how to get to whatever it is that you need.   Now today, what we want is to be able to run some 
+tasks against those VMs. Let's say we want to run   some OS patches and then install a programming 
+language, and then install MySQL. So, what we'll   need is a playbook. So that's what we'll start 
+with first, we'll create an Ansible playbook   and as the name indicates a playbook is going to 
+be a book of tasks or a set of of plays rather.   Now our first play we want to run this against all 
+of our hosts and we want to just run a security   patch, we want to make sure they're all running 
+the same version of the same operating system. So,   that will be our first play. So a play is going 
+to be kind of consisting of three main things,   you need a name for that play, you need the host 
+that it's going to run against, and you need the   actual tasks that will run. Now in this particular 
+play, let's say that we've got the hosts set to   all because we want to run this against 
+all the hosts. And as far as the tasks we'll define some set of tasks like 
+security patching and that kind of thing.   Now key thing that I want to mention here, Ansible 
+takes takes advantage of YAML to do its kind of   declarative nature of being able to declare what 
+you want. So this would this is obviously not   a valid YAML but in the real world you know when 
+working with Ansible this would be in YAML format.   So that'll be our first play running 
+against all of the hosts in our inventory.   Now let's let's create some more plays here. Let's 
+create a play that runs directly against the hosts   for our web servers. So we call that web, 
+right. And this is going to have a set of tasks,   maybe we need to do something like install Go and 
+install Python, maybe install some other services   that are specific to our web servers. And finally 
+we'll create one more play in this playbook,   and for this one we'll set the host to be our 
+DB, and then for instead of tasks let's talk   about something called roles. Ansible has a 
+concept of roles which basically enable you to   group together actions that you run multiple 
+times. So instead of having to define all of   the tasks every single time you can just define 
+the roles and that will take advantage of you   know the underlying modules and tasks that need 
+to be run. By the way, a playbook is one way of   grouping together a set of tasks that you need 
+to run, it's a declarative way of doing it,   but if you really want to keep things 
+procedural imperative you can actually run   one-off tasks by themselves and do so in a in an 
+imperative way or a procedural way, but this is   kind of the way you would do a fully declarative 
+approach to automate a set of tasks against you   know the set of hosts in your inventory. So, this 
+is our playbook and we want to execute this now.   That's going to bring me to my second tenet of 
+Ansible and that's the fact that it's agent-less. Now Ansible is agent-less in in the sense that 
+like a lot of other infrastructure automation   tools, unlike a lot of other infrastructure 
+automations, you don't actually need to install an   agent on the VMs that were provisioned. So, 
+Ansible is able to take advantage of SSH   to actually directly go into those VMs and 
+run the tasks that it needs to. So, let's   see what that looks like right. So we take our 
+playbook and as a user we'll execute Ansible, and   Ansible can execute you know and most unix-like 
+environments, so we'll execute our playbook and   it'll run against our virtual machines and there 
+we go, we're happy. But here's one thing to think   about. Now chances are we wouldn't be running 
+Ansible on our local machine, right. At the   end of the day it has to store SSH keys and a 
+lot of kind of other secure configuration and   you're not really trying to run automation off 
+your local machine. So there's a capability out   there called AWX, or Ansible tower, which is 
+the downstream project of the open source AWX,   and that's basically a graphical interface and 
+set of APIs that enable you to run Ansible and   operationalize it across your organization. So 
+whether you're using Ansible, or Ansible Tower, a   user will come in execute that playbook and there 
+we go, we'll have our config management executed.   Now the third aspect that I want to talk about 
+with Ansible is the fact that it's idempotent.   Now what exactly does that mean? So idempotent refers to an operation that can be   run multiple times without changing beyond the 
+initial application. In other terms, the first   time I run this operation it should recognize 
+that the security patches need to be installed,   the services need to be installed, the Python and 
+Go and MySQL, or whatever needs to be installed   has to be done. The second time I execute that 
+same playbook it's going to recognize it's already   done it and it's going to say hey nothing needs 
+to be done. But let's say I come back my second   day and I say oh we need to actually update the 
+operating system version from you know 1.0 to 1.1,   and we run this same playbook 
+and Ansible, or Ansible Tower,   and then recognize it and says hey that operating 
+system has changed but nothing else did it's going   to execute the only action needs to to kind of 
+resolve that difference. Now one thing to consider   all of these tasks have underlying modules that 
+power them and you want to make sure make sure   that the modules themselves are programmed in 
+a way that's idempotent. And this is important   and it kind of brings me to my last point 
+here is that Ansible is community driven.   That means that if I'm trying to do these things 
+in a playbook that I kind of outline today   chances are someone out there has already 
+developed the playbooks, the modules, the tasks,   that I need to actually do those operations. Those 
+are basically published as collections in what's   called Ansible Galaxy, which is a repository where 
+developers can kind of contribute their Ansible   kind of modules, or playbooks, or tasks whatever 
+they might have created in the ecosystem. That's   one of the great things about Ansible is that it's 
+so community driven that chances are whatever I'll   need to do I'll be able to find in that galaxy, 
+Ansible Galaxy. The one kind of disclaimer I'll   say, make sure run these operations locally, 
+make sure they're item potent, make sure   that you know executing them multiple times 
+responds in a way that's kind of predictable.   So all that being said, we've kind of talked 
+about how Ansible is a declarative language,   it doesn't require an agent to be able to 
+execute in these kind of end environments   in these virtual machines. It's idempotent based 
+on the modules that you're using to enable you to   avoid things like config drift by making sure 
+that any changes that you make should be done   in your infrastructure automation story, 
+whether it's playbooks, or roles, or modules.   And then finally, you know you can rest easy 
+knowing that chances are whatever you need to   automate is available in the community. Now 
+the third use case I mentioned, there are   three things that you can do with Ansible, it's 
+going to be app deployment. Now I'm not going to   go into too much detail here today about the app 
+deployment use case, but the fact is you can use   Ansible to then take it a step further and deploy 
+your actual web applications and workloads into   the virtual machines, it's also a capability 
+available by Ansible. I hope this was helpful.   If you like this video or have any comments, 
+be sure to drop a like or comment below.   Stay tuned and follow us for more videos 
+like this in the future. Thank you.

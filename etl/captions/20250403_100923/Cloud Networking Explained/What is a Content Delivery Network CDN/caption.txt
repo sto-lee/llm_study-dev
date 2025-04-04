@@ -1,0 +1,42 @@
+Content Delivery Network - Transcript Hi, I'm Ryan Sumner I am a Chief Delivery
+Network Architect with IBM Cloud and today I'm going help you answer what is a Content
+Delivery Network. So, in short, a Content Delivery Network,
+or CDN, is a service that accelerates internet content delivery. So, in other words the main benefit of a CDN
+is that it makes your website faster. So, before I get into describing to you how
+it accomplishes that and some of the other benefits. First, I want to talk to you about some of
+the challenges that we have where we have users all around the world, but we don't have
+servers all around the world and the experience that those users have due to that dynamic. So, I got a simple diagram here showing a
+server hosted down in Dallas, this is my website, and I have users all around the world. So, in Sydney I might have five, in London
+I've got five, New York I might have ten, and LA I might have ten. I’ve thirty users around the world they're
+accessing my server and my website down in Dallas. So, lets you can follow a set of these users
+in their journey and let's look at their users down in Sydney. They make a request to the website they got
+an eighty six hundred mile hike to Dallas and then in eighty-six hundred mile hike back. The amount of time that that takes is usually
+measured in milliseconds and just that round trip might be about a hundred and seventy
+milliseconds. For our users up in London that might be about
+a hundred milliseconds. Our users in New York City can probably experience
+about a forty milliseconds round-trip time. And over in LA about thirty. So, as you can see, the further you’re away,
+the longer it takes and ultimately the slower the website will be for you. So, this is where the CDN comes into play
+and this is how it actually accomplishes the increase in speed which is by reducing the
+amount of distance between the user and the content, or the server providing the content. So, what it does by doing that it places these
+Content Delivery Network end points in as many locations around the world as possible. And in our case, we're going to assume we've
+got one in just about every location where users exist. So, now when the user in Sydney, or London,
+or New York City, or LA tries to access some content its first retrieved by the Content
+Delivery Network service and then distributed around the world. So, we have a single request down to the Dallas
+server. It's now the distributed all around the world. And our users in London now instead of going
+all the way to Dallas they're able to retrieve that content directly from their closest geographical
+location, drastically reducing the amount of time that it takes to retrieve that content. So, as you can see here it's a very basic
+how a CDN is able to provide the benefits of to the end user by reducing the amount
+of time that it takes to deliver the service, but what you're not seen here is an indirect
+benefit is the reduction in the amount of traffic that actually hits the Dallas server. So, the indirect benefit is that you actually
+see a reduction in the load, or the reduction in the amount of capacity that you need in
+Dallas to serve all these users. So, another indirect benefit because there
+is much less validity and so much less stuff happening in Dallas, because all these users
+are not having to make these trips, and I'm also not having to communicate with users
+so far away. The Dallas environment may also see an increase
+in up time. And then lastly because the users are not
+really directly communicating with the server down in Dallas you have the indirect benefit
+of an increase in security through obscurity. So, it's pretty basic to understand how a
+CDN works, in the end it provide a better benefit to the end user. Thanks for watching this overview of Content
+Delivery Network. If you liked it, or have any questions please
+comment below. Stay tuned for additional videos in the future
+and please don't forget to like and subscribe.

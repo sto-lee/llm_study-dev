@@ -1,0 +1,30 @@
+Hi, I'm Alex Greer with the IBM Cloud team. 
+Today I want to talk aboutIBM Cloud Secrets   Manager. But, before I get into it, don't 
+forget to hit that "Subscribe" button!   As enterprises build more microservices and become 
+globally distributed, securing your application   secret data becomes much more complex. As we saw 
+before in my previous video, secrets management   services enable the secure management of digital 
+credentials that ultimately allow entities   to securely interact with services.IBM Cloud 
+Secrets Manager is a service based on open-source   HashiCorp Vault designed to securely manage 
+the lifecycle of Secrets, such as IAM API Keys,   User credentials, or different forms of arbitrary 
+text. This allows IT security leaders to dream big   about their cloud native application future 
+without being concerned about data breaches   from mismanaged credentials, or losing velocity in 
+their developer operations while securing secrets.   Secrets Manager centralizes the experience 
+of generating, storing, rotating, and revoking   multiple types of secrets from a single pane 
+of glass. Integrations with other services such   as your private catalogs in IBM Cloud enables 
+the retrieval of your secrets in-context when   you need them, streamlining your workflows.  
+Through leasing, it even allows for you to give   an application or a team member temporary access 
+to a service to complete their respective task.   As a managed service, Secrets Manager offers much 
+of the same benefit of an on-premise deployment of   Vault without the hassle of having to maintain its 
+tricky operators, or manage and ultimately operate   its underlying infrastructure. This allows you 
+to keep your desired security posture at scale,   while we take care of the rest. A critical element 
+of Secrets Manager that makes it’s so powerful   is its unique trust model. Built for enterprises 
+that have very little tolerance for any sort of   data vulnerabilities but need the velocity 
+provided by the cloud.  This model starts by   allowing you to seal your vault and encrypt all of 
+your hosted secrets with your own root encryption   key. For example — one of your existing 
+FIPS compliant keys from IBM Key Protect,   giving you ownership of your data. Next, your data 
+is protected in transit through TLS — Your vault   as well as the UI and APIs you use to interact 
+with it are all single-tenant. Meaning, your   data is isolated in your own dedicated silo and 
+doesn’t rely on any shared components. And…should   you decide to delete your instance you have the 
+peace of mind that your data is cryptographically   deleted. Thanks for listening to this introduction 
+of IBM Cloud Secrets Manager. To get started   with improving the security of your secrets 
+come check us out in the IBM Cloud catalog.

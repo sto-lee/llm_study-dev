@@ -1,0 +1,9 @@
+{
+  "video_url": "https://www.youtube.com/watch?v=I4L2aR80_nQ",
+  "video_id": "I4L2aR80_nQ",
+  "title": "Kubernetes drone demo: Deploying an application",
+  "upload_date": "20200130",
+  "channel": "IBM Technology",
+  "duration": "1:27",
+  "caption": "[Music] kubernetes gets an application running in a cluster by applying a configuration file that we create let's say we've built an application for running a web-based travel business we're passionate about delivering the best travel experiences to our users from flights to recommended tours to the perfect hotel our developers containerized our application and we're ready to deploy the containers to kubernetes we started by creating the deployment configuration file for our application the configuration describes the application and the required kubernetes objects in kubernetes application containers are encapsulated into a pod kubernetes is responsible for creating and managing pods of containers connecting them to the network and the rest of the environment we're assuming that all of the software to run our application in kubernetes is encapsulated in a single pot we're going to use the cube control CLI command to apply the configuration file each of our drones is connected directly to a pod in the kubernetes cluster our drones watch kubernetes for changes and react to those changes because our deployment creates a new pod one of our drones takes off our app pod is airborne you"
+}

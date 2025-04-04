@@ -8,6 +8,7 @@ class OLLAMA_LLMs(enum.Enum):
     gemma3_12b = (enum.auto(), "gemma3:12b") 
     exaone_deep_32b = (enum.auto(), "exaone-deep-32b") 
     exaone_deep_7b = (enum.auto(), "exaone-deep-7b") 
+    gemma3_finetune_gguf = (enum.auto(), "gemma3-finetune-gguf")
 
 def create_ollama_prompt_template(messages):
     return ChatPromptTemplate.from_messages([

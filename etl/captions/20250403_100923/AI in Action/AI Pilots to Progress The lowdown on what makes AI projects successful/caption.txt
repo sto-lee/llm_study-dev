@@ -1,0 +1,476 @@
+My advice would be go with the big or the biggest model that you can find,
+and see if it solves a problem. Then using techniques like distilling
+or fine tuning and there are many others quantization
+see if you can make the model smaller. 80% of all AI pilots fail. And that's
+according to the Harvard Business Review. I did my homework, y'all. Four out of five, just dead on arrival. And yet, everywhere we look, it's
+AI everything. So what is actually going on
+behind the scenes? How do pilots go from something
+promising to a pilot graveyard? And if it is working, when and
+where do you double down on the winners? I am beyond thrilled to ask
+these questions and many more to my guests today. We'll chat first with Anupam Singh,
+who is the VP of AI and Growth at Roblox. Anupam, thanks so much for coming on. I'm a huge fan of the game
+and the company. Hello, how are you doing? I'm really, really well. Now, Anupam, though
+I'm curious, please tell us a bit about your journey that you took in order
+to get to your current role. I am, two time
+founder of two big data companies. The second one
+went on to be acquired by Cloudera. So if you've ever heard about Hadoop,
+if you have ever played with open source, big data platforms,
+there's a lot you can blame me for. In what works, what does not work. Well, can you tell me also about some of your experience
+with building AI pilots? Then before Roblox and now at Roblox,
+I know that you mentioned a little bit of it there,
+but I want to dig deeper. Oh, yeah. So AI, you know, used to be called machine
+learning before everybody started calling it AI. So we've been doing machine
+learning for a long, long while. Take Roblox, for instance. We have had a text filter for our safety
+for years and years where,
+if you and I were texting each other and let's say
+you decided to use a colorful word, our text filter would in line
+live hashtag it. Meaning it's bleeping, but for text. And that always used machine learning. It is invoked around
+4 billion times a day. Imagine every one of your text
+going through this text filter being filtered out. And that was our biggest machine
+learning service. Before all of AI
+became the rage in the industry. Out of those pilots,
+then how many of them failed? It's interesting if you narrow down
+the problem the way I described it. So we are not trying to boil the ocean. We're not trying to do AGI. You simplify, the problem statement rather than trying to boil everything. And so some of the failed things
+that we have seen is when we try, try to do too much in one go
+because we get excited about the technology. You know, you must have heard something
+called time to first token. This is all the rage in AI. It's the first, it’s the time that
+it takes to get the first token. I have started calling something time
+to first demo. In AI, building a demo is easy, but never confuse the demo
+with actual production. Never confuse the demo
+with actual production. Can you break that down for me
+a little more? So let's say you have a video building software
+or you are trying to build photos. One of my AI friends calls it party
+trick models. Party trick models is you open your phone
+and you say, I want dolphins riding bicycles on Ocean
+Beach in San Francisco. Comes out and it's beautiful. But firstly, it's not useful to anything. It's a proposal. Nothing. Now, if you want to build a real video
+or a 3D world which has Ocean Beach,
+which has the fog of San Francisco, which has dolphins,
+it's a much bigger task. So the demo sometimes confuses people. I have other companies where people
+have gone to the board and demoed something, and the board assumes
+that it is the full product. We try to avoid that. We try to avoid, irrational exuberance
+around AI demos. Well, then how widespread is this issue
+of irrational exuberance? Honestly, because so many models are now available, so many
+large models are so easily available. I think it's become more common now
+because you can ask... the model can almost fool
+you into thinking that you just solved a very complex business use case,
+but it really hasn't. I'm curious about where does this usually start though,
+within the company or within the organization? Does it start in the C-suite or more
+so on the developer level? At some level, it's
+at the developer level, because earlier if you did AI before the large models,
+you would have to start with the data. You'd have to figure out which neural
+network technique you're going to use, and then you have to figure out
+about the output. But now, because large models
+are available off the shelf and and many companies are making them
+accessible, your first step is much easier but now all of it portends
+well for the future. But just because it is easy
+to do the first step, people confuse it with the with the end,
+with the conclusion of the project. Does that make it almost too easy
+to step into piloting? In some ways, yes. It is very easy to articulate
+a business problem. Have a demo ready and in your mind
+you're now not thinking about cost. You're not thinking about data quality,
+and you're not thinking about user experience. If you take these three away,
+the project becomes easy. But if your AI model
+is about to curse at you, or it is going to give you factually
+wrong answers, how do you assure that
+that's not happening? And those are the last 10% of an AI
+project might be harder than the first 90%. So what else are people missing
+as they start the piloting process? I think, the first one, I would say,
+because Roblox is at such a high scale,
+we have to think about cost. We like to give out our features to
+all of our users and all of our creators. So from day one,
+we have to think about, publicly. We talk about
+4 billion hours of engagement. So it's 4 billion hours of people
+talking to each other, people playing with each other,
+people building content. And we need to think at that scale. So often people will forget the number of tokens
+that are actually going to be used. And then when you multiply it
+by cost of running it on the cloud, you're suddenly,
+your beautiful AI project could cost your company $100 million straight up. And the bills are running up the way
+cloud bills do. They start very innocuously, and then suddenly it's a huge cash
+outlay for your company. Okay, you've identified a couple
+of huge problems here, right then Anupam. So I need your help now
+in helping us identify some hacks on how to build something
+that has staying power. So number one, let's talk about cost,
+okay. On cost, consider whether you really need
+that large a model. There's a little bit of an ego battle. It's like,
+oh, you know, John is using a 100 billion parameter model, but Arvind is using a 10
+billion parameter model. Oh, obviously
+100 billion is better than 10 billion. Not true. Because if your business problem
+is constrained enough, if your user experience question
+is constrained enough, you can actually work
+very well with 10 billion parameter model. What happens next? A 10 billion parameter model sometimes is 100 times cheaper than, let's say,
+100 billion parameter model. So it's very important
+to constrain the problem and then, use that constraint to reduce the footprint of your machine
+learning model. I've see now you've got me in two
+different mindsets though, because if I'm going to start small, how
+can I start to think about scalability? When I say start small, I don't mean that you should always start
+with the smallest model possible. You can start with the biggest model,
+you know, whether it's open source, whether it's your own. Take the biggest model,
+see if it solves your user's question. Let me give you an example. We started on something called Code
+Assistant. Millions of creators come to our platform
+and they write code. Of course, having a code
+assistant is great, but we started with a very big model. We actually put it
+in what you would call a pilot, saw that your users are developers
+really like it. Then behind the scenes, because
+we had a gateway sitting in between, behind the scenes, we changed the model
+to a smaller model and tested it. We changed it to a smaller open
+source model. So my advice would be go with the big or the biggest model that you can find,
+and see if it solves a problem. Then using techniques like distilling
+or fine tuning and there are many others quantization
+see if you can make the model smaller. So that's sort of the first step. Gotcha. Okay. So see if I can make the model smaller. Now let's fast forward some. I've got my pilot and I'm ready to grow
+now, Anupam, I want to grow. So I need a team. How easy is it going to be for me
+to be able to find people who have the right skills in the
+AI space, like right now, today? That's a brilliant question.
+I'll tell you why. Because whenever we think about AI,
+we think about models. Whenever we think about models, we start thinking about people
+who can train these models. But what we have learned here is the magic starts a little before, which is data. So preparing data for AI is very different than preparing data
+for business intelligence. If you remember your business
+intelligence software, what does it do? It creates charts. It creates
+pie charts and swim lanes and whatnot. But preparing data for AI is different. You have to create vector embeddings. You have to put it into a vector database. We have learned that right now some of it is art
+and some of it is science. And finding that right mix in the engineer to think about data is sort of the hardest
+skill in the market. I want to give a shout out, by the way,
+to everyone who's listening right now. Especially some engineers
+that I'm sure are tuning on into this one. I want you to speak
+directly to them, though. Let them know, how can today's engineers
+start learning these skills? If you are a database person
+or if you are data person, start thinking about vector databases. Start thinking about what an embedding
+looks like. It's not that bad. It's still a table. It's still data. Okay, data stays data. So that's one way you can get in. The second, of course, is learn a few model optimization techniques. Not all of us have to go and build GPT. Not all
+of us have to build these bigger models. If you want to get your
+your feet wet on AI, go in and just learn these techniques like RAG, fine tuning,
+quantization and just play with a model. You don't have to do the training
+yourself. And the third kind of engineer
+who will try, we didn't talk about performance as such, I
+emphasize cost, I emphasize data quality. But in the end, when you are typing in
+and your AI is taking too much time to respond, you
+as a user are not going to like it. So what is software about? Since many decades
+ago, it's about performance and a lot of that performance
+is still distributed systems engineering. And so if you are a distributed systems
+engineer, you still have a lot to contribute,
+because in AI inference, all of these older
+techniques are coming back. Since you're here, we obviously have
+to talk about your work at Roblox. All right. So in your view,
+how's AI shaping the future of gaming? Oh, I thought you would never ask. So so, there's a few things that are that are all active simultaneously. So it's a very exciting time
+to be involved with Roblox and AI. So the first one is, of course, creation
+itself. You want to create a game. You come to the Roblox platform,
+we'll help you with texturing. We will help you with code
+assistance. Okay. Your creation is ready, but now you have to send it out
+to millions and millions of users. In our case, it's
+essentially every corner of the planet. We have about 24 data centers at the edge
+where your creation is going to go. We have features
+which help you with rendering. As a creator, you don't want to spend
+too much time rendering it. So that's the creator. Now, let's say you're a user. Now, I don't know about you, but
+I have a really snazzy avatar on Roblox. It's got a beautiful white coat
+and it's it's got a, you know, weapon
+and a very nice mohawk. Imagine trying to build
+your avatar used to be painful, but avatar auto setup on Roblox immediately
+gets you avatar to look amazing. So just these three things,
+creators, users get enabled. Behind the scenes though, one of the biggest areas of investment always has been since Roblox was founded
+is safety. And a lot of our AI,
+I would say almost half of our AI spin is on safety. Whether you are texting a friend, chatting
+with a friend on Roblox, and whether you can be colorful or not,
+that's something that our AI helps with. But the most exciting one pertinent
+to our conversation right now is voice. You and I are chatting. This is, you know, a professional setting. If I suddenly used a colorful word,
+I think we should beep it, correct? Sure. Now, do you want to be in post-production
+or do you want to beep it in here? Right. And so our voice safety effort is that, depending on the context, we will actually immediately identify
+whether our voice interaction is safe or not. And that's been
+one of the most successful projects on AI. To your earlier question about pilots,
+I remember the pilot. It seemed very expensive. It seemed the model was too big. It seemed the data quality was not high. In a one year journey. We have addressed each one of these things
+and now the safety group is the biggest user
+and consumer of our AI, platform. I can only imagine the colorful language
+that we would hear if we just stood outside the door
+during that training. We had this great demo in which our, vice
+president of engineering for safety, would be talking to our founder and CEO in the town hall, and it would nudge them
+to be less colorful. So it was a pretty impressive demo. Well, then what do you see coming next
+then as gen AI gets better and pilots do start improving
+what's on the horizon? Firstly, if you live in San Francisco,
+hopefully you have seen these driverless cars. It's amazing that, literally in real time, this car is able to reason about what it is, seeing,
+what it should do. And because San Francisco is very narrow
+and steep street, sometimes it has to back away
+to make let a garbage truck go by. So in a way, I feel excited
+that the future is already here in certain parts of the world. So that's that's part one. Part two,
+I think all the AI excitement today is legitimately about text. You know, I type in something,
+it type something back, but the next horizon is image,
+which is already here. People are talking about image. Then we are thinking about audio. Then we are thinking about video. And then we might think about the world
+itself. And for us,
+because we live at the intersection of the real world and the virtual world,
+building these worlds in the most efficient way
+possible is a big deal. It takes too much effort for our creators to take what is in their mind and translate it into working code. We want to sit in between
+and let you become a storyteller on Roblox versus today, what you would have to do is
+you would have to write some code, and you'd have to learn
+how to, you know, build a Roblox world. Imagine you could just say it and out
+pops a Roblox game, and you and I are playing that
+in five minutes. That's the future for us at least. So is there a world post code then? Is that what's on the horizon? It's possible. The beauty about AI today, apart
+from obviously what we started with, yes, there's a lot of failures that we will
+encounter like any other innovation. But every three months an entire set of of assumptions get broken
+and we see something new. So it's an exciting time, to be working in
+machine learning and AI, for sure. Then my final question with that is, with everything
+becoming so much more accessible, with creating pilots,
+becoming more accessible, do you think that's going to lead
+to more pilot failure in the future, since people can feel so confident about it and just jump in,
+even without a ton of experience? Or do you think that that's going to
+improve the quality of pilots that we get? I'll tell you what we saw here. The sophistication
+will not be in the pilots. The sophistication will be AI platforms will become smarter to figure out that this is not a good use case,
+or that the data quality is not good, or the inference is too slow,
+or it is too expensive. You know how, if you go back to the time
+when cloud was new, I could just you know, ask my boss to give maybe, maybe their credit card
+and put it on the company tab. And that's it. That's my cloud pilot. Today,
+cloud has an entire set of disciplines, entire set of process
+to manage the cloud spend and performance. I think the AI platforms
+will become sophisticated enough that they will catch these pilots. But I think we should let
+creativity be unbounded. We should encourage our engineers,
+our developers, our creators to do a lot of new things with AI while the platform constrains what's going on. Okay, Anupam,
+thank you so much for your time. Listening to you, it makes me feel like the future
+is going to be super duper bright. But today people putting their blood,
+sweat and tears into pilots that never see the light of day still just breaks
+my heart as a creator myself. So I've called in my friend
+IBM's Nick Renotte. He's going to help me to understand his point of view as one of
+the brilliant minds behind AI builds. Nick, welcome back to the show, man. It's really good to see you. Yeah, no, thanks. Thanks for having me. Now, look,
+as someone who's really in the weeds developing individual
+AI projects every day, let's start here. Does it begin
+like any other creative endeavor? Like, like just a fun idea. The biggest thing that I always think
+about when I'm designing
+or coming up with ideas is like impact. So if I build this,
+how is it going to be able to be used? Who's going to be able to use it?
+Where is it going to go? What's the potential? One of the most popular projects
+that I actually built on YouTube was the sign language detection model. And there's been other like a ton of other object
+detection models that that I'd seen floating around YouTube before. But I thought, hey, this one's actually
+got some, some, some real use and like, maybe I won't push this to the absolute
+Nth degree, but if I can give people a start,
+it'll actually help kick people off. And I actually had, a father
+reach out to me yesterday who's actually taking the model
+that I helped start designing on YouTube. And he's using object detection
+and embedding that inside of a set of glasses
+for his daughter, who is blind, to help identify obstacles, in a way. So I thought that was a really cool sort of evolution of the project
+that I sort of started off with. Geez, how validating
+that must have sounded to you like to know that something that you just dreamt of
+on a whim and just started, you know, doing is actually being placed
+in real life application? Congratulations on that. Yeah.
+Thank you, thank you. And, I mean, the funny thing is
+that, like, there's been so many different offshoots
+from from that project, there's obviously been others, but like this one because
+it's had that, that, that greater for, for the greater good type feel to it
+or or vibe to it. It's really gone a lot further. I know
+clearly that you have a ton of ideas. They must just like, hit you at all
+different points in time. But when you're trying
+to narrow those ideas down and when you really try to plan a pilot,
+how do you try to make sure that the pilots
+that you do endeavor to create actually grow up, actually make it far enough
+to to take root? Yeah, I think I'm going to switch
+speeds here, right. And then focus a little bit more on
+like how I do it at work as opposed to like personal projects,
+because a lot of my personal ones sort of just go off the wayside,
+kind of like, the, the amazing footage that you mentioned at the start,
+like they're always on the to do list. Whereas, when I'm at work, I'm a lot more driven
+to make sure that these do grow up. So I stay within inside of an organization
+inside of IBM called Client Engineering. And we actually created this framework
+called the Pilot Engineering method. One of the first steps
+when it comes to kicking off any pilot is actually looking
+for a specific business opportunity. And then looking at use case discovery. Those two steps ensure
+that you're at least going down the right path to begin with. I think we're going to talk about like one of my biggest failures
+a little bit later on. But like the reason
+that that that pilot failed or the project that I was working on
+failed was because I didn't do that. So I didn't look and identify
+a valid business opportunity. I didn't do proper use case discovery. And then most importantly,
+I didn't quantify, the business value. Like,
+how much is that worth to the organization to solve this problem,
+because then they're like, they're actually going to want to solve
+that particular problem. Like, I always talk about it, or I'll
+refer to it as the bleeding neck problem. Like if you're next bleeding, you really
+want to solve that problem, right? Is what we're trying to solve
+a bleeding neck problem. So when it comes to to to actually going through that process,
+I think those two steps are critical. And that all sort of starts
+at the initial phases of the project. Right? So to actually doing workshops
+and working with a client like this stuff can't happen in isolation. It's absolutely critical
+that the when you're looking for that, that that business case
+and when you're looking for the use case that you sit down with the people
+that are going to be using it, not not just the project sponsor
+or the person funding it, it's like, is this going to be valid to the person
+that's actually going to be using it in their day to day life? And then from there,
+not just sort of disconnecting, they need to be critically engaged at every
+particular step of that, that project. So, once we sort of decide on that, then,
+then we really go into what we call the co-creation phase. And keep in mind, like co
+is the really important part in that it's not just engineers building stuff
+off on the side on their machine just hacking away. It's building alongside our clients. And then once we've gone
+through that process, along with a number of playbacks,
+it's really about transitioning, this off into production
+because you've probably seen it before, right, that there's a bunch of projects
+they start off that they're really great, and then they never
+really make it out there into the world. And that happens a lot, right? Like there's a lot of developers
+building a lot of stuff and like, there's a lot of pilots being spun up. But if you haven't actually gone
+and established that, that business value looking specifically at a valid use case,
+then there's not going to be, a bleeding neck
+need to actually get this into production or actually use it
+with inside the organization. So, going through those steps,
+the workshops, the builds, the transition, we bake that into each one of our projects
+and our pilots to make sure that they do grow up. When you mentioned the co part,
+Nick, that to me really seems to kind of like sum up
+everything that you shared there, because just listening, for me,
+I'm like, wow, it would be so much fun to brainstorm
+and to come up with different things. But at the same time,
+even though that is such a thrill, that also places so much responsibility
+on just you as one person to stay personally motivated
+and to push it on through. But when you're working with the client, like you can't just shrug it on off
+because you become bored of the project anymore. So since you can't plan for everything,
+how do you try to design your pilots so that they can adapt
+to what you can't know? But like at the same time, you can't know
+what you need to build into them. So I feel like we're stuck in this circle. So how do you fix it? There is that loop, right? Yeah. Like there's the known knowns,
+the known unknowns. But then there's always going to be
+the unknown unknowns, right? This comes with every project, right? It's not just AI projects
+that that have instances of scope creep where something creeps in and it's like,
+oh, this is an absolute critical thing that we didn't mention at the start
+that we now need to go and handle. Part of good project management
+sort of hedges against that. Right? So like that, like agile project management
+makes sure that like we're prioritizing to build stuff that is absolutely critical to ensuring
+that this particular pilot succeeds. A lot of the risk, associated that with
+that can be sort of hedged or mitigated against
+by doing that use case discovery and working alongside the client. Because really quickly, if the client's
+testing as you're building, they'll probably point out like, oh,
+we kind of have that filter there or oh, I need that filter there, or oh,
+we can't show that data because it's super sensitive and this person shouldn't
+have access to it. So co-creating, sort of alleviates a lot of that other concern,
+but also doing playbacks. So whenever I do pilots,
+I try to make sure that anybody that is going to have a potential touchpoint
+or is going to be a decision maker for this potential solution going
+live, needs to be in those playbacks. They need to be saying what we're building, because you never know
+how one particular workflow might impact somebody else
+until somebody else is there in that room. So, making sure that that,
+that those happen proactively and not reactively
+is, is critical as well. Well, look, it's funny
+because hearing you share all of that, as a listener, I'm like, you know, well,
+it sounds like Nick has it all down. He's got it all together. So how could anything
+positive go wrong like you? No, not at all. What is it like Bear Grylls,
+adapt, overcome, something else, like.... Right, right. So. But I know that that's not true
+because you teased us a little earlier
+by telling us that there was a failure. So I'm going to kind of push on the wound
+a little bit here, and I'm going to ask you if you can tell us some more about that
+failed pilot that you worked on. Yeah, yeah. Thankfully,
+this, this, this wasn’t a pilot at IBM so that there's no brand rep damage
+likely to occur as a result of this. A while ago,
+so I was just coming out of university. I was doing my master's. And as part of that,
+we had a, like, a startup incubator. And then our startup got picked,
+to go into the incubator and, and to, to, to build it out. And the whole premise of it was like
+we were going to be building an application or like a solution to help
+increase transparency of patient journeys throughout a hospital,
+because like one of the big factors when you're inside of a hospital is like,
+you don't really know what's happening and you don't really know
+what's going to be happening next. And that can really increase the stress
+and concern, when you're going through that process. So you're getting treatment. Now, I thought this was a massive problem because my girlfriend
+had just been through hospital. She was going through surgery,
+and it was an absolute nightmare. Like we went into the hospital ward
+one time and they're like, who are you? Like, why are you in this bed? And I was like, as if it's not enough
+to know what it's going to be happening to us at that particular point in time.
+They don't know who we are. And so I'm like, like,
+does anyone know what's happening here? So I'm like, oh, this is a great idea. Like, we can help improve transparency
+in hospitals, improve patient experience. And that has a knock on effect. There's a bunch of research studies that
+like improving patient experience ensures, like reduces the likelihood of
+readmissions, it improves recovery rates. It and reduces like a whole ton of, costs associated to that hospital
+and providing care for that patient. And I'm like,
+okay, let's build a solution for this. Like I'm like, I'm I can do data science. I can build machine learning models. This is awesome.
+We're going to bake it all into it. So we build for like three months. Right. And we just keep building like
+we have a meeting with the with the like. We actually got a hospital on board
+to help us out with this. Right. Or like to,
+to potentially take on the solution. So we have a meeting where like we,
+we're thinking about building this like yep, great. Cool awesome. Build it. So, heads down we build for like
+two months, like just coding. Like, so I'm working my day job
+Monday to Friday and then going to like the incubator from like 6 to 9 p.m.,
+like Monday to Friday. And then I'm working Saturdays
+and Sundays, building this up with my co-founder, build it, build it,
+build it for three months, and I'm like, hey, we should really
+should be showing this back to the client and going,
+oh, like to the hospital. Like, hey, what do you think about this? And at that time we had,
+like a startup advisor, like he was like, he was the one that got us the contact
+with the hospital. And he's like, hey, at this point, right? Like, you've built more than an MVP. You really should be looking to,
+to get some sort of funding or like, like get the client
+to start paying for licenses, even if they're just token licenses
+and like lifetime licenses just because they're your foundation
+client. I'm like, okay, great. So we've got a product. We, or a minimum viable product. Like it's enough to charge for. So we go to the client like, hey, we've built it, we can hook
+in, we can do all of this stuff. We went through a ton of regulation
+to make sure that we have it, and now we're like,
+okay, like we've built it all up. We're going to give you
+like unlimited licenses for it for the entire lifetime,
+and it's going to cost you X dollars. And the client's like, yeah, but like,
+I don't know if we really need it now. And I’m like, what? Like, what do you mean, like, I'm like,
+I was still like, I didn't have as much experience in terms
+of, like, selling and building startups
+and doing like that. That whole process, and just sat there
+in that room and I'm like, I don't even know how to interpret that. Like what? Like you don't like there's like, you
+don't need it and you don't need it now. So I like eventually
+I got like I gathered myself and I'm like, okay, when,
+when do you think you would need it? They're like, maybe you should go back
+to the drawing board and like, review it. And, I was just like, like eventually I
+recognized I was getting the cold shoulder and I'm like, oh, this is just like,
+I, we just wasted so much time. Like, like three, four months of our lives
+building this, like, on top of, like, the stuff that we did
+in the incubator prior to the hospital. And it's just like, exhausting. Like I was like, I'm gonna,
+there is no value, right? There's opportunities
+and there's lessons learned. But like at that point in time,
+like I can still see it. Like I was sitting in that, that, that, that like a demountable room because
+they were going through a reconstruction. Or like construction
+of the, more construction on the hospital. And I was like, oh, man, I can't believe
+we didn't validate this way more. I can't believe we didn't
+sit down with them and like, triple check that this is what they wanted,
+that this is what what they were going
+to be able to pay for. And I've just gone, like I could have
+had like, mitigated so much of this well ahead of time instead of waiting
+until the end to, to present that. But I mean, you live in you learn, right? That hurts. You just, and you just painted that room for us. You dragged us back into your trauma.
+Nick. Thanks for that. I'm assuming that the reason
+that you can remember that one so well is because there are quite a few pilots
+that you've worked on that do succeed, right, that have succeeded. So I know you've got a bunch of those. What made those pilots
+different than than this one? Because from where I'm sitting, it sounds
+as though you were able to identify, like maybe a commitment going forth
+with everything else that you worked on. Was that one of the first things you did? Yeah, definitely. So like when we spin up pilots
+now, there's a whole process, right? It's not just like, hey, there's a
+you want to do a pilot? Cool. Let's go do a pilot and start
+building. Right. We actually go through, ways of working. So like we set up
+a document of understanding, so like what we're going to deliver,
+what the commitment on the client is. So, like,
+what are they going to be able to do? Do they have the sufficient amount of time
+to test this. Because again, it's co-creation,
+not just IBM creating. Right. Like we're trying to build stuff
+to, to help their organizations. Close engagement with the client
+is absolutely critical. Like if I look back on like my startup,
+like we got data from the hospital, but it it was like, I want to say
+1% of the amount of data that we needed. So ensuring that you have the right data
+available, all the right data prepared and the right data
+collected is absolutely critical. I want to say that, like a lot of the
+the pilots that we do now are really successful
+because of the people, right? Like we have the right people
+in the right room. And that's not just IBMers,
+but that's also like the client coming together with their right people
+that are going to help push this forward and make sure that it's successful,
+because ultimately, like every pilot ends
+with some sort of presentation to an executive or like a funder
+or like an executive sponsor, having everyone in the room
+and making sure that the like the right people are in the room ensures that,
+like when we go and make that pitch that, that, that, that they know that, hey, it's not just something that some,
+some random group is gone and built. It's like, this has been a collective,
+like we've actually gone, gone ahead. We've scoped this out properly. We found a problem
+that needs to be solved, and we've made sure that that
+that it'll work and it'll deliver the business value
+that, that that's needed. I imagine right now, I hope that
+there are a bunch of developers that are listening to us,
+listening to you specifically right now. Can you give them one word of advice as they think about whatever pilot it is
+that they're dreaming of giving them? Just at least one word? My personal favorite is fail fast. Build a prototype as quickly
+as you humanly can and validate it. Right? So like build it, go and show it to to
+the person that you think is potentially going to be using this or buying this. So that's really quickly going to validate
+or invalidate what it is that you're building. That, that
+that's probably a big one around startups. Right. But if we had built in what we built in
+like, two ways before,
+instead of getting way too far down into the MVP and said,
+hey, will you buy this right now? Or like Will, is this exactly
+what your organization needs? And really quickly, it's a qualifying
+statement or a disqualifying statement? Super early on. So, failure is not really failure, right? It's just, it's the lesson learned. Yeah. It sounds like you fell in love
+with your pilot, Nick. Oh, man, 100% I was committed. I was like, this is this is so cool. It's going to improve people's lives. It's going to make hospitals way better. Not the hospitals are great
+anyway, but, like, it's gonna just get, it’s world changing. Yeah. Like, look,
+I'm still kind of vested in that idea. I probably need to go and do a ton more research
+and approach it from a different way. But now, like, there's so many other problems that I can solve
+that I've got deep expertise in, like, I'm not a doctor,
+I'm not had like I wouldn’t, like I don’t know
+the first thing about patient treatment. But I was like, I'm vested in this. I want to solve it. Look,
+and you clearly have a ton of free time, so I'm sure that you'll pick
+this one up in your spare time, Nick. Yeah. Just like I'll do it between, sleeping
+and, and working, right. Well, with all that then said,
+thank you for squeezing us on in then within your time, I really do appreciate
+you getting on here, enlightening us. It's always a true joy to speak with you. And also thank you again to Anupam. This has been a fantastic episode
+and that's it for today's episode, so we appreciate you all
+for listening as always, and we will see you back here
+very, very soon, I promise.

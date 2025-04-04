@@ -1,0 +1,30 @@
+Hi, my name is Jordan Shamir with IBM Cloud and today I'm going to be talking about Veeam. Veeam is an intelligent data management backup
+and disaster recovery solution that is focused on providing hyper availability and uptime for their customers. Back up and disaster recovery is no longer a luxury, but an absolute necessity. Our consumers expect us to stay online, they want to be able to access our products when they want it. However, this is becoming much more challenging with the rise of disasters such as natural disasters, the rise of ransomware and cyberattacks, and lastly human errors. Maintaining this uptime and availability is
+becoming much, much more challenging. Many businesses have their disaster recovery
+and backup environment within their own data center. This is risky because if your data center
+goes down, you are down. So, as companies begin to modernize, they look at their cloud to provide a disaster recovery and backup environment. Some of the benefits are the geographic spread. We're giving you that two hundred, four hundred,
+five hundred mile difference to ensure availability by a different region. Also, beyond that we provide a variety of
+different economic benefits because you don't need a disaster recovery environment until
+you're going for a test or an outage. So, within the cloud you can use the flexibility
+to have a low initial foot print and scale up as needed to accommodate an outage. Back up and disaster recovery is completely
+different than availability. Cloud service providers guarantee you a certain
+level of availability of your workloads, but it doesn't mean that your workloads are backed
+up and resilient. Whether in your own data center, cloud, or
+a multicloud environment you need disaster recovery and backup. Veeam on IBM Cloud is one option. Within IBM Cloud we give you full Bare Metal
+and Hypervisor Access, and this is important because it significantly reduces the learning
+curve of using the cloud. This enables you to maintain the same security,
+flexibility, and control that you're running in your own data center today. Specifically, with Veeam you get access to
+all the advanced functionality which really makes Veeam, Veeam. Such as Instant VM Recovery, SureReplica,
+SureBackup and a variety of other features. It's critical that businesses have deployment
+flexibility as their requirements vary by specific applications and workloads. In IBM Cloud we have over thirteen thousand
+different deployments of Veeam. You can either deploy on our Virtual Server
+Instances, are Non-Virtualized Bare Betal, as well as our VMware and SAP workloads. These deployment options are available in
+sixty plus data centers around the globe. One of the really cool things as you can actually
+replicate between these data centers for free and securely. So, if I think about backing up my own workloads,
+I have my production data center in A, and then my backup data center in B. So, replicating
+between the two is completely free and secure within the IBM Cloud. And this really saves me a significant amount
+of networking cost to have a backup and disaster recovery environment in the cloud. In order to meet your consumer expectation
+and availability requirements you need a multicloud strategy. Veeam on IBM cloud provides you the control,
+flexibility, and availability to meet your business objectives. Thank you for watching if you have any questions
+please comment below. If you would like to learn more about what
+IBM Cloud is doing, please subscribe to our YouTube channel.

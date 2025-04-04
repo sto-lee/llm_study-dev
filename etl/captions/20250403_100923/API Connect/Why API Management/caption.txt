@@ -1,0 +1,67 @@
+Node.js, GraphQL, Spring Boot, Golang There's so many options we have, 
+as technologists, to build today's modern APIs. For today's topic I want to talk about 
+why you should consider having API management in your architecture. Hello, my name is Jamil Spain. I'm a brand technical specialist  
+for the Cloud Pak for Integration in the U.S. Financial Services market,  and when it comes to API management, 
+I want to focus on three quick areas that are really my top three when I talk about this topic. One is injecting some flexibility in your architecture. The second is security. And, more importantly, the analytics 
+that you're going to get in return, So, I ll explain more here. Now, before we get started, 
+I do want to talk and level set  on some common terms that come up   
+when we talk about API development. Now, there are two major types    
+that I like to classify APIs. The first is service APIs. Now, I consider service APIs anything that  
+directly talks to a system of record. Whether you're an enterprise developer or a general startup developer, you're making  
+your own project here, you always want to protect these APIs.  These are generally your strongest assets here. The second type are interaction APIs. Now actually, anything that's not a service 
+API, I consider to be an interaction API.
+   When I start a project out, I generally start with 
+my service APIs, and then I start development on   these interaction APIs. They may actually call 
+these service APIs , but let's take a look at that   word. There's one key piece here. That root of 
+that is interact , so it is generally making some   interaction on top to facilitate some type of  
+operation that you want to programmatically do here. This is what starts us off at our first 
+point here: flexibility in the architecture. Now,  you have consumers who are going to be using 
+your APIs. In API management, one major concept   is having an API gateway that you have. So, 
+your users, consumers of your APIs, will   always interact with the API gateway when they 
+want to consume your APIs. Now, the job of the actual API gateway is to perform the interaction layer, 
+API layer, there for the most purposes. Now this is greatly differs if you don't have 
+API management. Users, consumers of your APIs, may directly  
+be talking directly to your APIs, but this puts a layer in front. One of the first things that gives you the greatest flexibility 
+is I get to standardize on an interface   you know, denoted and documented through open API 
+swagger specs of course, through those YAMLs there,   and published in a developer portal so they can easily 
+self-service and get on board to using the APIs,  but the most important thing is, they define, 
+you know, they're going to get a standard   definition of these APIs. Now, what actually happens on the other side for your services that you're running, and I'm  
+going to do these little database icons here to   imitate the API that you're writing here, it could 
+actually go to one service or it could be multiple   interactions, invocations to these APIs, and 
+more of a I've actually done some scatter   gather patterns where I want to hit three services 
+and build a response that goes back to the user,   the consumer. Why is that important? Well, we all know that with 
+all those technologies that I mentioned at the beginning, we want to always be in a place
+that we can feel free to innovate, refactor, explore new technologies. Especially in this day and time of container architecture and cloud native, it is very easy to now free yourself 
+and try many, many new technologies here  as well. If you're providing a singular URL to 
+your users that, without API management, you have to always be cognizant that, "Hey, I have to always 
+be able to update my users to the newest thing."
+   Now, whether that's your new latest startup, 
+or your new latest enterprise application,   that may be very critical very hard to do in some 
+perspectives here. But by having API management in, it gives me the flexibility to do my own innovation inside. The interface that I,  that I give to my users externally doesn't  
+always have to directly mirror the architecture   that I have inside, so I m free to innovate 
+there as well. Second, while this occurs, I have an opportunity to implement some security here. Each consumer of my APIs when they come up APIs are generally part of the API management 
+solution is the APIs have to be published in   some type of usually a self-service developer 
+portal, and they're going to get assigned a client   ID and secret. This is a great way of identifying and 
+designating that I know who is registering their applications and who's 
+using the APIs there as well. On top of that, the second most important thing with security, is 
+I get to implement an SLA with rate limiting.
+   Now, this is very, very, very critical because 
+it gives us a way to kind of conserve the APIs,   the usage of the APIs, that are coming. I can leverage it to make a service level agreement here  on how much you can use, or if 
+you want to actually get into monetization,   getting higher tiers, publish a freemium tier, and 
+then have more higher tiers that you can do. 
+   You can all facilitate this. This is usually built 
+into every API management solution. 
+  Without  this, you'll have to code and try 
+to implement these parts yourself. Lastly, analytics. I love these because it helps you get to know how 
+much your APIs are being used. And once you have users subscribe, you have this in place, I'll be able to know
+who are my most important users of my APIs.   
+Without API management here you really 
+don't have a strong indicator of how much people   are using, how many errors you're getting back, 
+what's the performance, what's the latency.  So,  all these decisions are really hard to - you're 
+kind of guessing that as well. Now for you, the organization making the APIs, 
+one of my best things here as well is: what do we work on? In today's culture we are a data-driven society, 
+and this will clearly give us the metrics to say,   we need to devote our time to this particular API 
+set , because this we have the data to back it up,   that this is what people want, is what they're 
+using here as well. So, with this, let's to recap here.  API management is important for the 
+mere fact of the flexibility it gives you in   your architecture, the security options you have 
+at your fingertips to implement and, also, the analytics you get back. Thank you for your time. If you have questions, please drop us a line below and, if you want to see more videos like this in the future, please like and subscribe.

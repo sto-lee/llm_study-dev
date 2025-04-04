@@ -1,0 +1,76 @@
+- Hello, I am Pratheek
+Karnati, Security Architect for IBM Cloud. Today we are going to look
+at IBM Cloud Data Shield and how it enables you to protect your containerized applications
+data in use or in memory. We are going to see this
+in action with the help of a demo application we
+built called Cloud Fund. But first, let's talk
+about data protection. We believe it requires protection of data throughout its life cycle. In transit, at rest, and also in use. And we have been on a
+mission to address that with confidential computing
+which protects data in use by performing computation in hardware-based trusted
+execution environment. And Data Shield, is a deployment time tool that helps you adopt
+confidential computing on x86 platforms. Specifically, Intel
+Software Guard Extensions with no code changes. Let's see how this works. Cloud Fund is a Python app
+we built for this demo. And yes, we Data Shield power
+by Fortanix Runtime Encryption in addition to C/C++. We also support Java, Python
+and RUST runtimes on SGX. Cloud Fund is a containerized application running on Kubernetes, Cloud Fund is a typical
+three-tier application with a UI, backend API and a database. For the database, we are using
+confidential database service from a portfolio called
+Hyper Protect MongoDB. So it is very secure. For this demo, let's focus
+on the threat vectors that come at the backend API layer and how it privileged
+user infrastructure admin, for example, with no access
+to database can steal sensitive data from the
+backend API's memory. As a narrative element for this demo, we are using Cloud Fund to
+donate money to a charity. Let's see how it works. So I open the Cloud Fund
+application in the browser. I click donate now. Here I'm giving the
+details and importantly, I'm giving the personal information and also the credit card number. And the expiration date and
+the CVV and click submit. Now the data goes through the backend API. Now let's see how it privileges
+that attack and play out. Here I'm logged into the
+server as privileged user. So how my terminal open. I'm trying to log into
+the workload in question, once I'm in there, let's
+find the processing question. The Python app I was talking about. Once I have that, let's find a PID. Once I have that let's memory dump it. Now let's look for strings
+in the memory dump. That's a lot of data
+let's ask for my name. As you can see, this is a problem. This application is vulnerable
+to privileges that attacks targeting its memory contents. Now let's see how you can
+protect your applications data and use the Data Shield. Let's take a look at Data
+Shield documentation. You start your journey in
+the getting started page. One of the first things you
+do is you have the right cluster. The right worker node. And you run a couple of
+commands for prerequisites and you install Data Shield
+through this helm shot. The places value for the
+chart name, your email ID, account ID on English subdomain. And you get your dedicated
+singleton instance of Data Shield running
+natively on your cluster. Now let's look at the UI. You log into the UI using IBM token. Once your in there, you can manage your worker nodes and look at the attestation reports. You can create apps and
+bills for your pipelines. You can create tasks so it
+can approved or denied build. On the user section, you
+can add your teammates or you can manage them. Now let's go back to the
+application and see how easy it is to convert your application
+from its current state to runtime memory encrypted counterpart. Since Data Shield is a
+deployment time tool, you don't have to make
+any changes to your code. You make this API code from
+your CICD pipeline prior to deployment of your application. Replaces values here with your
+application container name and the new name for the new
+SGX capable image we create for you. When you call this API
+since it gives Data Shield, read-write privileges to
+your container registry at installation. Data Shield pulls the
+current image converts and packages to SGX capable counterpart and pushes the new image
+back to your registry. Now you continue with your CD process and deploy your new runtime
+memory encrypted backend API. Let's look at the changes you
+make to the YAML real quick. As you can see, all we need
+is a couple of volume mounts for SGX drivers. You can find an example of
+a YAML in our documentation. Let's go ahead and deploy
+this new backend API and perform the same steps as earlier. I'm on the terminal, I'm
+deploying the new API. Once it's up, let's go to the
+browser under the same steps as before. I'm in the Cloud Fund, I'm donating to Cloud Fund,
+I gave my name, my address, my telephone number, my credit card number and my expiration date and
+the CVV and click submit. Now let's go back to the terminal again and try to scrape for
+text in the memory dump of this process. Here I am in the worker node. I'm trying to search for
+the process here on the PID. Once I have the PID lets
+memory dump the process. Once we memory dump it, let's scan for plain
+text in this memory dump and to make it easier,
+let's give him a name. But you see nothing because
+the memory is encrypted. There you have it. In about five minutes,
+you go from an application that is vulnerable to a
+runtime memory encrypted counterpart. Data Shield helps you and
+your team do what you do best developing stellar apps. Data should takes the burden
+off from the development to the deployment time on how
+to protect your sensitive data in memory without any code changes. Please give IBM Cloud Data Shield a try and reach out if you have any questions. Thank you.

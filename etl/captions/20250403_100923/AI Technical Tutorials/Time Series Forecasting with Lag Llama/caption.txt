@@ -1,0 +1,64 @@
+This fall, I bought a new plant. It's an orange mum, and it 
+looks great outside my house. But the weather is already 
+getting colder in New York. And if the temperature goes below 
+freezing, my new plant will die. I gather data on hourly temperatures in 
+New York over the past several weeks. Using this time series data. I'm going to use the Lag-Llama model 
+an Open Source Foundation model, to predict the overnight low temperature and   help me decide when I need to bring 
+the plant indoors to keep it alive. First, we'll clone the open source GitHub repo. I'm using a notebook with an IBM 
+watsonx.ai studio for this project,   but you can use any environment to run this model. Next we'll install the Pre-trained model weights 
+from the hugging face repo where they're stored. We use the hugging basically to download 
+the trained Lag-Llama checkpoint. Now we have to wait for a pre-trained model 
+that we can use in our zero shot forecasting. We need to import libraries 
+to work with Lag-Llama. For this project, we'll use GleonTS, 
+an open source PyTorch Base library   for working with time series 
+data and forecasting models. Next, we need to load the 
+data set for our tutorial. You can find this dataset in the 
+repo along with the notebook. This time series data contains hourly temperatures 
+in New York for the month of October and November. The data was gathered from ACS Web services. I'm loading data from within my project 
+in watsonx.ai Studio, but this will differ   depending on what environment you're using 
+and where you are storing the data file. The data has some missing readings. We'll fill them in by 
+interpolating between values. So there's no missing values in the time series. Here's what the data looks like. We can see the trend of colder 
+weather throughout the fall. Now we're ready to make predictions in traditional 
+time series forecasting with a model like ARIMA. We'd have to first train 
+the model on this data set. Lag-Llama works differently as a foundation model. It can create a forecast without pre training,   the same way that an LLM can output text 
+without being pre trained on a task. This works because Lag-Llama is trained 
+on large scale time series data sets,   like how LLMs are trained on 
+a massive corpus of text data. The Lag-Llama model uses a transformer   architecture based on the 
+Llama model architecture. The model makes use of lag features or 
+previous readings from the time series,   like traditional forecasting models such as ARIMA. We need to specify some 
+configuration settings for our model. The prediction length is how many time 
+steps each prediction should contain. We'll predict the overnight 
+temperatures, so eight hours out. The context length sets the number 
+of time points looking back into   the past that the model should 
+look for lagged correlations. We'll look back one week when 
+making these overnight predictions. Now we'll create the forecaster. This step consists of two parts. First, we create a lag estimator which uses   all the parameters copied from 
+the downloaded Lag-Llama model. The second step is to create 
+a Lag-Llama predictor using   that create predictor method of the estimator. This allows us to pass a context lead sized window 
+of data to get the forecasts from the predictor. Now we're ready to create our forecast. We'll focus on days in late November because   I know that's typically when the 
+first frost of the season happens. We'll use the make evaluation predictions   method from the GluonTS evaluation 
+library to generate our forecasts. Now that we've generated our forecasts, we'll 
+evaluate them against the ground truth data. We'll use an evaluator object also 
+from the GluonTS evaluation library   will generate several metrics that we can use 
+to evaluate the accuracy of our forecasts. But we'll focus on mean absolute 
+percentage error or MAPE. Once we have the evaluations for each 
+prediction, we can graph each prediction. Our chart shows each of 
+our six zero shot forecasts   shown in green and the actual time series data, the blue Line. For each forecast, we can see the 
+mean forecast as the green line. The boundaries of the 50% prediction interval in   dark green and the boundaries of the 90% 
+prediction interval in lighter green. These prediction intervals show us how certain 
+our model is about the forecast at each step. This is an advantage of a probabilistic model. It will show us how certain it 
+is at each step in the forecast. So what does this mean for my new plan? To be cautious? I think any time the 50% prediction interval 
+indicates a frost, I'll take the plant inside. By this measure, the Lag-Llama model performs 
+pretty well at predicting an overnight forecast. For example, in this first chart for 
+November 24th, the model predicts   within the 50% prediction interval that the 
+overnight temperature will go below freezing. And it does. We can see that the blue line tracks 
+fairly closely to the green predicted line. This is also reflected in our low 
+MAPE for this day's predictions. For the date of November 28th. We see a less accurate forecast 
+from the model on this day. The overnight temperature drops 
+to the coldest yet this season. For this prediction, we see 
+the actual temperature ends   up within the 90% prediction interval, but 
+mostly misses the 50% prediction interval. But following my guideline to 
+take the plant inside any time   the 50% prediction interval goes below freezing, I would have saved my plant on this day, so 
+it's not bad performance overall from the model. Based on the results with my new outdoor plant. We can see that foundation models hold 
+promise for time series forecasting. While we've seen a lot of applications 
+for the use of generative AI and foundation models for LLMs,   applying these approaches to time series 
+forecasting is still a developing field.

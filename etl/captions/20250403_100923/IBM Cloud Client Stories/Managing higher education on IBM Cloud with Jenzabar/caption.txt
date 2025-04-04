@@ -1,0 +1,13 @@
+- We started with IBM cloud, using all public cloud instances. And as our business grew rather quickly, we've been able to use VMware, and basically create a Jenzabar
+cloud on the IBM cloud. We use Vsphere, which
+is what's used to do all the server virtualization. We have that deployed across
+multiple data centers, which enables us to do
+site to site recovery. And that's a big advantage. So our environment is
+almost a hundred percent a hybrid environment. With some servers on the campus,
+some servers in the cloud. We're closing in on the
+four-digit server count, and we're gonna cross that. And again, I quite counting
+because the speed is so quick. We have a 99.4% retention
+rate for our clients. So after they go to the
+cloud, they stay there. We're continuing to move
+towards cloud native, towards the cloud as a platform. And that's based on the
+positive experience we've had running infrastructure as a cloud on IBM cloud.

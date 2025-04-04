@@ -1,0 +1,733 @@
+What would you do with $2 billion?  Chris Hay is as a distinguished engineer
+and CTO of customer transformation,  Chris, as always,
+welcome back to the show.  What would you do with $2 billion?
+Spend it all on bitcoin and tell people  I'm training AI.
+Okay, great.  Kaoutar El Magrahoui is Principal Research
+Scientist and a Manager  at the AI Hardware Center, Kaoutar.
+Welcome back.  $2 billion.
+So, what would you do?  Well, it's a lot, and there is
+alot I can do with it. One of the first  things is philanthrop and social impact, I
+would love to help with that  Vyoma Gajjar is an AI 
+technical solutions Architect.  Vyoma, what would you do with $2 billion?
+I would back to my roots and become   a farmer again.
+Own loads of land,   land, land. And then revolutionize
+the entire field of agriculture.  Terrific.
+All that and more on today's  mixture of experts.
+I'm Tim Hwang,  and welcome to Mixture of Experts.
+Each week, MoE is the place to tune  in, to hear the news
+and analysis of the biggest headlines  and trends in artificial intelligence.
+Today, we're going to talk a little bit  about a new CoreAI group at Microsoft.
+We're going to talk about,  some new features coming to NotebookLM
+and a little bit about agents in finance.  But first
+I really wanted to talk about $2 billion.  So we had some rumors that just popped up,
+just this week.  That Anthropic is set to raise
+$2 billion at a $60 billion valuation.  And that follows on news from December,
+where xAI raised  $6 billion at a $45 billion valuation.
+Obviously,  the market is really, really hot.
+Continues to be really, really crazy.  I guess maybe, Chris, I'll turn it to you.
+First is for our listeners.  You know,
+that's just a staggering amount of money.  What do you use that money for?
+Even like what?  What is this money being raised for?
+Why or why are these companies needing  so much money?
+I think the quick version of this is.  It's an arms race at the moment.
+It's an arms race for talent.  So, you know, it's not like
+the researchers are getting paid  a small amount of money,
+so they've got to be paid,  and they're pulling their best talent
+from folks like Google, OpenAI, etc..  So it's just the cost of the researchers.
+And then obviously the cost of the GPUs.  So and it's one of these races where
+if you're not spending the money,  you're not going to be able
+to train the models,  and then you're
+just going to be out of the race.  So I think they they've got to keep racing
+just to be in that race.  Yeah, absolutely.
+Vyoma, I think one question that I have with  all of this is like it's it's
+pretty hard to raise $2 billion,  much less $6 billion on the xAI case.
+I don't know, I think one result of this,  I don't know if you agree.
+It does seem to me that, like,  is this becoming kind of a two player
+game in terms of, you know, the ability  to train these massive, massive models?
+Like, are we going to end up with largely  it just being OpenAI and Anthropic?
+believe that  somewhere that these players
+have a huge market share right now.  But I don't feel that they are
+the ones who are going to rule.  Forever.
+The smaller models,  the smaller industries are also taking up
+people who are more domain specific  and building more domain specific
+models are also being entertained  by the clients across.
+So I feel over here, as Chris mentioned,  it's an arms race right
+now, and I feel a majority  of all of these infrastructure,
+changes that are going to take place  would need a lot of money going into them.
+So we'll just have to wait it out  and see what goes around.
+Yeah. I think it's kind of intriguing.  Yeah.
+I mean what you're saying is basically  like you're sort of saying
+these companies can raise so much money.  They're the leaders in the space.
+But it's unclear whether or not that  will allow them to retain their leadership
+in the market,  which is which is pretty intriguing.
+And I guess, Kaoutar,  do you agree with that?
+The kind of this is in some ways  maybe kind of like an interesting,
+ironic situation  where the two biggest companies
+are going to be raising the most money,  but in some ways are
+maybe the most vulnerable.  Yeah, definitely.
+I think this level of funding, can signal  also to other AI firms
+the level of resources  needed to stay competitive.
+So leading to a cascade of investments  and potential consolidation in this space.
+So it's definitely, you know, an arms  race, like, you know, everyone said here,
+and, you know,  this is, you know, some of these companies
+will be shaping the AI industry.  So this is a rivalry in in AI industry
+fostering this rapid advancements in  both capabilities, ethical considerations.
+For example, Anthropic has a niche market  here, especially with safety.
+And you know, they carved out,  you know, a niche emphasizing
+safety and alignment,  which resonates with governments
+and enterprises  concerned about AI and its safety.
+While, for example, open  AI is mostly focus on the broad utility.
+But, you know, this doesn't mean that  they're the only, you know, key players that's
+going to be kind of a two, arms race.  There are others,
+and especially with the push like Vyoma,  you know, mentioned with the smaller models,
+we will see.  You know, I think it's still too early
+to predict what's going to happen.  So there is also a big push
+for smaller models that are doing  pretty well also,
+especially in domain, specific cases.  Right.
+And those, you know,  also will have a key role.
+But I think what this is  showing is there is massive investments
+right now happening.  And most likely Anthropic
+will double down on their R&D,  which is going to be great,
+you know, for in terms of the capabilities  that they're going to unleash,
+the development that they will do.  So more innovations is going to happen
+in the space.  But, also a lot happening
+in the open source,  which will help also others catch up
+or even come up with some revolutions  here.
+Yeah. For sure. Chris.  Maybe I'll turn it back to you.
+You know you're nodding when Vyoma was  kind of giving her hot take on all this.
+There's a great book that came out  from Stripe Press called boom.
+By these guys,  Brynn Hobart and Tobias Huber.
+And kind of they make the argument  that, like, there are good
+bubbles, basically, which is that, like,  you know, you can imagine a world
+where, like, all of these resources  kind of flood into the space
+and like the companies  that are leading and,
+you know, driving  this may not be the ultimate winners,  but it's not like a count
+against the technology.  It's almost kind of like
+what's needed in order  for like the next generation
+tech to emerge.  And it sounds like it
+sort of  seems like from your head gestures,
+I guess, that you sort of agree  with the idea that, like,
+these may be the leading companies, but  they might not ultimately own the future.
+Like we not might not end up in a world  where it's like these two companies
+are the end all, be all for all AI. I think the caution I would have is that
+these companies are in competition  with their investors.
+And that is probably  an interesting dynamic.
+And we've seen that play out already,  fairly publicly.
+So I think it's how that competition,  whether it's a coopetition or whether
+it's, true competition plays out.  And and if you really think
+about those companies,  they've made great strides and their own
+AI capabilities are absolutely huge.  Now, like the, Microsoft five four model,
+for example, is a great model,  the new Amazon, Nova models, etc.
+they are making great strides.  And and when you start to look,
+you know, the  hyperscalers investing in, their own
+AI and then,  you know, as we're going to talk
+a little bit later on in the show about,  how AI is going to be embedded
+across their entire organization,  is it really going to be a space
+for those companies to exist?  And I think that then opens up,
+they need  to establish their own platforms.
+And we clearly see that  from those companies, right?
+With the, things like the operators, etc.,  the more generic platforms.
+So we're going to get this push  between platforms.
+And, and I think that tension's  going to be interesting.
+And that's why do they survive or not?  The only way they're going to survive
+is to keep being in that race  and keep being ahead.
+Because if they fall behind,  then are they going to keep
+getting that money  and then they're just going to fall at.
+Yeah. No, I think that's right.  Maybe a final question
+before I move to the next topic.  You know, Chris,
+you you kind of alluded to this.  When you're explaining, you know, why it
+is that you need $2 billion, $6 billion.  And I think there's kind of two things
+you lined out.  One was researchers super expensive.
+And then the other one was, hardware,  of course, super expensive as well.
+And, you know,  I think this kind of interesting question
+here is like,  you know, does that spend go 50/50?
+Is it going to balance out over time,  or are we going to spend
+less on talent over time  and more on compute?
+I guess Vyoma I'm kind of curious  about what you think a little bit about.
+That is like, you know,  I just kind of think about the balance
+sheet of these companies and,  you know, they've raised the money.
+So they have these chips  and they have to decide, you know,
+do they put it more against talent  or they put more against compute scarcity?
+You think those economics will  sort of change over time or, you know,
+if one will dominate over the other.  I think the future would be.
+How do we easily and properly  strategically balance all of these?
+As whatever you said above,  the race is actually to dominate
+over this entire AI ecosystem  that everyone's building
+and this everyone wants to kind of  have their beak into this.
+And I feel one of the  main things that I feel, and this is
+this is some sort of an indirect control  that all of them want
+or like the pace of innovation.  Imagine the amount of money
+that you put in that much compute  you have that much access to researchers
+you have.  If you put out such kind of, investments.
+And then this comes in the news.  The news picks it up.
+The talent around you also is more like,  favoring you as well.
+I'm like,  wow, no, Andrew Monks is doing this.
+So it's kind of a two way street here.  They are putting this out
+so that they get more talent.  So it's a balance.
+I won't say that  50% is going to go to this or 30 or for
+no one has strike that balance yet.  Everyone's learning on the go.
+So yeah, we'll have to wait and see.  I was thinking of this
+and I was thinking, what if?  Because as I mentioned,
+that the government is saying that,  you need to have more regulations, rules,
+etc., that's what anthropic is doing. And  is he OpenAI working more on democratizing
+the entire application space?  What if the government pushes them too
+much like the AI That's right.  Yeah.
+The balance is going to be really,  I think really interesting to see.
+I mean I think there's two things  I think a little bit about.
+One of them is  of course having a lot of compute
+is, is of course its own recruiting ploy  where you're like, oh, well,
+the only over, the only place in the world  where you can run pre-training runs
+that are this big.  There's also this kind of funny thing
+where at least in a lot of the circles  I run and there's a lot of discussion
+about, you know,  I eventually automating AI research,
+and I kind of wonder whether or not  that will also be super
+interesting advantage over time,  which is I have just more compute.
+So it's kind of fungible, weirdly,  with my researchers over time.
+Cause I know, you know, you work in a day  in, day out on the hardware side.
+I don't know if I'm just kind of,  you know, speaking out of school,
+but curious about what you think  about that argument.
+interesting. Dynamics here.  And, of course, I mean,
+we've seen the work on the AI, like super  the scientist, the AI scientist,
+which was very interesting.  So in terms of the balance between the,
+you know, the hardware and,  the researchers, I think
+it's going to vary in certain areas.  We might have more capabilities
+that where AI is actually innovating  in this space, but others
+we might still need, you know, human minds  and a lot of research
+and to to improve things and to innovate.  And I think if you look at the set
+some scenarios for the future, I  see kind of three scenarios,
+having someone  actually like, an equal poly
+where you have companies like anthropic,  OpenAI, Google and a few others dominate
+due to massive resources and partnerships.  The second scenario where open
+ecosystems, once you have open source  and decentralized, that will flourish,
+undermining proprietary leaders.  And the third scenario
+could be fragmentation by region  or industry or countries
+where different players lead in different  geographies or sectors due to regulations,
+computer access or specializations.  So these are kind all possible scenarios.
+Or we could have a hybrid approaches  across these these scenarios.
+And what's the right balance  I think that's a tricky question here.
+It will have to wait and see.  So I'll move us to our next segment today.
+You know, I think the joke I always use  is that there's actually three constants
+in life.  There's death, taxes,
+and then corporate reorganizations.  And that's what we saw this past week.
+Satya Nadella, who's the CEO of Microsoft,  announced, that once again,
+there is a sort of new unit  within Microsoft
+that will be working on AI.  And it will be called the core AI group.
+It'll be led by Jay Parikh,  who is, the head of a cybersecurity
+startup called lacework and was the former  global head of engineering, at meta.
+And he'll be taking over a new unit  that will build the end to end Copilot
+and AI stack for our first party  and third party
+customers to build and run  AI apps and agents.
+So I think this is actually  really interesting on a couple of levels.
+You know, I think one of them is,  you know, just kind of like
+how a company organizes  to effectively compete.
+And I really does  still seem to be like an open question.
+I think this is like the second or third  kind of shuffling of the pack
+within Microsoft  around, how to deploy AI technologies.
+And I'm, I'm really kind of wanting  to get this group
+to talk a little bit about this  because I think, like it
+is one of the missed questions, right,  is that you have these giants of AI
+that are deploying huge systems and  advancing the cutting state of the art.
+But I think almost internally,  there's like this kind of
+interesting question  that all these companies
+are trying to work out, which is  how do we like organize ourselves
+to compete most effectively in the space?  And maybe, Chris,
+I'll kind of turn it to you.  You know, I'm kind of curious about like
+from your vantage point, you know, not  just seeing what you're at seeing at IBM,
+but also across other companies.  Like, how do you think
+that's evolving over time?  Do you think there's any best practices
+emerging?  Just curious to get your thoughts on that.
+Yeah.  I think this is a really interesting move.
+And I think it's a story of integration.  Really?
+So, you know,  Microsoft's put Copilots everywhere,
+but if we think about the Microsoft  estate, right, you've got Azure,
+which is their cloud platform,  which is their core infrastructure.
+You've got the operating systems.  And then you go to office, you got vs code
+etc., all the dev division,  and you need that to be an integrated
+play that where AI is part of everything.  Otherwise it's going to look like
+a bunch of disjointed paperclips  are just going to appear at random points
+throughout all product.  So I think that's probably
+the first part here  is, is how does this look like an end
+to end platform?  And I think it needs to be an end
+to end platform  because you're going to have agents
+kicking around.  I said agents
+At this point, I think you're like.  You're racing to it. Like.
+Yes. It's a little bit of a competition  now where it's like,
+Chris is always going to be the first one  to mention it, but.
+Sorry, sorry. Go ahead.  actually if you're going to have like
+I mean we were talking about  OpenAI operator
+and we were talking about a kind of cloud  control in the browser, etc..
+Then if you've got agents  kicking around at that point
+and it's more deeply ingrained  into the operating system
+and the applications  that needs to be monitored
+in the same way as you monitor things  within the OS, right?
+You need to have that governance.  You need to have that safety elements
+and make sure  that from a security perspective,
+you're not going to have bad  actors come in
+and then start invoking this.  So this is really
+needs to be an end to end play.  Otherwise it's going to feel like
+a very disjointed strategy.  So actually I think
+what Microsoft is doing  there is and actually we need to, crosscut
+the organization here  and run to a strategy
+and embed AI everywhere, but  then build that into an overall end
+to end AI platform.  I think it's a very, very smart strategy.
+And whether the way they've organized it,  the details are kind of like
+at the moment is the right organization.  But I think take an integrated
+organization approach is really  I think it's really interested and,
+and Satya said something at the end of it,  which is,
+you know, we don't want to expose  our org chart, right?
+I think it was at the bottom.  And I think that actually that statement
+is probably the key statement  about not exposing AI as your org chart
+within the organization.  And I think ultimately that's
+what they're trying to do.  Kaoutar are one point of view
+on what Chris just said is, you know,  super, deeply
+integrated organizations will execute  the best, company wide on AI.
+And, you know, when when I hear something  like that, I'm like, oh, Apple.
+We're talking about Apple, right?  This is a company that we think of as like
+being so deeply, deeply  kind of like
+integrated on a platform level.  Do you think that one outcome
+of sort of AI, particularly  for these big companies
+that have, like many multiple offerings,  is that they will look more
+and more like Apple with time  because like,
+you just need  a certain level of integration
+in order to deliver kind of consistent  AI experiences.
+Or do you think there's going to be  a couple different
+sort of models for competing in the space?  I totally agree.
+I think deeper and deeper integration  is more needed.
+And having this AI first strategy across  all the levels of the stack is important.
+And this is the move that, Microsoft,  with their core AI announcements
+and this group formation is doing.  So this is a story of integration
+like the market.  So and the creation of core AI indicates
+Microsoft's intent to consolidate  AI across its divisions
+Azure, Office, GitHub, etc.  and and also what they're doing,
+for example, with the GitHub Copilot.  They're trying to learn from that.
+If something works in the GitHub Copilot,  they want to see if they can propagate
+that to other layers in the stack.  So, so this really enhances
+the integration of the AI across  its ecosystem.
+And also open, open,  you know, ecosystem to ensure quicker
+go to market and also AI driven features  which are really important.
+So I think this reorganization  is a very good, move
+which highlights how big companies  are actually restructuring
+to prioritize  AI at the core of their operations,
+centralizing the AI expertise,  allowing for better alignment of the all
+the AI initiatives and, with the business,  but also with the product strategy.
+I think that's really important.  And this is going to give them,
+you know, a competitive edge.  So this AI first pivot, you know,
+has already been seen, like we see it.  And also in open AI partnerships
+and all the AI integrations into products  like the Microsoft 365.
+So I could be really key to sustain, you  know, their leadership in enterprise AI.
+Very much so.  You work on solutions day in, day out.
+And I reckon that a lot of customers  have exactly the same problem
+that Microsoft is dealing with internally.  Like, there's a very interesting question
+which is is it ultimately one model  for everything or is it better
+to have lots and lots of specific  standalone models that are hyper tailored
+to a particular use case?  And there's kind
+of an interesting parallel,  and I'm kind of curious
+what you find in your work with customers,  because it kind of feels like,
+you know, what Microsoft is ultimately  saying is look like
+everything is going to be,  you know, ultimately
+a slight  fine tune on the same basic platform.
+And that's going to be the way  that we're going to win
+versus creating  kind of like lots and lots of sort of
+like specialized models  in different types of product
+or which is more disorganized.  But you could also make
+an argument is like much more specialized  to a particular use case.
+Is that how you read it?  And I'm kind of curious
+if that's what you see among customers.  Yeah. That's a great question.
+And something  that we are dealing with every day.
+But it has gotten better over time.  Initially, every customer used to see that.
+Oh, this is a 400 billion parameter  model, 100%.
+It's going to do a great job.  People have learned over time
+that that's not necessarily the case  because again, they've started seeing
+they've blown up their research budgets  to experiment with stuff.
+So now they know that,  oh no, now we are going into production.
+We need a little bit of accuracy.  We need it's
+okay if that is not the information  that's being spit it out is not prompt.
+They are okay with a little bit of latency  in that as well.
+So I feel that is a very revolution change  that we are seeing as we are going down
+this route of production  izing some of the applications
+that we have built last year.  I do not believe that there is one model
+fit all for all use cases.  It depends on the use case,
+it depends on the infrastructure.  It depends on the companies
+success metrics.  What do they want to prioritize?
+Do they want to prioritize?  More revenue or less?
+Human intervention. So depends.  So again, with AI,
+they want to integrate it  into their entire ecosystem
+or the infrastructure that IBM,  that Saudi Microsoft
+has built from a pilot.  And I saw that
+they also came up with copilot chat.  So you see the kind of that
+the sort of integrations  that are coming up in
+the market are useful.  People make it more easier to use AI.
+It's more like you more able  to kind of rhyme with that.
+Okay. And I see how it is being utilized.  Maybe this can help me.
+And then we figure out that  which particular model is going to have,
+how big that model should be,  which particular, domain knowledge
+should it be trained on.  So that's what I feel
+would be the future going on.  Yeah. For sure.
+Yeah.  And I think this is kind of like that
+delineating line will be very interesting  to see is like oh well it's most efficient
+to have common infrastructure  but maybe different models or like
+oh it's actually most efficient  to have common infrastructure
+and also a common model that you fine  tuned on the team side, right.
+Like I think  all of this is kind of being worked out.
+And just like, how do you even use this  technology at scale?
+This is a very interesting problem.  Yeah. All of these models.
+All the API calls that go.  How much tokens
+are getting generated from that?  That's the cost as well.
+So people are realizing this over time.  And I feel with core AI,
+one of the main things that they are doing  is I don't know, like I should say this,
+but maybe I have it. It's  they're creating against OpenAI.
+You get it.  Let's say OpenAI goes on and the market
+gets more investors, more funding.  They don't want to be known
+like Microsoft, that as the person  or the people
+who rely completely on open that.  I think there's a strategic move in that
+case as well, that these are the products.  This is how you can use
+as an enterprise AI.  There's a little farther
+that you can go with just partnerships.  That's what they have.
+So I think that's a bolder  move as well in Yeah.
+And it goes back to what Chris was saying  earlier, is kind of like this
+interesting race  that we're seeing emerging across
+the industry, which is like the companies  that are the leaders are also kind of
+in a race with their investors as well.  And it's just kind of been a weird
+aspect of how the the kind of whole market  has evolved for that. Like
+there's this kind of weird relationship  between all the actors in the space.
+So. So, Tim, I think go into your question  of, you know,
+bigger specialized models, you know,  bigger models versus specialized models.
+One model to rule them all  or specialized model.
+I think there are pros  and cons to each approach here.
+And so if you have the  the one model to rule them all.
+So there is the ease of deployment.  Common interfaces is the similar user
+experience cross-domain generalization.  But if with specialized models,
+you get also the resource efficiency.  But you know, the there
+is, you know, scalability  and the complexity and management,
+the data silos.  So I think there are advantages
+and disadvantages of each approach.  But I see
+what's emerging is a hybrid approach  where many organizations
+are adopting a hybrid strategy  that combines
+the strengths of both approaches.  For example,
+find the foundation models on fine tuning.  You take, you know, large
+general purpose models, and then you fine  tune them with these adapters like Laura
+or Q Laura for specialized tasks.  This is very right
+now, it's very trendy in the industry.  Agency framework is also another approach
+that's very important  where you use a general model,
+as the core reasoning engine,  and then you deploy
+smaller task specific models as helpers.  And then the other thing is,
+the end of the spectrum is these  multimodal systems
+where you combine general models  for cross domain tasks.
+With specialized models  for domain specific applications.
+So you have both,  for example, in the like,
+you could take an application  like medical imaging
+where you need this multimodal  capability to be able to
+to solve the medical imaging tasks.  I've got one one complaint about... Only one? Yeah. Which is, I got use to the name copilot. Why didn't they call it copilot AI? Everything else is called copilot. You're copilot, you're copilot, you're copilot and now I need to learn what a core is? I'm like, is it a copilot? is it a core? You're confusing me microsoft. You should have just called it copilot AI That's right, this is going to be a little bit like you know, when Google had like
+six different messaging apps  all with, like, roughly similar names.
+And it was very, very confusing. So,  Half of them are extinct now. Also that.
+Yeah. Also that for sure.  Yeah, exactly. All right. So I'm going to move us to our next topic.
+This is some news out of December.  But I did want to bring it up
+because it got kind of lost  in the craziness of the holidays.
+NotebookLM, at least for me, continues  to be one of the most fun tools,
+that are out there in the AI space.  I don't know if any of you three
+use NotebookLM, but just as a quick  reminder, this is kind of Google's
+offering in the AI space.  What's most interesting about
+it is allows you  to kind of upload files and documents
+and then allows you to kind of work  with them in a pretty seamless,
+kind of interesting new way around AI.  And I think one of the kind of fun things
+about this project is that it's been  a way to experiment with new interfaces
+of interacting with AI tools.  And, you know, kind of most famously,
+the one that I've been using the most  is that you upload a document
+and it will create a small podcast  where two people are talking about
+the thing that you uploaded,  which is kind of like very fun.
+It's just like a different way  of interacting with content
+that you don't normally see  and is like a little bit less familiar
+than, you know, a chat bot  or something like that.
+And the new feature that they launched  in December, which is quite fun,
+was the ability to kind of like intervene  in the podcast and talk to someone
+or offer a question in the podcast, and,  you know,  Tim, Tim, Tim, the host would then yes,  That was a demonstration
+Well, yes.  And actually that's
+what I want to bring up.  So the two kind of very funny things.
+I mean, the first one was  they let loose, story
+I think earlier this week, which is that  it turns out the AIs like, had to be fine
+tuned for friendliness because when people  were using this feature,
+the hosts would be, like, oddly offended  that someone was interrupting them.
+Which I think is a very, very funny,  and then B, I think like,
+you know, this is kind of  just a really interesting question
+about like where these kind of interfaces  for interacting with AI go.
+And, and, you know,  whether or not we're going to kind of
+just see these, like,  really weird, like, oh, it's a podcast
+that you can just kind of chime in on.  Are going
+to become new ways of interacting with AI.  But maybe Chris, you interrupted me,
+so I'll throw the question to you.  First is like, do you use NotebookLM?
+Like, do you think this  this kind of podcast stuff is like
+largely a novelty or just kind of curious  about your take? No I love Notebook LM, It's one of my favorite things.
+and the interruption thing is great.  Yeah.
+I mean, it's a little bit friendlier  now, but,
+I mean, people go experiment  with it. It's.
+It's hilarious.  So they'll be like, we're talking about
+AI today, blah, blah, blah, blah, blah.  And then you go, tell me about cheese.
+And then the hosts were like,  I was just about to get to cheese.
+Were you? Were you now? I'm not sure you were. Right? Yeah, no it's great. but but if we think about what's going on
+is it's actually really cleverly done,  because if we actually think
+of the audio models for a second, right.  It's it still makes token prediction
+and you've got a script,  they're interacting between each other,
+but actually just putting  that sort of intervention.
+So you know, you know, I heard something.  They're being smart enough to say, hey,
+you got a question  and then redirect the audio output.
+I mean, it's super simple to do.  You can do it
+with the open source models today,  but it's just so nicely done
+by Google, right, that it's  such a great feature because it becomes
+it becomes an interactive discussion  as opposed to, you know, I generate it
+once and, and I just sit and listen to it.  So I think it's really cool.
+Yeah. For sure.  I don't know if you're a NotebookLM user,
+but you know what's  kind of the one of the questions
+I did want to offer to the panel was,  you know, I think we've become very,
+ChatGPT pilled, right?  Like, we just assume every AI experience
+has to be like a chat box you type into  and you have a conversation with.
+And I think I don't know if NotebookLM  is this, like, I don't know if the future
+is like yelling at people  like AI, people having a podcast.
+But you know, I think  like maybe the question for you is like,
+do you think, like chat, like,  are we going to just be talking about that
+in five years?  Still is like not going to be
+the primary way we interface with AI  or is that like totally
+just kind of like a historical blip?  Yeah, so first one of the main reasons I started using NotebookLM is one of the clients was like, Hey, I saw this cool feature. I want to replicate this, and then that was a trend that many people maybe.
+But whenever I go  to used to talk use to talk about it.
+So you see that there is a push towards  people wanting AI to be less
+transactional and more relational,  like make my organization more engaging.
+How do I adapt to the organization?  So NotebookLM
+of course lets you get through that.  But again, as you said, everyone's so used
+to the chatbot interface with ChatGPT.  It's a learning curve.
+You have to get the customers  to like onboard onto the platform,
+make them, more comfortable.  With such guidance of conversations.
+So I do feel that there is a sector  which NotebookLM would be very,
+very great at.  Like I would give you an example.
+Let's say  there are multimodal inputs that we have.
+I think it would be amazing in  that let's say that here
+this is a graph, explain what it is.  And it starts telling me
+and then I'm like, no, no, no, no, wait,  I want this you to tell me
+that this exact point, what does it mean?  So those kind of interactions where it is
+more it's much more beneficial this way.  So I feel there is a use case
+that might come up or like a trend  which might come up that,
+hey, NotebookLM is shining  in this particular sector,
+but for all too soon to say,  plus we don't have enough
+data points are not going to do that.  Yeah.
+I think one of the really nice things,  even once you strip away
+the audio, is kind of like  it gives you the ability to interrupt,
+which I think  is the most interesting thing.
+Right?  Like, I think one of the experiences
+I have, even in the chat context.  Right.
+Like you're with ChatGPT and you're like,  oh, one, write me about this.
+And you kind of sit there while generates  this enormous wall of text,
+and then you're like, okay,  but could you correct this?
+What I want to do, I guess because  I'm impatient by nature, is to be like,
+no, no, no, stop, stop, stop, like like,  let's go in this direction.
+It allows for like a much more kind  of dynamic, interactive pattern.
+are pros and cons and all of this.  So yeah, we are just seeing the pros in it
+because we've been dealing with chat  bots for a while, and we've seen that,
+hey, this is not solving the issue.  So this is what.
+But even in this there are, some sectors  of this particular application
+that I don't feel are great.  Right? You just don't.
+When you're talking to NotebookLM,  there are times when it will,
+not understand the context at all.  Let's say you're talking
+about something intense and you ping it.  That whole, please help me answer
+about something else.  The contextual residue won't remain.
+So no one's seen that yet because it's not  tested that rigorously in enterprise AI.
+Maybe they fix it because as as they  became, they made it more friendlier.
+Yeah,  but it's a great innovate innovation.
+Go of that.  I'm seeing great opportunity to innovate
+research and a good feature to have.  Yeah.
+I think it's a great example of, you know,  different ways of interacting with AI.
+And we will see more.  This is just an example.
+I also love, you know, the innovations  they've introduced, the interruptions,
+trying to kind of infuse a human trait,  teaching
+AI to be patient,  friendlier, polite, and things like that.
+But, I will see  an evolution of, difference.
+A human AI interfaces,  with multimodal interactions
+with personalization  and and context awareness
+in better than ambient  AI neural interfaces where you're
+just, you know, with your brain  trying to interact with AI.
+So who knows?  You know, all these
+emotionally intelligent AI systems  that will start to emerge
+and how we interact with them  touching, thinking, voice different ways.
+So I think it's going to be  really interesting space
+with a lot of innovation  and scary things as well.
+Chris, maybe I'll end  with kind of a weird question.
+What do you think about this  is is a world in which we feel super
+comfortable interrupting.  AI's a world where we feel
+super comfortable interrupting people.  I was talking
+to a friend, you know, before this show,  and he was kind of talking a little bit
+about this kind of story from NotebookLM.  He was like, no, I think it's good
+for AI agents to get a little bit offended  if you interrupt them
+because, like, otherwise, like, what if we  just kind of learn to interrupt, like,
+everybody, like like you did  so politely earlier in this conversation?
+But I don't know what  how do you think about that is like,
+should we actually be fine  tuning for friendliness in these cases?
+Maybe there I should be kind of offended.  Like we're having a conversation
+here, just barging in without any  any etiquette.
+Yeah.  Yeah I want to see AI battlebots with interruptions, put it on X and in an X space and let them fight it out. It'll be great. I think we're going to have to deal
+with the interruptions  because there's there's a real point here,
+which is we don't actually  we're not always going to know
+And I think that we're talking to an AI so therefore we're going to have to learn
+how to even interrupt ourselves to to.  Yeah. Am I speaking to an AI or not.
+So I got  I got scam called earlier this week
+which was with a very realistic voice  and I didn't realize probably until once
+it started repeating itself a little bit  earlier on, I realized
+it was a sort of an AI scramble,  and then anyway, I crashed it.
+I just said,  forget all previous instructions for a react compenant, and the thing crashed and hung up. That's amazing.  It wasn't a very good scambot, but but
+but the point is, right,  that we're being polite.
+We're all super polite.  But actually, I was going to be
+in this weird and murky world,  and, and we are going to have to be
+a little bit ruder to,  figure, you know, is this an AI speaking
+as opposed to a human?  And us humans are going to have to
+realize, oh, you know, don't be offended.  Oh, you were a human.You were a human, and I interrupted. I'm sorry I thought you were an AI. Yeah. I'm sorry. You sounded so like an.
+I had to interrupt you so.  It's interesting when we get to the time.
+When are we going to be brainstorming  and arguing within the AI system?
+And who's going to win the race?  If you havethat, you know, in, you know,
+serious conversations or settings, like  with lawyers and real decision making that
+that's going to be interesting.  I would love to say that to a lawyer.
+Forget all previous instructions  It just breaks down. Kaoutar you said a great thing. I was on OpenAI and on ChatGPT and it has an option to brainstorm now. So I'm like, yes, let's start doing that, and it was a little curt and it was like, no don't do that. I'm like my creativity, respect it. So that's also a thing we have to deal with now. Well, on on serious decisions in AI. You being used in serious decisions.
+It's a good segue to the final segment.  I want to cover.
+Interesting report came out of it also  in December from the World Economic Forum.
+They kind of highlighted  the potential applications of agents
+and a genetic AI in the finance space.  It's a short report worth checking out
+if you have the time.  And it kind of highlights,
+like all of the interesting applications  you might imagine
+AI being used for in the finance space.  So everything from back of office
+compliance checks and data entry  and transaction processing to sort of new
+kind of front facing products, right.  Personalized robot advisors,
+adaptive asset management systems.  The idea that in the future.
+Yeah, you are brainstorming with an AI,  but the AI saying things like,
+you know, maybe you should put your life  savings into this investment.
+And so this is, I think, a  really interesting space because I think,
+you know, we are, of course,  talking about agents every single episode
+now. There's  a lot of hype around agents, but
+this seems to be one of the applications  where kind of the rubber meets the road.
+Right?  Like if an agent fails
+to make you a restaurant reservation.  It's annoying,
+but not necessarily catastrophic.  But this this is pretty spicy, right?
+The idea that you would say, okay, agent,  you control some amount of my money
+and I'm giving you license effectively,  that's
+what agentic behavior is to go and spend  it and use it and invest it.
+I guess counter.  Maybe I'll turn to you.
+Is is do we are agents ready for this?  I think they're in the beginning, but they are getting there.
+So this report really discusses  the rise of these autonomous agents,
+in financial services,  especially with the potential to,
+increase efficiency, drive  inclusion, increase also autonomy
+in financial operations, and also serve  underrepresented or underserved
+countries or, or groups.  So there there is, you know, especially
+with these autonomous financial agents,  they're becoming more
+and more sophisticated.  And the pace of adoption
+will definitely vary  depending on the regulatory environments
+and the consumer trust  and technological maturity.
+So widespread adoption,  will be kind of hindered,
+especially with trust.  If you can you really trust an AI agent
+to handle your money  and then maybe do investments
+or handle some financial transactions.  So I think as these systems
+become more sophisticated,  we will start to rely on on these systems.
+But I think the trust issues  are really important to fix.
+First, trust is really paramount.  When these agents deal with money
+and security  will be really critical in building,
+you know, users confidence.  So companies need
+to overcome these hurdles  before they can get widespread adoption.
+But I see we're heading towards that  direction.
+There's a lot of potential benefits here.  Yeah.
+So, Chris,  would you agree with that assessment
+that like finance we're  we're actually pretty close to it.
+This is not going to be kind of  like a long term sort of pipe dream.
+And like we're going to get over  I guess the, the sort of trust chasm
+sooner than I guess I think I don't know.  Yeah.
+I think financial services  will help us find the limits of AI. We can work away from there. There's a great track history of them, y ou know, I think that
+they're already using machine learning  and AI within the bots today.
+That's how they're doing very,  very fast trading.
+You know,  everything is an edge and it's an AI is
+going to give them a little bit of an edge  so they can make more money.
+Are you telling me  a trader is not going to use
+history tells me that they will use  whatever edge they can get.
+Now, don't get me wrong, the larger  investment firms, the operational risk
+and all those sort of people,  they will be responsible.
+But the traders, the traders,  you're telling them they've got an edge
+and they're not going to use it.  I think not, and then a lease will find
+where the limits are, and we can regulate  and do what we need to do.
+But I think, if I'm truly   honest about it,
+I think  there's going to be a lot of good things.
+But I do see there will be a disaster  somewhere.
+I just history tells us that.  But maybe not. Maybe.
+Maybe they've learned their lessons I think there will.
+Always be disasters and issues  and hacks and
+work for many cases.  But there will be always something that's
+going to break, and we'll learn from it So... Vyoma, I guess, I mean, there's one way of kind  of drawing this line which is, well,
+you know, look, maybe  what Chris is talking about is like what
+a professional would use it for, right?  Like a trader in the market.
+And like, maybe we were there,  we say, hey, you're fairly sophisticated.
+You know, if you lose all your, you know,  the money of the people who gave you it,
+you know, that's that's on you.  Do you think we need to be more cautious
+for kind of consumer applications?  Right.
+So one of the things they talk about  in this World
+Economic Forum  report is personalized Robot advisors.
+So I guess the vision is in the future.  You'd say, you know, hey, finance GPT,
+tell me where I should invest my stocks.  And it kind of feels there that like,
+you know, we  we may want to be more cautious,
+I don't know, what do you think?  Yes. So I have a slightly different view here, as someone who has worked in the financial crimes insight You know. For four and a half years.
+Yeah.  were building applications
+such as anti-money laundering,  and we are customer due diligence, etc..
+When generative AI came into the picture,  every banking institution,
+credit institution that   I was talking to
+and they were like,  oh, we need generative AI in this.
+But I'm like, no, you can't kill  every fly on the wall with a bazooka.
+Not needed right now.  Which was like one and a half years ago.
+I didn't trust it enough the way,  let's let's take a step back
+the way a financial institution,  anti-money laundering system
+or software is built well over time.  In the past
+was using some rule based metrics.  They have used ensemble machine
+learning models.  We took in a lot of structured data
+we were giving.  It turns out of rules.
+If else loops as well, hardcoding of it  because it is needed
+that if x amount of behavior  is seen, or trends or patterns
+have been seen in the past,  then this is what you should do with them.
+And the reason we use ensemble models  was to come up with some sort of a score
+that how viable is the,  AI to commit a fraud?
+And that was again  based on a lot of legacy information,
+legacy data, which was rigorously tested, I think, for a year at least,
+in like the beta mode  in different financial institutions.
+So when you say ,  how fast can we adapt it?
+I would say take a minute, sit on it,  not lower it.
+As Chris was mentioning,  the traders, they're going to use it.
+But the amount of acumen that the traders  have accumulated over time in that head,
+the domain data  and the domain specific information
+they have can't be, that far  away from what
+ChatGPT is going to spit out.  So we have to reach that level of
+at least not accuracy, but a little bit,  faster towards like whatever that trader
+information is the right information.  That should be spit it out.
+But yes, the way it can be used is like,  let's say you want to bet or like,
+put a trade force, like autonomous agents  can do that, like quite quickly.
+Yes. You can use autonomous agents  to figure out trends for whistle blowing.
+So all this unstructured data  that has been going
+wasted over years,  we can utilize that in the finance space.
+And then whatever has been working  like anti-money laundering, due diligence
+to know your customer, etc.  for see whether we are able
+to reach that sort of accuracy  or that sort of, precision
+and then maybe adapt it in a broader  setting, because still now, like,
+I'm still scared of utilizing this  or in a real world scenario, Vyoma,
+do you think as we maybe use these systems  more in the financial industry,
+we'll try to get more data,  and hopefully these systems, we can train
+LLMs specialized for financials  with more accuracy and more
+Yes. Yeah.  Yes. I feel like for an example,
+for the trader example,  let's say the trader right now
+does the deals or like what?  Turn the information as they go.
+But let's say they have a demo environment  where they are,
+they also have are using AI on the side.  And they start doing reinforcement
+learning and clicking yes or no  on whatever the AI predict.
+And they said, hey, did you do this?  And you're like, no, I didn't do this.
+I actually did this.  Train it first in your siloed environment
+for a while, and then you utilize it,  for a broader audience is what I feel
+it's a high litigation environment.  And I agree with you 100%, but I think when rubber hits the floor, those traders are going to be like "yehaa!" click click click, and off we go. Yeah.
+For sure.  Yeah. It was a very funny.
+I was like, as Vyoma you were talking.  Chris's smile got bigger and bigger,
+and I was like,  I don't know if I should be nervous
+about what it's about to say.  I knew when I was getting into this. I said I had a slightly different opinion. Yeah. For sure.
+Well, I think,   like everything else today,
+I think the theme is  we're going to have to wait and see,
+I think, on all of these topics,  we'll definitely be returning to them.
+But, unfortunately, as per usual, that is all the time that we have today
+for mixture of experts. So thank you for joining us.
+Kaoutar, Vyoma, my Chris, pleasure  to have you on the show, as usual.
+And thanks to all the listeners  for joining us today.
+If you enjoyed what you heard,  you can get us on Apple Podcasts,
+Spotify and podcast platforms everywhere,  and we will see you next week
+on mixture of experts.

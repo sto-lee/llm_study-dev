@@ -1,0 +1,84 @@
+Thank you for joining us today! My name is Bradley Knapp, and I'm one of the product managers here at IBM Cloud and we've come to answer the question: what is Site Reliability Engineering, or SRE? And SRE is really the name for a new discipline 
+that's actually an old discipline.   It's a new name, it's only been around 15, 18 years, but the job itself has been around for a very long time. It's just evolved over time, and now we've given a formal name to the discipline and the job. And so, the question is, what is SRE, 
+what is site reliability engineering? And so, the way that I like to describe it is that it's really the collision of the 
+traditional IT role and DevOps, right? So, back in the day, in the traditional IT 
+role, you would think about lots of people sitting in an operations center staring at very 
+large screens, kind of arranged in a semicircle, like a mission center, or a 
+watch center in the military. Well, that world doesn't so much exist anymore, and in the new world, in the DevOps cycle that everyone should be embracing for their software releases, you still have to have reliability. Your developers are still going to engineer 
+the software to be reliable, but when it comes to actually operating it actually delivering 
+the service that goes out to the end customer, that's really kind of outside of the responsibility of those software developers. That's where SRE comes in. An SRE is what I like to call a 50/50 role, right? SREs should spend about 50% of their time focusing on solving customer issues. That can be escalations, could be responding to incidents, dealing with an upset customer who 
+needs help on a tactical problem. That's going to be 50, and then the other 50%   is maybe the most important part, and 
+that's every SRE should be actively   trying to automate themselves out of a job. 
+They want to automate all of the things. The buzzword for this is reducing toil 
+, right? Reducing all of the manual work   necessary to keep any kind of 
+software environment up and running. This includes the hardware itself, 
+it includes all of the middleware,   it includes the software - all of the related 
+services you have to keep these things live. And so, the question then becomes: all right, 
+well, we're going to automate these things,   isn't that putting my job at risk 
+if we get rid of these manual tasks? And the answer is: in reality, no it's not. 
+It's never going to put your job at risk,   because every time you automate something, 
+you gain some additional insight   into the system. Every time you automate 
+something, you learn something new,   and you identify additional tasks that 
+you'll be able to automate in the future. And so, automation is core. It's approaching 
+operations with a development mindset,   because you want to programmatically 
+solve problems so that you don't have   to go in and make the same manual 
+fix time after time after time. This is key to the SRE role, and 
+it's key to your success in it. And so that other 50% of the time I talked 
+about that before right, that's going to be   escalations. It's going to be on-call work or,   in some cases, for a large enough 
+organization, SRE might be 24-7. It's going to include customer facing work, right? 
+You are going to have to interact with customers,   and it's going to include being the 
+source of knowledge for your group. Because SRE crosses all boundaries: it 
+knows about hardware, it knows about   software, it knows about monitoring, it knows 
+about logging, it knows about automation. And so, they understand all of the different 
+components. They have the institutional knowledge   of how to keep the product up 
+and running as a product manager. I like to make the joke that when I want 
+to know how software's designed to run,   I go, and I ask the developers who wrote it. 
+When I want to know how it actually runs,   I go, and I ask SRE because they're the ones who 
+get to deal with the implementation every day. And so, bridging the gap between what 
+actually happens and what we want to happen,   that's so important to the SRE job because 
+they have day-to-day hands-on interaction   with how people actually use the product. So, SRE is constantly feeding data back 
+into development so that development can   make the software better, at the same time that 
+they're automating in all of the resiliency. SRE understands that failure will happen.   Failure is just the nature of business. 
+You cannot design a perfect system. And so, what SRE excels at is 
+programmatically identifying   potential failures and solving them ahead 
+of time, and it's also good at identifying   how are we going to solve 
+immediate tactical problems. And so, I talked a minute ago about monitoring, 
+right? That traditional IT room with all of the   screens. Well, monitoring and logging 
+are just key to the SRT role, SRE role. So SREs, as they monitor, they're keeping track 
+of what's happening in real time. Logging is an   archive of everything that's happened, so 
+that you can go back and examine it later. So, your monitoring is going to give 
+you the ability to anticipate failures   and see them coming so that 
+you can proactively solve them. Logging is when you get an unanticipated 
+failure. It allows you to go back   see what happened. You can do a an RCA, a Root 
+Cause Analysis , on it and figure out how to   solve it, not just for now, but for the future. 
+That gets back into the automation again, right? If you know what happened, 
+and you know why it happened,   you can then adjust that monitoring that we 
+were talking about, so that the monitoring   itself will catch this edge case and you 
+don't encounter that failure ever again. So, SRE is just core to a successful business, 
+and most companies will find they have a role   pretty similar to SRE today in the world 
+of software in the world of technology it's   something that we already have, even 
+though we may not be calling it SRE,   but if you're talking to a startup, a very 
+young company, they're going to say, well,   you know we don't have the budget to go out 
+and develop an SRE organization to start with,   right? We only have 25 employees, we 
+only have 30 employees , and that's okay. The important part of SRE for a small company is 
+not so much having someone with that job title,   because your developers are your operators at 
+that point. It's engineering everything they do   with that SRE mindset: that failure is an option 
+and, as a matter of fact, should be predicted for,   but is something that you can automate 
+to solve. It's something that you can   create enough redundancy that, 
+when failure does happen,   it's not a big deal because you're 
+resilient enough that nothing goes down. And so, as long as you develop with that SRE 
+mindset in mind, and you are being resilient,   you're being redundant, you are constantly going 
+back and automating problems so that you don't   have to manually fix the same thing over and over 
+and over again, and you're doing good root cause   analysis on actual failures so that they don't 
+happen again, and you're monitoring so that you   will know when they're about to happen and you can 
+head it off at the pass - that's really the key. Large organizations, they can afford an entire 
+SRE department. They can stand it up, or they   can transition an existing operations group into 
+it by empowering that operations group. Again   that 50/50 rule, spending 
+half their time automating,   half their time fixing problems, and automating 
+all of the things. Automate everything, because   the less manual work and manual intervention you 
+have the happier that SRE team is going to be. Thank you so much for your time today. If you 
+have any questions, please drop us a line below.   If you want to see more videos like this 
+in the future, please do like and subscribe   and let us know. And don't forget: you can grow 
+your skills and earn a badge with IBM Cloud Labs,   which are free, browser-based 
+interactive Kubernetes labs,   that you can find more information 
+on by looking below. Thanks again!

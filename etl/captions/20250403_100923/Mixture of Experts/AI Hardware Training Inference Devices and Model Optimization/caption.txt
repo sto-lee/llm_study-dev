@@ -1,0 +1,470 @@
+Welcome everyone to this
+week's Mixture of Experts. I am your host, Brian Casey. Um, today we're doing all
+hardware all the time. Uh, we are going to start with a
+deep dive really of the industry and space right now, specifically
+about, um, how the training and inference stacks are diverging. Model architectures still. evolve over time. So how do you build hardware that, you
+know, you put in the data center and you, you know, depreciate over like five, six
+years so that you can still run the model, which is active in six years with today's
+hardware, you know, you're putting down. From there, we're going to move to Apple
+and talk a little bit about how The architecture patterns that we see there
+that are combining on device and cloud could be a pattern for the industry. The composability of these
+chips, the different models is going to become important. And I liked the way Apple did this, right? Here's some of the stuff
+that you run on device. But when I want to do something a
+little bit more complicated than reasoning, I'm going to come off
+device and I'm going to push that on the cloud to perform that action. Finally today, we're going to talk
+about model optimization and the things that people are doing with models. to better take advantage of the
+hardware that's available to them. But I see there's a lot of energy there
+and a lot of work and documentation and, uh, which make it very easy,
+you know, for the end users and the developers to use these techniques. Joining us on the show today,
+we have Volkmar Uhlig, who is the VP of AI Infrastructure. We have Chris Hay, who is the CTO of
+Customer Transformation and we have Kaoutar El Maghraoui, who is the Principal
+Research Scientist for AI Hardware. We're going to start like
+a little bit big picture. Um, and Volkmar, I'm going to
+throw this first one over to you. Um, but obviously like NVIDIA has been,
+has absorbed a lot of like the oxygen and perhaps money in the room, uh, in
+the hardware space over the last 18 months in a sort of like classic, Um,
+when there's a gold rush picks and shovels, um, toward a sort of investment. Uh, but I think one of the thing that's
+becoming like more discussed and kind of more clear is that the ways that like
+the training and inference stacks might diverge, um, over time, the extent to
+which that's kind of already happening. Um, because I think some of the
+players that are involved in each one of those things, and some of the
+like, the interests of the consumers are, um, you know, a bit different. Yeah. Even at some of the use cases obviously
+are very different, but I wonder if you might just like start us off and just like
+maybe give, like, I don't want to say an overview of the whole landscape, but maybe
+start with that kind of piece of talking about the, like the two stacks of like
+training and inference, uh, kind of maybe some of what you see going on in each
+of those and just like how you see them kind of diverging both now and over time. Yeah. Okay, cool. So I think the, uh, uh, the
+main difference between. inference and training stack is to
+scale, uh, these GPUs get connected. And so we like, there's a bunch
+of accelerators happening, but let's just stay in the GPU market. On inference. You're primarily limited by, you
+know, the throughput you want to achieve the token latency you want
+to achieve, um, and then there's a certain amount of memory you need. And so the bigger the models get,
+then usually, you know, you start spanning across multiple GPUs just
+to maintain, like you have enough memory and maintain the throughput,
+um, and then achieve latencies, which are reasonable for human beings. So if you look at the big
+GPUs, which is often what... what people are using, A100s, H100s,
+and, you know, what's coming out, um, you connect, you know, two to four of
+them to just get into latency bands, um, where, uh, you know, the human can not
+read as fast as the tokens get produced. Um, and then you have the, the other area,
+um, we're just training and training is really, uh, how many GPUs can you connect
+into a single system, and it's much more like the HPC space, you know, very
+like, you know, for 20 years, we tried to figure out how to build networks to
+connect thousands or tens of thousands of computers, and now we're doing the same
+thing again, it's just called the GPU. And here it's really how fast can you
+exchange information between these GPUs? So you have these all gather operations
+or weight redistribution operations, um, but you may have 10, 000 GPUs behind it. So the real value here is how fast
+can you get data out of these GPUs to the other GPUs and how fast
+can you distribute them to all. And so from a cost perspective, um, in,
+in basic inferencing is really like, you know, you cram something in a box and you
+want to have a power efficient, um, and then you want to achieve those latencies. And in the, in the case of training,
+uh, at least for like the very large training sets, uh, it's like how
+many computers can you fit into a room and connect them with a super
+latency, uh, super low latency network? And many cases like You know, the
+hardware cost in the network is 30 percent of your overall system
+cost just to interconnect them. And Chris, maybe a question to you is,
+um, on the inferencing side, like in particular, have, have you seen like costs
+on like an absolute basis already become like a real issue for clients, or is it
+the type of thing where, you know, they're concerned about like the unit economics
+and as it scales, it will obviously be an issue, like how real is the cost
+problem today um, on just like the production workloads people are working
+with when it comes to work with LLMs? Is that like a theoretical
+problem or real problem? Um, a very obviously in the future
+problem, uh, real problem, but how would you, how would you describe that? I honestly think from a client
+perspective, and this is going to sound really harsh, they don't really care. Because most of the time they're
+getting inference from the cloud, right? And they're playing cost per token, so
+they're not really provisioning GPUs. I don't know many clients
+who are provisioning GPUs? Maybe some are doing that for
+fine tuning, but they're certainly not doing that for inference. In fact, clients are actively avoiding
+anywhere where they have to have a GPU for inference themselves. And the reason they're avoiding that
+is they're not going to shove enough workload through that for inference
+to be able to justify the cost. So they really want to be paying
+more in a kind of SaaS model where it's kind of paying for the
+tokens as opposed to GPU time. And if you think about it sensibly, GPUs
+would just sit around doing nothing most of the time in a client's estate, so I
+think this is a big technology company problem, not necessarily a client problem. Now, don't get me wrong. There are some clients who have
+to run on premise workloads. So think of financial institutions,
+government institutions where they don't want that data going to the cloud, and
+they have that problem where they have to think about provision their own GPUs. But, but regular clients, I don't
+think they think about that too much. But I think I, you know, this is very
+true, Chris, but I think especially for startups and like small and medium
+businesses, this becomes a big challenge, especially being able to maybe either
+train or fine tune models for their whatever business that they care about. This becomes a real issue. So cost reductions for
+them will be significant. I think like what Chris said is, is right. To a certain extent, the
+customer doesn't really care. Um, you know, they don't want to know
+that there's a GPU behind it, ultimately. Um, they only care that
+they get the service. And they get the service at a certain
+cost and at a certain latency. Because in the end, you're modeling
+something where, let's say, I have an interactive workload with a customer and
+the customer doesn't want to wait like 20 seconds until they get an answer back. Um, we want to hide that in the data
+center in the inferencing service. Now, from a hardware perspective
+from, you know, companies which are actually invested in those hardware
+systems, that's the optimization, right? And that's, I think, where we will
+see much more custom hardware going into the market, um, which is highly
+optimized for these specific workloads. And it's interesting to see like, you
+know, we have a trend of like, okay, there's, you know, more common models
+and model architectures, but model architectures still evolve over time. So how do you build hardware that, you
+know, you put in the data center and you, you know, depreciate over like five, six
+years so that you can still run the model, which is active in six years with today's
+hardware, you know, you're putting down. So I think there is a, there's an
+optimization game probably played by the big players, you know, the AWSs
+and you know, the Azures and you know, the IBMs who are putting specialized
+hardware, highly optimized influencing engines with a lot of variety for these
+different models into the data center. And I think, and for companies,
+it'll be hard because, like, how many GPUs do you wanna host? Like you want to homogenize,
+but now you may overpay. And so the cloud may be your answer,
+uh, to get cost reductions in place. To that point about maybe optimizing
+for five or six year time horizons. Like one of the themes I've
+seen come up, um, more recently, I've heard Jan Leike.... Um, make versions of the statement,
+a few others, um, that like LLMs, even within the research and academia
+community have like absorbed all of the oxygen, um, in, in the room and
+that there's other, there's other areas and like ways that people could
+potentially even imagine getting to AGI. But like right now, it's just
+everybody's on this one path and so I think Jan even like famously was like
+telling New Research like don't work with LLMs like go do something else
+with your life, uh, basically which like the reaction in the market was
+like sort of predictable to that but it was like very Jan on some level. Um, but I'm curious like do you see like
+the hardware players like almost following that same sort of dynamic where like
+everybody sort of like is looking what's happening with LLMs right now and they're
+just sort of all in like the transformer has been pretty resistant up to up to this
+point with some like tweaks to it so... are people kind of looking at the model
+architectures that are around today and just sort of like assuming that those
+are going to hold for at least at least the medium term or, you know, do you
+see places where people are like, you know, Exploring, you know, what other,
+um, um, you know, maybe what other alternative architectures might play
+a role at some point in the future? I think that's a great question,
+and there's a lot of research actually exploring alternative
+architectures as transformers. Transformers, of course, it's
+a pretty solid architecture. Uh, the example, for
+example, the MatMal3 LLMs. Which is… which is I think it’s a WAG paper that has demonstrated the viability of MatMal3 architectures. And the research opens up a new frontier in LLM design. Also encouraging the exploration of alternative operations and computational paradigms. So this is actually kind of opening
+the frontier here for a new wave of innovations with researchers
+developing novel model architectures. So this particular paper, Uh, really
+kind of looked at using these trinary operations, replacing the, uh, the math
+behind the matrix multiplication with much simpler operations, and that's
+actually the biggest bottleneck you see in these LLMs computationally. And there's also translated also into
+reduction, huge reductions into the memory and the computational, uh, requirements
+needed for these LLMs, also, they really showed some very interesting benchmarks
+and result that shows you could get almost same accuracy or the same performance
+as you would get with transformers. So and I think this is just the beginning. So there is a huge need to look
+at alternative architectures, uh, either using, you know, these novel
+architectures or using things like, uh, neural architecture search where
+you're trying also to You using AI to generate efficient architectures
+for for hardware for to target, you know, special special platforms. And that's are much more energy efficient. The reaction to that paper
+when it came out in the market was like pretty substantial. Um, I think the original tweet that
+got shared as well, like announcing the paper, either just like summarizing it
+even, um, I think had a couple million views associated with it and people
+were very excited and, um, in the way that Twitter gets, um, around things
+like, oh, this is, you know, a big change, it's like, we're not going to
+do matrix math on GPUs, uh, anymore. And obviously, like there's the initial
+hype and then, you know, there's reality that sort of comes after that. Um, but in, in a space like that
+where you're doing that sort of fundamental research and a lot of
+the indicators were looking like, you know, this actually could be a thing... um, what do you, what are like the next
+steps for an approach like that going from something that's just like a novel
+piece of research to something that is like approaching a place where it
+might have some commercial relevance? Like, how does it go, and like,
+you know, does it end up having any impact on the hardware ecosystem? Maybe before we get to that hardware
+point, you know, maybe just would love to hear from the group of, you know, what
+are the things that you would want to see that would give you some indication
+that like a different approach like this, um, might have some, some relevance and
+some staying power, um, in the industry? So I think that we go through functional
+plateaus with these different models. So if you go back, we had CNNs,
+and suddenly computers could see. And then we got transformers,
+and suddenly they can reason. And we are going through that, through
+those phases, I think there will be new model architectures coming, you know. Like this is almost like
+a scientific discovery. Suddenly, The model exhibits
+a certain behavior, which we haven't seen before, right? And we had the similar effects when CNNs
+came out and suddenly, you know, all the image processing algorithms were out the
+window and now all the, the NLP systems are out of the window because we don't
+do entity extraction anymore because we can directly reason in a network. And so I think there will be new
+architectures coming with new capabilities, and I think this will
+be a lot of the effort, like the people will start experimenting with
+these alternative model architectures. At the same time, we are seeing that,
+you know, people are trying to rewrite the existing capabilities because now
+you have that new plateau where you are, you know, we know how Chat GPT needs
+to behave and we, we can benchmark it. Before we could benchmark the vision
+algorithms and we could say, you know, what's the detection rate. And so I believe that we will
+constantly go through these loops. And if these fundamental changes happen,
+suddenly you got, you know, a 10 X performance improvement, but, and then
+the, the hardware will catch up, but you will not take something which is
+in production and necessarily say, Oh, let's just throw it out because these
+models have been tuned for, for ages. So if you look at the introduction
+from discovery until it goes into the industry, you know, if you are like at. Three years now, like, you know, it's
+like Chat GPT already I mean, it's already aged, like the transformer model is aged. And so what's the lifetime? It's probably not like twenty years,
+but it's probably like five, six years until the new model shows up
+and things, you know, get tweaked, and each of these 10 X performance
+improvements now allow you to make the model 10 X more complex, because now you
+suddenly get all the computation free. And so I think those things
+will happen over and over again. We are just now in this era of discovery,
+right before a true architecture or a lasting architecture was found. So, and I think we will have
+this for a couple more years. Do you think that basically every, every
+hardware player in the space right now is up is like building out what they're
+doing, optimizing almost entirely for like the existing transformer and LLM stack? That's the safe bet, right? So if you look from a, from a
+manufacturer, if you build a card, like you go like all the cards,
+if you go back five years, cards don't have enough memory bandwidth. Then suddenly training of these LLMs
+comes on online and it's like everybody's like oh I need two terabytes of memory
+bandwidth per second and now I need four and you know if you're growing these cards
+if you would have optimized the card five years ago you would have done that for
+encoder models which are totally compute bound and not that, not memory bound. And so we are seeing the shift towards
+these models as they come online. And then you go from, oh, I
+need 32 GPUs to I need one. But that's the architectural shift because
+the hardware gets like gets modified. And you are like, Okay, I'm willing to
+pay 10 times as much for memory bandwidth. And so but overall, I'm
+still getting a better deal. And so I think those things will happen
+over and over again, you know, like effectively what NVIDIA did is like
+it took the computation of the CPU and said, okay, I give you 100x for
+this different architecture, right? And now we are going through a
+cycle of, okay, we need more memory. And so then there will be
+specialized operations. We already see it with CUDA cores, right? So do matrix multiplications in
+hardware and, you know, you just do this over and over again. I, I kind of disagree. Yeah. Sorry. I kind of disagree.
+Good. I think, I think last best model wins. That's it. So how many people here
+is still using LLAMA 1? How many people here
+is still using LLAMA 2? Nobody. Why? Because we're using LLAMA 3. How many people is
+using Mistral version 1? Zero. Cause we've all moved on to Mistral 0.3.
+Last best model wins. So therefore, if somebody comes up with
+a good new architecture that beats the old architecture, Everybody's going
+to move to that super, super quickly. Consumer doesn't care because consumers
+are not training models, so they will take the first model that works,
+they'll run it, as long as it works on their consumer hardware, they're good. Slightly different for data centers,
+but data centers are not going to want to be left behind, so
+they're going to run towards it. So hardware wise, if I'm honest,
+as long as it runs on my Mac, which runs MLX, I don't care, right? So I'm not going to go out and buy
+a GPU, it's going to run on my MLX. Now that's different for, uh, folks who
+run data centers because they're going to want the most efficient inference
+that they can and they're going to invest in the hardware to be able to do that. But me as a consumer, last best
+model wins and, you know, it's got to run on my consumer grade hardware. Good, but now you just defined
+what the constraint is and it needs to run on my consumer hardware. So there is effectively a,
+there are two sides of this. There's like, to what hardware do
+I build, which you are going to buy with your next laptop in three years? And what's the model architecture? And so you have a deployment,
+deployment issue, right? So CNNs, for example, haven't
+fundamentally changed. So CNNs, the hardware is the same, right? It's an encoder model. It's not a decoder model. And so you, you, Still run the same
+hardware, but now we said, Oh, and by the way, we have this new workloads, but fund
+fundamentally CNN's all kind of stuck where they were a couple of years ago To a point, because if there's a
+brand new model with a completely different architecture, and it could be. It could be a 5 trillion parameter
+model for all I care, right? If the latency is fast, then again,
+I'm putting more constraints on it, and it's SaaS and I can't run it on
+my machine, but it smokes whatever I can run on my machine by 100x, and
+the price is so cheap, I don't care. I don't need to run it on my machine
+at that point, because That model there is the new best model, and it
+wins, and therefore me as a consumer is going to run right towards it. I think on the hardware space it is,
+it has been constantly a challenge for these hardware vendors to
+figure out what do we optimize for. There's always this trade offs between
+building this general purpose accelerator that can run all these different
+architectures Or this really super optimized things for like the LLMs or
+for the CNN, so for, you know, the LSTMs or all of these different architectures. So that I think that's going to continue
+to evolve and because it takes a long time to design hardware, so it's not a
+software that's, you know, every day you have new architectures, new, new releases
+and things like that for hardware. It is a much longer timeframe, so. so this really, you know, becomes a
+challenge for the hardware vendors. What do we optimize for? And I think maybe that's going to
+even change the way these hardware vendors and the architecture and so
+forth think about hardware moving into these composable systems. Maybe I don't need to build these
+monolithic chips that are built to design everything, you know, to optimize for
+one specific model or architectures. Can we compose things and
+then plug plug them or compose decompose in a dynamic fashion? So I think this is maybe something a
+chiplet, for example, it's something trying to do something similar where
+we we don't want to have, you know, these one big chip, but having these,
+uh, uh, chiplets where that you can compose, uh, very easily and then scale,
+especially for different use cases. I think the, the, this race for the
+best model is going to continue the, the, also the race on the AI hardware... how do we optimize,
+what do we optimize for? How do we build the next
+roadmap for the next five years? That's also going to be a challenge,
+but it's going to force, I think, a much closer hardware software co
+design kind of cycle that we need to shorten so we can reduce cost
+efficiencies and win in the market share. And I think you're right. There is, I think there's two
+different driving factors, right? So if you're a consumer, there are
+three different driving factors. If you're a consumer, you care
+about what is cheap for you, what can run on your machine, etc. That's kind of one factor. If you are a company who is
+training these models, then the biggest factor in your case is
+going to be, can I train the model? Can I pump the data in, how
+quickly can I get my model out? And how can I prove it and
+keep up with the market? If you're a cloud company serving up
+inference or a data center serving up inference, then you're trying to maximize
+the cost per token or minimize the cost per token for your architecture. And that becomes really
+important because you want to be competitive with everybody else. So if you're charging, you know 0. 05 cents per token or something
+per million token, but somebody else is doing it for 0.01, you need to cut your inference
+costs get it as bare as possible so that you can be as cheap as possible. But that's not true when training, Right? When training you are trying to get the
+best possible model that you can and get it done as as quickly as possible. So I think these different driving
+forces, uh, really affect it. And I totally agree with you, Kaoutar,
+that, that the composability of these shapes, the different models
+is going to become important. And I like the way Apple did this, right? Here's some of the stuff
+that you run on device. But when I want to do something a
+little bit more complicated than reasoning, I'm going to come off
+device and I'm going to push that onto cloud to perform that action. And I think that sort of. Uh, thing is going to
+be key in the future. There's a really good statement across
+which, um, what I like about the Apple approach is that they effectively
+figured out an upgrade path, right? So you can have your five generations
+of old phones and you effectively say, whatever I can do on device, I
+do on device and whatever I can't, or if I don't have the hardware
+acceleration, I now have an overflow bucket and the overflow bucket can be. The model is too complex or like I
+want a complex answer to something or the other one is I have old hardware. So they effectively created for
+themselves now an architecture where they can start innovating despite
+that the device has a longer lifetime. So they decoupled the lifetime of
+the device from the lifetime of or from from the model evolution. And so now they can innovate
+rapidly because they can always update the data center. But the device which the customer
+held in their hand is, it's, you know, it's kind of fixed. And so I think it's, it's
+a really interesting move to, to do that separation. I thought that story, just like everything
+that they announced at WWDC from, from both that path of smaller, like many
+smaller models on device to their own models in the cloud, to only a third
+party API when they absolutely have to, and then having like the user opt in on
+a per interaction basis combined with their own sort of Silicon was just like... the best example yet I've seen in the
+market around how to do, you know, how to optimize for, for cost for speed,
+how to do kind of like local, um, you know, local inference, um, on, on a
+workload, um, you know, I'm just curious, like, do the rest of y'all, Was that
+kind of your reaction to it as well? And I'm curious to just the conversations
+that you've had with clients like did that did that stick with them at all
+about a way to, you know, think about both like the combination of models they're
+working with and just like at all in terms of the way that they're thinking
+about like infrastructure and compute. Yeah, my reaction was the, I think
+it's the first architecture, which takes security and confidentiality
+between a device I have in my pocket and, you know, computation, which is
+on the other side of a wire, seriously. And I think they really try to figure out
+a way, um, to keep like the, you know, like they're selling a device and like
+everything happens on the device and they figured out, well, we cannot do that. And so they try to come up with an
+architecture where you, you, you extend your trust domain into a
+data center and they, they went, I think, Overboard with like, okay,
+we, you know, we have secure boot. Okay. That's what everybody expects. And then you have, um, non introspect
+ability of any, any data, which goes in by the like by an administrator,
+so you don't have privilege elevation of administrative accounts that
+I cannot extract data at all. So I think there is. They really, oh, and then we publish our
+binaries and the binaries are digitally signed and they are only buildable
+through our internal build processes. And so now anybody can inspect it. So they really try to say, look what we
+guarantee you with physical isolation. We are doing also in the cloud with like. digital isolation, you know,
+through that, all these things. I think the second really smart move
+was to say we are taking the same chip, we are not buying, you know, an NVIDIA
+chip or, you know, an AMD chip, but we are using our own infrastructure to run
+those things on our, on the same device, like on the same operating system, right? So they're M3 or whatever
+they have internally. Um, and so, And now you can
+run the code on both ends. So, like, from a development perspective,
+it really brings the cost down. But if you look at those scales,
+those Apple scales, with, you know, hundreds of millions of chips, like,
+it's really cheap for them, right? So, a chip costs you, like,
+60 bucks if you make it yourself, put a bunch of memory. The whole system is probably
+in the ballpark of, like, $200. And they can stamp them out. They know how to stamp
+out at scale, right? And so, if you would do that alternatively
+with an NVIDIA card, Card and x86 servers to cost would be like super ballooning. And so I think there's a lot of really
+smart, but design decisions in there, but they really looked at an end to end. I think they figured out and they put the
+bar there, how consumer AI trustworthy consumer AI will now look like. And everybody will be like, okay,
+if you don't do it like Apple, I will not use your source. And I think now what's unclear is what
+the enterprise answer to that is, because there are other questions which are asked. But I don't think that's just
+in the consumer and inference. So, uh, I run a Apple M3, right? MacBook Pro. It's a 128 gig unified memory. Um, it's, this machine is a beast, right? And basically, I can run Llama
+3 70 B on my local machine... because of the unified memory, I can say
+right now, there is no consumer machine that I can afford, right, other than
+the Apple M3 that would be able to run Llama 3 on on my machine, not only that,
+I can fine tune models just as fast as I can on Google Colab on my MLX machine. Without quantization, I can just take
+a base model and I can fine tune it. So I fine tuned, I think it was 1, 000
+rows, completely unquantized, so maybe it was about 10, 000 tokens, maybe more. Um, and I did that in less than
+10 minutes on my, on my M3. I didn't need to go to cloud,
+just did it on my machine. Now, I haven't even measured that with
+quantization or Laura at that point, but that is going to be a future for fine
+tuning as well, even in the enterprise. Why would I go to a cloud to go and fine
+tune my data if I'm fine tuning maybe 100, 000 rows worth of data, right? Maybe I'm doing a couple million tokens. I can run that on MacBook, and half of
+my enterprise is sitting with MacBooks on their machines, so I think it's, I think
+Apple's making a really smart play, and I don't think it's just in the inference
+space, I think it's in the fine tuning space as well, I think Apple has set
+themselves up as the real developer. Uh, workstation for AI I think combining this with something
+like what IBM is doing and Red Hat with Instruct Lab would be really powerful
+because it also brings that kind of, uh, creativity in terms of creating your
+own models, fine tuning them all in your local space without having to deal with
+the complexity or the cost of the cloud. I think that's going
+to be really powerful. It's funny. I think one of the outcomes of just
+that whole thing was that from the very start when people started to get
+educated about models, people were like, fine tune as a last resort. Like you should, you should do rag first. You should do all these things before
+you ever think about fine tuning. And I kind of feel like Apple made fine
+tuning cool because that was like such an important part of what they're doing. And it just, it does strike me as
+like, as it gets easier and cheaper to do this stuff that we'll see,
+we'll see more and more fine tunes. I certainly like hugging faces just
+like littered with fine tunes at this point, but I think, um, it does
+feel to me like there's going to be sort of more and more of that. And I think that's actually sort of
+a great segue for the last segment where we were going to just talk a
+little bit about, Model optimization. There's a huge amount of
+activity in the space. I think, um, you know, the count of
+and it even seems like the emphasis on smaller models, even from the big players
+is getting to be more and more and more like even some of the messaging I've
+seen from them recently is like we want to deliver models that are actually like
+usable to the community as opposed to just like this, just ultra AGI path, which
+is only useful in like some dimensions. Um, you know, Chris, you just talked a
+little bit about Laura and quantization. Um, I'm just, you know, beyond like,
+what are you all seeing in terms of the things people are doing? And that's having like the most impact
+in the market right now in terms of Taking a combination of like small models
+and fine tuning all these techniques and actually compressing them down
+to get their inference costs lower, but still getting kind of the results
+that they're that they're looking for, there's like a lot in this space, and
+there's a lot of energy in the space. And I'm just curious in terms of like
+the things you've seen, the things you've done, the clients you've worked with,
+um, you know, just where you're seeing kind of the most bang for the buck and
+where people are kind of most excited, um, right now and, you know, happy for,
+um, anyone to kind of take that one. I think there's a lot of, you
+know, excitement around these model optimizations, you know, reducing the
+complexity of the models, quantizing the models, pruning the models, applying
+things like knowledge distillation. So there is a suite of techniques right
+now and tons of great libraries out there. Hugging Face is doing a, I think they're
+doing a fabulous job, uh, with their Optimum, uh, uh, library, where they
+have multiple hardware vendors, and they basically focusing on these, uh,
+hardware level optimizations, but kind of abstracting them away where you can
+have these LLM extensions, for example, for better transformers, for things
+like quantization with GPTGTQ and or for bits and bytes, so these are libraries
+that make it very easy with some common APIs to benefit from quantization,
+pruning, uh, better transformers or optimization and transformer like this. page attention. Uh, you know, some of these
+quantization like you, Laura, et cetera. So those are very important to kind
+of democratize and make it easy for people to consume without really
+having to understand the depth and the details of different hardware vendors. So that's a good example of kind
+of democratizing this, all of these optimizations and making
+them accessible to the developers. Um, Of course, that requires a lot
+of work from different vendors to be able to implement all of these
+optimizations and then provide these common API for the end users. But I see there's a lot of energy there
+and a lot of work and documentation and, uh, which make it very easy,
+you know, for the end users and the developers to use these techniques. Yeah, and just to sort of add into
+that, I mean, there's obvious ones as well, like kind of caching, for example. One of the ones that I find
+quite interesting at the moment is probably batching. So there was a project somebody did
+with MLX earlier this week, where, you know, if you use MLX out of the box,
+on my machine certainly, with something like the Gemma, Model to be model. You're going to get something
+like 100 tokens per second. That's unquantized. But they got up to just by batching
+the inference, they got it up to 1300 tokens per second on their machine. And I've seen similar
+things with fine tuning. So one of the things that I've
+done in my data pipeline is the MLX pipeline wasn't fast enough for me. So I rewrote all the Apple data
+pipeline so that it was just kind of loading in and The biggest thing that
+I found is actually I pre process all the tokenization for fine tuning. So rather than letting it load, um,
+you know, as it's trying to fine tune, I just pre tokenize everything. I set up all the input and target
+tensors, get it all done in advance. But the last thing that
+I do is then I bucket. all of the batches together on
+the same sizes, which is kind of almost like padding free. But really what I'm doing in this
+case is bucketing based on the same pad padding size to reduce padding. And that is massively increased,
+uh, my speed of training. So I think these techniques like caching
+training, you know, uh, cause I mentioned things like you, Laura, et cetera. Again, even, even, even if you
+think of the way LoRa works, um, you're really looking at
+things like, um, freezing layers. I think at some point, if I think of the
+Golden Gate stuff, the Anthropic we're doing, I, I think you're going to get
+to the point, rather than doing a hard freeze on layers, I think you're going
+to get, start to freeze on features, because if you can understand Feature
+A and Feature B are being influenced, uh, or is, are on a certain topic, why
+not freeze those features right in the future and then train areas only in the
+feature area that you want to train. So I can see that happening
+in the future as well. So I think there's going to
+be a lot of optimized patients coming in on those areas. I know we're just about out of time. So Volkmar, maybe I'll, as the first time
+guest, um, on the show, maybe I'll, I'll give it over to you to maybe close us out
+and talk, you know, of all the sort of like techniques that are in the market
+right now that are like really focused on like optimization, which ones, which
+ones are you seeing, like, are Yeah. Which ones are you most excited
+about and that you see the market kind of most excited about? So I think the similar to what Chris and
+Kaoutar already said, you know, I think we get a bag of these optimizations. What's interesting, uh, what I find
+interesting is the, uh, Uh, like anything which is giving you like a
+2, 3x speed up in whatever dimension. Like we are not yet, I mean, when you
+compound them you may get to a 10x. One of the things that really excites
+me, um, is speculative decoding. So we are running a sim, like a simpler
+model, um, on top of your complex model. And the simpler model is kind of
+trying to predict a bunch of tokens. Um. Ahead, and then you just verify it
+with the big model because all the quantization methods, right, there's a
+quality impact and the quality impact, you know, it's really hard to quantify. And so we have these models which
+we're testing and then we go through quantization and they kind of look good,
+but you don't know what you don't know. And with speculation, you effectively
+verify against the full model and you get just a 3x performance improvement. And I think that's probably the one
+thing where, um, uh, you know, I, I think that's, that's the biggest
+impact because it's also like batching makes things better, et cetera. And then you have like
+a continuous batching. So, you know, requests come in and
+go out, but there's always, um, like there's a latency impact with that one. It's really like, it's just,
+it's better and you don't have any, any reduction of quality. I think that's a great place to end on. And it's also just like thematically, I
+think one of the most fun parts about the space, which is, it just feels like you
+can wake up one day and it's like, Oh, I, someone struck together a couple two Xs. And now we got a 10 X improvement. Um, and something, you know, being
+at that stage of the journey is a lot more exciting and interesting than,
+Some of the later ones, potentially. So, um, it's a fun, fun time right now. And, um, I think a great,
+a great place to end on. So thank you all for, for joining us
+today for our listeners, for our guests. And, uh, we will see you back
+next time on mixture of experts. Thank you.

@@ -1,0 +1,9 @@
+{
+  "video_url": "https://www.youtube.com/watch?v=6h-UCGJ4-BA",
+  "video_id": "6h-UCGJ4-BA",
+  "title": "Using IBM CloudLabs for Hands-on Kubernetes Training on IBM Cloud",
+  "upload_date": "20200722",
+  "channel": "IBM Technology",
+  "duration": "1:38",
+  "caption": "Welcome to IBM CloudLabs, an interactive way to learn essential cloud-native concepts all entirely through your browser. Whether you're an experienced developer, or just looking to learn more about Kubernetes in the cloud, IBM CloudLabs makes it easy to get started. Let's see how it works. Cloud Labs gives you access to a real Kubernetes cluster environment - not a demo. You'll get temporary access to a paid Kubernetes cluster in an IBM Cloud account. To get started, click on the lab that you want to start with, and then take a look through the contents of that lab, and then hit the \"Launch Lab\" button on the top right. If you're not logged in already, you'll be asked to log-in or create an IBM Cloud account - this part is quick and free! Following that, you'll have a fixed amount of time to run through the lab. If you need more time to complete the lab, you may extend the duration by one additional hour. Here's the best part: there's no pre-req setup or tools to install, all the tools you need are embedded in the interactive terminal directly in the browser! Follow the guided lab - you can easily input commands from the instructions into the terminal. Once you've completed the labs, you can take the quiz to earn a badge and show off your skills. To get started now, check out the links in the description below. Thanks for joining us, and we hope to see you on IBM Cloud Labs. As always, please drop a \"like\" or a comment below. Be sure to subscribe, and stay tuned for more videos like this in the future."
+}

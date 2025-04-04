@@ -1,0 +1,651 @@
+Are we just waiting for these,
+like, agents to get better and better? And humans will have to do less
+and less in the loop. Or, you know, is it less dependent
+on the model's capability and more dependent on kind
+of the use case, like where is it headed? Is there a limit to how much we can abstract away? Hello and good morning. From my hotel room in San Francisco, you're listening to Mixture of Experts,
+and I'm your host, Tim Huang. Each week, mixture of experts brings together
+a stellar group from research, engineering, product sales,
+and more to tackle and discuss the biggest trends
+in artificial intelligence. So this week on the show,
+we've got three stories. First, Nvidia announced
+the launch of Nemotron-4 340B an LLM, specifically designed
+to aid in the creation of synthetic data. How big of a deal is it,
+and what does it say about the next stage of AI training? Second, we'll talk about recent
+developments for agents in the enterprise. Our agents reality now. And what can we expect the biggest impacts
+to be. And third, and finally, just earlier
+this week, former OpenAI chief scientist Ilya Sutskever launches a company, Safe
+Superintelligence Incorporated. What is it? And does it have a chance
+of becoming a new contender in the space? As always, I'm joined
+by an incredible group of panelists that will help us navigate what has been
+another action packed week in AI. So joining us for the first time today,
+I'm Maya Murad, product manager for AI incubation. Maya, welcome to the show. Thanks for having me. And then we've got two veterans who are joining
+that we haven't seen for some time, but I'm very excited to have both of them
+back. Kate Souleis a program director
+for generative AI research. Kate, Welcome back. Hey, everybody. Great to be here. And finally, Kush Varshney,
+who was part of the very first episode. So he's the OG, for a mixture of experts. He is an IBM fellow working on issues
+surrounding AI governance. Yeah, O.G.,
+I guess it's a great designation. Yes, it's some kind of distinction. So, Kush, welcome back. Well, great. So I think the first, story
+I really wanted to dive into was, you know,
+I caught in the kind of constant, you know, wave of papers and releases
+coming out. a launch that happened from Nvidia late
+last week on Friday. And because it was a Friday launch,
+I think it kind of got lost in the news cycle. But I did want us to kind of focus on it. Nvidia released a model,
+a class of models, called Nemotron-4 340B
+and it's a set of models that are specifically designed
+for synthetic data generation. and I think it's so interesting
+because if you're not familiar with the background here, right, the way we train LLMs,
+get them to do their magic. A lot of it relies on data. and in the past, the way people have done
+this is literally getting lots and lots of real world text, to train
+and improve their models. And so, you know, the dream of synthetic
+data, I think is very fascinating. It's kind of like the idea
+that in the future, we actually won't even need text
+from the real world. It'll just be like stuff
+that another AI model generates. and I guess, Kate,
+I want to throw it to you first, cause
+I know you've thought a lot about this area and been kind of
+doing some work in the space. I'm kind of curious, just as a first cut. Like, why is Nvidia getting into this area? I'm really kind of curious about
+why this kind of hardware company is saying what we're going
+to be launching these models. And one of the models we're launching
+is, is a synthetic data model. So I guess the first question I'll throw to you
+is like, do you have any thoughts on that? Conspiracy theories. Maybe not conspiracy theories,
+but just like why it is that they're investing
+in this space at all. So, I mean, I think there's, some more straightforward answers and then maybe some side answers on
+why they're working in this space. I mean, one example of what
+you might think of why Nvidia is working, and released the 340B model into the open source, is for synthetic data specifically is
+because they're recognizing that no one wants to run inference
+on a 340 billion parameter model for real tasks like the value of models
+the size. I think
+originally there was a lot of excitement. Everyone wanted to build as big a model as possible
+and see how far they could push the field, but the reality is like no one's actually
+going to go and deploy this in production and hit a 340 billion parameter model
+every single time you want to run. Inference is just too costly. But there is a lot of value
+in running inference on this model. Once using the data that you create to train a much smaller model
+and then deploying that out in production. And so I think part of this might be just
+the field is starting to find new ways to add great value to these really
+big models they invested on early on. because they do take a while to train,
+but it actually makes a ton of business sense for Nvidia to,
+if you think about it, because customers need
+their customers need to get models hosted on their compute
+running as soon as possible. And what we're seeing is the easiest,
+not the easiest, but one of the most exciting. And, most powerful ways
+to start to take models, improve them, use them for their use case
+and get them out into the world and deploy them in production
+is to align them using synthetic data. So more and more customers are using
+and consumers are using synthetic data in order to actually take models
+and tune them for your use cases and for your task. And so if Nvidia can help customers
+with that cycle and help get models out into production faster, you know,
+ultimately that's going to create some some good drag
+for their their products. Yeah, it's such an interesting dynamic. I think particularly in that first point
+that you're making is, you know, Nvidia like the company that I identify
+with like really big compute, right. Like, you know,
+every release is like bigger and bigger. And the models that you can theoretically run on them
+are bigger and bigger and bigger. But I guess
+sometimes you're kind of saying here Nvidia is like conceding
+the reality that like most people actually are not going to be doing that. It's just like such an expensive thing. And so almost they have to win
+the synthetic data game, or in the very least kind of like support
+that use case just because it isn't. It isn't what most people
+are doing to create like the biggest, biggest,
+biggest models in the whole world. Yeah. I mean the model, if you look at the,
+supported intended uses, it's not just intended for synthetic data
+generation. It's a perfectly reasonable chat model. It can be used for chat use cases. But if you look at how it's been marketed
+by Nvidia, every single press release and blog and paper
+is all about the synthetic data aspect. And so I think they're recognizing
+that this really is the only viable way to try and get value
+out of models of size. And it's also a really exciting way. I mean, it's
+just where the field is headed and where people are seeing a lot of,
+a lot of use and value. Yeah, for sure, Maya I'm kind of curious, So I can bring you into the discussion. So I think one of the reasons we want to bring you on
+is my understanding is that you've done a ton of work
+with kind of enterprises, right? And getting them to integrate
+new kinds of technology. I guess I'm curious about what you're sort
+of seeing out in the space as like synthetic data becoming,
+you know, a bigger part of the discussion. Do people want it? I'm just kind of curious about like, what the market demand for, for
+this is looking like over time. I think it's a very exciting space. And it's a it's a need that existed prior
+to the rise of generative AI. So customers are they have their own data,
+but they're also limited to it. And it's costly to create task
+specific data. So there is a really strong premise of
+can I start with only a few examples and augment
+that data set to for various use cases to train my own model
+to evaluate on a use case to red team? so there's a lot of value
+to be drawn out of it, and it's one of the top customer inquiries
+we get. yeah, that's really interesting. Yeah. I wonder if, like in the future, I just I'm curious if any of the panel
+is kind of view on this as like, you know, we've we've so identified
+and I think this has actually been certainly something on the policy side. People have been like,
+oh, you know, AI is so data hungry. And so therefore it is kind of privacy
+invasive, right. Like it just needs all of this data
+to get working. Synthetic data for me has always
+been like, well, maybe in the future, like actually real world
+data is actually not going to be that big of a deal
+because you have a few examples and then you scale up with synthetic
+and there you go. I mean, is that a fantasy
+or are we headed to that world? I mean,
+I think in terms of using synthetic data as a tool to protect privacy,
+it certainly has a lot of value. I don't think we have quite, you know, there's a lot of work to be done
+in that space. in order to really take advantage
+of the promise that it offers. But my I've mentioned that even before, like, LLMs became around,
+we've been using, synthetic data. And I think that's very much true. Like we've looked at, for example, a couple of years ago, using synthetic
+tabular data just to create privacy protected versions of sensitive
+data sets where you can mask information. so there's a lot of different
+kind of really cool applications that I think are going to start to converge with synthetic data around privacy,
+how that impacts generative AI training. and maybe help drive the space forward
+more. I know, Kush,
+you do a lot of work in this space. Maybe you can comment. Yeah. No, I mean, I think the the privacy
+aspects are an important part of it. I think the exciting thing
+is actually going back to the fundamentals of probability. I know in the first couple episodes
+we covered Kolmogorov and other friends, from that time and just the ability
+to sample like really high dimensional, spaces,
+with just a few examples is like mind blowing in some ways,
+even though it feels very normal. Like with five data points,
+you can sample this like trillion dimensional space
+and cover it so well. I mean, I think that's pretty crazy. So, yeah, I mean, this is just changing
+how work is done. I think, in the whole generative AI space. Yeah, for sure. I think it's really, yeah, it's a really interesting way
+of sort of thinking about it. And yeah, I think we want to do more
+collaborative type sections, like it feels like that was actually
+really good for us to go so, so wonky. but I think it's actually important,
+I think in terms of like, exposing, you know, what's
+actually really going on under the hood. I mean, I guess one question for you is, given that this has been a long term
+research objective, right. Do you see the Nemotron release
+this kind of largely sort of incremental like,
+is this a big deal this launch, or is it pretty much just like the most recent
+salvo in the race for synthetic, data? So honestly, I think what I what is the most exciting part about this release is the release of the model terms, where Nvidia is actually saying we want this model to be used to train
+other commercially viable models and make no claims over models
+trained with synthetic data created by Nemotron which is very different
+than almost any other model provider that's created, especially ones
+creating their own custom model terms. If you look at like the Llamalicense,
+you know, gamma license and others that are being created,
+they all prohibit that type of use. So the model itself is exciting. And, you know, I think people
+will start experimenting with it and seeing how far they can take it
+in the next couple of weeks. But what they did
+that is really totally different from how anyone else is behaving is actually
+the permissions in which it was released. it's like the legal terms
+are the real innovation here. I'm sure there's lots of other innovation too, but that's
+what I'm sure you're excited about it. yeah. Yeah, for sure. And I think it's kind of
+I mean, you know, Nvidia is kind of playing a dangerous game here
+though, right? Because there's a bunch of people
+who are making these models proprietary because they want to build businesses
+at the synthetic data layer. I guess Nvidia is kind of saying like,
+we sort of don't care. Like we would rather just have
+everybody have access to this. And, you know, for us to sort of enable
+all the secondary commercial models rather than creating like a market around
+synthetic data, specifically. I mean, you got to use Nvidia compute to, to generate synthetic data
+on a 340 billion parameter model. Then you have to use compute
+to train it, and then you have to use compute to host it. So I think they're playing a good long
+game there. yeah I saw this great tweet recently,
+which is, you know, the adage of like, oh, when there's a gold rush,
+everybody should be selling shovels, but it's almost kind of like Nvidia is
+like when everybody's selling shovels, you need to be selling shovel
+making machines. And I was like, that's actually like such a good way
+of kind of capturing what it is that they're what
+they're doing in the space. There's a very broad topic I think we want to cover, on this second
+agenda item, which is agents. Right. This is like
+the jargon in the space shift so quickly. It's like it feels like a few months ago,
+people were like, oh, agents are coming. And then now it's kind of like agents
+are here and everybody's working on it. And, I guess, you know, Maya,
+I think part of the first thing I want to kind of bring you in on is just if you want to explain to our listeners
+what are agents exactly? And like, why is it a jump
+from what we've had in the past? because I think the definition
+and the distinctions have not always been so clear. And so I think even for me,
+I don't really know. but we're just like,
+it's a good place to start. Like, what are agents
+and why are they different? Yeah, absolutely. So the way that I like to explain
+what our agents is to first contextualize where we are
+in terms of building applications with AI. So in 2022, all about foundation models,
+all about large language models. I think we've learned
+since that simply inputs and outputs from a model is not going to unlock
+those high impact, enterprise use cases. So if I want to understand
+what is my vacation policy or if I want to retrieve real data,
+I have to build a system around it. And actually, Berkeley
+came out with a really good paper this year
+talking about compound AI systems. and it's a reflection of the fact
+that you need to go back to plain old systems
+engineering to build AI applications. So modular components
+that are fit to solve certain problems. So you have a retrievers,
+you have external tools, and then you have your model interacting
+with those to solve a problem. And we're still in this world
+and agents still operate within the space of an AI system. the way most of AI systems are built,
+for example, retrieval, augmented generation
+is one of the most popular kinds is me as a developer,
+I prescribe the flow. So take the user query,
+run it through a search, retrieve the results, feed it a model,
+and then the model generates an answer. So this is a flow that has been pre
+described and it's fixed. If I give it something else
+it's not going to work because it was pre described to solve problems
+maybe related to a vacation policy. and agentic approach in a system is that the LLM can reason
+through how to solve the problem and understand what is the path to chart
+to to answer a query. And this is done through two capabilities
+and that are building on top of large language models. So one, large language models
+have really great reasoning capabilities. And they're improving as LLMs are getting bigger and stronger
+and are seeing more data. And it's operating
+the same way we as humans do it. So if I give you a complex question
+like how many times can the UK fit in the US
+if you if you, I ask you to give me a an answer on the top of your head, you're not going to get
+you're most likely won't get it right unless you're a
+really great geography buff. but we as humans, the way we think about it is we break down
+the problem into smaller parts. So let me find the size of the UK. Let me find the size of the US. What tools do
+I have at my disposal to find this? Maybe Wikipedia is a trusted source, and then let me do some math
+to divide the bigger by the smaller. And this is exactly how an agent
+would reason about it. And there's no magic behind it. You're just literally prompting the model
+to say, think step by step, create a plan. And then for each part of the plan,
+you have access to tools. so that's the other part of it,
+the ability to act and to call on tools. So a tool could be an API
+that interfaces with Wikipedia. It could be a calculator,
+it could be a piece of program that can run a script for you. And when you combine all of those
+together, you're actually giving a lot more autonomy to the model,
+to how to solve the problem. You're not scripting
+how the solution would be. The model takes care
+about how to solve it. And this is what we mean
+by an autonomous agent. So long answer. But I think this is helpful
+to contextualize that. It's a continuation
+of where we are with systems design. Yeah, that's really useful. It sort of feels like we've kind of moved
+through these three acts already. Right. And like lasts,
+you know, 24 months, right. Where like my the way you kind of phrased
+it was the first act was everybody thought we'd have one big model and do inputs, outputs
+and like problem solved, right. Like we're done. And then it feels like act two was,
+oh my God, that doesn't work at all. What we need to do is kind of like
+prescribe all of these steps and then kind of like
+insert the model into the process. And then I think act three is kind of
+it sounds like a little bit of where we're going now with agents is, well, we
+kind of go back to that big model state. But the trick is, I guess, that
+we're allowing the model to like, develop these step by step instructions
+on their own and then I guess, enable them to kind of like reach out
+and interact with all of these systems. so it, it
+strikes me that the big challenge here is can the model actually touch
+all these outside services? because, you know, we've had stuff like
+chain of Thought for a very long time. That interface seems to have been
+the difficult one. Right? Which is like,
+how do you actually get the model to go and interact
+with all these services? Because I suppose, in fact, it's
+kind of like get the agent to write an API on the fly. Is that kind of how people are approaching
+it? Yeah. So models are being trained to be better
+at generating a correct output to interface with an API
+or to run a piece of code. There's also, actually good privacy and security considerations here
+when you move to the agentic space. So prompt injections would be quite scary. And then I think I pass it on to Kush to
+maybe talk more about that. But the other part, as well as code
+execution, we've heard from even like
+I think the founder of OpenDevin, said the first time we run it,
+like all the systems in the file system were deleted
+because of like the agent behaving. I have to be like really careful
+and how you architect that. And yeah,
+I don't know if you want to comment more on like some of the security privacy
+considerations with agents. Yeah. so clearly when, these things are interacting with,
+various, cyber physical sort of systems, then there is a risk of,
+the different types of, prompt injection attacks and what we call
+indirect prompt injection attacks that can either get corrupted
+because something out in the real world has, problem or that is the models
+themselves are going out and, actually causing stuff,
+that happen in the real world. So I think, yeah, I mean, it is a danger. but I think the promise is also really,
+really great. And I think we can build in some of the,
+this security privacy sort of guardrails into the way that these, decisions
+actually interact. And. Yeah, I mean, as Tim said,
+I mean, the code itself, like the API code is being generated on
+the fly, is like the, the most exciting part about this,
+because, code has traditionally been written,
+for like a fixed sort of thing, but here, if it's being generated,
+then, you can compose things, as in a creative way. And, I think that's, a unique thing. Yeah. All of these things seem to point
+to kind of the struggle of deploying AI in the real world, where, you know, the act,
+one that I described is almost like the AI person's dream, where it's like it's a complete vacuum,
+and we just have one model that does everything
+completely out of the box input output. And we're, you know, we're done. and, you know, each step of this seems
+to have been like, actually, you know, there's actually all these legacy systems
+you need to deal with. my is it right from Kush's last comment
+that this is one reason why agents are potentially really good
+in the enterprise? Because I guess what I imagine here is, you know, your main
+worry about agents on like a consumer side is like they're going out into the world
+and doing all sorts of things, and, you know, they're subject to all of these
+inputs from the public that might be attempts
+to manipulate these systems. But I guess in the enterprise, like, you control
+a lot more of the variables, right? You could have an agent that just like operates within a business
+and that feels like it might like, constrain the problem more in a way
+that makes agents more viable. do you agree that. Yeah. So I think in general, when
+you're taking a new piece of technology, especially one that has more autonomy in
+how it can operate, so starting with low risk areas,
+maybe back end services in a company, I think that would be a good place
+to start. And then gradually exposing it more as you architected systems
+to safeguard it from threats. Or it's just guardrail, it's internal behavior
+so it doesn't end up wiping your system. So I think with all technology
+like you start with the the less risky place and then you
+gradually add more risk to it. And I think that's a sound approach. and then, in this world. So I talked about compound
+AI systems. Right. And then there's kind of on the one
+hand side you have a programmatic way
+of doing things. And on
+the other side is the agentic like way. I don't think it's going to be one
+or the other. The two are going to talk to each other. So for some problems,
+there's a especially for narrow problems where there's a very specific way
+of solving the problem that's repeatable. You're not going to get something out of left field, a query
+out of the field that doesn't like fit the solution
+you had in hand go for efficiency. You go for the programmatic approach, for problems
+that there's many ways of solving it. especially like for example, how to solve
+software engineering problems. this is where an agentic approach
+can be easy because there's multiple ways
+of going through a path to solving it. And these two will come together
+to solve problems in the enterprise. It's not going to be one or the other, and you're going to always going to apply
+a systems mindset of how can I solve the problem most cost efficiently
+with the right guardrails around it? Totally. Yeah, it kind of there's like basically a real big question here
+on, you know, for a given enterprise, if you if you broke down all the tasks
+they need to do on a given day, right? Like what is what is structured
+and what is like requires an agent is actually kind of a big question
+about how that market's going to separate. Like, I don't genuinely know, like if you
+took an average enterprise in America and you say, let's map
+all your business processes, you know, do they tend to be quite routine
+in the way that like, you know, does this sort of like
+we just need to do this in this kind of like very systematic,
+systematic programmatic way? Or does it require like,
+you know, like the agent to go out and kind of like exercise
+some innovation? Do you have any early signal on that, like for the clients that you work with,
+the people that you talk to? are enterprise is still mostly favoring
+kind of this very structured approach or is there like like
+are there particular kinds of businesses that are like, oh yeah, the agent,
+that's exactly what we need. Yeah, I would say most enterprises
+are still in this systematic approach. RAGRis a very popular use case. Most enterprises have built
+programmatic RAG, there's degrees of agenticness
+you can build into it. So maybe you could have
+a self-reflection loop. so you could take the output,
+of what the RAG system, provided and have the model reason on
+is this actually solving the problem at hand and maybe loop one more time. So you we're seeing some companies dabble,
+but not fully embracing the the full autonomy of an agent solving
+a problem and for multiple reasons. one is we're trying to understand
+which sets of problems are better suited for a fully agentic approach
+compared to the programmatic approach. I have a hypothesis of
+if you have a narrowly defined solution that can unlock a lot of business value,
+let's say it's like you're interacting with a database and there's a narrow
+set of commands you want to apply. You can engineer all the fall back
+loops by hand. And if you solve this, you unlock
+$1 million for the company. Go for the programmatic way. And then if you have a system that's going to get
+so many different queries that there's so many, you need different
+trajectories to solve it, and you can't even think through
+all of the different ways this could fail. And running a pilot program,
+you could uncover some, but there's a lot more to figure out. I think this is where having more autonomy
+in the system could be useful. But we're still early days and we're still trying to thread this
+tension between the two. And and I think cost efficiency
+will come into this equation as well. For some problems, you're willing
+to spend more for 1% more accuracy, and then for other problems, you're going to be a lot more tighter on
+what's the right solution to implement. Well, and isn't there, a third dimension
+on all of this, which is like, what do you want to handle
+programmatically? What can you start to free up
+and allow more agentic approach? But then what
+what always needs a human in the loop, like humans and agents working together
+with just humans separately. so I'm curious,
+Mayaif you have any thoughts on that, on that other layer of it, I think great agent systems that where we are right now might need a human in the loop. just and it, it would be great to have
+the system know when to plug in the human. And you could like with the genetic
+frameworks out there, you could prescribe for the model to call in a human for help. so I think it depends on like the,
+the what is the risk of harm or the risk of failure
+and the availability of an expert. And I think that's what you would consider
+of how you would bake it in. I think most autonomous agents we've seen, have
+a strong element of human in the loop. So if you're looking at the,
+the GitHub workspace assistance, all of this require you to revise the plan
+of the agent before it executes it, and then you get to see
+every step implemented. Then you have so many ways to, to, for recourse or changing the,
+the how the problem is being solved. And I think right now we're leaning
+very strongly in having human the loop because we're early days
+and there's many ways this could go wrong. And I don't know
+if this answer your questions. Well, well, I was just going to ask, are
+we just waiting for these, like, agents to get better and better. And humans will have to do less
+and less in the loop or, you know, is it less dependent
+on the model's capability and more dependent on kind of the use
+case, like where where is it headed? Is there a limit
+to how much we can abstract away? Yeah, I think these are great questions. I'm always in favor of me personally. I'm always in favor to have people engaged
+and for safety. I it's an open question of,
+are these models going to get better at what they do and be able to implement
+what they need more autonomously? Where we are with the technology right now,
+you definitely need a human in the loop. Yeah, I think we're also
+I mean, the meta here is that it feels like we're talking a little
+bit about trust, right. there's
+a hypothesis I've been chasing after, which is whenever people talk about AI,
+they're almost like the AI is coming. And like,
+what does the AI enterprise look like? but the fact of the matter is like this. This depends so much on, like,
+the culture of a given company, right? And like the degree
+to which they trust autonomy. and what you could actually anticipate
+is that like the, the implementation of,
+like the programmatic approach versus the agentic approach, like where you lie on that spectrum
+will almost be like totally defined by like how much management
+trust the technology and then what
+their general behavior is like. I'm curious, like if a company
+who already is like very structured with its employees and it's like, here's
+the big list of things you need to do. Like, it will be no surprise
+that when they implement AI, it will be like programmatic
+in that way, right? Whereas you might see cultures of,
+you know, enterprises that are just a lot more like, well, we just like give people the goals
+and they sort of figure out what happens. And it will similarly not be a surprise
+that when they implement technology or AI that they'll say, yeah,
+actually working with agents, you know, so long as that there's enough
+kind of trust in the technology. Yeah, there's the risk appetite. So I think that we're seeing
+with companies and larger enterprises, like we said earlier,
+you might start in low risk places. So like your HR systems,
+your back end systems. And then you would bring it
+more consumer facing. and it's I think it will be interesting
+to see this year what would be the appetite of enterprises
+to adopt more agentic like behavior. Yeah. That'll be so fascinating to see, especially because I think some of those
+determinations at even what functions are low risk is going to depend a lot on
+like what else is happening in the world. Like you can imagine like a very high
+profile failure, basically totally lowering people's appetite to like
+implementing agents for a long time. And there's almost kind of
+like a Google Glass effect where it's like,
+oh, you have one wearable, which is like an enormous failure
+in the market. And then it's like difficult to, like,
+convince people to put anything on their face
+for the next decade. and so there's, there's a little bit it's
+kind of like crossfade, which is like, all these companies
+are making their own decisions, but it's also in like a soup of like what
+they're seeing out there in the press and in the open
+and what their competitors are doing. Well, great. So I think to bring us home,
+I want to go to our third topic. there is a company that was launched,
+just this week, I think like 48 hours ago, 24 hours ago, by the name of Safe
+Superintelligence Incorporated. and if you haven't been following this soap opera,
+the background is that Ilya Sutskever, who is formerly the chief scientist,
+one of the key players in OpenAI, and played a role in the board
+drama and kerfuffle. that happened not too long ago. was, left the company. The circumstances are still disputed. and has reemerged with a new company
+that, promises to finally deliver
+on the dream of superintelligence. and, Kush,
+I think, you kind of threw yourself, kind of in front of the bus
+to kind of talk about this topic. and I guess I'm kind of curious, just
+as a starter, how big of a deal is this? You know, there's my point of view,
+which is it's becoming increasingly clear that, like, in order to play in the AI space,
+you need very, very, very deep pockets. And, you know,
+there's kind of a part of me that this sort of despair
+is at competitiveness in this space where I'm like,
+I don't agree with Ilya. I'm very skeptical
+of all the superintelligence stuff. But like, man, if I don't hope that like,
+a small startup can, like go up against the big folks,
+is that even a possibility, like, like, does this this company SSI have a chance
+to, like, become a player in the space? Yeah. I mean, I think this is just a round
+of like multiple rounds that are happening where you start with idealism  and you then like kind of face the reality. see the professionalism of its openAI
+started with an ideal sort of thing. Then anthropic started with some ideals
+sort of thing. And now this is kind of the, the next one. and I think what's happening is. Yeah, I mean, the deep pockets are the,
+the important aspect of it. So, because you need so much sort of
+investment to even get off the ground and, at some point the question becomes so for where the money came from,
+what's the return that they're getting? It's hard to stay, like, isolated
+and only be like, a research organization or like have like that single, like, oh,
+we only have one thing on our roadmap. We only have one sort of goal because, like,
+people want to, they want to get paid to. They do. I think that that's right. And like there's this conflict
+between like scaling and caring. so you can like, scale, and that is what I mean,
+capitalism is all about, you can care
+just focus on like, one person, one sort of issue
+and then really go deep in that. And like,
+you can't really do both. And so, I think that's where
+where the conflict is. And is this going to be successful? Maybe, but I think it'll be
+just one more round of this. So for a couple of years, 2 or 3 years,
+whatever it is, they'll kind of have their point of view,
+keep it. But then, yeah. I mean, someone will be at the table,
+asking to be fed. So, I think we'll,
+see we'll see what happens. Two forces interact. yeah. I've a friend who's observing, like,
+you start out trying to deliver on AGI, and then you find yourself being like,
+we got to do B2B SaaS. Like, actually,
+it's like you're eventually kind of dragged towards this,
+just even if you want to fund the dream, like basically like where the money's
+going to come from is like these kind of very like day to day
+kind of, applications. Kush, I actually we haven't talked
+about this in the previous episodes. I mean, do you buy their mission? Like, is the goal of superintelligence
+like something we should even be chasing after? Does it
+is it a coherent goal? Right.
+Like, I think there's, like, real kind of critiques
+that people have made in that space. But as someone who thinks about
+AI governance, who's like researching these issues, how do you size up, I guess this ideathat, like, we're going to do a company where the promises, Yeah, like to an investor even you put money in and we deliver
+on superintelligence, right. Like, it's like the old DeepMind mission,
+which is like we solve intelligence first,
+and then after that, we solve everything. yeah. You know, is that something that you think
+is like, the right way
+of approaching some of these problems? Yeah. No, it's a great question. And, let me like,
+give somewhat of a historical perspective, at least for me, like the first time
+I heard about superintelligence at all, it was, December of 2015. so this was at the NEURIPS conference. there was this whole day, like symposium,
+which they don't do anymore, but there was one. It was "the algorithms among us" was the, the title of it. And, there were a lot of different things. It was about like
+the societal benefits of AI. And I mean, things that I was thinking
+like, oh, I would be really interested in. And then I show up at this thing and,
+one of the, the presentations is, Nick Bostrom
+talking about superintelligence and, and, like in this whole, like, sort of day. but the word safety kept
+coming up again and again and again, and no one was defining what even safety
+is, what they mean by it. And I think, like, I came home, like I tried to figure out
+what safety means to me. kind of wrote something about it as well,
+which was, minimizing the probability of harms
+and risks and minimizing
+the possibility of unexpected harms and, this sort of stuff,
+which then lends itself to, kind of more, like clear and present
+sort of harms clear and present things
+that affect society now and then. at the same time, in 2016, there was this, now famous paper coming came out,
+which was this concrete problems in
+AI safety, Dario Amodei I was the first author on that one. And, that somehow, like, just caught the attention of people. it became kind of like this religious
+sort of thing that, this existential risk, this big sort of, sort of thing for like, 100 generations into the future, like,
+what is I going to do to to humanity? And I mean, to me, yes, we do need to think
+a little bit into the future. so there's this, concept
+called the seventh generation principle. So this comes from the Haudenosaunee,
+tradition and, like. Yes. I mean, you can think
+150, 200 years into the future and think about what might happen,
+the consequences. But, like, so for into the in advance is a little bit,
+pretentious in my opinion. So, superintelligence. There are risks, of course. but I would much rather both
+from a personal, societal and enterprise perspective, focus
+on, kind of. What can we do? where do we take things
+and where do we protect things? protect things now? Yeah. I think kind of what
+I'm trying to reconcile is, and it may just be that we end up, like,
+talking a little bit about kind of like how the broad universe of AI
+is going to continue to diversify and look very different
+at very different places. It does seem like I know we've spent like
+maybe the last 40 minutes kind of talking about trends that are like almost very opposite of,
+you know, superintelligence, right? Or like what Illya working
+on, which is like, turns out a lot of people don't really need
+huge, huge, huge, gigantic models, right? Like, ergo, you know, like what
+the synthetic data stuff is, is kind of pushing towards like similarly
+like a lot of the issues that businesses are dealing with there, like, you know,
+how do we query a database effectively. And so it kind of feels like maybe there's
+actually going to be this, like the these two worlds
+were very similar for a while, which was, oh, LLMs are going to deliver
+on superintelligence. And oh, by the way, we can also do B2B SaaS,
+but it kind of feels like maybe over time those technical agendas
+are going to go further apart. Yeah, I think at least
+from my perspective, from the agent space, the types of agents that are coming out are very narrowly
+defined to solve a specific task. And then you have instantiations
+of narrow agents. So an agent that focuses on data
+analysis, that collaborates with an agent that can do reporting. And this is kind of the path forward. That's that is getting gaining
+adoption and traction. And for several reasons
+you're able it's more democratic. You can work with open source models,
+smaller models that you can self-post. So you have full control over the system
+that you're building. And I think this is the opposite
+view of the big monoliths that are trying to take a stab
+at superintelligence. And I think we and IBM research,
+I think I know which camp we're in, and it's like betting on giving you
+as developer more autonomy, you being able to control which models
+you use, trying to use your own data. And the way to go about
+it is more narrow applications. I have an open question
+in my head of like, how broad and general purpose
+we can go, and there's a limit to what would be useful to society
+like Kush mentioned, just echoing what Maya said,
+I don't think that they are going to be very well aligned, incentivize moving forward. you just look at where like, we're going
+to be incentivized to develop from the types of tasks. You don't need super general intelligence. but I do question and I question,
+you know, whether this should be developed in a kind of proprietary closed
+company versus in a more like academic consortium and other groups
+that might be better incentivized and, have maybe, better priorities as we talk about, like,
+what society could actually benefit from for developing this type of technology
+versus just like some man behind a curtain with some VC money going at it. Pay no attention to the man
+behind the curtain. yeah. Yeah, it's it's so competitive. And I think in part like the this kind of divergence
+like for some of these companies. Right. Like so OpenAI
+anthropic is another great example. Right.
+Where it's basically like very much instantiated
+by people who like really believe in want to work on massively
+a agentic systems. Right,
+that are incredibly general purpose. You know,
+they would call it superintelligence. but in practice they've also had to kind of just deliver on
+like the day to day of being a business. And it's kind of like to what degree can
+these businesses kind of keep these two objectives in line or like even work on
+things that achieve both ends? And I think kind of the question
+we're asking is, well, maybe at some point the research or product development
+agendas here become quite different. it producer
+Han's actually just dropped that anthropic just this morning
+launched a new model in the space. so they've just dropped, Claude 3.5 Sonnet, and, you know,
+one of the things that everybody's kind of observing
+or chattering about this morning is that it's actually very similar
+to what Google and OpenAI I have done over the last few weeks,
+which is speed. They want to launch models
+that are just very, very, very fast. And it is kind of interesting is like,
+why do you actually work on speed? Well, it's not necessarily
+because you think the superintelligence needs to be really fast, right? Like, you know, what you're doing for
+speed is like, oh, it actually opens up all of these other
+interesting consumer applications, like, you know, talking on the phone with your
+AI, why you like, walk along the street. and yeah, and it's a I think a really good example is like,
+if anything, the recent set of announcements
+this summer have all been kind of pointed towards the more practical
+than the more sort of speculative. but yeah, I don't know if the panel's
+got kind of thoughts on that or if they saw the recent Claude release. I think it was literally
+like 90 minutes ago. So no, I haven't seen the Claude released. But I think on that point maybe being counter what I said before,
+which could be interesting. You know,
+you think about the types of models that we're working with today,
+the class of technology with transformers. It's not they're not efficient at all. They require huge amounts of energy. Like there's a lot of question whether this is really
+the type of technology that will actually drive
+superintelligence. So if we are being more incentivized
+to focus on things like efficiency and speed, will that unlock
+and maybe help us discover new types of models, new types of architectures
+that could serve as a much better basis for potential
+in general intelligence systems? Yeah. That's right. So we actually kind of unexpectedly
+like in chasing through B2B, SaaS, we actually end up
+like coming out the other end and being like,
+I guess we have superintelligence now. It's sort of like,
+sounds like what you're saying. Well, I, you know, maybe it it just
+helps us get a little bit more diverse in where we're, we're investing. But. Yeah. Right. And to go back to something
+we said earlier about like we used to have all this promise
+and like monolithic models will solve all your problems
+and will achieve superintelligence. And then I spoke a little bit about how it's actually like systems
+that are bringing a practical angle. There's some really interesting papers
+and studies coming out that if you compare like the best in class models
+like GPT4o and and system approach, whether it's a genetic or not,
+using smaller models, you're actually on like a burrito efficient curve,
+you're actually achieving better accuracy than GPT4
+and a much more cost efficient way. And I think when you like,
+if you're talking to enterprise customers, when like, this is the selling
+point of you're able to do more, more accurately and more cheaply. And I wonder if it's like in the future,
+are we going to get monolithic models that are going to be better
+and out of the box, or it's going to the power
+is going to come from a systems approach. Well, and even the definition of like
+a monolithic model is, is different. Like we're seeing like, okay,
+this model is actually, you know, a mixture of experts of like eight smaller
+8 billion parameter models either fuzed together, but sometimes
+they can be more independent, you know. So what is a model or a monolithic
+model versus what is a system model? I think those lines continue to blur. Yeah, I think we're I think
+we're very much past the monolithic model. Like I think we all can safely say,
+like GPT4 is much closer to a system
+than it is to a monolithic model. Yeah, like the era of the big model
+is actually already over. Like we're not actually
+in that world anymore. I it's it's also true to fact. I mean, if you're one of those people
+who uses, like, the evolution of the human mind as kind of like a projector
+or forecasting for like where AI is going. Yeah, it's kind of a view that like
+the human brain was kind of like clues together over many,
+many like centuries and millennia, which is like one piece being bolted onto
+another piece, bolted onto another piece. And so in some ways, it's
+kind of a surprise that if we're working
+on general intelligence as something that resembles a human mind,
+that you'd actually end up with a model, ultimately that is like a bunch of pieces
+running around. It's like a bunch of kids
+in a trench coat, actually, is like how we achieve
+general intelligence. Yeah. And even the safety work that, Ilya,
+I mean, was leading on the super alignment,
+where it's, it's a smaller model that's kind of controlling to the bigger
+model and making sure it doesn't go haywire is, again,
+I mean, this sort of architecture, the sort of view that, I mean, you're going to have
+a bunch of things working together. So, I mean, the way they described it,
+was, like this weak to strong generalization. so you have a weak model
+that's controlling the strong model, but I think a better way to think about
+it is like a wise model that's controlling the strong model. So there's some aspect of wisdom
+that's coming in. You like different properties
+of different components. can actually,
+keep things under control as well. So just like, our wise, host
+Tim here keeps all of us under control. I think, the there's rules. I mean, there's reasons for, for all of us
+to exist and, kind of work together. So, that's great. Well, thanks all the listeners
+for joining us again. please join us next week. And as always,
+if you enjoyed what you heard, you can get us on Apple Podcasts,
+Spotify, and, better podcast platforms everywhere. so, Maya, Kate Kush, thanks for joining us
+and hope to have you back on the show. at some point in the future. Thank you. Thanks, everyone. Thank you. That's great.

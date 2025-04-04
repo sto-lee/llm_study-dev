@@ -1,0 +1,577 @@
+Should your AI assistant
+remember everything about you? Vagner Santana is a Staff Research
+Scientist, Master Inventor, and Responsible Tech team member. Uh, Vagner, welcome to the show. What do you think? No, absolutely not. I think we should be able to,
+uh, tell to our agents what to remember and what not to remember. All right, a little bit of both ways then. Uh, Vyoma Gajjar is an AI
+Technical Solution Architect. Vyoma, welcome back to the show. Um, what do you think? Thank you. And only what matters,
+only purposeful things. And Shobhit Varshney, who I'm
+declaring is the MVP of MoE expert guests, Senior Partner Consulting on
+AI for US, Canada, and Latin America. Shobhit, what's your hot take? It should remember everything just like
+my wife does, but I do need an incognito mode that I don't get with my wife. Okay, got it. All right.
+Well, lots to talk about there. All that and more on
+today's Mixture of Experts. I'm Tim Hwang, and welcome
+to Mixture of Experts. Each week, MoE aims to be the single
+best place to get caught up on the week's news in artificial intelligence
+and sort out what it means to you. Today is jam packed. We're going to talk about
+Microsoft's recent announcements at its Ignite conference, a
+new math benchmark, AlphaFold3. But first, I want to talk
+a little bit about memory. So Google Gemini is touting a new
+memories feature available to premium subscribers, where the model basically
+can recall facts about yourself. So you can say, I like prefer, um,
+you know, apples over oranges, or you can say, I'm really interested in
+these types of topics, and the model is, uh, allegedly able to recall and
+use this for context of the future. Uh, at the same time, there was an
+interview done with Mustafa Suleyman, who, formerly of Inflection AI, is now
+the head of Microsoft AI, um, and he gave an interview basically claiming that
+they are, uh, sort of on the brink of unlocking, quote, sort of near-infinite
+memory for models coming soon. Vyoma, maybe we'll start with you. Why does memory matter? Is it just more context for these models? Or is this kind of like a
+game changer in some ways? I do feel it's going to be a
+game changer going forward. It's not just context, but It's also
+making it much more, uh, relevant to the users that are using it, which helps
+people adopt, uh, these technologies much better, because now if you have an AI
+model, which kind of knows exactly what you want and how you want things, it makes
+me go back over and over again to it. Um, the other thing that I feel is,
+If we keep looking and experimenting with AI models with more memory, we get
+into a point where we come up with much more creative nuances of generative
+AI, which we've not seen as much yet. Yeah. And I think the user experience of
+this is going to be so interesting. I mean, we even saw it in the first
+question is, you know, Vagner was like, well, it should remember what
+it should and shouldn't remember what it shouldn't, which is very much
+almost like, I want to choose, right? Uh, and then I think Shobhit,
+you were like, it's just remember everything, but I want the ability
+to opt out when I need to, right? And those are like two very
+different ways of looking at it. Um, I guess Vagner, do you want to start? I'm curious about like why you
+answered the way you did and what you're trying to preserve, right? When you're, when you give
+that kind of response. I was thinking about situations in which,
+uh, imagine that we have agents that know almost everything about you, near-infinite
+memory, and the consequences of that. Like imagine, um, advertisement or other
+things that could be done with that kind of information, um, willingly or not,
+or not, uh, uh, considering your privacy or your, uh, uh, desires, so to say. So if, if there's a, um, let's say,
+uh, a business model behind of that using this near-infinite memory to
+offer things to you that I think that something that supposedly was to
+improve the user experience thinking about things that is are good for you
+but then with a business model behind that that may become a different thing. It's a little scary. I mean, I don't know, Shobhit, if
+this is where you were going, but I mean, there's one counter argument,
+which is this is like the internet. You're like describing the internet. People are already
+tracking you all the time. You know, kind of why should
+models be any different? I don't know if, Shobhit, that was
+the direction you were thinking about going down, but I think
+that's like one question here. There's a different take if you're
+looking at my personal day to day world. Uh, like if I need to go remember
+what I did in, uh, in Mexico, like six months back, where I stayed
+and stuff, I just expect to go into Gmail and ask that question to
+Gemini and get a response, right? So I do expect that there's somebody
+who's augmenting my long-term memory. We are really good at short term memory. I need somebody to
+maintain that long-term. Uh, I have been very consistent in
+my responses on this, on this podcast about enterprise focus, right? So for me, when we start to look at
+enterprise, I'm working with a very large healthcare client right now where
+we're trying to build these, these virtual assistants that'll have infinite
+memory because they are essentially, they're, picking up where you left off. Every time a conversation starts,
+it should be a hot, warm start. It should not be a cold start
+where we're asking information about what we should already know. So picking up from that moving toward
+one on one personalization, that's the promise we've had for a decade. But ultimately, now we have
+the right way of doing it. So if I do load all that context from
+back-end system passed on to a large language model, in the memory itself,
+it should be able to go look at what we've had the conversations around and
+then be able to fine tune it and the conversation that they're having today. So it has to be more contextual. So for me, the memory plays a
+huge, uh, has a huge impact when you're looking at enterprise. One-on-one personal relationships
+you can build versus having a very generic goal you introduce
+yourself from scratch every time. Yeah, it'll be sort of interesting. I mean, I guess Shobhit, you're almost
+arguing, and it is one of the questions I had is like how competition around this
+feature is going to emerge over time. And you're almost kind of saying, well,
+look, maybe if it's like a personal chatbot assistant, it'll have to just be
+a lot more discriminating on these things. But in the enterprise setting, people,
+people want access to everything. You know, I don't know if
+that's what you're saying. I just wanted to add a little bit
+nuance there to Shobhit's point that there is an unexplored territory
+in the whole generative AI world, which I feel is called forgetfulness. So let's say, um, a lot of models,
+they keep remembering things about you. Imagine if it keeps building
+on some irrelevant data. As a human myself, I'd like to
+forget some data about myself, or I'd like to change myself. I might like Korean food today, but
+tomorrow I just might not like it. So how do you make these systems not
+to forget the long-lived data, but like use that more efficiently and make sure
+that we're using those relevant parts such that the AI systems don't become
+bogged down with irrelevant information and they're not biased going forward. Yeah, I can imagine actually, there's
+going to be this period where, you know, we're all very excited about memory, we're
+going to have infinite memory features, but then it's going to be that funny
+thing where you like browse one thing on Amazon, and it just recommends that
+forever, you know, it's like, Oh, you really want to buy, you know, my friend
+bought like a toilet seat recently. And it was like, customers like
+you also enjoyed, and it was just all more recommendations, not
+really realizing that, like, that's kind of an incidental transaction
+versus a, you know, an ongoing one. That's what I meant by
+saying incognito, right? Mm hmm.
+Yeah. With chat GPT today. I do temporary chats quite a bit. I don't want to remember memory
+about things that I'm asking it to do every time, right? So temporary chat with chat GPT,
+incognito with Chrome and Safari and things of that nature, those are meant
+for those kind of use cases, right? This is a one off thing that I want to do. I don't want you to remember this. I don't have that option with my wife. I just want to have infinite memory. That's right. Uh, I'm a question for you for some,
+uh, you know, I'm sure some listeners will have this question, which is, Is
+memory just kind of like RAG ultimately? Like it's ultimately just
+like a document of facts that the model is retrieving from. So, you know, what is the difference
+here if there is any difference? Is memory more of just like a
+marketing phrase or is it, or are there actually kind of technically
+different techniques going on here? Yeah, so it's a very nuanced
+world now that we are in this whole multi-modal world right now. So when we- when we speak about memory,
+it might not just be text that you're giving out or prompts that you're
+giving in about yourself or you want to ask it things about something else. Let's say there are clients
+that I work with myself as well. I give it a picture that,
+hey, this is a picture. Can you help me evaluate what is in it? Can you develop this picture for
+me or can you like edit it for me? So it's not just a part
+of information that you're providing, but different facets. to it as well, about something that
+you like or something that you dislike. So I don't feel that eventually it is a
+RAG because unlike humans, it will add all this information as a structured
+data into its particular memory, but there might be different models to
+it that it also evaluates it against. So, um, RAG can be one use case for that
+particular, uh, infinite memory, uh, ingestion, but there can be many other
+things that can be done on top of that. Got it. Yeah, that's a really
+useful clarification. Uh, Vagner, I think I'll give
+you the last word on this one. Um, you know, I don't know
+if you buy all this, right? Uh, it seems like out of the
+panelists, you might be the most kind of privacy sensitive. Um, but do you think the future is
+kind of like optimal forgetting? You know, I guess you could even kind
+of fine tune a model, which is like it should forget the way I forget. You know, it's almost kind of like a
+really interesting way of potentially thinking about it, but curious like
+whether or not you think that there is this kind of nice distinction between
+enterprise and personal and and, you know, how these features will kind of
+evolve if we are sensitive to stuff like I think what you're raising,
+which are the privacy concerns. Yeah, and I think that only not for
+privacy concerns, but also thinking about fairness and thinking about, uh,
+certain, uh, business case as well. Um, in terms of fairness, if you
+think that, uh, let's say credit score, uh, how long should we
+consider in terms of, uh, data? to think about a fair credit score, right? How, uh, my life in the last five
+years, my finance life is different from my life like 15 years ago, right? So, uh, that is an important distinction
+to, to make and how these things can be done to increase, uh, biases, right? And, and unfairness in certain
+algorithms, in certain systems, in certain, uh, businesses. So I think that my concern is more
+to that direction, how, how to define this, uh, uh, interesting point,
+right, on how to, um, keep a context that is useful for the, the user and,
+and actually brings value in terms of business context, but also protect the
+user and also people in communities that have historically been marginalized
+or penalized because of their, uh, uh, uh, characteristics that some, uh,
+unfair algorithms may, uh, distinct in when, when taking certain decisions. I think that that's the, uh, uh, uh,
+hard point Sweet spot to find, but it's something that we need to have in mind. Totally, yeah. I mean, you're talking about kind
+of a classic problem of, right, like I, uh, I commit a crime
+when I'm a young kid, right? And then that just follows me
+around for the rest of my life. And how do we want to manage that? It's like genuinely a pretty,
+a pretty hard problem. And I actually wonder if this will almost
+become like a, uh, a kind of competitive thing in the market as we go forwards. Right now, everybody's
+like, memory's a new thing. So, you know, Google says we have memory. Microsoft wants to come out and
+say we have infinite memory. Um, but I actually wonder if after, after
+these features become more commonplace, the, the reverse will be the case. It'd be like, I've, like, this
+product forgets in the right way. And like, that's why you should use it. Will be very, very
+interesting to, uh, to see. So our next topic for the
+day is Microsoft Ignite. This is the Microsoft conference for I .T. professionals and developers
+that happens just this week. Um, there is a large number of
+announcements, but in particular was interested that the company made
+a really big emphasis on safety. So among other things, the company
+announced there was an event they announced called Zero Day Quest, which
+will be an in person security event, and they announced a fairly large amount
+of money for $4 million in bounties to expose vulnerabilities in AI. Um, and I guess Shobhit, I
+wanted to turn to you first because I know you were there. I think you just got back, um, and
+you were covering it on the grounds. Uh, curious from your
+eyes what you saw there. What are the big trends? So we, Microsoft was a really big
+partner for IBM and I'm wearing that IBM Microsoft shirt right now. Yes, . Yeah. We got the logo. So we got, we got a couple big
+partner of the year awards for all the work that we do with Microsoft. We've had more than a 30 year
+partnership with Microsoft. It's been scaling tremendously, both on
+the consulting side, as you would expect, but also on the IBM technology side. Within Ignite, this is one of the
+things that they had to address very clearly around security. Uh, what happens with the copilots? Are they, is there any possibility
+of leaking data anywhere? How do you do access control
+and things of that nature? Uh, I believe out of all the companies
+that we work with, all the ecosystem partners, understanding the ecosystem
+of SharePoint access, the email that was sent to somebody but not to the others,
+that kind of a graph of access control is something that's very unique to Microsoft. So they're doubling down on that. So they are making sure that if I do. That's the create a agent to go to
+a particular SharePoint, the access control automatically kicks in, right? So they've just made it natively
+embedded across everything. They also spent a lot of time and I
+spent the next two days with them on deep diving, technical deep dives on
+specific capabilities around governance, all the partnerships that they've
+done with showing what's happening across the pipeline, weights and
+biases or with Kredo, with Arise, and all the other third party tools, that
+gives you the full gamut of what's happening, all the traceability, all
+the evaluations, things of that nature. So I think they've addressed both the
+transparency and evaluation frameworks, uh, governance, as well as the security
+controls in place very, very well. I was, I was genuinely pretty, pretty
+happy coming out of the conference. I've done some hands on work with them. They've addressed this phenomenally well. Yeah, for sure. And Vyoma, maybe I'll turn to you,
+because I think one way of reading all these announcements is very clear, right? Like, Microsoft wants to be
+the safest place, in some ways, to design AI products. And I think it's sort of a really
+interesting kind of competitive edge on the market, right? You could, you could come to
+the market and you say, we've got the biggest, baddest models. Uh, and I think Microsoft obviously
+wants that as well, right? But I think it's also now saying,
+well, one unique thing about working with us is, is safety and security. Um, and I guess you work
+with a lot of customers. How are you seeing customers kind
+of trade off against these things? Because I'm sure on one hand, they
+want, the shiniest tool, right? But on the other hand, as they're
+worried about, you know, kind of like the security of the deployments they
+want to work on and curious about how people are balancing that and whether
+or not you think this bid is really, it's where kind of the market is going. That's a great question. So the past one and a half year,
+everyone experimented with Gen AI. And they've done a lot of POCs, et cetera. But now rubber is hitting the road. Now things are going into production. Once they go into production, then
+come the different issues of privacy concerns, security concerns, et cetera. And I have always seen Microsoft
+as a leader, innovator, and now a steward of responsible AI as well. So the way that they are augmenting
+it into everyday, Uh, products such as Microsoft 365 and their
+different OS systems as well. That kind of showcases and instills
+that faith in users who use those products on a day to day basis. All of us I feel at some point,
+uh, use Word or like Excel, etc. And I feel that kind of is the right way
+to go to get everyone talking about it. And then when you say about
+like, uh, you asked me about how clients are looking into it. Each client wants security measures on
+top of it, if not any success metric that is available out of the box. They want to bring
+their custom metrics in. They also want to create their own
+metrics based on the kind of information that is coming out before, um, it-
+that particular product or like chatbot in our case or rack system
+goes into full fledged production. They want all security guidelines
+adhered to because now no longer there's just like the AI tech team sitting
+in a boardroom making the decisions. Now there's a finance team sitting
+there, a legal team sitting there, and then the entire tech team too. So there are so many different, uh, minds
+at play here that all of them will feel much more, uh, secure if there are like
+guardrails, uh, defined around them. Yeah, that's great. And Vagner, maybe I'll turn to
+you next because I think that there's this one question I've been
+pondering a lot in this space is when we say safety for AI products? That's, that's very broad, right? It's everything from, is your model
+going to leak the data that, you know, you've put into the system, um, to can
+hackers, you know, get access, right? Can they manipulate what the system
+does to even the bias questions? I think that you raised on the last
+segment, and, you know, so I think safety is kind of the shifting
+category where who's responsible for it and what you're working on is,
+is always kind of moving over time. And I think it does feel like here at
+least, right, there's a lot more of emphasis on what you might call kind
+of like this technical safety, kind of like cybersecurity in some sense. Um. Do you think that, like, you know,
+ultimately these teams will also be responsible for the types of
+bias questions that you raised earlier, or is that going to live
+kind of elsewhere in the enterprise? It's interesting that we see
+different approaches to this. There are some, um, some companies that
+put everything on developers shoulders. Like, oh, you're responsible
+for taking care of the safety. There's a lot of discussion
+right now on defining what. is exactly safety nowadays, because when
+we think, uh, we look back for, let's say, in aviation or other systems, it
+was, it had, it had a different flavor right now with stochasticity of these
+models, it's really hard to define and, uh, with, uh, synthetic data as well. So we are. touching a really unknown territory
+in terms of how to even how to define how what is safety in
+this world that we're living. Um, so I don't know how
+to answer your question. No one knows is the answer. I brought more questions because it's
+something that things, for instance, our group here is touching on and how to think
+about safety in these new terms, right? It's hard even to define it and, and, uh,
+to define the boundaries of that as well. Who's responsible for, for that? Well, we know that, uh, when we
+create a technology and when we deploy that, we have this, uh, um,
+entanglement with the technology, right? We are actually responsible for, for
+that technology that we're delivering. But when we look down for downstream
+implications, that becomes really more complicated, especially in a B2B settings. With enterprises, we look at
+it at three different levels. There's the security of the infrastructure
+itself, the network, the hardware, access, things of that nature. The next level from there is security of
+the data, who has access to what controls, things of that nature, any breaches. The third level on top is the security of
+the application itself, that includes the actual AI and the model and the LLM app. And things of that nature, right? So the three different levels,
+there's a varying degree of how much of that is the network security team
+involved, or those are the classic security teams in the companies. And as you go up to the application
+layer, you start to think more about the responsible use of how you want
+people to use this application. Let me just, uh, let's pick an example. One of the big Fortune 50 companies that
+we're working with in the CPG space, they just launched a massive campaign
+around um, their water bottles where you can go on the website and go create
+an image with Adobe Firefly and others, be able to print it on that bottle. And that's something that's very unique. It's a unique design that you have built
+and that gets shipped to you directly. So we are running that in that
+platform for them end to end. So in that platform, we need to make
+sure that model itself that we're using has its own red shirting and can go
+reject things like if you want to go create an image that's not appropriate. One level up from there is the
+actual cloud vendor, right? If you're building this on Azure,
+IBM, Google's of the world, and each one of those cloud vendors
+has on filtering processes, some policies you can set for in and out. One layer out is this platform
+that we have built for for them. That platform can have some rules
+as specific to that company. And across any third party tool
+or any third party cloud they use, we'll filter it out there. And ultimately, you have
+the application level. So for example, if you if you are
+if you have a lot of points with that particular company because of
+interactions, you may have unlocked some more premium images that you can create. But on the platform side, we may
+need to say creating an image of an astronaut is okay, but an
+astronaut on that bottle holding a competitor's drink, that's not okay. Or wearing clothes that are
+not appropriate is not okay. So all that has to be filtered in. And we're getting thousands of these every
+day when people are starting to use this. These things go viral very quickly. So we need to have enough of
+filtering mechanisms for the safe use of that particular product. But on the infrastructure side,
+it's more around cyber security. So the three layers as you go further
+up, it's a blend of security and the responsible use, I think, and
+organizationally, they'll start to get, get tied into one organization. Yeah, that's really interesting because
+I think, I mean, you know, Vagner's response kind of corresponds to what
+I've experienced this right now. It's a little bit of
+a free for all, right? It's like everybody knows they want
+these models to be safe, but there's maybe 10 different organizations inside
+a company, for instance, that are tasked with different aspects of the problem. And it ultimately has this effect
+of making the security posture very, often very incoherent. Right, and I think it's interesting
+to hear your prediction that, like, as things get a little bit more mature,
+these will start to kind of coalesce into maybe a single org, or maybe a single
+person will sort of be responsible, managing teams that are looking at
+this from a number of different angles. So Shobhit, maybe I'll ask you
+this, is before we leave Ignite, any announcements that you're excited about? Things to look forward to? So I think it's really reflects the
+maturity that we are that we are seeing. There were a bunch of gaps with the real
+world deployments and we might mention a couple, but as we have scaled these
+out with Microsoft and like we have all kinds of offerings around their copilots,
+we do a ton of custom copilots for clients at scale across each industry. We do a lot of Azure
+transformations, their OneLake fabric on the data side and stuff. Across each one of them, there was a lot
+of incremental progress they've made. Uh, the really cool thing, some of the
+really cool things that stood out for me personally was their Azure Foundry. They've done a good job of bringing all
+of their AI tools under one umbrella. So it's just on the studio,
+they've governance, they've models. There's a lot of talk about industry
+specific models, how to make this easy for you to fine tune with your own data. Azure Foundry.
+A lot of talk about security and stuff. And there are a few different
+features like side-by-side comparison of LLMs on the same topic. Google has been doing
+this for a while now. We need to go have a set of
+learnings from each other as well. So I'm trying to, we're seeing
+all the different vendors catch up to the kind of Things that are
+needed to put LLMs into production. In 10 days, we'll be at the AWS reInvent. Under NDA, we've seen quite a bit
+of really cool things that they're bringing out in the next year. It's really exciting to see all
+the different vendors catch up with each other and one up each other. And the great thing is they're
+all in the service of enterprises. So, data, their fabric, what they're doing
+with the data landscape on the Azure AI Foundry side, they've done quite a bit. They did have a lot of
+things around hardware. They are ensuring that the whole
+stack works, works very well. Uh, both from their own
+proprietary hardware, plus all the partnerships that they've built. Uh, they, we do a lot of work with
+companies like NVIDIA and Azure together. So there's a lot of clients where you're,
+on the infrastructure level, there's a lot of, uh, good, uh, synergy between
+a lot of our vendors working together. It's, it is, it was a great,
+great event and I'm just very, very excited coming out of it. Especially after the keynote, when you
+start to go hands on and you work with the product leads, the, the research
+teams and stuff, they've done a really good job at piecing everything together. A few episodes ago, we were
+like, we're just done with the summer announcement season. We've got a little bit of a break
+and it feels like basically like the gas is being revved up again as we
+kind of get into the end of the year with these final few conferences. Our third segment of today is going
+to focus on a new benchmark that's on the scene called FrontierMath. We love benchmarks here at Mixture
+of Experts, it's one of the things that we cover almost as ferociously
+as we cover new product features. And this one's particularly
+interesting because it was released by a research group, uh, Epoch AI. Um, and what's interesting about
+FrontierMath is that in contrast to a lot of benchmarks that you may
+be familiar with, this benchmark specifically contains unpublished,
+expert level mathematical problems that specialists spend days solving. So in contrast to like an MMLU
+or other benchmarks you might be familiar with where you yourself as
+a human could go through and evaluate them and do the test yourself, um,
+this is specifically designed to be the ultra hard benchmark on math. Um, and, uh, Vagner, maybe we'll start
+with you on this particular topic, you know, we've talked a lot about how the
+benchmarks are getting increasingly gained in the AI space, you know,
+when a new model comes out and they're like, look, we beat all the benchmarks. I think everybody kind of just like
+collectively rolls their eyes now and says, I'll just kind of, you know, load
+it up and test it out myself and see whether or not I think it's good or not. Um, But this one's really interesting,
+and I guess I'm curious if you think that this is indicating a kind of new sort
+of meta in, uh, AI benchmarking, where the new trend is now going to be like
+the benchmark that's so hard that you need to be a world class human expert
+to even deal with it, um, and, uh, and what you think that means for the space. I think that you already mentioned
+a really key aspect that they are novel and unpublished. So then I think that if you think
+about the challenge for mathematicians, it will be like, okay, you think
+that that thing reasons, let me show you what is a real hard problem. So I think that it was a really
+interesting approach to that. And I think that at the
+end, it shows us that. Uh, there's not much reasoning, right? It is word prediction and the, the,
+the technology that we are, uh, talking about and, uh, and, and trying to, uh,
+put things on the ground and discuss how the technology actually works. And I think that this, uh, benchmark is
+trying to expose more of the capabilities and also limitations of this technology. I think that it's an interesting aspect,
+and, and, and the interesting thing in the report is that, is that it was saying
+that, uh, only 2 percent of the problems from the benchmark were solved, right? And so, uh, uh, maybe, and, and
+I think the interesting thing is, Uh, what happened in these 2%? I think that is an interesting
+discussion as well. If these are novel and unpublished
+problems, how do this technology, uh, solve actually 2 percent of these
+problems that were unseen for that? I think that is the most interesting
+aspect for me, but, uh, yeah, I think that the, uh, it is an interesting, um,
+approach to show novel things and actually is not part of the training data, right? And how these technology is tackling that. And, and, and connecting to, uh,
+what we always talk here about, uh, enterprise business case, right? Uh, what will this technology do if it's
+touching for the first time, uh, to, uh, some enterprise, uh, uh, data that this
+technology, uh, had never seen before. So I think that that's an interesting
+discussion to, to, to bring up that, uh, we sometimes talk a lot about the
+training, the data used for training, and what would happen if, uh, let's
+say, uh, Gen AI or LLM specifically, uh, uh, interact with new data. And I think this is an
+interesting example of that. Yeah, for sure. It's really interesting. I mean, there's a fascinating point
+here about how, you know, because these benchmarks are unpublished, you start
+to see the real edges of AI capability. And so kind of like the apparent
+success of models against a bunch of these benchmarks may just be
+because we've been lazy, like no one wants to spend the money and time
+creating entirely novel test sets. And so you do end up having a lot
+of kind of like repeating from training data, you know, being the
+reason why there's a lot of success. Um, I don't know, I guess maybe
+Vyoma, Shobhit, I don't know if either one of you want to take this one. So this is very fun from a
+research standpoint, right? Like what's that 2 percent mean
+and what is this model doing and how does it succeed here? Um, I guess on the commercial side,
+like, do we, do we feel that enterprises are like, we need better benchmarks? Like we need harder benchmarks because
+it's clear that the benchmarks that we have aren't giving us enough signal into,
+you know, whether or not these models can do stuff that's more than just kind
+of search and retrieval effectively. So, um, This is my, my
+quick two cents on this. Um, when we are recruiting a human for a
+particular job in an enterprise, we have some good, uh, expectations on what we
+expect them to do out of the box, right? From day one, they've had a training
+in psychology or accounting and things of that nature, right? I think we need to have some level
+of entry-level domain expertise that we need to judge each model by. So in that sense, the corollary
+will be we need to have some benchmarks that are domain specific. And then within that, as the AI model
+starts to do better, just like we do performance reviews of our own team
+members on specific topics, a hard call came in about a tax issue, were
+you able to solve it or not, right? So we then start to differentiate and say
+this person is a subject matter expert. Not just in the domain, but in the
+expertise in this industry, in our specific company, in our specific,
+uh, uh, tools and the documents, things of that nature, right? So I think there has to be some
+level of gradation of what kind of benchmarks we go through, and then
+you give them scores accordingly. And that should be the way you charge for
+these benchmark, for these models, right? So if I'm hiring somebody who has a
+generic accounting degree, I may pay X dollars for them, but as they start
+becoming an expert and as they go through different tests, we, we know that
+they're, that they're doing a better job. There's also a continuous
+evaluation piece to it. So just, I'm not sure how many people
+realize this, but as a physician, my wife has to take an exam every X number
+of years to recertify herself that she knows pulmonary, she knows critical care
+well, and so on and so forth, right? We do need to have some sort of a
+Continuous benchmarking that's needed over time, the kind of problems that we need to
+solve or what we are seeing will change. So we do need to have a starter
+set of benchmarks for enterprise, and you keep evolving them based
+on the kind of question that we are really, really getting. There'll be very few people
+that we need in our organization that can humanly solve the math
+benchmarks that they just created. PhDs in this area were not able to
+deliver that kind of accuracy themselves. So is it working to stumping both humans? As well as AI. So you really need to be doing, writing
+a PhD in that particular domain to be able to answer that question in one shot. So this whole one shot getting
+to the answer versus using tools and agents giving to the answer. So there has to be a mix of all of that. And there's a sense of
+consistency of the response. If you look at Claude's
+desktop use, right? In the benchmarks they released,
+they had a benchmark at the very end about tool usage. That says that the consistency
+of the response, I ask you to go book me a flight to London. I asked you that in 10,
+in 10 times in a row. Today, the models getting, getting it
+once right out of 10 is very, very high. Getting it 10 times in a row
+correct is very, very low. It's embarrassingly low how bad these
+agentic frameworks are in getting the same thing correct in a row, right? So I think there's a consistency
+benchmark, there's some levels of benchmarks that are needed, and the
+benchmarks need to evolve based on the kind of usage we are seeing. Vyoma, you'd add something to that? Yeah, I was just going to add right
+exactly to what Shobhit said if we pivot into it, unlike the generic
+benchmarks that we have, the one that FrontierMath focuses on is the
+mathematical reasoning behind it. So imagine whatever Shobhit said
+that we need, um, uh, like the same answer not being consistent, imagine
+FrontierMath starts, uh, spitting out something like a cognitive residue. So every time it spitted out an answer,
+it gives you exactly how it did it. That's one of the ways and that
+has been pitched in this new research that has been coming up. And then the agents and the models
+start becoming more and more intelligent and understanding their own patterns. That, okay, whatever I said before
+is now based on this parameters, and then we go keep adding this. So I feel there's a whole avenue that
+is going to be released in the form of research in AI, mathematical AI. The moment I read FrontierMath,
+I'm like, oh, did they solve the NP hard problem yet? So that's, that's not, I
+don't see it in the future. But one of the things that I feel
+is it will at least help you, you know, understand some computations,
+which mathematicians or statisticians do to solve a particular problem
+and then at least rule that out. Imagine the amount of time and
+energy that is being put in creating validation test sets or test data sets. So all of that being done by some
+other technology to expedite the process would be a good avenue as well. Yeah, for sure. Um, yeah, and I think that's like
+one of the questions that I think is interesting that's kind of presented by
+FrontierMath is, you know, to Shobhit's point, these models are really bad at
+consistency, but you know what's really important with consistency is like
+math, like when you, when you add two numbers together, you're always supposed
+to get the same number every time. And so it almost kind of begs
+the question of like, is the technology good for math at all? Um, and I think, you know, these
+benchmarks are helping us kind of like think through the problem. I feel that. There's a, there's an adjacency
+that comes with being good at math. Your reasoning skills, the way you think
+through a problem, you break it down in your head, I think that helps LLMs do a
+better job at reasoning elsewhere as well. We see this with code as well. When you add code to the training
+data, You see them do a better job even on the tech side. So consistently if you look at models that
+have added more code, even for text-only LLM kind of responses and stuff, it does a
+better job at reasoning and understanding. So if I give you a problem where I need to
+figure out what is the real root cause of what the customer was complaining about,
+you do need to figure out that, oh, so far I've seen that there are three things
+that they talked about, the first two kind of got resolved, the third one did not. But this is what they really
+were complaining about, right? So the fact that you can reason and
+think through a particular model, and the word reasoning is not very well
+defined, uh, like in our industry yet. You'll see a lot of exuberance around
+the word reasoning versus some others will just dunk on it saying that, no,
+this is just smartly regurgitating. But across that spectrum,
+I think they get better. When they get better at math as well, Shobhit, I do really love the idea
+of thinking about this almost as kind of like recruiting and like a human
+sense or in the future, you're going to be like, I just need to get like
+three, I got to staff like three entry level models and maybe like
+one senior model to run the team. It will like start to feel
+like that as these evals really become kind of like the way we. We see whether or not we wanna
+work with these models at all. I'm gonna move us on to our final
+topic of the day, which is AlphaFold3. Um, AlphaFold3 is the technology
+that drove the Nobel Prize Award- uh, Award-winning work in using
+AI to predict protein and its interactions with other models. And it's potentially this major
+technology for using AI to advance, uh, scientific research, pharmaceutical
+development, and, and otherwise. And, uh, if you haven't been
+following the twists and turns on this story, it's been very interesting. So, so DeepMind, uh, originally
+released its paper and it said, look, if you're a researcher, you can get
+access to the model, but it's going to be on our servers and it's going
+to be under very specific kind of licensing constraints, essentially. Um, there was this big outcry in the
+research community saying, well, if you do that, we can't reproduce the
+research and, you know, it's kind of offensive from a research standpoint. And after a lot of
+pressure, DeepMind relented. Right? And so the big move of kind of the week
+is that DeepMind decided to take this major kind of groundbreaking technology
+and open source it to the world. And so I think maybe
+Vyoma, I'll start with you. You know, I think one way of looking at
+the story is this is super valuable stuff. Right. Like AlphaFold3 is like core technology
+that you could imagine building this enormous new business on. Um, and DeepMind, uh, I guess apparently
+was sort of bullied, you know, into releasing this model open source. And so, you know, I guess maybe I'll
+just kind of present the question was like, why would a company like
+DeepMind, um, want to give up this incredibly valuable trade secret? Like what, what is, what is
+pressuring them to do that? What does that tell us about the space? Yeah, it's, it's press-. It's not pressuring, I feel, but
+it does, um, kind of pivot people to use AI in their industry. That's one of the key things that I've
+been saying, like when everyone says that, oh, there are, uh, researchers who said
+that AlphaFold shouldn't, uh, do this. But there is another caveat to this as
+well, which they say that they wanted, researchers wanted to get a hand, uh,
+hands on with this, why is open source technology so prevalent in this world? Why does everyone, um, like it? Because it kind of opens new
+avenues, it helps create, uh, more IP because I'm pretty sure when you
+have a strong technology like this, there'll be so many different creative
+aspects which can be added to it. Imagine synthetic, uh, data
+generation for, um, pharmaceutical companies, et cetera. So that is one thing as well. But. I feel, uh, when AlphaFold did this
+on their own servers or depended it on their own servers, it helps reduce the
+computational, uh, resource need as well. There might be researchers or
+like universities or students who might not have that
+computational power to work on it. So I feel it is a blessing in disguise
+because now it's on their own servers. I know, um, it's a little bit of
+an advanced topic around IP, et cetera, but it does help everyone. It helps the future. Uh, to be, uh, at the future industry
+in this case because everyone will get a chance to build something and there
+are no stopping criteria such as not enough resources or computational needs. Yeah, I think that's a really good point. And I guess Vagner, I mean, you know,
+DeepMind had a number of reasons why they didn't kind of want to release
+this to the public, you know, one of them was, well, we want to balance
+the ability to open up new research, as you were saying, with our ability
+to kind of pursue this commercially. I know some people were also
+commenting like, this technology could also be potentially used
+for some, like, bad purposes. Like, once you start getting AI and
+bio, you know, you start to worry about, like, well, if a, you know,
+bad actor gets access to this stuff, what could they possibly do with it? Do you think those kinds of
+risks are overblown here? Or do you, do you kind of worry
+that this is kind of one trade off as we get more and more powerful
+models into the open source? Well, it's, it's interesting that, um,
+It is related to another prize, right? Winning a project. And, and I think that we're going to
+see more and more, uh, AI projects, AI technologists and their creators
+being, uh, uh, awarded this prize. And I think that the reproducibility
+and the transparency here, uh, play a key aspect, right? Because people want to know, okay, why
+this is so valuable, why this is, uh, uh, But to your point, I think that it's. It's also a challenge because, right,
+it's open source, and then what, what, what can be done with that technology? Um, this is, is really hard to define,
+and, uh, well, to one aspect, they only open, uh, for, uh, researchers. So I think that that And he's a better
+way to deal and and you're making it transparent for other researchers, but
+uh, it's not open to everyone I think this is an interesting uh approach
+because uh to your point, I think that yeah I agree that could bring high risks
+to you other uses of this technology. That's right. Yeah, i'm looking for I don't
+know kind of like it feels like everybody's struggling for a good
+like answer to this question, right? Which is we, we know we have all
+these benefits of open source. We want to preserve all these
+benefits of open source. And it feels like companies have
+been like, well, we'll give you a license that you need to sign. And maybe that's one
+way we'll deal with it. I know the other one has been, oh,
+well, we'll fine tune these models. So they'll be necessarily safe. But you know, the history of jailbreaks
+is that these models get jailbroken. And Vyoma maybe I'll give
+you the last word here. Uh, it's fascinating to think that like,
+we may already be moving from one era of open source and AI to another, right? Like maybe 2025 is this inflection point. point. Um, do you have predictions? Like where, where does this
+all go for 2025 in open source? First thing, like DeepMind doing this,
+but then we, I think we spoke in this, uh, about this in a previous podcast
+about watermarking, uh, technology called SynthID by Google as well. So imagine all the information that
+has been coming out from AlphaFold and that starts getting watermarked. So I feel Google's thinking
+leaps and bounds ahead. They have already created a structure
+which is going to help them. Stop these processes in which
+IP is being misused or sensitive information leaking out. So I feel that is happening. And one of the great caveats that I see
+happening in the future is how do you govern each aspect of a generative AI
+or a machine learning production flow? Not only a prompt, not only
+a model, but even your agent. Each information coming out of an agent
+being monitored by a particular governance model or a governance structure, I
+feel there's going to be a multifaceted governance structure or a platform coming
+up, which will not only have rules, regulations, ethics, responsible AI,
+but success metrics for each different task, which I feel someone or some place
+will come up like a company or like a board, which will have the final say
+in token on these processes needs to be governed with these different structures
+and these different, uh, policies. The actual evaluation of each step
+around the agent governance around how an agent is picking up tool
+and stuff, that is available today. We, we do when we are rolling out
+production agents, uh, flows for clients. We do have enough measures in place. I think the, the, the extension that
+you're, that you're recommending is these will become, will make their
+ways into the AI regulation as well. Today, AI regulations are
+looking at overall, uh, overall application and the use of AI. And yes, you're thinking that AI
+regulations will become much more precise on going further, further
+down into the, into the how. Mechanics and stuff, right? Exactly. So the question is that we follow
+and the one that we feel sure with is like, is your model going to be biased
+against a particular group, et cetera? Very, very, um, generic. They are not specific to the
+task or specific to the problem that we're trying to solve. Exactly what you said. That's something that I envision
+happening in the future. Well, as always, a lot to
+look forward to in 2025. I don't think we will
+be short of any stories. Um, and even the kind of close of
+the year is going to be a little bit crazy with all these conferences. Um, so I think that's all
+the time we have for today. Thanks for joining us,
+Vagner, Vyoma, Shobhit. As always, it's great having
+you all on the show and hope to have you back sometime. And for all you listeners, if you
+enjoyed what you heard, you can get us on Apple Podcasts, Spotify,
+and podcast platforms everywhere. And we'll see you next week for
+another episode of Mixture of Experts.

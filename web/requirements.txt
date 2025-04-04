@@ -8,3 +8,8 @@ groq # groq API 클라이언트 라이브러리
 langchain # 언어 모델 체인 라이브러리
 langchain_community # 언어 모델 체인 커뮤니티 라이브러리
 langchain-ollama # 언어 모델 체인 올라마 라이브러리
+psycopg2-binary # postgresql에 접속할 수 있는 라이브러리 
+sqlalchemy # streamlit과 postgresql를 연동하게 해주는 라이블러리
+torch # 파이토치 라이브러리
+transformers # 트랜스포머 모델 라이브러리
+unsloth # 언슬로스 라이브러리

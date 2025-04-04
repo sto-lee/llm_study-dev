@@ -1,0 +1,92 @@
+How are you making sure that your highly sensitive 
+information is protected while you're running it?   Hi my name is Alex Greer from the IBM Cloud 
+team, and make sure to like and subscribe.   So, before I get started talking about 
+confidential computing I want to talk   a little bit about why it's such an exciting 
+field. So, confidential computing among other   reasons is exciting for the fact that we're seeing 
+cross-collaboration in the tech space to actually   drive the technology forward, and so it's awesome 
+to see people reaching across a competitive   aisle to do that, a lot of bright minds. The 
+second is that the technology is going to   directly complement the existing data encryption 
+paradigm that we have today and make it an even   more complete end-to-end story. So, before I get 
+into the actual technology and some of the use   and value behind it let's start with the 
+existing pillars of data encryption today.   So you start with protecting your data while 
+it's at-rest, so when you're storing it.   So we've got at-rest, you can think of this as 
+whatever information you'd like to. We'll just   represent it simply here. Now we have information 
+that we want to transit from point-to-point. So   in order to do that securely we need to protect 
+it while it's in-transit, so we say in-transit. But what's missing in today's 
+story is this third pillar here.   What are you doing to protect it 
+while you're actually running it? The groups you're going to have to protect 
+yourself against, one, are malicious actors   who want to do things like scrape that data. 
+You're also going to want to protect against   memory dumps, things of that nature. We have the 
+inevitable threat that we have to protect against   which is insider threats. And, in addition, 
+we also have a lot of collaboration that we   want to go on between us and either a trusted 
+vendor or even a trusted technology partner,   but at the same time we really don't want to 
+expose a piece of highly sensitive information   to them even though we want them to 
+be able to take advantage of it. So,   we've got also our partners and vendors here. How 
+can we ensure that this information is not only,   not visible to these parties, but also protected 
+from the worst case scenario? That's where   confidential computing comes in. So, let's talk 
+about what confidential computing looks like. We earlier talked about the collaboration 
+across technology leaders in the space,   we at IBM are a part of the Confidential Computing 
+Consortium. So the definition that we follow for   confidential computing is as such, confidential 
+computing is a hardware-based technology that   allows for the physical partitioning of memory 
+at the server level. So let's draw our stack. We've got our hardware level on the 
+bottom which is where the actual physical   partitioning of the memory is going to take place,   and then we have the middleware level, and then 
+for the example but not exclusive to we're going   to talk about any containerized abstraction of 
+this. So we're going to have containers here. So what's taking place is that at the hardware 
+level we have that physical partitioning of the   memory which allows for you to actually 
+run that application in its own silo.   So the silo in the scenario that we've 
+painted here is going to be called an enclave.   So we've got an enclave here, one, two, 
+three, etcetera, etcetera, etcetera,   etcetera. So these enclaves can have applications 
+run in that that physically isolated environment,   but let's take a look into more detail 
+about what that actual enclave is.   So the enclave itself functions like a black 
+box so to speak. This black box or enclave   has that data that we spoke about earlier we'll 
+make it the same one from our previous example,   but what it also has in here are the set of 
+techniques or the things that or the actual   processing and the procedures for that processing 
+that information so we've got our techniques here. What this system does in a scenario in 
+which we had the malicious actor from   earlier, we had the insider threat, 
+and we even had our own partners -- what it does is it has an encryption key that 
+it only extends out to the authorized program.   That allows for that authorized program to decrypt 
+the information running within this physically   isolated silo and to be able to actually perform 
+its set of processes. So, this authorized program   can do so, but that key is not extended to 
+the other parties. So that right privilege,   since it's not offered here, prevents the access 
+from for a malicious actor. It prevents the access   to an insider threat. And then finally, 
+it even prevents access to a partner.   What actual access is it preventing now? This 
+is access to modify that code as well as and   to view that data while it's actually inside this 
+physically partitioned silo. But what's really   important for our design is that we verify 
+that the interaction with that code or data   was what we hope for it to be. So 
+we need to have what we refer to as   attestation reports. So attestation reports 
+you can see here, attestation reports.   And just for good measure, we've got in here 
+that encryption key that we talked about.   So let's get back to the key value proposition we 
+just discussed. So what this secure enclave this   black box allowed us to do, it gave us a data 
+and code integrity that we didn't have before.   One, it reduced the visibility of 
+that data while it was being run   only to the the authorized program 
+itself. So, we have restricted visibility.   The second, is that it took that data and 
+it actually prevented these parties from   making any sort of undue modification 
+to the actual code itself. So no mod,   or unauthorized mod, and then what we were able 
+to do was verify the actual interaction with that   code and that data via attestation reports which 
+is very critical for corroborating the story   that our system is telling us. So now let's 
+look at the use cases that have been enabled.   So the first use case here we're going 
+to talk about is multiparty computing.   Multiparty computing coming down to right here 
+we're actually working with the technology   partner, it allows for us to take highly sensitive 
+information and exchange it with other parties   without actually exposing it so therefore what we 
+can do is we can share data sets, we can actually   collaborate, and perform functions commonly on top 
+of highly sensitive information. So you can think   about maybe a collaboration between two research 
+institutions who otherwise in the past had to   go around a very complicated path for actually 
+getting approval to exchange that information,   now they've got that quick and easy path 
+by simply not allowing that information to   be exposed to the other party. The next case 
+that we're going to talk about is IP. So IP,   you can think of that next great discovery 
+that your company is making perhaps you've   discovered some sort of pharmaceutical 
+innovation and you have the actual,   the blend or the chemical composition and the 
+other things that are unique about your solution   and you're wanting to actually share that with 
+another party, but again without exposing that   information to them. So this is another 
+great scenario where you're protected.   Now the final one, it's a real situation that we 
+all have to tackle today is that we give the keys   to the kingdom essentially to the people that we 
+trust and we hire, but an insider thread is always   a possibility. So we have to protect our workloads 
+from that possibility. So we have insider threats   here and now we've protected ourselves from even 
+the case in which our own turn on us. So now   that we've got the use cases laid out you can see 
+the clear value that is provided by confidential   computing. Confidential computing is focused on 
+protecting application data while you're actually   running it, and it allows for us to be able to 
+collaborate more freely with other parties as well   as protect ourselves in a new way from malicious 
+actors whether external or internal. Thank you for   listening. If you have questions please drop us 
+a line below. If you want to see more videos like   this in the future, please like and subscribe. 
+And don't forget, you can grow your skills and   earn a badge with IBM CloudLabs which are free 
+browser-based interactive Kubernetes labs.

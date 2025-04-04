@@ -1,0 +1,9 @@
+{
+  "video_url": "https://www.youtube.com/watch?v=5Y-vzRFXDKU",
+  "video_id": "5Y-vzRFXDKU",
+  "title": "Managing higher education on IBM Cloud with Jenzabar",
+  "upload_date": "20190626",
+  "channel": "IBM Technology",
+  "duration": "1:02",
+  "caption": "- We started with IBM cloud, using all public cloud instances. And as our business grew rather quickly, we've been able to use VMware, and basically create a Jenzabar\ncloud on the IBM cloud. We use Vsphere, which\nis what's used to do all the server virtualization. We have that deployed across\nmultiple data centers, which enables us to do\nsite to site recovery. And that's a big advantage. So our environment is\nalmost a hundred percent a hybrid environment. With some servers on the campus,\nsome servers in the cloud. We're closing in on the\nfour-digit server count, and we're gonna cross that. And again, I quite counting\nbecause the speed is so quick. We have a 99.4% retention\nrate for our clients. So after they go to the\ncloud, they stay there. We're continuing to move\ntowards cloud native, towards the cloud as a platform. And that's based on the\npositive experience we've had running infrastructure as a cloud on IBM cloud."
+}

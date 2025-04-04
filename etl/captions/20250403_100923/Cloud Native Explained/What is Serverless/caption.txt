@@ -1,0 +1,63 @@
+Hi, I'm Ashher Syed with the IBM Cloud team. Today, I'm going to discuss serverless, but first, let's define what serverless actually means. Does it mean that there are no servers involved? The answer is no, obviously. What it means is that you're not responsible
+for managing and provisioning of these servers, it's sort of outsourced to the cloud provider
+whereas you are as a developer focused on writing code or business logic. And our deployment models have been
+evolving over the years, so let me walk you through how we have gone to where we are on
+the serverless and the journey behind that. So, on the Y axis you see increasing business
+focus on logic, that means you're concerned more about writing code and less about
+the underlying infrastructure. And on the X axis, you're seeing
+decreasing stack implementation. What that means is you are in less
+control of what goes behind the scenes when you deploy your code or write your code. So, first we start off at bare metal. Bare metal you were managing and
+configuring these servers and the environment that you want to deploy your code on. That means you are responsible for installing
+OS, all the patching and everything. So, quite time consuming to
+figure out that environment. Next, we move to virtual machines. Resource optimized from the bare metal where
+you were handling idle times much better. But at the same time, you're still responsible
+for setting up your environment; again, installing O/S and patching and everything. Down the road, we move to containers. Actually, Docker popularized this idea. Essentially what you're doing is you are
+packaging your deployment code, application code and all of its dependencies into
+a single container which could run on any underlying infrastructure. It simplified a lot of things from the
+deployment point of view but at the same time, some challenges with containers
+could be when you scale up your apps, management of containers becomes a challenge. At any given time, your application
+code is at least running on one server, so you still have some idle time. Then we move to serverless
+which is where we are now. And in this, like I said earlier, in this
+model you are sort of abstracting from all of the underlying infrastructure and you're
+focused mainly on writing business logic. Let's look at how this serverless
+actually works. All of the major cloud providers
+have this Functions as a Service. This is essentially a compute platform for
+serverless where you run your functions -- functions are, just again, single
+unit of deployment of your code, you could say it like a file
+processing as an example -- which is run by events which I called by events. Events are anything, think of it as a click of
+button the user has, and it creates an event which calls a function and
+then you run your code. And in this serverless Function as a Service
+environment you have event driven architecture which is, again, an ecosystem provided by cloud
+provider which has different services running like database, IoT depending on
+how you want to build your app. So, those, all of them are emitting
+those events and you build your app, you look for those events and
+program that into your code. And again, like any other platform, some of
+the drawbacks of serverless would be timeouts, you know, these are stateless containers,
+[they] spin off for a little bit of time and are deleted afterwards. So, if your execution code does not
+finish in that time, your app could fail. And then, you can also run into
+some latency issues depending on how time sensitive you want your app. So, let me illustrate that into an example here. So, for example, a user comes here
+on a client side and uploads an image and press a button to submit,
+it creates an event. So, an event calls a function or invokes
+a function which does the resizing of that image and it stores into storage. So, this is just a very over simplified
+example of how Function as a Service works and how you build your apps in that
+environment, serverless environment. So, let's look at some of the benefits. You pay for execution only. What that means is there's no idle time. So, like in previous cases where you were always
+maintaining a capacity or you're provisioning for different scenarios that you
+always had something running. Here, when your function is running, that's
+the only time you are paying for that and its very cost efficient and functions
+usually run at 100 milliseconds of times. So, auto scalables. That's a responsibility taken
+by a cloud provider again. When you architect your apps, you're
+not provisioning for any of that, you are less concerned with the resources. Faster time to market. Again, since you're not responsible for
+any of the management and deployment of any of the underlying infrastructure,
+you can build your apps faster, solve customer problems and
+bring them to market. Polyglot environment. So, like others, I mean, Function as a
+Service allows you, you can write any language and frameworks that you are comfortable with. A lot of cloud providers have multiple languages
+that they support, so it could be very helpful in cases where you are comfortable with
+one language, you want to write in that. So, that's totally okay in
+the serverless environment. Last but not the least is all of the
+serverless apps are highly available. What that means is that cloud provider takes
+care of all the fault tolerance and the MZRs -- Multi Zone Regions -- that they build to make
+sure that your app is always up and running. And all the services that you're using in event
+driven architecture are also fault tolerant, so your app overall is always highly available. Thank you for watching the video. If you have any questions,
+please drop us a line below. If you want to see more videos like this
+in the future, please like and subscribe. And don't forget, you can always
+get started on the cloud at no cost by signing up for a free IBM Cloud account.

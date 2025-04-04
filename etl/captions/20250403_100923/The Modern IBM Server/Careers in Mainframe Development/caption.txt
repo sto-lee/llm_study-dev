@@ -1,0 +1,46 @@
+AI? Whoa! Hybrid cloud? Whoa? Wait a minute. What about mainframe? What...? Mainframe careers, they are opportunity for everyone to be involved 
+in absolutely critical work and get involved in the industry
+and really have a job for a long time. Just like I have, 36 years! But, you know,  let me introduce my co-speaker 
+today, Christina LaRow, who is a new IBMer, to explain why she chose to come into a mainframe career. So about eight months ago
+when I joined IBM and prior to that, I graduated college--
+and I sent out job applications everywhere. We all know how that goes. And I wasn't hearing from anything. And then I was like with my best friend one day who happened to have an internship at IBM
+and then got a full time job offer. And he said, “Well, why don't 
+I forward your resume along? See what happens.”
+I said, “Okay, sure,   why not?” Sent him the resume. And then a few weeks later  I got an email from Rosalind 
+saying, “Hey, why don't we chat? I'll send you some contacts.” 
+Yeah, and you got to talk to a number of people on the team
+about what they were doing, right? Yeah. And it was fascinating. Before that, I didn't really 
+know what the mainframe was  besides this ancient technology that my parents use when they were kids. Or it was something that everyone was kind of questioning me on
+about why I was even entertaining this job offer. But what made you finally 
+decide to actually take the job? Well, when we were talking with your contacts,
+people like Frank and Jerry. they were so excited about the technology
+and they were explaining how impactful it is on society-- how like on the economy and government,
+just private organizations. So many people use mainframe. And that got me excited to work on a technology
+that's impactful. And looking at Jerry and Frank-- 
+they're on the older side and they kind of represented
+where I thought the mainframe developer was. So I saw a lot of opportunity for myself
+to grow in this role. You mean we're old and we're going to retire? And so you can take over for all those jobs? Your words, not mine! Yeah. But I understand that 
+we do need a variety of ages as part of the industry to 
+help make sure it grows. Okay, so now you're here. How did it-- how did you work out with that? What did it turn out like? Easier than I thought it would be. A lot of stuff I learned in 
+college applied to the mainframe,  which I was not expecting at all. I thought I'd have to learn 
+this really old archaic language or work on like those old black and green screens. But no, I can use VS code. I use Python almost exclusively, the [Eclipse] z/OS Explorer, which I had exposure to in college. I'm able to use that. The hardest part is all the Z terminology, which I can just ask my teammates  or I can ask you or anyone 
+else within the vicinity. It's kind of unique to sit next to you  so you can answer those 
+questions, and it's kind of fun. It's also good for me  because I get to learn more 
+about how you see the environment and you see the mainframe and 
+how you're working with it. Now let's talk to everybody else. How would you suggest they get 
+started in a mainframe career? Be open to it. People are going to come to you  and they're going to say, “Why 
+on earth are you doing this? No one will be using it in ten years.” Don't take their word at face value. Do your own research. Find out for yourself how 
+important this technology is. Second, when you do decide that you want to pursue
+this career,   don't be intimidated by all the acronyms. There are so many acronyms. You can Google that--it's fine. You can ask people--it's fine. Ask questions. Don't be afraid to go to 
+your teammates or anyone else  if you're in the office. Don't be afraid to look around you and say, “Hey,  what does ISPF mean?” Or any 
+other acronym or any other just vocab word that you 
+don't know because no one here  expects you to know everything 
+about Z right off the bat. And that was a huge comfort for me going in. Ask question!. And if you are one of the people
+that someone is asking a question to--be patient. They may ask dumb questions,  apparently no question’s a 
+dumb question and be patient. They're going to have follow up questions
+and they're just trying to learn. So be excited to learn. Be open to questions. Everything will be fine. And that's really important 
+when we think about this. No matter what job you take,  you need to be a continuous 
+learner for your lifetime. I learn new things every day. Talking to newer people 
+who've come into the industry as well as technology continues to change. But the mainframe is a critical part of our world. It runs the economy. And it's time to take a 
+look at the mainframe today  and see the opportunities that are there. Thanks for watching. Before you leave, please remember 
+to hit like and subscribe.

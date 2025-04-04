@@ -1,0 +1,40 @@
+Hi, I'm Ryan Sumner and I am a Chief Network Architect with IBM Cloud. Do you know what "VPC" means? - and why it even matters to you in your public cloud journey? Well, today I'm going break it down. VPC, or "Virtual Private Cloud", is a public cloud capability that provides you the ability to define and then control isolated virtual networks and then deploy cloud resources into those networks. So, what is a virtual network? Well, to help you understand that, let me first help you understand how we would deploy networks in a standard public cloud. An administrator is going to find a backbone,
+now that backbone is going to carry all the traffic in that cloud. There's going to be some segmentation on that
+backbone to create a separation between one client and another client. Or let's even say
+separation between one application and another application within that same client. So, now that we have that segmentation, we
+need a network function that will actually allow us to have communication between those
+segments. A network function we're going to call router. So, now that we have communication between
+these segments I might choose to say I don't want traffic to flow between this segment
+and that segment. Let's say because this is customer A and this
+is customer B. So, now I have a firewall function that provides
+us with filtering capabilities. So, now I have my cloud defined, it's completely
+isolated, it's not connected to the rest of the world, but I need internet connectivity
+because I'm hosting web application here. So, now I need a network function that can
+provide me with NAT-ing. In addition, I need to extend my enterprise.
+Or I have applications here that need to communicate and get data from my enterprise on site. So, I'm going to build a VPN function. So, in a traditional cloud environment most
+of all these network functions are actually done with appliances. There done with appliances
+that require infrastructure administrators, or network administrators to log into them
+using proprietary interface to define all these flows and controls. If you look at virtual networking, however
+we introduce all of these capabilities as a service. For which in case, we introduce
+all these capabilities to the user where they can now create these functions and create
+this isolation and the segmentation with a UI or CLI or API. So, they might be able to say I want four
+of these networks, and I want to find my own custom segmentation for this application for
+that application. Now I want to have connectivity to my enterprise,
+I provision a VPN service to get connectivity to the internet instead of having to configure
+NAT-ing I provided, I provision a service to be able to be able to give me that ability. So, now the user has this control and they
+didn't need to know any proprietary interfaces to make these connections are defined these
+flows, and since each of these are networks, they are completely isolated with each other.
+They don't have connectivity between each network until I say so. So, let's talk about a few the benefits. Now
+you understand where the virtual network comes into play and how that actually contributes
+to the private piece of V. P. C. So, some of the benefits are because now I
+can get all these all these functions and I have isolation built in I have some security
+aspects. In addition, since these are not appliances
+and actually provided has a capability of the cloud, I can do all of this at scale. Again, developers need things that are customizable
+right. So, the aspect of being able to find the segmentation and say I want four, five,
+or six, or tear it all down and come back tomorrow to do it again, I need some aspects
+of customizing this environment. In addition, it's flexible enough 
+to allow the user to be able to say I need to be able to add virtual segmentation later
+on down the road, or I need connectivity to the enterprise down the road. So, these two attributes here actually allow
+the developers to become more agile which hopefully is going to save you some money.
+So, now you understand what virtual private cloud is and why it matters to you. We hope you like this video on VPC. If you did, or have any questions, please
+comment below and don't forget to like and subscribe.

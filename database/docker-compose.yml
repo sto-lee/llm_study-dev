@@ -1,0 +1,14 @@
+version: '3' # 도커 컴포즈 버전
+services: # 생성할 서비스(컴퓨터/어플리케이션) 리스트
+    db-postgresql: # 서비스 이름(마음대로 작성 가능)
+        image: pgvector/pgvector:pg17 # 도커 image
+        container_name: llm-db # 컨테이너 이름
+        restart: always # 항상 실행
+        volumes: 
+            - ./db:/var/lib/postgresql/data # 마운트 장소
+        environment: # 컨테이너 가상환경에 변수 등록
+            POSTGRES_USER: postgres # root 이름
+            POSTGRES_PASSWORD: 1234 # root 비밀번호
+        ports: # 컨테이너에 등록된 어플리케이션 포트
+            - 5432:5432 # 포트 forwarding: 컨테이너 포트 -> 호스트 포트
+

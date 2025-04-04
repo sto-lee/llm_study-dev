@@ -1,0 +1,110 @@
+What is Functions as a Service, or 
+FaaS as it is more commonly known as.   Are FaaS and Serverless the same 
+thing, or are they different?   Hi I'm Jason Goode with IBM Cloud team, 
+I'm going to answer those questions for you   today, but before we go too FaaS, please make 
+sure to hit that subscribe button. All right,   I'm excited to get into let's take a step back 
+and look at a time before we had cloud. So back   in the day an organization would have to manage 
+their whole IT software stack on premises. So,   let's take a look at that. So at the 
+bottom here you would have your Hardware,   and this would be all your compute, your 
+network, and your storage resources.   And then moving on up we'd 
+have our Virtualization layer,   and essentially what happens here is you'd be 
+virtualizing all those hardware resources with   something say like a hypervisor to create modular 
+virtual machines so you can horizontally scale. And then moving on up, we then 
+move into our Operating System.   And I'm sure most of you 
+are aware of what this is,   this would be the software that's actually 
+on your computer and enables programs to run. And then on top of that we run into our Runtime, 
+and this would really be the glue between your   Operating System and your Application and be the 
+environment that your Application operates in. And   then last but not least, we have our Application. 
+And this would be where all the magic happens. So   this would be your business logic, right. And 
+this is where your development team will spend   most their time, because this is where they 
+design, build, and deploy your application.   So, as you can see this is quite a bit for one 
+organization to maintain and own, you know up   front you have a lot of costs with your hardware 
+and you're not very agile, say something goes down   in this IT stack here, I mean it could affect any 
+of these given layers. And the time to provision   and get your application out the door could 
+take anywhere from a week to even a month.   So not very efficient. So, let's fast forward 
+to the early 2000's and AWS emerged with   a new cloud computing service model, which is 
+Infrastructure as a Service, also known as IaaS. And what IaaS does it actually 
+abstracts these lower layers,   these infrastructure layers, which you can now run 
+from a cloud service provider and it's a common   model used today. So it's much more cost efficient 
+without having to own and maintain these layers   and you can provision and get your application 
+out the door much quicker. So, we're looking   at anything from an hour to minutes, which is a 
+huge increase from that week to month timeline.   So then we also had another cloud computing 
+service model emerged which is Platform as   a Service. And as you can see we even took 
+the abstraction level even further with PaaS,   so with this model now you're just worried about 
+your application, that's all you have to maintain.   And the idle time is much shorter too, so 
+you'd be running at least one server but   you don't have to worry about your Runtime, 
+your Operating System, just that Application.   And the time to provision and get 
+your application out the door is much   shorter as well, so you're looking 
+anything from minutes to seconds. All right. So you're probably wondering, okay, 
+so we're at the Application layer, how can we   abstract even further. Well let me explain. So 
+back in 2014, hook.io emerged with a new cloud   computing service model which is the topic of the 
+hour, and that is Functions as a Service, also   known as FaaS. And what FaaS does it abstracts 
+that Application, so now you can only focus on the   Functions. And the functions are the individual 
+components that actually make up that application.   So, it'd be the individual tasks you know 
+something like uploading an image file,   you just have so much more flexibility and 
+you have zero idle time. So you don't even   need a server, that's all managed and taken 
+care for you by the cloud service provider.   It's much more cost effective, and the time 
+to provision with Function as a Service   is lightning fast. So we're looking at 
+anywhere from a second to millisecond. So I know I went through this pretty quick, 
+but hopefully you can get a sense of how   Functions as a Service relates to the other cloud 
+computing service models within this landscape.   Oh I'm sorry, I should actually take a step 
+back, we should talk about Software as a Service   briefly. So that's another cloud computing 
+service model that actually abstracts all   these layers here, including the functions. And 
+you know, that would be something like YouTube,   if you're watching this video that would be an 
+example of Software as a Service. So now let's   take a look at how Functions as a Service relates 
+to Serverless and take a look at the architecture. All right. So, Functions as a Service, is actually 
+a key subset of Serverless, as well as Backend as   a Service. Backend as a Service is any third party 
+service that you integrate with your application   and the great thing about it is there's no code 
+that you need to manage, and there's no servers.   So let's take a look at what a Serverless 
+application architecture might look like   and let's use an example of something oh I 
+don't know let's say a hair color for gray hair   eCommerce storefront, which I've never looked into 
+before. Okay. So we'll start here with our client,   and this would be our hair color eCommerce 
+website. And let's say we have a user   and they click and they want to see 
+some before and after images. So   we would have a request come down here and we 
+would have a third party Object Storage Service. And, the great thing about this is there is no 
+servers involved once again. So this would be   one example of Backend as a Service. And it would 
+use something like HTML, it could be Javascript,   or CSS and it would actually send those images 
+back to the client. So now that they've looked   at some before and after images, now we need 
+to get them authenticated. So we can again have   another third party service integrated and we 
+could have this as an Authentication Service. Okay, so this would be one more example of 
+Backend as a Service, but now let's let's take   a look at Functions as a Service and let's say 
+that the client needs to get their account. So   we'd have another request come and this would 
+interact with what we call an API Gateway. And this API Gateway would then invoke a function. And we'll call this function GetAccount. 
+And this GetAccount function will now   communicate with a different 
+database, and this would be Customer Database. So, this would be our Functions as a Service, 
+right here. So this would be one individual   task within the greater application. So 
+let's do another one. Let's say the Client   makes another request and now they want to see you 
+know what kind of hair color options they they're   working with, right. So we'd have another 
+request go through the API Gateway and this   would have another individual function and this 
+would be Available, if i could spell ha, Color. Okay. So this FunctionAvailableColor 
+would go to a separate database   and we'll call this Color Database, Color DB. All right. So, this is again, just a very 
+simplified view into a Serverless Application   Architecture and I mainly want to focus in on 
+the Function as a Service functions right here.   So let's just zoom in right now, and we'll look 
+at the API Gateway and our functions and expand.   And expand this out as well, the API Gateway. 
+So API Gateway, it translates requests to   a single endpoint and then routes it to a 
+different Functions as a Service function.   So in our case our user makes 
+requests, right. So we have Get / api / color. This API Gateway notices the requests 
+and it sees AvailableColorFunction over here   because it has Available Color route within the 
+API Gateway. So again, Functions as a Service   is essentially a small piece of code written by 
+developer that are executed in the cloud and run   on stateless containers. And what this means is 
+that they do their job and then they disappear.   And this leads me to my first key benefit I want 
+to highlight, which is you only pay for what you   use. Because unlike our other cloud computing 
+service models if you recall, you always got to   pay for some idle time. Even a platform as service 
+you're responsible for at least one single server. Another key benefit is you 
+can just focus on that code,   right. So without the underlying infrastructure, 
+which is going to be a common theme,   you know throughout this whole video, is you 
+could just focus on those individual functions   from splitting up that server and that 
+business logic where you don't have to   worry about maintaining it with 
+that underlying infrastructure. Another key benefit is auto acaling. So again, 
+without that infrastructure you can scale on   demand, automatically, and instantaneously, 
+right. So if your Function as a Service platform   has demand go down, it'll 
+automatically scale down for you. The last but not least highlight I want to 
+mention is that it's inherently highly available.   So by being spread across multiple availability 
+zones in different geographical regions,   you can deploy your Function as a Service platform 
+in those different regions at no incremental cost. So I know this is just a quick overview of 
+Functions as a Service, but hopefully you   can now see some of the key benefits as well 
+as how it relates to Serverless and other   cloud computing service models. Thank you. If you 
+have any questions please drop us a line below.   If you want to see more videos like this 
+in the future, please like and subscribe.   And don't forget you can grow your skills 
+and earn a badge with IBM CloudLabs,   which are free browser-based 
+interactive Kubernetes labs.

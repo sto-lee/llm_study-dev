@@ -1,0 +1,514 @@
+At the end of 2025, is DeepSeek
+leading the state of the art in artificial intelligence? Abraham Daniels is a Senior Technical
+Product Manager with Granite. Abraham, welcome back to the show,
+joining us for the second time. What do you think? They're definitely making a splash
+in the open source, uh, space, but you know, it's, it's a really
+competitive, uh, landscape, so I guess we'll have to wait and see. Kaoutar El Maghraoui is a Principal
+Research Scientist and Manager at the AI Hardware Center. Kaoutar, I feel like you're
+becoming a regular here on the show. Uh, what's your take on this question? DeepSeek is definitely reshaping the AI
+landscape, challenging giants with open source ambition and state of the art
+innovations, but talking about leading, I think that's remains to be seen. It's not just about the raw performance,
+but it's also about the whole integration. And finally, last but not least
+is Skyler Speakman, who is a Senior Research Scientist. Uh, Skyler, welcome back. What is your take? Um, amazing technology. Great splash, as we said earlier. But I think there's really some
+really big geopolitics at play on how these models really get developed
+and are used across the world. All right. All that and more on
+today's Mixture of Experts. I'm Tim Hwang and welcome
+to mixture of experts. Each week, MoE is the place to tune
+into to hear the news and analysis. on some of the biggest headlines and
+trends in artificial intelligence. Today, we're going to cover
+quite a lot as per usual. We're going to talk about Mistral,
+potentially going IPO, uh, controversy around the FrontierMath benchmark,
+uh, and a recent interesting IDC report on generalized versus
+specialized coding assistance. But first, I want to start with DeepSeek. Um, so just this past, uh, last week
+or so, um, DeepSeek released R1. And if you recall and you're a listener
+to the show, you know that just a few episodes ago, I believe we were
+talking about DeepSeek v3, uh, which is their release, uh, which at the
+time I think kind of blew everybody's mind where they were showing really,
+really incredible performance with incredibly sort of less compute. and costs than what we're
+traditionally used to in the AI space. And with R1, um, it basically is
+DeepSeek's pretty fast on its heels release, showing that it has performance
+comparable with kind of state of the art stuff coming out of OpenAI,
+specifically to wit, uh, o1 and kind of the inference compute sort of techniques
+that really seem to give it a bunch of, um, sort of benefit, uh, for that model. Um, and so I guess maybe Abraham,
+I'll, I'll start with you. Do you want to talk us through a
+little bit about like why this is a big deal because I remember when, you
+know, o1 was released, people were like, this is a huge innovation and,
+you know, really shows that OpenAI has this big technological edge. Pretty soon afterwards, it
+seems like DeepSeek's doing almost the same thing, though. So I don't know if you want to
+talk our listeners to like, how do they, how do they do that? How do they catch up so quickly? Yeah, that's a great question. Um, so I think there's kind of two
+things that are really cool here. One is, of course, just, you know, the
+comparative performance with, you know, a state-of-the-art kind of, leading
+edge, bleeding edge model, like, uh, o1. But, um, unlike o1, it's been pretty
+cool that DeepSeeker has decided to open source it, which, you know, has
+been able to kind of proliferate some pretty powerful models across the
+community without the blockage or, you know, added need for commercial license. So I think they're really kind of
+shifting the paradigm, given a lot of these model providers are starting to
+slap on more, um, you know, specific licenses that are tailored to more
+commercial practices, given, you know, the business model that they're in. So I think it kind of shifts
+the idea of, you know, what does it mean to be transparent? What does it mean to be open
+without having to risk performance? Skyler, it strikes me a little bit that
+like, I think when we've talked about this issue in the past, you know, we've
+really talked about it in terms of. You know, OpenAI versus
+Meta, you know, right? And Meta's trying to kind of go
+compete with OpenAI by releasing these incredibly powerful models open source. This almost feels like
+now like everybody's after OpenAI exactly the same way. And obviously the distinction
+here, which is pretty interesting is you know, DeepSeek is, is
+not a kind of classic player. It's not a big tech player. Um, so do you want to
+speak a little bit to that? I know you kind of mentioned that,
+like, you think the competitive dynamics here are really interesting to watch. So, uh, first off, I think we'll get to
+the competitive dynamics in a bit, but reinforcement learning back on the scene. And I know it was, it kind of sort
+of died out for a while when, uh, uh, deep neural networks really took over. But, there now are multiple companies,
+and I think DeepSeek is an example of making it quite public, of bringing this
+back into, uh, the large language models. So, uh, cool to see these ebbs
+and tides of various parts of AI and machine learning come and go. Uh, so that's kind of more
+on the technology side. It's really cool to see some of
+these things, uh, pop back up. Yeah, totally. And I guess a quick comment on that. I mean, I think it is funny that, um,
+you know, for DeepMind, right, which originally made its bet on reinforcement
+learning, I think the rhetoric of the last year was, ah, they made the wrong
+bet and now they're trying to catch up. And now it's like, were they just really,
+really far ahead of everybody else? Like, I don't know. Yes. No, great comment. There were, there was this big push
+in reinforcement learning before, I think the transformer basically. And now these things seem to be, uh,
+you know, I'd say cohabitating, or at least, uh, being, uh, being in the
+same technology, uh, DeepSeek's has shown that they can put both of those
+techniques into the same package. And I think that is a really
+compelling argument, uh, for their strength going into 2025. Kaoutar, maybe I'll turn to you. I know out of the kind of set, uh, of
+folks on the panel, you know, I think you sounded the most, uh, sort of,
+um, you know, cautious about DeepSeek. Um, you know, I think there's
+one point of view, which is, oh man, they're releasing V3. That's incredible. Not like a month or so later,
+you know, oh my God, now they're releasing R1, you know, they're,
+they're catching up so quickly. Uh, you know, I guess there's a, there's a
+way the human mind is just like, well, if we continue these trends, then, you know,
+AGI by the end of the year from DeepSeek. Um, Do you want to speak up a little bit
+about why you're still ultimately kind of skeptical that, you know, DeepSeek,
+this is like the arrival of a genuine deep challenger to something like OpenAI? Yes, I think the key question
+is, what advancements does R1 introduce compared to V3? And how does it compare to o1? Are we talking about incremental
+changes or really like through innovations and new things that
+are leapfrogging the AI community. So they're claiming that they're improving
+the search precision, the scalability, the usability, while their V3 release
+focus on optimizing the core algorithms. So they're saying that R1 has
+capabilities, you know, such as better contextual understanding,
+and especially for these complex reasoning tasks, which makes it
+competitive, kind of toe-to-toe with R1. So, so I think we need still to test
+these models to see really whether they're there because this is a new
+release, so it still remains to be tested and to see what capabilities
+they're really bringing to the table. And how do they really compare with o1? I mean, they're showing some of
+the benchmark that sometimes, you know, they exceed o1. So I think something that
+needs to be validated. Um, But one thing that I'm a bit
+skeptical about is, you know, I think o1 still benefits from their
+proprietary integration with enterprise grade features, which R1 might lack. So, and that's something that still
+needs to be tested and evaluated. So, uh, you know, the, and another
+thing is, what are, what's the broader implications, you know, in this rapid
+integration for open source ecosystem? You know, the release cycles are, it's
+pretty impressive, they're very fast. cycles. And, you know, this release space
+show showcases the power also of community driven innovations. However, maintaining quality while
+scaling adoption remains a challenge here. And, you know, the open nature of DeepSeek
+could accelerate AI democratization, and it's also challenging the big players like
+OpenAI so and putting, you know, kind of pressure is visually that they're coming
+with very competitive pricing much cheaper compared to a one OpenAI's pricing. So I think it still needs remains to
+be validator, whether we're really talking about true innovation that
+goes, you know, kind of hand in hand with what one is doing or even better. So that needs to be still validated,
+but I still think, you know, the fine tuning capabilities, the integration
+with the enterprise enterprise use cases that probably are still lacking there. Yeah, for sure. I guess, Abraham, that's like a very
+natural place, I think, to turn to you. You know, what I hear in Kaoutar's
+argument is kind of the idea that the models are going to become kind of more
+commodity with time and sort of the competitive edge is integration, right? Which is, well, OpenAI can kind of
+win now because it's like hooked into all these other types of systems. And that's actually where the advantage
+is, you know, as someone who's working on Granite, is that kind of how you
+see, see the market or I'm kind of curious about your response to all that? Yeah, I think there's kind of
+two people that we gear towards. There's the commercial users, you know,
+where, you know, they're, they're really focused on enterprise use cases, ensuring
+that there's proper governance wrapped around the model and demonification
+and just that safety and support. And then there's the open source
+developers that, in my opinion, kind of dictate what is the best on the,
+you know, outside of benchmarks, which, you know, to Kaoutar's point
+is, is, is not always exactly what it seems, you know, our developer
+community really dictates what the best is given what the adoption rate is. So, um, I think over here at Granite,
+you know, we're focused on open source, so I think DeepSeek is a phenomenal play
+in terms of being able to open up the aperture when it comes to some of the
+most performant models on the market. Um, and honestly, I'm looking forward
+to kind of seeing what this, what comes from this in terms of the learnings
+that are shared and, you know, how developers in the community actually
+start to use, uh, o1 to start to, you know, develop new ways, uh, of, uh,
+you know, creating, uh, creating, um, to your point, like applications and
+spaces where this model can perform. Yeah, I think really to, to truly lead,
+you know, LLMs or these, um, you know, large language models need to move just
+beyond the role benchmarking performance. And to really reach true innovations
+that you have to innovate across efficiency, ethical framework, specialized
+adaptability, ecosystem support. So pushing the boundaries, not
+just in AI, but also how it's going to transform human interactions,
+technology, enterprise applications. So it's really a story about
+end to end integration while being safe, being ethical. So that's, you know, when you can really
+can claim true leadership in the AI space. So a full story of integration, not just
+looking at the benchmark performance. Benchmark performance is, I'm not
+saying it's not important, that's important, but I think integrating it
+full end-to-end and meeting all the regulations, safety, and the ethical
+considerations will be really important, uh, drive adoption, wide scale adoption. And if I may just add a the release
+of the DeepSeek did come along with a number of distilled versions. Um, so just to the point of adoption,
+like, you know, the 650 billion model is not gonna fit everywhere in terms
+of compute use, you know, availability. So the fact that DeepSeek understood that
+in order to adopt the model, you have to have, you know, different weight classes
+for different use cases, I think that just adds to, you know, their story as well. Yeah, totally. Sounds like Skyler wants to get in. I think Skyler also, before your
+response, if I can prompt you a little bit is, um, distillation. You should explain a little bit
+what distillation is, because I think it is super important. It's going to totally change a lot of the
+competitive dynamics in the space, but, um, you know, even I have kind of like
+the barest understanding of what it is. So I think probably you should
+start with an explanation of like, what does it mean that they've
+released a bunch of distilled models? And then, and then you should do
+whatever hot take you're going to do. All right. I'll, I'll try not to get
+into lecture mode too much. Knowledge distillation is when a much
+larger probably a much more complex model is used as a target for a,
+uh, smaller or less capable model. So what do I mean by a target? Hopefully our users understand the idea
+of the next token prediction task, right? You have to complete the
+rest of the sentence. Knowledge distillation doesn't care
+quite as much about predicting the next token, but rather taking a smaller model
+and asking it to match the internal representation of a larger model. So before that larger model gives
+its answer, it has its own internal representation of the answer. Now we are tasking the smaller model to
+match that representation rather than making a prediction of another token. And actually last year, Llama showed great
+results of getting Lama 3.2, I believe. Smaller through knowledge distillation,
+but what's different here is they are now fine tuning a Llama-based model, but
+the larger one is coming from DeepSeek. So this is kind of, uh, you know,
+spending across different companies here in different ways of training
+the original DeepSeek model. Way too large to actually run
+in a lot of circumstances. But as part of this release, they
+also have Llama-based models that have been fine tuned as guided or as
+distilled from the DeepSeek model. And I think that's something that was
+a very, very smart play because people are used to kind of the Llama sizes and
+you can, uh, Llama APIs, and these seem to be plug and play with those existing,
+uh, with those existing tools already. So knowledge distillation is a way of
+taking a much larger, much more complex model and using it to guide the training
+process of a smaller, um, uh, smaller model that uses a lot less VRAM and
+makes a lot of the users much happier. Yeah. I think I like the analogy of
+the teacher students model. Think of the Big model as a teacher
+and the smaller models as a student, and they're just trying to mimic like
+Skyler said, the internal representation and mimic the final answers while
+still having much smaller footprints. So I'm going to move us on to our next
+topic, Mistral, the French open source AI company, um, was recently, uh, appeared at
+the World Economic Forum happening Davos. Um, and uh, sort of after much rumors
+confirmed that they were not attempting to sell the company or be acquired,
+but instead we'd be pushing for IPO. Um, and I think it's a kind of nice
+opportunity to talk about Mistral because, you know, I remember like many
+moons ago, and by that I mean, I don't know, 18 months ago Mistral was like
+the thing that everybody was talking about in terms of open source AI. Um, and candidly we haven't really
+heard from them in some time, right? Like we haven't talked about Mistral
+at all in the last, say, 10 episodes of Mixture of Experts and open source
+seems to have appeared to become much more dominated, say by Meta. And I guess the question I wanted
+to kind of ask the panel first is. You know, uh, is open source
+really Meta's game right now? Or do, is there kind of a chance for
+these kind of like earlier players that really moved along open source
+AI in a really big way in kind of the early innings of this game? Um, you know, do they still
+have a fighting chance here? Or is it really kind of
+Meta's game in some way? Um, and Abraham, maybe
+I'll toss it to you. I'm curious about what
+you think about that. Uh, I mean, in short, I don't
+think it's only Meta's game. Um, so the, the most recent Llama
+license, although it allows for open source there are some intricacies in
+terms of, you know, you do have to model nomenclature has to include Llama. So they do still wrap some, you know,
+uh, restrictions around how you use your model, especially if you are,
+you know, an IBM or a different model developer that wants to distill, uh, you
+know, DeepSeek into Llama, so I think the, I think the market is still open. IBM is 100 percent
+committed to open source. Our entire roadmap will ensure that
+our dense models and our ML models are released on Hugging Face, uh, fully
+open source under Apache 2 licensing. So, um, personally, I think it's, you
+know, I think the market is still, uh, the field is still kind of open to, to,
+you know, who wants to lead that charge. And just based on our last conversation,
+you know, obviously DeepSeek now entering the space with, uh, you
+know, extremely high, extremely high performance model it's, uh. I think right now it's just like, you
+know, who's committed to it more so than, you know, who owns it right now. Skyler, do you agree with that? Yes, I do. I'm rooting for them. I think, uh, perhaps, um, I
+don't know, living in the global majority, I do pay more attention
+about where these models come from. And so I'm, I am rooting for models
+coming from, uh, EU or any of kind of the kind of non-traditional large players. So, uh, I great to see them, uh, you
+know, not at least being up for sale. Um, you know, we'll see how
+long that that stays out. But yeah, it was really
+cool to see that statement. And, uh, again, rooting for models
+that are coming from as diverse parts of the world as possible. And so I'm still holding out
+for Mistral to still represent, uh, large parts of the world. Yeah, of course, because I think that
+that is a big part I did want to bring up is, is the global majority and kind
+of the geography of all this, right? I mean, we talked about DeepSeek, right,
+China, Mistral for a long time, it's kind of considered like, oh, okay,
+Europe's also going to have its kind of open source player in the space. And so, yeah, I think it is exciting. I guess, Skyler, to kind of push you
+a little bit further, you know, do you think that different countries, different
+regions of the world will produce very different kinds of models, right? Like, I guess that's kind of the thing
+that you might be suggesting here, but I don't know if that's what you imply. Should they or could they might
+be the, the key difference there? Um, I think, um, I think if
+they could, they would have yet. I think it is proving much more
+difficult to kind of, you know, uh, these efforts, uh, scale across the country. And it's also why I think, uh,
+two, uh, two countries have really dominated this space. Um, so I would like to see
+more of that again, why I would be a Mistral, uh, a fan. Um, I think it would take lots of
+investments, uh, from governments, from universities if that money
+exists to really push that type of homegrown effort of models. And I don't really see that now. That's why, again, Mistral,
+stay strong still, uh, still represent other parts of the world. Definitely. Yeah. So Kaoutar, are you going
+to buy into the Mistral IPO? I think it's a great
+strategic move by Mistral. So, uh, you know, especially it's
+great for the European startups ecosystem because they often face
+these challenges, uh, around scaling due to limited vendor capital
+compared to what we see in the U.S. So the Mistral's IPO will test
+really whether Europe can foster this globally competitive AI companies. And of course, you know, I think it's
+important not to have this centralization just, you know, between U.S. and China. It's good also to see other countries,
+you know, uh, Middle East and Europe and also contributing models. I think going to the question you had,
+whether we're going to see different models coming from different regions,
+there might be some nuances there. For example, the cultural, uh, cultural,
+uh, implications or the, um, the, the language, the, you know, all these
+things, maybe some of these regions might tailor their models to their specific
+cultures, their specific traditions, uh, focus more on incorporating, you
+know, their languages also in terms of the APIs and answering questions
+and things like that, which would be great, uh, while also, but of course
+for general questions and so on, there will be commonalities, but I think there
+might be also some, uh, regionalization that might happen in the future. Yeah, for sure. I think that'll be so interesting because
+I think it'll, you know, I mean, there's almost nothing mysterious about it. It's almost like, okay, if you're
+based in a country, you may think to use certain data sets that people in
+other countries may not think to use. Right. And like, I'll actually have a material
+effect on the behavior of the model. And so, you know, I think it's like,
+there's really kind of interesting aspects of like, Oh, what would you choose to use? You know, if you're based in France
+versus, you know, Menlo Park, California. And I think that that's, that's
+a really interesting twist of it. Even I think the way that the model
+responds to you, for example, maybe the tone of the language, uh, whether
+you want it to be polite or didn't want it to be aggressive, I think if we
+can inject some of these human traits in this human, uh, AI interactions. and kind of taint it with some cultural
+aspects, which would be really great. You know, the way you greet a person will
+be different from a region to region. Would you incorporate maybe some religious
+aspects to it or some cultural aspects? It would be nice to see some of
+these specializations per regions. Yeah, definitely. I'd love to do the test, which is,
+um, you know, talk to this chatbot. Which country do you think
+this chatbot is from? Like whether or not you could be
+like, oh, that's definitely an American chatbot, I would know. Next topic that we're going to cover
+today is a pretty interesting one. Um, a few episodes ago, we talked
+about the release of a benchmark called FrontierMath from a group called Epoch AI. And FrontierMath is
+fascinating, uh, to me at least. because it is an attempt to kind
+of create evaluations that can keep up with how high capability
+these models are coming becoming. And so what FrontierMath is that you work
+with a group of um, uh, really kind of graduate mathematicians, kind of like
+professional expert mathematicians to put together incredibly hard math problems
+that even they have a hard time solving. Um, and uh, using that as the
+source of the eval benchmark, right? And you know, here is that
+all the classic evals, right? Like MMLU or whatever have kind
+of become saturated, like no one really thinks that they give us good
+signal anymore on model performance. Now I bring it up again today because
+there was sort of an interesting controversy that emerged where it sort of
+came out that OpenAI had been involved in the development of this eval, and in fact
+had gotten sort of access to, um, sort of these kind of initial test questions. And um, you know, I think there's a couple
+of kind of responses that Epoch had, you know, one of them is that there's a
+holdout set, right, that that the open AI team won't be able to get access to. There's kind of a commitment not to
+train on these questions, right, which might also distort the eval performance. But I kind of wanted to raise it because
+I think we're kind of in this interesting time where everybody knows the existing
+evals that are kind of the main benchmarks in the industry are kind of broken. Everybody's seeking to
+create better evals. And we're kind of in this new world
+where we're trying to work out, like, what should that look like exactly? And, uh, and I guess, Skyler, I want
+to kind of throw it to you, is like, you know, how, how should we sort
+of think about the involvement of companies in developing benchmarks? I guess the skeptical part of me
+would just say, expect that type of back-and-forth between the eval, the
+companies and the evals, and then take whatever performance gains they're
+advertising with a grain of salt and wait for third party confirmations. So that's, that's probably the,
+my, my largest takeaway there is it don't say it's never going to happen. In some cases, perhaps it really
+is great to have smart people get into the same room and break down
+barriers between companies and the goals of making benchmarks. But don't just take that
+particular company's word about how amazing their product is on
+arguably Uh, overfitting results. So yes, just add overall to, uh,
+skepticism and just kind of raise the bar a little bit on consumer education of what
+these kind of results really mean and, and make people really be appreciative
+of, of third party confirmations. Definitely. I, cause I think, I don't know. I, I, I, I take that. And I think that you know, I'm a
+little bit sympathetic to Epoch, right? Which is, well, you want to create an
+eval that challenges the very best models. And part of that involves
+working kind of closely with the companies to design those evals. Like the worst thing is you
+release an eval that is completely irrelevant to actually testing
+any model performance at all. And so almost by necessity, there
+is this kind of interaction. You know, Abraham, do
+you kind of buy that? This is sort of like inevitable. I know I have some friends who are
+like, you know, church and state, right? Like you should, you know, the
+eval people should never talk to the companies, which I think is at least in my mind is a little broken,
+but curious about what you think. Yeah, I would echo the same
+sentiment, to be honest. I think it's, um, I think the evaluations
+and benchmarks over the last, you know, year have become less and less,
+I wouldn't, I mean, not trustworthy, but, um, uh, transparent in terms
+of what they're actually using as part of their, uh, you know, what
+benchmark you did, it makes it into the training, uh, versus, you know,
+what they're actually evaluating on. Um, I think in a space like this,
+it really is the community that dictates the performance of the model. Um, you're even starting to
+see where, you know, you'd have ubiquitous benchmarks across models. You're starting to see model
+providers pick and choose which benchmarks they publish versus which
+ones they leave out to be able to narrate the story that they want. So I think as, as, you know, as that trend
+continues and as you know, data curators work with model developers to figure out
+what the best way is to evaluate these models, I think it's just going to be on
+the community at large to be, you know, the judge jury, um, in terms of, you know,
+is this model actually performing what the benchmarks say, or is this another
+kind of, you know, gaming the system? Because a model comes out every few
+months and somehow every single model is better than the previous one, so everything is always state of the art. We should have been at AGI months ago,
+but it's, you know, why are we not there? Kaoutar, I guess this kind of leaves us
+in a funny place though if we take sort of Skyler's rule, right, which is we
+should see all these evals with a bit of skepticism, is it true that kind of in the
+end, like, vibes still are the best eval? Like, you know, is there, can
+we trust any eval anymore? Like, it kind of leaves me in a fun
+place because I'm like, well, I really desperately want to have some kind
+of quantitative metric here, but it sort of feels like maybe that's
+ultimately kind of a lost game. Yeah, I think it's, it's a very
+controversial thing here, you know, what do you really What can you trust here? So there are all these
+benchmarks out there. But you know, with this controversy
+that happened around FrontierMath, you can see that OpenAI has this advanced
+access, which raises concerns about fairness, because it gives them an
+advantage in optimizing their models specifically for those benchmarks. And this compromises the integrity
+of this fair benchmarking. where all the participants should
+start from the same baseline. So how can we fix this? Can we maybe establish some governance
+around, you know, these evals? Can we have some transparent access rules,
+some independent oversight, like a third party that makes sure that everybody has
+access at the same baselines and, you know, that they don't get access maybe
+to data that will help them tune their models for those specific use cases. And then can we have an open
+review process for these results? So that's going to require a lot of
+work, but I think it can be done. Technically, it can be done to have
+these third parties that are completely independent that establish a governance
+and write these tools and processes and so on to be able to really
+ensure a fair evaluation process. And I hope we get to that some
+point because what can you trust? And you have to do these
+evaluations sometimes yourselves. And I think maybe the community
+can also contribute to all these evaluations and provide more validation. Yeah, I think the incentives are
+kind of a little bit interesting here too, because I think, you know,
+Epoch gets burned in this story, but OpenAI gets burned as well, right? Because like, it doesn't, it's
+not a great look in some ways. Um, and I feel like, you know, almost
+there's incentive to, like, be as hands off as possible, because look, when o3
+comes out, I really do believe it will be better at very hard math, right? Like, I think there is actually some
+genuine signal here, but like, where we are now is maybe a little bit,
+you know, happens in the shadow of, oh, well, we know this arrangement,
+and they had access, and all that. I mean, the jump was pretty
+significant in the benchmark. I think it went from, uh,
+before the o1 results. It was a 2 percent and jumped
+to 25 percent with a one result. That's a big jump. Yeah. The question is like how much of
+that delta is the model, right? Yeah. And how much of it is, you
+know, being able to kind of study for the test basically. Yeah. And I think there was also someone,
+I think Chollet, the creator of the ARC-AGI benchmark, he refuted OpenAI's
+claim of exceeding human performance. You know, he highlighted, you
+know, that o3 still struggles with some of the basic tasks. So, so then, you know, it remains,
+you know, what do you trust? You know, 25% leap here
+compared to the 2%? Or maybe there are still some,
+uh, gaps that they're not, they're not telling the full story. So yeah, I think we're going
+to have to keep on this. Um, you know, there's a great article
+that I saw from, um, uh, they just came out, I think a few weeks back that was
+kind of making the observation that models are getting better, but we don't,
+can't really measure how, you know, we live in this kind of funny world where
+like all the evals kind of seem broken. We have a general strong intuition
+that things seem to get better, but like we have no way of actually
+assessing that, which I think is is kind of a funny situation to to be in. Can we create an eval LLM? So some model that evaluates
+all of these other models. Can we automate this evaluation process? Yeah, I think that's kind of where we
+end up is like I think if we think that vibes are going to be a powerful way
+of evaluating models and what we really say by vibes is like an interactive
+evaluation like you talk with the model to get a better understanding. It seems very intuitively obvious
+to me that at some point you will end up with like, well, to scale
+that we need LLMs talking to LLMs. And that kind of like they're
+conducting a scaled Vibes eval. I don't know where that goes, but it kind
+of feels like that's like maybe one set of research paths that you'd go down. You might be onto something. Yeah, we'll see. I just host the show. Someone else needs to do that work. So for our final topic today, we're
+going to talk about a report that came out of the research group
+IDC, uh, about generalist versus specialized coding assistants. Um, and it was released, uh, or
+just earlier this month, I believe. Um, So the report kind of takes a look at,
+you know, what programmers are getting out of, um, uh, out of, uh, coding assistants. And they show a lot of the results that I
+think we are familiar with at this point. So they report that 91 percent of
+developers are using coding assistants. They say that 80 percent of
+those developers are seeing productivity increases with the
+mean productivity increasing by 35%. So all kind of the good news that
+we're used to, which is that these coding assistants really do seem to be
+helping people along and doing better at their job as software engineers. I think the really interesting
+thing, though, that they make a distinction on is between generalist
+and specialized coding assistants. So generalist are basically like overall
+coding help with specialized assistants focusing on specific programming
+language, specific frameworks, um, industry specific requirements. And they kind of make the
+distinction, these are actually like two different markets. And right now like, you kind of
+need both to do coding assistance. And I guess maybe the question, you
+know, maybe I'll throw it to you, Abraham, first, is like, you know, I
+always thought that, like, where we're headed with these coding assistants
+is that they will just be one coding assistant model to rule them all. Um, but it is kind of interesting to me,
+they seem to be making the argument that like, no, there's going to be these really
+interesting niches for like, you know, my joke is like the FORTRAN model, right? It's just like, just specific
+to this particular use case. Is that what you guys
+are seeing at Granite? Like, I'm kind of curious because I know
+you've done a fair amount of coding work. Yeah, yeah. So I, I agree at least in the current
+space right now, you know, there, the, the perfect world there would be,
+you know, uh, one ring that fits all, like, you know, that rules them all- The one ring that fits all. kind of methodology, but here at IBM,
+you know, we support, uh, we develop our resource specific languages and the
+reason behind that, there are these legacy applications, you know, COBOL Z, where
+it's a low-resource language, there's not a ton of, you know, data that we can
+use to be able to do that trade on models where if we were to start to bake it
+into our more general code model, some of the capabilities might get lost in terms
+of being able to support that use case. So we find that, you know, you do have
+these legacy systems that people are still on where, you know, a resource
+support might not be as prominent as it was 5, 10, 15 years ago, where
+you do need to backfill some of the work with, you know, code assistants. And then you do have your larger, more
+general models that support, you know, your more uh, widely used languages,
+so in our space, we really do have that two pronged approach in terms of
+how we develop our, our code models. And of course, you know, the, the
+ultimate goal is to start to consolidate into something that can fit everything. But right now, that's just not the case. So I guess your prediction is that
+we will actually just see, like, this is temporary and we will see
+the merger, like generalists will become specialized at some point. You know what? I'm, I'm, I'm trying not to make
+predictions in this space because everything changes so fast. Yeah, I think it's hard. But what I will say is that, um, there's
+a shift in workforce specifically around, you know, capabilities. So I think that for organizations
+that need to be able to maintain their environment, they will
+look for models that help that. And if that can be provided as a part
+of a general model, all the better. But I think right now, it's,
+it's still looking to be more of a specialist model focus. Skyler, do you want to talk a little
+bit about, I mean, the interesting kind of labor impact of all this? Um, you know, I was joking with a
+friend recently, I was like, what you really need to do now, talking about
+the Fortran code assistant, is like, you need to specialize in languages
+that no one programs in anymore. Right, because if you do Python,
+you do, you know, any of the popular languages, you're about to get wiped
+out because the models are going to get really good really fast. And so the main thing is to flee into
+like what weird obscure version of Haskell, you know, and kind of that's
+your that's your defensive moat if you're a coder, is that good advice? Or is that just crazy? That's a great anecdote, um, and I
+think actually it's not just a story. I do think actually IBM's got a lot
+of vested interest in keeping some of those old languages up and running. So, uh, beyond, beyond just a, um,
+a punchline, I think here, here's a great breakdown in as part of this,
+um, the survey that was done from the IDC, they also said what particular
+tools, or what particular tasks. Do you use these assistance
+for and at the top of the list was unit test case generation. So this is like the really boring part of
+software engineering, writing all these unit tests to try to break your code. In that sense, I would say to your friend,
+don't specialize in building unit tests. That is something that I think machines
+are doing a great job of, and people are already leveraging for that task. But at the bottom of this list of where
+they don't, aren't using these tools as much, is code explanation, which is now if
+I copy in a set of this code, can I have an LLM tell me what this code is doing? So I think there's this really
+cool breakdown between what tasks software developers really want to
+be automated for them, things like coding up unit tests and other areas
+where they actually need to, you know, use kind of higher level processing
+of, Ooh, what is this code doing? Can I explain what this code
+is doing to somebody else? And That kind of breakdown here of how
+at least software developers in the U.S. are currently using tools,
+I think represents that gap. So to your friends, don't tell them to
+specialize in unit test generations, but maybe have them skill up a little
+bit on the ability to explain what that code is doing, because that's something
+that currently the AI assistants at least are not being used for. I see the future as an AI
+co-creation, uh, software developers. So where the future of programming will
+involve human, AI collaboration with AI as a coding assistant helping to brainstorm,
+optimize, and refine solutions. But going to your friend, I think where
+they should focus on is where areas, uh, is on areas where AI struggles, things
+like system design, security and handling edge cases, uh, creative problem solving. So, uh, you know, it's
+responsible AI use cases. Those are still areas where AI struggles
+because I think designing and solving and programming complex software
+systems involves not just coding. But a lot of other elements and, and,
+uh, angles here, and especially the collaborative nature of understanding the
+end users requirements, the client edge cases, the requirements, the security
+implications, all of that, and putting it all together in a full, full end to
+end solution with testing with coding with so there are a lot of elements here
+that still AI cannot handle completely and software developers are still needed
+but I think they need to focus more on those situations that AI struggles with
+but of course enhance their productivity with these code assistants and copilots. Yeah, I think that's right and I
+think I don't know Skyler's emphasis I think on like don't do unit tests but
+work on explaining the code I think is very interesting, um, you know,
+I mean, classically, documentation is always terrible for any software. Um, and I guess, Skyler, kind of
+what you're saying is maybe that's actually where the future is. Like, you really, you really
+gotta get better at that soon. I was actually having a conversation
+with a former, uh, co worker and, uh, I don't want to date him, but when
+he was in computer science, when he was doing his grad school in computer
+science, he said they didn't code. They just, their goal was to think
+about how to strategically, um, you know, outline your code and what's the
+thought process behind building it, as opposed to just going and building. And he recently took on a new,
+uh, role in a new space and he's had to learn a new language. And it was funny. He was saying, I don't
+have to build code anymore. I think the gap that I see with a lot of
+these, you know, PhDs coming out is they don't have to build code, but they're
+never taught how to think through and explain why we're doing what we're doing. So he found it a lot easier to
+actually learn given that that was kind of where he started. So to your point, Skyler, it was, uh,
+he's actually seeing that the better you can actually structure your code
+in your head before you actually start to write it, the easier it is to learn. I agree with you, Abraham. I think the problem solving process. How do you decompose a problem into
+subproblems and also the algorithms think understanding, you know, how to
+create a very innovative algorithm. This is something, you know, that
+requires deeper thinking, deeper expertise that probably AI cannot solve today. Like coming up with a new algorithm
+that solves something, um, like, uh, some of the existing problems. So it's still challenging
+for an AI system to do. Well. Let that be a lesson to, or a, the
+word of advice to all you coders out there who are listening to the show. Um, as always, I say this every single
+episode, but we are out of time for all the things that we need to talk about. Um, thank you for joining us, Abraham,
+we'll have you back on the show. Kaoutar, as always. And, and Skyler, thanks for coming
+on and thanks for joining us. If you enjoyed what you heard, you
+can get us on Apple Podcasts, Spotify, and podcast platforms everywhere. And we will see you next
+week on Mixture of Experts.

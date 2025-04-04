@@ -1,0 +1,64 @@
+Have you ever interacted with a chatbot that can't 
+seem to figure out what you need and responds with   "I'm sorry I don't understand. Please try again." 
+Yeah, we've all been there with a rules-based   chatbot, when a simple task of ordering something 
+turns into a headache. Are rules-based chatbots   obsolete? No! But let's look at three different 
+kinds of chatbots with various degrees of   sophistication: the rules-based, AI-powered, and 
+generative AI. Which is the right kind for your   company? The answer is "it depends".
+Let's look at our first example,   the limited rules-based chatbot, which walks 
+the customer through a rigid, predetermined   flow and operates on basic keyword detection.
+[chatbot] Thanks for choosing Taste of Italy.   Our pizzas are yummy! How many 
+pizzas would you like to order?  [Bella] Two.
+[chatbot] What size would you like   them to be? Small, medium, or large.
+[Bella] Large.  As you can see, there's not much AI 
+involved in this interaction. Of course,   placing an order is not always so straightforward. 
+Because it's impossible for the conversation   designer to predict and pre-program the chatbot 
+for all the ways a person can place an order,   this kind of chatbots often get stuck. [Bella] My pizza is cold! I want to file a   complaint and get my money back!
+[chatbot] Sorry, I don't understand,   try rephrasing your message.
+Also, if the customer has a   complaint about the order, the chatbot 
+could act as a gatekeeper. This is a sure   way to send customers to competition. 
+Let's start the conversation again,   this time with an AI-powered chatbot!
+[Bella] I want to order two large   pepperoni and cheese pizzas.
+[chatbot] Great choice,   Bella! Would you like any extra toppings?
+[Bella] No, just the regular, thanks! Add   one apple juice and one beer to the order.
+With AI and natural language understanding [NLU]   capabilities, the chatbot can understand the 
+customer's request, the first time—no matter   how it's phrased. With deep learning, the longer 
+an AI chatbot has been in operation, the better   it can understand the intention behind questions 
+and provide more detailed, accurate responses.  Let's continue:
+[chatbot] We have a new offer – order   1 pizza and 1 dessert, and get a drink for free. 
+Would you like to take advantage of this?  [Bella] Of course, who doesn't like dessert?
+[chatbot] Where would you like this order to   be delivered?
+[Bella] Home  [chatbot] Confirming 2 promotional packages.  Delivery in 45 minutes. Enjoy dinner, Bella!  Deeply integrated with the business systems, the 
+chatbot knows the customer's name and address,   presents the latest offers 
+that might be of interest,   and creates a smooth ordering process.
+[Bella] My pizza is cold! I want to file   a complaint and get my money back!
+[chatbot] I am sorry to hear that. I   am transferring you to a live 
+agent who can help you now.  When the customer is unhappy and wants to speak 
+to a human, the transfer should happen seamlessly.   After being transferred, the live support agent 
+will get the chatbot conversation history and can   start the call informed. But what would this 
+look like with a generative AI chatbot? Would   the customer want to read a 
+chatbot-generated poem about   pizza when placing an order?
+[Bella] I want to order   two large pepperoni and cheese pizzas.
+[chatbot] In this vibrant city's culinary scene,   lies a pizza divine, a flavor supreme. 
+Would you like to order a pizza today?  Hmm, that's certainly added personality, but 
+probably not all that helpful in this case.   Ok, let's start over. How can generative 
+AI elevate the customer's experience?  [Bella] Today I'm celebrating my 
+college graduation! I want to order   two large pepperoni and cheese pizzas.
+[chatbot] Nice to see you again Bella,   and congratulations! No party meal is complete 
+without something sweet! We have the most   delicious tiramisu cake and a new offer – order 1 
+pizza and 1 dessert, and get a drink for free. Would   you like to take advantage of this?
+[Bella] You bet!  The next generation of generative AI chatbots can 
+get even smarter and more fluent in understanding   common language, adapting to the customer's style 
+of conversation, and using empathy when answering.   You can optimize the chatbot response even further 
+using generative AI capabilities for search.  Let's see how:
+[Bella] I have   an allergy to peanuts. Can you confirm that 
+this dessert does not contain any peanuts?  [chatbot] This tiramisu does not contain 
+any ingredients with peanuts. I searched   my knowledge base. You can expand to see 
+all the ingredients and what they contain.  Chatbots with conversational search capabilities 
+can give you answers to the questions you're   looking for, while showing you the source if 
+you want to validate the chatbot's response.   So, do chatbots need AI? Well, yes, it does make 
+chatbots smarter. They can better understand   intent and respond more accurately to questions 
+by learning from its previous interactions,   improving customer experiences. When thinking 
+about generative AI's impact on chatbots,   think about how you can take advantage of 
+creative, conversational responses and when this   technology makes the most sense for your business 
+objectives and the needs of your customers. Thanks again for watching. Head to watsonx Assistant to learn more about how to
+leverage AI chatbots in your business.

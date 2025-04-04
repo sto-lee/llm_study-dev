@@ -1,0 +1,44 @@
+So where do I think AI will be in five
+to ten years? While the possibilities are endless I
+believe the most consequential will be secure application development name is
+Sridhar Muppidi, I'm the CTO for IBM Security. Our clients
+are going through a digital transformation journey,
+they're modernizing applications data and infrastructure.
+IBM delivers a number of security solutions to help our clients
+protect detect and respond, but the reality is that security
+professionals that use our offerings are inundated
+with too many things to do, too much of data,
+very little time, and too few skills. AI can have a huge impact on cyber security
+solutions and the professionals. Since the
+inception of AI we've learned that to make at the right
+AI system we need the right data we need to train
+the AI model on the right data test it for bias
+as well as to ensure that it is robust on the solution side. AI can help us
+provide accuracy in detection ai can help in
+accelerating the investigation and automating the response
+it can also help provide proactive mechanisms of protection
+so that you're safeguarding against threats we made a massive investment on
+AI, and IBM and 100 of our products use
+AI my favorite solution is how we use AI to do a continuous verification of a
+user based on behavioral biometrics this helps us evaluate the risk of a
+specific user for a specific session. So based on that we're able to subject
+the user to right amount of friction. If the risk is low we don't need to
+subject the user from multiple passwords on the other hand if the risk is high
+you may want to prompt the user for a password or even a second
+factor authentication. We're very fortunate to have a large
+number of our clients using our solutions across
+number of different industry verticals. A few that come to my mind
+are Wimbledon suggested as well as RGS Nordic this is exactly
+where we apply AI's speed and accuracy to help
+create proactive protection improve the accuracy of detection accelerate the
+investigation as well as improve the automation
+in response. We have a lot more to learn and
+evolve the maturity of AI in the next few decades to come.
+While the possibilities are endless my vision is for AI
+to develop secure applications by default
+so that they are not as vulnerable and reduce the number of breaches
+in the industry I believe IBM is well poised to not only help with the secure
+application development, but also secure data across hybrid cloud
+as well as secure infrastructure this ability to secure
+the journey to hybrid cloud will help our clients embrace digital
+transformation with a lot more confidence.

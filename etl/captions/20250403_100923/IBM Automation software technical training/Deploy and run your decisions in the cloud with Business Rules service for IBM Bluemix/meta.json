@@ -1,0 +1,9 @@
+{
+  "video_url": "https://www.youtube.com/watch?v=I93VDovz_lM",
+  "video_id": "I93VDovz_lM",
+  "title": "Deploy and run your decisions in the cloud with Business Rules service for IBM Bluemix",
+  "upload_date": "20170706",
+  "channel": "IBM Technology",
+  "duration": "1:53",
+  "caption": "business rules on bluemix gives you the ability to configure orchestrate and run your decisions in the cloud to get started log into bluemix then go to the catalog of services in the application services section click on the business rules icon then name your service and click on the create button the created service is displayed in the connection settings tab you can see how to start the management console and how to reach the service to rest or soap the decision services tab shows the available services you may like to invoke the business rule editor plugin for eclipse and lotus sample project in this project you can see some rules used to authorize a loan based on information on the loan and the borrower flexible rules define the maximum amount that can be borrowed the acceptable credit score and income when you're happy with the business rules you can deploy the project your bluemix service after a few seconds your project has been deployed in the cloud going back to the server and bluemix we can see the newly registered service we can test it by providing a test case and invoking the loan service we see that the credit score is too low the loan is rejected and we see that with the higher credit score the loan would be accepted now the same web service invoked and processed in the cloud from any application running on bluemix or on-premises thank you"
+}

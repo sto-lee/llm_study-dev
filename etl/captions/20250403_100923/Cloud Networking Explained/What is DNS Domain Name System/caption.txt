@@ -1,0 +1,60 @@
+Hey everyone, what is DNS? Have you ever wondered how you  
+access the web pages that you do almost every other day? I am Pooja, from IBM team and I'm going to explain to you how DNS works. DNS in short is called the Domain Name System. The domain name system translates domain names to IP addresses, and what is a 
+domain and what is an IP address?   Let's take a look at that. First, let's see what a domain name is. A domain name is any text or string that you 
+basically enter in your web page.    It could be ibm.com, google.com, abc.com, any of these. And what really is an IP address? IP address is a four set number, goes like this. Just going to write a random number for you here. I'm pretty sure you have all seen 
+this IP address almost every day  when you access these websites and says 
+oh you know your web browser is down.   You know, you're not able to access 
+the DNS that you're looking for. So, let's take an example, abc.com. What happens is, instead of typing abc.com, if you 
+type in the IP address of that particular website   in your web browser you will actually  
+be routed to the web page. Now, the main component of the DNS system is the DNS resolver. So, the DNS resolver acts as the 
+phone book in this entire thing. How do we bridge the gap between  
+the human communication and the DNS, and the networking world? So, in the networking world the computers 
+use numbers to communicate with each other, and in the human world we use names to communicate with 
+each other, and here DNS resolver acts as a phone   book where you search the name and match it to the 
+number. The IP address is the internet protocol   that has a set of rules that helps millions of 
+devices communicate with each other and that's   why we have these IP addresses allocated 
+to each and every device on the internet.   All these devices communicate using this 
+unique identifier, and since as humans   we are not accustomed to remembering names, we 
+use these domain names, to remembering numbers,   we use the domain names and that's how we 
+resolve using the DNS resolver. Now that   we know an overview of the domain name system 
+let's take a look at how the DNS lookup happens. So the first step in the DNS lookup is the user.   This is where we enter the website address from 
+our web page and you are going to be the actor   here. So, the web browser has what we call the 
+cache memory. The cache memory stores certain   values for a certain time period of time. So, when 
+you enter the address abc.com let's say, what   happens is it looks in the cache memory first and 
+when we say, "oh, i don't have the IP address of   the particular website that you're looking for," 
+we forward the request to the main DNS resolver.   So this is going to be our 
+DNS resolver for the day, and now from here the DNS 
+resolver has its own cache. It looks at its cache and says "hey, i don't have 
+the IP address of the particular website that you   are looking for. So what i'm going to do is i'm 
+going to route your request to the root server."   I'm going to use a different 
+color. So, this is the root server   and root server is the top server at 
+the top level in the DNS hierarchy,   and the root server still doesn't have the 
+information of abc.com that you're looking for,   but what it does have is the information 
+about the top level domain server   that you have to route your request to. Also the 
+root server is placed across different locations   throughout the world there are almost 
+hundreds of these root servers placed,   and there are 12 different organizations that 
+manage these root servers, and from there we   get the top level domain server's IP address. 
+So, now we send the request to the TLD server. And the TLD is nothing but "Top Level Domain", 
+which basically means it has all the information   for the top level domain, and in this 
+case the top level domain is going to be   a dot com. So it could be anything like dot 
+net, dot org, as such. What it does say is   "hey, i don't have the ip address of abc.com, but 
+i can send your request to the authoritative name   server. I can send the IP address to which 
+you need to send your request to, and the   authoritative name server has all the information 
+and all the DNS records that we need to access.   So basically the authoritative name server 
+renders the DNS records that we need to access. So the request is sent to the auth name server,   oh and we can also call it as the domain 
+name server, and lot of cloud providers   across all over the world provide this server 
+ability, and you can use multitude of them. So this is going to be our authoritative name 
+server, and what the authoritative name server   does it sends back the IP address of the 
+particular website that we are looking for,   and now we get the IP address back to the 
+DNS resolver so the DNS resolver now stores   it in the cache. I store it in the cache 
+and I send it back to the web browser,   and now the web browser has the IP address 
+that it was looking for. What it does is it   sends the request to the particular web server 
+that points in the IP address that's been sent.   So, this is the web server of any particular 
+website that you're probably accessing. In   this case it is going to be abc.com. So, now 
+the web server has all the content that is   needed to display in your web page. What we 
+render back is the content of your web page. This is the entire working of our DNS lookup and 
+this is what we almost do in every day when we   access different websites all over the internet. 
+I hope you find this video very informative. If you like this video and want to 
+see more like it please like and   subscribe. If you have questions please drop 
+them in the comments below. Also if you need   to learn more about the DNS services please visit 
+our website for the domain name system services.

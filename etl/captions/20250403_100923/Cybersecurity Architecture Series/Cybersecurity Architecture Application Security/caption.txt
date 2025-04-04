@@ -1,0 +1,128 @@
+Welcome back to the Cyber Security Architecture Series. In previous videos, we covered security principles,
+some of the foundational concepts, and then we started talking
+about different cybersecurity domains like identity and access management
+and endpoint security and network security. Today, we're going to talk about application security. So let's get started. What are some of the things
+that we need to consider in this? Why do we have to care, maybe, is the best question. Well, it turns out that essentially all software has bugs. Nobody writes a software of any real complexity
+that's error free. And it turns out that some percentage of those bugs will be security vulnerabilities. So therefore, if you follow the logical conclusion, that means essentially all software
+is going to have security vulnerabilities in it. So what can we do to try to reduce those
+and why do we need to do it? Obviously, we don't want buggy software
+and we don't want security issues, but this will help drive the point home a little bit,
+I think. If we look at the various stages of application development and look at where security or vulnerabilities in general are introduced. Think about the injection phase. It turns out that most of the vulnerabilities and bugs are introduced in the coding phase,
+which is not surprising. And then as we move to unit test,
+functional test, system test and release, then we find fewer and fewer bugs. So that's the green curve,
+but that's when they're introduced. When are they found? Well, they're found as we kind of move along this process. During the coding phase is
+when we're introducing them, but not finding them; in the testing phase, we're finding them. And then hopefully when we get to the real world,
+we don't find quite so many. Now the interesting thing about all of this is the cost. How does the cost go? Well, it turns out cost goes about like this, where we go from 1x as the whatever you want to base the cost
+to fix a bug down here in the coding phase to -- in some cases 640x. It is vastly more expensive to fix a vulnerablity once it's in the field than it is to catch it early. So there's a huge incentive for us to get this right
+and get it early. Now, what can we do then
+in order to get this done more quickly? Well, let's take a look. We're going to take a look, by the way,
+at this software development lifecycle. That's the SDLC. And traditionally, this is how it's been done. We have some design phase here
+where we're going to figure out in general what we're going to do in this particular application. And then we're going to move to a coding phase. We're going to write the application itself. Then we're going to go to some sort of testing phase. And then ultimately we release it to the world
+and put it in production. Now, what is traditionally happened
+is there's a big line separating these two--where this is the dev part of the process
+and this is the ops part of the process. This is where we're developing. This is where we're releasing and then just operating it
+and running it in a continuous state. The problem with this traditional approach
+is that it's very linear. You can see how this process goes. It's also very siloed. This line right
+here could be very thick in some organizations. And it kind of leads to this sort of “over the wall” mentality. I'm going to write the code and then I'm going
+to throw it over there and make them operate it. And so there's not a lot of communication happening here. It can be a slow process and it's fairly inflexible. And by the way, I'm going to suggest to you, we didn't
+really introduce security very early in this process. Very often security gets introduced out here,
+and that's a problem. Now, a more modern approach to this
+is this thing called DevOps. So here we take the two processes, dev,
+where we're building the code, then we're releasing it, we're deploying it,
+we're operating it, and we're feeding back. With a DevOps process,
+now what we've got is a cyclical type of situation. This thing doubles back on itself. There's a feedback loop of continuous improvement. There's no over the wall. There's no us versus them. It's an integrated process. It's much more rapid, and it's designed for agility. So this is a much more flexible kind of capability
+moving away from this traditional linear approach. But again, we haven't really addressed the security here. And so what more modern approaches have done is introduce this notion of devSecOps,
+where now we're going to basically bathe or encompass the whole thing in a security layer. We're going to put security at every one of these phases. We don't want this to be something that we wait to the end. Security can't be a bolt-on. That is not going to be effective. We need security to be built in
+and looked at at every one of these phases. So, for instance, with a devSecOps approach, we're
+going to do what is referred to as shift left thinking. That if you were thinking of this in a linear phase
+or thinking of it this way, then we're going to put security not just here, we're going to introduce security
+at each one of these phases. We're going to do security by design. We're going to design the system so that it stands up and it's resilient to attack from the first. Not again as a bolt-on. Then we're going to create collaboration
+among what have been traditionally three different groups that maybe didn't always talk together. But with devSecOps, we have it all working together
+with a lot of collaboration, a lot of feedback. And then ultimately try to leverage a lot of automation. I'll talk about that
+in terms of tooling a little bit later in the video. Okay. Now, we've covered the software development lifecycle. Next, we're going to take a look at secure coding practices
+and things like that. What do we need in order to write secure code? If we're going to shift
+security left all the way to the coding, maybe even design phase,
+what we're going to focus on the coding part right here. What are my needs? Well one thing I need is a list of secure coding practices. This is a prescriptive way of saying
+this is how we should go about writing certain code. There are certain things that we need to do. For instance, validate inputs. We need to make sure that if a buffer
+has been allocated for this size, for input, that when someone sends me something, it's not this big
+because then in that case, it could be overwriting memory. We call this a buffer overflow. So that's a type of condition
+that's been around for a long time. If we don't do all the input checking,
+we could have problems. We need to specify how we would do authentication. What are some of the other ways
+that we would use cryptography? What kinds of error handling routines? So it's basically a way of saying,
+have we checked off all of these things? Have we done them all correctly? Well, there's a great resource here. It's called owasp.org. And at this website, what you'll find
+is they have a list of secure coding practices. They have a very good document that is kind of an industry
+standard that a lot of people use in this. So I would reference that you take a look there. Trusted libraries. Everyone doesn't write all their code from scratch anymore
+because there's just too much that needs to be done. So as a result, we end up relying on code
+that's been written by other people. It might be open source,
+it might be proprietary, but we're going to use this in our code as well, or make calls to it and leverage it. There's a lot of sources that are out there,
+but not all of them are trustworthy. And even the trustworthy ones need to be looked at with a certain amount of skepticism
+and a certain amount of inspection. So trusted libraries are an important thing here as well. And if you want to see what can happen,
+even with a trusted library, go look up something called Log4J. This is a very well known vulnerability
+that infected tons and tons of systems because everyone was using this routine, which was a common trusted routine from trusted sources, and yet it had a vulnerability in it
+that an attacker could exploit. And those vulnerabilities were discovered. Guess what? Over here in this phase, right
+when it was the most expensive, after it had been released. So, again, we want to try to eliminate that or at least find it much earlier in the process, if we can. And using trusted sources, at least, helps. It doesn't eliminate the risk, but it helps. Standard architectures. I want to have spelled out that when we're going to do a certain approach,
+this is how the system should look. So we want to spell out in advance
+what those would look like. There's a lot of different sources for that. IBM has an Application Security
+Architecture Reference website that you can take a look at. We'll reference here. Also there are other sources, but you want to be able to spell this out
+for your whole organization so that they can see that. Mistakes to avoid. Again, we're going to go back to our friends at OWASP. They have a thing called the OWASP Top Ten list. And what's really interesting in this is they're showing
+what are the top ten vulnerabilities that we keep seeing. And it's very interesting to look at this over time. Look, back in 2017, what were the top ten? And look now and the more recent one, 2021? And what you'll find is there have been
+a little bit of shifting here, but unfortunately, it's sort of the same list,
+which means we're not getting better. We're not making these defects extinct. We're just kind of shuffling the order a little bit. But things like buffer overflows and other types of input validation errors have been around for a long time. But this is a great learning resource. So again, I refer you to OWASP. And then finally,
+this notion is really starting to build some momentum. The idea of a software bill of materials. That is, I want to know where everything came from,
+kind of a supply chain, if you think of it this way. I want to know all the components that I'm using. I want to know where they came
+from, their origins, the libraries that they came from, and where those are sourced. I want to know what dependencies exist amongst these
+different components and have those really spelled out. I don't want any surprises in that. I want to know the versions of all of these
+that I've used across all of my different systems. And if I'm building applications, I need to know
+which versions are used because those will change over time, need to be updated, and I need to be able to know
+what vulnerabilities might exist in those. Again, refer to Log4J. Go and do a web search on that
+if you want to find out more about that example. That's a good example where if we have a software bill of materials
+and we get hit by one of those vulnerabilities, then we have a much better idea of all the different places
+that we need to make changes and we can recover much more quickly
+and hopefully eliminate a certain amount of this cost. Okay. Now, we've covered the software development
+lifecycle, secure coding, and we're now going to take a look at vulnerability testing. We'd like to test for security throughout the process. Remember, one of the things I mentioned in the DevSecOps
+process is to use more automation, that is, use more tooling. And two major classes of those tools are static application
+security testing, SAST. And DAST: dynamic application security testing. You figured if a one was going to be static,
+the other was going to be dynamic, right? Okay, what's the difference in those two? Well,
+the static is often referred to as “white box” testing. It's called that
+because we can look inside and feed it the source code. So it's like it's looking inside our code. So the box is open in that sense. The black box dynamic, instead of giving it source code, we're actually obscuring
+what the source code is. It's going to look at an executable system. Think about it differently. In this case, we're going to do
+maybe after the coding phase, I can run one of these tools, I can feed my source code into it,
+and it will look for vulnerabilities and tell me about those, the ones that it can identify. And the great thing about that is we're moving
+this much earlier. We're doing a shift left in the dev process
+and finding those bugs at the earliest stage
+that they were introduced, therefore, reducing cost. Even if I can't do it in that phase, I’d at least like to catch it during one of these test phases. So it's a little bit later in the development cycle,
+but it's still before we hit release when everything gets super expensive. So what I'd like to do is run both of these. In other words, it's not an either/or. It's really both/and. Because there's advantages to both of these, the source code
+scanner will find certain types of vulnerabilities. The dynamic scanner will find other types. So you really need to use them both together
+and you use them throughout this process. And again, think about that cyclical devSecOps process
+and you can see how this would fit in and how the tools
+now become the enabler to do better security. One other sort of tool that's being used in this space
+a lot for application development. It wasn't initially thought of in that context
+by a lot of people, but it's really becoming popular and that is chatbots. These large language models
+with generative capabilities can also generate code. So a chatbot is good at generating code very quickly. You could say “write me a routine” in, say, Python that will find all the ways to make change for a dollar
+and it'll spit it right out just like that. So that's a nice feature that you can have
+the chatbot write code for you. It can also debug code. So if I've got stuck at some point during the development of some routine,
+I could send it into a chatbot and maybe it will find what my vulnerability is
+or what the bug is that I'm trying to deal with. So that's all good stuff. However, there's a downside. The downside is
+it could also potentially inject vulnerabilities. So that is, when we get source code back,
+we could inspect that. But probably you went to the chatbot
+because you had a lot of code you wanted it to write for you, not just 12 lines of code,
+because that you could have done on your own. So are you going to inspect all of that
+and make sure that the chatbot either didn't make a mistake that introduces a vulnerability, or maybe it's been engineered in a way or someone has hacked it and it's intentionally putting a backdoor in
+so that all of your data is shared out with someone else,
+or that malware is introduced without your knowledge. So that's a big risk. It's not necessarily a trusted source,
+like an open source library where we've had potentially thousands of eyes looking at it
+and inspecting it. In this case, it just came right straight from the source,
+and now you're putting it right into your code. So there's a big risk there. And another thing is, if I'm using it to do debugging, then that means I'm feeding my source code into this system. And this system might expose intellectual property. If this code I have is considered confidential, if it's a trade secret,
+if it's something that we might copyright. Now I've just taken that and I've given it directly to what is essentially to the Internet, potentially,
+because it can now take that information and learn on it. It might use it might re-use your code in some other case. There was one major company
+that, in fact, had that happen to them where their developers were using a chatbot to do debugging. And it turned out they were releasing
+their proprietary source code into the system. And the company decided
+that's not really what we want to be doing. So we need to stop that. OK, so that's a quick look at application security. What we've tried to cover are ways to introduce process, do a more continuous process, and use tooling in order to improve the security
+of our systems and leverage the best of the learning from sources like OWASP so that we don't keep making
+the same mistakes over and over again. It feels a lot if you've been doing security
+like the movie Groundhog Day, we just keep reliving the same problems
+over and over and over again. So let's learn from those
+and use those good resources to not keep doing that. So now we've covered application security. In our next video, we're going to move over
+to cover data security, which is the crown jewels. That's the thing
+that we ultimately need to protect in most of these cases. And so that you don't miss that,
+make sure that you hit it like, subscribe, and notify. And that way you'll catch the next video when it comes out.

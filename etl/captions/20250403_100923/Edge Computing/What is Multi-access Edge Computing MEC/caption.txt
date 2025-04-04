@@ -1,0 +1,47 @@
+What is multi-access edge computing? How is 
+it different than regular edge computing? Hi,   I'm Dan Kehn from IBM Cloud, and before I answer 
+those questions, please click like and subscribe.   Edge computing is about bringing compute capacity 
+closer where data is created to reduce response   time and the load on back-end servers. Multi-access 
+edge computing is the next logical step in edge   computing for telco cloud. It brings compute 
+capacity directly to network's edge, literally   on the same infrastructure as the network itself. 
+Let's go through it using an example. So we have   say an image application that does image 
+analysis. It communicates with the core network. That in turn works with a back-end server. For sake of discussion, on that 
+back-end server, let's assume we have   a service called "image analysis service" installed. Okay, this is a classical 
+application design pattern;   the user makes a request, it 
+goes to a back-end server,   it formulates a response that it returns the end 
+user. The round trip for that including latency   might be on the order of 100 milliseconds. 
+That's perfectly fine for many applications.   But let's assume we have a more demanding 
+application, for example, one that does video.   And it isn't using just one user that it wants 
+to capture, it's capturing a crowd. Maybe it's   used for security purposes, maybe it's used for 
+threat analysis -- those are just some examples.   What really drives us towards an edge computing 
+solution are two things: First, there's a lot   of data. Now an HD video camera, that could 
+stream as much as six megabits per second.   The other thing is the real-time 
+aspect -- we need a real-time response,   It would be difficult to send all that data 
+back to the back-end server, process it, and   return it in real-time. That's why we install edge 
+servers closer to where the source of data is.   So say, for example, we install some edge servers, and on those we install 
+the "video analysis service". This really helped with our latency problem. We 
+no longer have to send data across the network   to a far away server. It also 
+helps with our data volume problem.   We're no longer sending huge 
+amounts of data across the network. Where multi-access edge computing comes 
+into play is when we add a third element, specifically mobility. In the prior examples, we were assuming that 
+these edge computers were in a fixed location,   for example, at a retail location providing a 
+shopping experience, maybe an IoT device at a   factory that's doing assembly. Those are examples 
+where the edge computer location is known.   In this case, for multi-access edge computing, it 
+could be anywhere. We cannot predict where the   edge computers might be located, so we install 
+them on the network itself. So, for example, we   have a radio access network and then install 
+it at the base station; or, we could install it   at the data center for the network itself. This 
+really drives latency to its absolute minimum,   as little as 10 milliseconds. It also reduces the 
+load on the back-end server for the enterprise.   We could then repurpose that for something 
+else, for example, we could do machine learning. So, for example, say we do machine learning 
+training, then we take that result and we   give it to the video analysis service 
+to improve the quality of its results.   There's a couple other different benefits 
+that are worth noting. Because this is   running on the network's infrastructure, 
+if there is a temporary outage between the   back-end server and video analysis, it can continue 
+to process. Thus you have continuous operations.   Finally, there is the ability to take 
+advantage of radio access network data. For example, the radio access network would 
+know where the location of the users are   and it could potentially predict where additional 
+load would be required. This allows their network   to be much more responsive to users' needs and 
+being able to deploy capacity where it's going to   where it's going to be needed in the future. Multi-access edge computing means communication service   providers can bring compute capacity directly to 
+your users no matter where or how they connect to   the network. Thank you for watching. If you 
+have questions please drop us a line below.   If you want to see more videos like this 
+in the future, please like and subscribe.

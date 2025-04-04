@@ -1,0 +1,57 @@
+Today cryptography is the ultimate line of 
+defense that protects our data. But it's based on   an assumption that it cannot be broken by classical 
+computers. In the near future, quantum computers   may be able to crack these encryption algorithms. 
+That's why every organizational leader needs   to understand the risk to their data and the 
+solutions that will make them quantum safe. Let's get to it.  What bad actors and cyber criminals 
+can do once quantum computers mature? First   thing they can do is fraudulent authentication, 
+which means they can get access to our data--the   secure data that we have in our applications, our 
+systems, and our databases. Second thing they can   do is forge signatures, which means they can fake 
+the records, fake the audits, and also can make   the fake identity and tamper [with] our blockchain 
+assets as well. Third thing they can do is harvest   now/decrypt later, which is very, very important 
+for us today. We are understanding that they   cannot steal and decrypt the data today, but they 
+will be sitting on it until the quantum computers   mature and they will be able to decrypt that and 
+find out the crown jewels from your enterprise.   The first step is to discover. Discover your 
+cryptography means you need to identify the   cryptography-relevant artifacts in your business 
+applications--source code as well as object code.   What this means is that brings you the visibility 
+where the cryptography function library's methods are being used. Once you have them, 
+you need to also find out the dependencies   across all of these artifacts and then create a 
+single source of truth. A similar concept like   in a supply chain inventory called SBOM (software 
+bill of materials). You need to have the concept   called cryptography bill of materials (CBOM). IBM 
+has been helping bringing that as a standard as   part of the CycloneDX. And this capability can bring 
+you a static view of your business applications   environment. Once you have this, the next step 
+is observe. Observe your cryptography means   bringing the dynamic view along with static 
+view. Often many organizations have either one   or the other, but you need to have both. And 
+as part of bringing both of these together,   you need to have a full inventory of your 
+cryptography assets from network perspective as   well as your applications' perspective. And then 
+you need to understand how these key exchanges are   happening from cryptography perspective like TLS, 
+SSL from your network environments. And then once   you get the full visibility of that inventory, 
+you need to prioritize where your cryptography   relevant artifacts are important based on 
+your cryptography posture or your regulatory   compliance requirements, and then create 
+that list. And once you have the prioritized   inventory of your cryptography assets, you need 
+to transform the cryptography by implementing   and applying the quantum safe algorithms, or 
+encryption algorithms, or new certificates,   or key lifecycle management capabilities that are 
+quantum safe. By doing this, you need to make sure   that you are also following a process that you 
+can achieve crypto-agility. What we mean by   crypto-agility is that [is] how can you reduce the 
+burden on development as well as the operational   environment so that it's not disrupting your 
+existing systems and applications--and rather   giving you an ability to move from old algorithms 
+to new algorithms seamlessly, which means you can   have crypto-agility as a service capabilities, 
+starting from encryption, key lifecycle management   and certificate management capabilities that 
+would be quantum safe. And whenever you need   them in your business applications, you can simply 
+make an API call when you need a new encryption,   when you need a new certificate, when you need a 
+new key in general. So this helps you bring a full   capability across Discover, Observe and Transform. 
+Now you understand the three key steps. What tools   should we use to get to your journey to quantum 
+safe? IBM Quantum Safe Explorer helps you discover   your cryptography by scanning the source code and 
+object code of your enterprise applications. Also,   it can create and generate the CBOM, what we 
+call the cryptography bill of materials. This   gives you the static view of your IT enterprise 
+applications. IBM Quantum Safe Advisor can help   you bring both the static as well as the 
+dynamic view of your cryptography assets   and also prioritize them based on the cryptography 
+posture in reference to your compliance and the   vulnerabilities. IBM Quantum Safe Remediator 
+is a capability that can bring and allow you   to remediate with quantum safe algorithms, 
+quantum safe key management capabilities,   as well as the certificate management capabilities 
+that can allow you to be crypto-agile. And there   are a set of remediation patterns that are part 
+of Remediator that can enable you based on your   requirements in terms of VPN, in terms of 
+proxy, in terms of TLS connections. All   of those remediation patterns are based on 
+the best practices that we know as of now,   based on our current client needs. IBM Quantum 
+Safe can help any organization not only prepare   for the post quantum cybersecurity landscape, but 
+also improve and maintain their cyber security   hygiene overall. How your organization can prepare 
+for the quantum era--Check out the links below.

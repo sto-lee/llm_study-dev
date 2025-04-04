@@ -1,0 +1,108 @@
+As your applications grow in complexity
+how do you harness and drive new insights from all the chaos? And is
+observability just a buzzword, or is it something that you actually need to
+think about? Spoiler alert, it is. My name is Sai Vennam and I'm with the IBM Cloud
+team, and today I'm joined with a special guest. Hi there, I'm Laura Santamaría and
+I am a Developer Advocate with LogDNA. If you don't know LogDNA is a core part
+of our observability story on IBM Cloud, but today we're gonna be talking about
+observability, so let's start with definition. So observability is a
+property of your systems that helps you understand what's going on with them,
+monitor what they're doing, and be able to get the information you need to
+troubleshoot. So the way we see it there's three major tears of
+observability and let's go through those now. We're gonna start out with my favorite
+which is logging. In addition to logging we additionally have metrics, so that's
+just all of your analytics around all of the data that you're gathering and
+finally...we've got monitoring. Now monitoring is essentially putting up a
+magnifying glass to your systems and getting new insights from what's
+actually running there. Today we're gonna be starting with an example, in the
+bottom left corner we have sketched out a few of the different infrastructure
+pieces so we'll start with today. Can we explain what those are? Sure, we have a
+public cloud, it can be any of them. And then you have on-prem, and then let's say we
+actually have some user data, maybe this is a tablet or a cell phone. So all of
+those infrastructure pieces are creating and generating data and what I'm kind of
+gonna focus on here is the personas that are going to consume them. So we've got
+that Dev persona, we've got Ops, and finally we have Security. So, all of
+this data flowing in is kind of a lot, I want to have some way of filtering it
+down for my specific user personas to be able to understand it. So let's start
+with developers, what do developers care about? I actually
+want to back up here for a moment though because let's talk about all the
+different levels that logging can come from. So we have three different levels
+that we can think about so you have your Operating System, you have Kubernetes or
+any other type of platform, so I'm picking kubernetes. That's my favorite. And
+then finally your application. So your operating system and kubernetes all send
+really good logs and you can use a lot of that data pretty much as this, or add
+in some of your own but applications is really where you need to spend some time.
+So you're devs need to create a proper event stream and this really goes by the
+garbage in, garbage out system where you really need to put in good work and get
+some good data on the side of the application so that you get good logs
+out. Right, exactly, so the great developers out there on kubernetes and
+the operating Systems they've instrumented their platforms but the
+application that's up to you as a developer to make sure the
+instrumentation is in place. Absolutely, and when you think about it, let's say
+that we have an operating system here and I'm gonna say that's an operating
+system, and then we have kubernetes running on it. And then you actually have
+your app running on top of kubernetes. And all of these are to each sending
+data. So we have three different levels of data all coming out and trying to
+come towards the dev that wants some information. Right, so it looks like
+they're all coming into this central area here. That's right. We can talk about
+this is our aggregator. So our aggregator takes in all of this
+data and puts it all into one place so we can work with it. That's right, but
+kind of coming back to the the problem here a
+developer might not care about all of the information flowing in, how do we
+drive just the pieces that they care about like we mentioned? Maybe they
+instrumented their specific application, how do we drive that to them? Absolutely,
+so an aggregator often has filters. So in this case let's say the dev is just
+asking for data about debugging and just some information there, and your data,
+your filter can actually set up a dashboard or some other way of accessing
+all of that data that the dev can take a look at just the pieces that they need.
+That's a core part of a observability solution, this aggregator not only does
+it collect the data but it needs to externalize it, expose it, so my
+developers can access it and drive new insights. So let's say we solved that
+part of the puzzle, what do operators care about? What are
+the operations teams? What are they looking for out of these systems? So an
+operations team might need to know more about degradation of its system, or if a
+pod is falling over,  maybe your database filled up and you need to know more
+information about how you can fix it. The ops teams is going to be getting
+data from all of these different systems and filtering it out to yet another
+dashboard or another interface of some sort and getting that data just what
+they need. Right, so potentially they may not care as much about specific
+application level logs but they'll be looking to kubernetes to say hey what
+was the CPU usage, do we need to set up some horizontal pod auto scalers to make
+sure that we don't hit those limits. Finally, kind of probably see where I'm
+going here with the last piece of the puzzle with security, they probably have
+a dashboard that's created for them as well. So a security team let's say
+they're using a third-party tool as most security teams generally, do they
+identify a threat ID, or maybe a customer ID and they want to dive in deeper to a
+potential threat that's been identified. So they put that information in the
+aggregator and they can identify and make kind of sense of all the chaos to
+identify exactly what that specific security analyst might be looking for.
+But I want to pose an interesting question here, it's not always about
+going to the system and identifying what's there,
+many times security advisors need to know what's happening the second it
+happens and they can't just sit there and stare at logs all day, right.
+Absolutely, this is where monitoring comes in, this is really a two-way street.
+We have automated alerts that can go out and tell all of these different groups
+about specific things that they're interested in, specific events that they
+want to know about. So let's say that you have a system that's been accessed and
+it's not supposed to be frankly that system is going to figure it out long
+before a human is and that's what an alert is for an ops team doesn't want to
+find out that there's a degradation of service when their user does, they need
+to know ahead of time. So a good observability solution should have the
+ability to externalize the data and then additionally set up a learning on top of
+that. So our dev team may be their most comfortable in Slack, so they set up a
+chat bot so that particular exceptions when they're thrown they're able to know
+when they happen. Your ops team may be they were using something like a paging
+system so that you know in the middle of the night if something goes down they
+get alert and they can start looking into it right away. And then finally for
+our security teams, kind of as I mentioned, they're generally using you
+know maybe third party tools or custom dashboards they can set up custom
+alerting so they can know exactly when something goes down. And to be honest
+this is your new norm, you're going to have multiple clouds, you're going to
+have on-premise systems, you're going to have data coming directly in from your
+users. You need to be able to understand what's going on and really this is what
+observability is all about. Thanks for joining us for this quick overview of
+observability, also thank you so much for joining us today Laura. Absolutely, my
+pleasure. If you have any questions please drop us a line below. If you want
+to see more videos like this in the future, please like and subscribe. And
+don't forget you can always get started on the cloud at no cost by signing up
+for a free IBM Cloud account.

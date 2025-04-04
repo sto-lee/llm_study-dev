@@ -1,0 +1,113 @@
+Hey, what's up, everyone? My 
+name is Luv Aggarwal and I'm   a Data Platform Solution Engineer for IBM.  
+ 
+  Data warehouses. Their prevalence across 
+enterprises has grown significantly   over the past 20+ years. But with 
+multiple modern advancements,   the numerous options out there 
+are now much more complex.  
+ 
+  So, let's talk about what an enterprise data 
+warehouse, or "EDW", is. So, first and foremost,   there's often confusion between "data lakes" 
+and "data warehouses" and even "data marts".   So, I like to think of a data warehouse as being 
+more purpose-specific than a data lake. So,   while a data lake is a great place to dump all 
+sorts of raw, structured and unstructured data   in a quick way to clean and organize later, a 
+data warehouse, on the other hand, is a large   collection of organized and clean business data, 
+ready to help an organization make decisions.   And a data mart is like a subset of a 
+data warehouse that's more specific to a   particular business domain. So, for example, 
+you could have a finance data mart.  
+ 
+  But for today, let's focus on the data warehouse.   So, we'll get rid of data lakes and data marts, 
+and we'll make this a little bit bigger.  
+ 
+  But for today, we'll focus on the data warehouse. 
+So, let's get rid of data lakes and data marts,   and make our data warehouse 
+a little bit bigger.  
+ 
+  So, the data warehouse serves as the single source 
+of truth for an organization across multiple   knowledge domains. And data in the warehouse 
+comes from multiple different source systems.   And is transformed from raw 
+data to high quality data,   optimized for analytics via various different 
+ETL, or "Extract, Transform and Load" tools.  
+ 
+  So, as I mentioned, data that's 
+in our source systems can be in   different types. It could be transactional 
+systems, it can be relational databases,   and they can cover a wide 
+variety of business domains.  
+ 
+  So, the data could cover things like customer 
+data from our CRMs. We could have sales data.   We could have data from our ERP systems. 
+We could even have supply chain data.   And the list goes on and on. Right.  
+ 
+  So, once data has been cleaned, transformed and   loaded into our data warehouse, it's 
+now ready for us to expose to our users,   who can then start to take it and do analytics 
+and machine learning on these data sets.  
+ 
+  So, who are our users? Our users can be folks 
+like business analysts. We can have data   scientists. We could even have data engineers. And 
+these folks can now start leveraging these data   sets, either using the built-in analytics tools in 
+the data warehouse or using a variety of different   business intelligence or predictive 
+analytics and machine learning platforms.  
+ 
+  OK, so now that we know what an 
+enterprise data warehouse is,   let's talk about the different ways 
+in which it can be implemented.   So, three common ways in which a 
+data warehouse can be deployed.  
+ 
+  The first way is on-premises. Now, 
+a couple different ways in which an   on-prem data warehouse can be configured, 
+we could have our data warehouse running on   commodity hardware. Now, this could be set up 
+and structured using either MPP, or "Massively   Parallel Processing", architecture where we just 
+add more compute nodes as our workload grows,   or using SMP, or "Symmetric Multi-Processing", 
+architecture where, typically, we have a   tightly coupled, multi-CPU system that shares 
+resources from one common operating system.  
+ 
+  Now, the other way is through a 
+purpose-built appliance format.   Now, this is typically an integrated 
+stack of CPU, memory storage software,   all purpose-built and optimized for a data 
+warehouse workload from a single vendor.  
+ 
+  So, what are some of the benefits 
+of having an on-prem data warehouse?   Well, first you get to maintain complete 
+control over the entire tech stack, right?   Second, you can leverage your local network 
+speeds and perhaps avoid some bandwidth challenges   typically associated with the cloud. You can also 
+leverage high availability, and we can maintain   strict governance and regulatory compliance, but 
+on the other hand, an on-prem data warehouse does   come with an upfront investment and the 
+need for ongoing support and maintenance. Now, the other way in which a 
+data warehouse can be deployed   is through a cloud-based data warehouse, 
+where our data warehouse is delivered as   a managed to SaaS offering via the 
+multiple public cloud providers.  
+ 
+  So, moving data warehouses to the cloud is 
+the next frontier for a lot of enterprises   and for valid reasons. Some of the benefits 
+include being able to free up resources   to focus on other high value analytics tasks, 
+right, instead of just managing systems.  
+ 
+  Another benefit can also be the 
+ability to scale easily. Right,   because we don't have to go 
+out and procure new hardware   and we get to leverage automatic upgrades. Right. 
+Now, on the other hand, oftentimes a cloud-based   data warehouse can take a performance hit due to 
+how it's fine tuned for that specific workload,   and there can be some unanticipated high costs 
+due to how cloud data warehouse is scaled.  
+ 
+  OK, the third option is actually a hybrid 
+approach. So, this takes the best of on-prem   and cloud and brings them together. And a lot 
+of enterprises choose to run both their on-prem   and cloud data warehouses in conjunction. And this 
+can be done for a couple of different reasons.  
+ 
+  So, one benefit can be that this allows us to 
+explore new use-cases. Right. So as an enterprise,   we may have certain data sources that 
+were born in the cloud. So, it can be   beneficial to start leveraging a cloud data 
+warehouse for analytics against those use-cases   while still maintaining their mission 
+critical workloads on-prem.  
+ 
+  Another benefit can be for a disaster 
+recovery and backup scenario.   This is where we would use both our environments 
+in conjunction for DR and backup reasons.  
+ 
+  So, if we take a step back, we can see that 
+we've barely started to scratch the surface of   enterprise data warehouses and how they fit into 
+an overall enterprise architecture. But I hope   this video has given us a good idea of how data 
+warehouses fit in and what they're used for. Thank   you. If you have any questions, please drop us a 
+line below. If you want to see more videos like   this in the future, please like and subscribe. And 
+don't forget, if you want to learn more about any   of the IBM data solutions we've discussed today, 
+please feel free to check out the link below.

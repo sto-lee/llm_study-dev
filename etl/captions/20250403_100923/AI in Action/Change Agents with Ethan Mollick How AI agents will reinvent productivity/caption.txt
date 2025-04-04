@@ -1,0 +1,303 @@
+AI is hyper persuasive. What does that mean? It's innovative.
+What does that mean? That, you know, in an ideal world,
+that helps us as humans thrive. What I worry about is organizations
+that aren't thinking about these issues. You don't have to look far to find news
+about business leaders and employees exploring how generative
+AI can help us work better, work faster, work more efficiently. But real talk. Are we actually getting more productive? Or is this
+just the story we're telling ourselves? And what's up with all of the names? Copilots, assistants, agents, LAMs? It would be great to finally get
+an answer, simply speaking, to what's the difference
+between AI assistants and AI agents? And where should organizations
+and employees be directing their attention and resources
+to really accomplish efficiency? Well, today I'm joined by Ethan Mollick. Ethan is an associate professor
+at the famed Wharton School of Business, where he studies and teaches
+entrepreneurship, innovation and AI. And he's the co-director of the Generative
+AI Lab at Wharton. He's also a popular author and blogger,
+and his latest book is Co-Intelligence:
+Living and Working with AI. Ethan, thank you so much for being here. It's a pleasure. Thanks for having me. When it comes to AI based productivity
+tools, kind of feels like
+there are too many terms out there, right? So let's start with
+how do AI agents differ from, say, AI assistants, copilots and large action
+models? Ethan, I need you to help us
+to get all of these names straight. Well, it doesn't help that even the term
+AI is, like, in dispute, right? It meant something very different prior
+to 2023 than it does today. So you're not alone, right? The easiest way to think about
+this now is probably to think about what you've been using
+when you use ChatGPT is you're using a chat bot
+or an assistant it’s sometimes called. Then when you have a
+AI tool integrated into your software, like an AI help bot or, it's
+a tool that helps you, you know, finish your graphic design or something
+that's usually called a copilot. And then agents are autonomous AI systems
+that will go off and do work on their own and set their own goals
+and just perform autonomous work. They're not there yet.
+That's what everyone's aiming for next. And large action
+models are a new, made up term for an AI that can actually do things
+like if you say, set up an appointment, it can actually act on your phone
+and set up the appointment for you. Okay, so there are some real distinctions that you just drew
+in between each of those. So does the name really matter after all? If you're the one who's building it? The one thing that I think we've learned
+about AI over the last couple of years is AI
+companies are terrible at naming things. I mean, who would have ever called ChatGPT
+4.0 and Claude 3.5 sonnet and you know, like Llama 3.1 405 B, like,
+these are things I have to say with a straight face now. So like,
+I don't think we should worry too much about the names because they're
+a complete mess and it is confusing. I think that creates barriers
+that aren't necessarily there. Like these systems
+are not that hard to use or to work with, and it just sounds harder
+than it is when we use all these names. You've been doing a lot of research on the practical implications
+of generative AI, often hands on. In a recent talk,
+you cited an experiment using gen AI that resulted in a 40% increase
+in quality of work. Can you tell us a bit
+about that experiment? And then I also want to know what type of gen AI was used for this
+and what does quality mean? It's a really good question. So the particular study you're talking about is one
+I do with my colleagues at MIT, Harvard and the University of Warwick,
+where we went to Boston Consulting Group, and they gave us
+8% of their global workforce. And we did an experiment. We developed 18 business tasks ranging
+from like consulting, standard consulting and now analytics
+and marketing and persuasion ideation. Some of the consultants got access to GPT
+4, some did not. The people who got access to GPT
+4 had a 40% improvement in quality, 26% faster,
+and got 12.5% more work done. So when you talk about the amount of work
+that's being done, can you still break down
+how does that quality figure into it? Sure. So we found this 40% quality increase that matches a bunch of other work
+that shows that when an AI does work, it produces pretty high quality
+work out of the bat. I would say solid A-minus from a lot
+of the most advanced models out there. Not always a plus, but but solid work. And so we found that
+it increased the average quality, especially for low performers. So low performers
+got the biggest boost in their quality. High performers got less of a boost. So this is an experiment. So now how can real life companies achieve
+something similar? What key actions did
+they need to take in order to get here? So that's
+where it gets really interesting. We are still seeing these kind
+of large scale improvements, but they're at the individual level. So individual coders who use these systems
+are much more productive. And by the way, everyone's already
+using them like penetration rates, from what we can tell from early studies,
+like there's a study in Denmark of all places
+from January of last year that shows that, already 65% of marketers, 64% of coders, you know, 35% of lawyers
+were already using AI at work. The productivity benefits
+go to the individuals, though, not to the organizations. To have the benefits flow
+to organizations, organizations need to think hard
+about how they're incentivizing people and how they're building
+organizational structures to succeed. Ethan, how can businesses empower these productivity gains
+then, rather than having people hide them? Is reward systems the answer?
+So it's a few things. Thinking about rewards is a big deal. Why are people incentivized
+to show you what they're doing? I've seen organizations give out $10,000 prizes once a week to
+whoever has automated their job the best, but even just doing things
+like having the company executives show you they're using
+AI can help make this different. And then there's
+the organizational structure piece. What do you do
+when you're more productive? What am I supposed to do with my time? That feels like a big question
+a lot of companies aren't asking. So are there any other recent studies
+then that you want to name drop? There's a lot of interesting work. We've got a repeated set of studies
+that show that AI is very creative. So my colleagues at Wharton run a famous
+innovation entrepreneurship class. They had the students in class
+generate 200 ideas. They had the AI generate 200 ideas. And they had I'd say judges judge
+the ideas by their willingness to pay, how much they'd pay for the
+the product that was created. Out of the top 40 ideas by willingness
+to pay, 35 came from the AI, only five from the humans. So we're already seeing higher creativity. Similarly, if you get into a debate with an AI, you’re 81.7% more likely
+to change your view to the AI’s view then if you get to a debate
+with an average human. So these systems
+are already extremely powerful. I'm trying to figure out
+if I should feel encouraged and empowered by that research,
+or if I should feel intimidated. I think a little of both. I mean,
+I think this is empowering and powerful, but I also think we haven't started
+to really deal with the implications of all of this. Like AI is hyper persuasive.
+What does that mean? It's innovative. What does that mean? That, you know, in an ideal world
+that helps us as humans thrive. What I worry about is organizations
+that aren’t thinking about these issues. Okay. So as long as the organizations
+are at least having this knowledge, that's a strong foundation
+for them to begin to think about it. And thinking about actually changing
+things like, what are they going to do? Like, I mean, look, the number one thing
+that people tell me they use AI for secretly inside their company
+is writing all their performance reviews. Now, performance
+reviews are really annoying to write. They're meaningful
+when they're done by human beings. They're not meaningful
+when done by the AI, but it's the first thing
+people automate, right? Like, similarly, like,
+I actually I had a great experience. I had to write letters of recommendation
+all the time for people. And the whole idea of a letter
+recommendation is I purposely set my time on fire as a signal fire,
+that I care about someone, right? Like I'm like, I’m going to spend
+45 minutes writing a letter for you. I have to read all of your stuff and your resume,
+and then I write a letter for you. And the letter doesn't matter. It's the 45 minutes I set on fire that’s
+an indicator that I care, right? Now, here's the problem. If I just put the resume in, the job
+they're applying for, and the letter, then I get a much better written letter in 30 seconds
+than it would take me to do in 45 minutes. Do I turn in the better letter
+that didn't take the time to write. Or do I turn in the worst written letter
+that took me 45 minutes to write? If you ask your students, they'll say
+like, turn in the meaningless letter because it's better written
+and they'll get the you know, get the job more likely. That starts to challenge
+how we view things. In fact, I had a student send me, for the first time, as when they asked
+for a letter recommendation, they sent me a prompt that they just
+said, paste, this is into GPT four. It use this to write the letter. No joke. Did
+that student end up getting the job? They did, yes. Well, that's a good letter. Well done. So based on where we are right now,
+do you think AI agents are the future of productivity? So my book is about Co intelligence,
+the idea that people working with machines do better. I think that that is still very relevant. I think if you can figure out a way
+to work with an AI, you do better, right? Agents are a different breed, right? Agents are the idea that I give an
+AI an assignment. Write me this code to do this, do
+the market research, generate the report. Come back to me. It's almost like
+we're with the contract worker. So all the AI companies think that agents of the future,
+we don't know yet whether they are or not. Where do you sit on that? Based on what I've seen for other agents, I think they're going to be
+a very big deal. I think assigning a tool to go out
+and do something in the world. I've already been using AI coding agents.
+I can't code in Python. I do a few hundred Python programs a week
+now because the AI does it for me. So I actually think agents
+are going to be a very big deal. I mean, I'm going to put you on the spot
+here. Can you give me a specific year
+or maybe like a range of time that you think it will take
+for the future to be here? I would guess 2024 if I had to guess. 2025 on the outside. Okay, great. Along those lines too,
+I'm very curious about what will AI agents end up doing for us
+or with us that they aren't doing yet? Like, what are they lacking? Right now, when you use an AI system,
+you have to direct it, right? It's designed to be a co-intelligence
+to work with you. I think that that is very different than
+an agent that just does the work for you. If I want to write a piece of code
+or write a document, I'm going to give the document to the AI. It will give me feedback.
+I'll give it back information. I might have to paste in some research. I'm directing the AI. With an agent based system,
+I would say something like, do all the market research
+you need to, go out into the world and collect the data
+you need, then write our initial draft, you know, simulate running,
+a bunch of different people reading the draft, make changes and updated,
+give it to me when it's done. And, you know,
+also make sure it's on the website and well formatted
+and figure out how that works. And, you know, read up the latest research
+to make sure everything's up to date. But is this something that an LAM can start to solve rather than an agent
+to go back to our name conversation? So LAM is a little bit vaguely
+defined still. But the way I understand LAMs are large
+language models that could take action. So the most common version
+is like on my phone, I can ask the the large language model
+to do something. That is different from the agent because
+it doesn't require full autonomy, right? An agent is has autonomous goals
+that it seeks to pursue as it wants to pursue them. While an LAM would be more like
+the example of like, you know, telling your coffee machine
+make me the perfect cup of coffee kind of set up, and it would push
+all the buttons for you to set that up. But it feels like gen AI is something
+that people just need to dive in and start getting their hands dirty. What should companies be experimenting
+with right now to get productive? The R&D process inside most companies,
+not for their product, but for their own process, has largely been outsourced to enterprise
+software companies like, you don't do the work yourself. You have, IBM has been thinking hard about
+this problem and brings you a solution. And I think that the issue is, is that that's left a lot of companies
+without a lot of R&D bones, right? They're not used to think about
+how to actually own, process or approach. They build good products or,
+you know, services or solutions, but they're not thinking about how do
+I fundamentally change my organization. And I think the real key
+is experimentation. What is AI good for it? You're gonna have to figure that out. And the people that figure it out,
+or the subject matter experts inside your own company,
+the people who actually do the research today,
+who are using the job this all the time. So you need to empower everybody
+in your organization to be learning and testing in an ethical, legal way,
+but not so constrained that they don't get anything done. What are Ethan Mollick’s top five ways
+that Ethan Mollick stays productive? So I differentiate in both the book and our study between what
+we call a cyborg and a centaur model. So a centaur is like an AI model,
+like an AI approach where you like half person, half force,
+you divide the work up to like, I like to do analysis,
+you do the emails, I divide it that way. Cyborg work is more blended. You do the work with the AI back
+and forth, throwing off individual tasks. So for example, things
+I've done in the last day we were developing a logo
+for a new internal project. So what we did was we sat down with Claude
+and said, here's the concepts we want to get across the logo, draw
+an image for us on the logo, try it against a blue background.
+What if this was more rounded? Can you think of a few other ways
+to do it? Another case was like,
+hey, I've got this document. I need it to be 50% shorter, can shorten it down without
+removing any of the important context. There was another case of like, you know,
+I read this academic paper, I'm like, I think I get it. Can you just make sure this understanding
+is correct? Like so
+lots of little use cases all the time. Well then is there a world
+where you OD on AI? I mean, I think it's the same danger
+that we have of OD'ing on our phone. Like there is this kind of like,
+what is human? When is it inappropriate to do?
+We haven’t divided those lines yet. AI is a very profound technology,
+technological change. We call these kind of changes
+general purpose technologies. They affect everything in our world. So the internet
+and the computers were one right? It took a long time to play out,
+electricity before that, before that steam. So they have lots of varied effects. Some are good and some are bad. And we're going to watch these things
+play out. So there's so many areas where
+using too much AI is going to be harmful. There’s going to be areas where AI is
+going to be transformative in good ways. And we need to play this all out.
+I want to do a lightning round. Are you down with that?
+I'm always ready. Yep. All right. So yes or no. What would you let an AI agent do for you
+today? Plan your next vacation? Yes or no? Not yet. Not yet. Okay, okay. Be your manager. Not yet. Give you a health diagnosis. As a second opinion? Definitely.
+But not as a first? I mean, I've got access to humans. My standard is always best available
+human. What's the human you have access to? And are they better or worse than the AI? AI is the cheapest
+second opinion in the world, and most of the studies show
+it's pretty great at medicine. I still wouldn't,
+you know, I'm not going to tell you out of on a podcast that like, trust the
+AI rather than the doctor. Although I spoke to one of the most famous
+therapists alive today, a guy named Marty Seligman,
+who invented positive psychology, and he says that the
+AI is better than him at therapy. So, you know,
+you draw your own conclusions. What about evaluate your performance? I absolutely use it for that today. Yeah. I was going to say if you said no
+for that one, I was going to call you out. It's like you use it
+yourself. Yeah. All the time. Yeah. Of course. How is this what would you what would
+an outside person say about this? What would a high school student
+say about this? What when someone is really critical, say,
+all the time. Can you complete this sentence
+for me: in five years, AI agents will... Be ubiquitous in that
+you will see them anywhere you're online. You're more likely
+to run into an AI agent than a person. What do you think is going to be the most unexpected place
+that we run into an AI agent? That's a tough one. I mean, I like, by the very nature,
+be unexpected. I will tell you the unexpected place where
+I think there'll be the biggest delay. I think teaching is not going to change
+as much as people think. Classrooms and how we teach will change,
+but we're not going to replace teachers with AI agents, but we will supplement
+them with AI tutors and things like that. I think you're going to see AI agents
+in more high end jobs than you think. I think a lot of first round legal work
+might be done by AI agents for example. How did you use gen
+AI recently on the job, and did it make you more productive? As academics, you also review
+very high end academic papers. I always review the paper myself,
+but afterwards I give it to the AI and say,
+what would you add to this that I missed? There was a flaw or issue
+to improve the paper. It does a great job with that. That's very high end PhD level work. I like that.
+What would you add to... okay. Thank you. I'm
+going to use that prompt myself. Appreciate you. Also, does it matter if productivity increases
+if we're focused on the wrong things? Because how's gen
+AI gonna help us with that? So first of all it is a pretty good
+advisor and manager. So it might help us with that. But I agree, like part of the moment
+requires us to really think about work in a deeper way
+than we're used to thinking about work. We need to be thinking about like,
+what is it? Why are we doing
+the things that we're doing? What parts of the process can be improved
+or place changed? Really big set of questions. All of this builds up to an overwhelming
+idea that AI is going to be your coworker. What are the things that our listeners
+should go do right now to be better at work? So I have four rules in the book,
+and I stand by them because like, even though I wrote them like a year
+and a half ago, people have been telling me they work. So the most important is just use
+AI for everything. Like, bring it to everything you do. Everything legally
+and ethically that you can, you know, I don't know if you used it before this podcast,
+but I would, if I was in your shoes, I would be like,
+give me some questions to ask. Then I'd be like, all right, let's
+rollplay back and forth some interactions. Then I'd take this transcript and say, what were the most interesting nuggets
+where I might make cuts? How would I summarize this down? How can I turn this into a digestible
+format for different audiences? And then I might say afterwards,
+like, well, how do I email all the people in my team to let them know what was good
+about the podcast or not? You know, what questions should I redo
+or do differently next time? I would use it for absolutely everything. Absolutely everything. And that's how you learn
+what's good or bad, because it's going to be good
+at everything. It's going to suck at some stuff. So you need to figure that out
+by using it. Second thing is just to realize that
+it's going to do part of your job for you. That's not the end of the world.
+Jobs are bundles of tasks. We lose tasks all the time. Like, I'm a professor, by the way, out of the 1016
+most affected jobs by AI, according to most of the studies
+on this, business school professor is number 22.
+So I think about this a lot. And like my job is going to change, right? Like will grading be done with AI?
+Will other stuff... but like I'm still hopefully
+to be talking to you here. So what I do day to day
+might change, my core job doesn't change. So you want to think about doubling down
+on what your best at. Because whenever your’re best at,
+you're almost certainly better than AI. Third thing, don't make prompting hard. Just talk to the AI like a person. Tell it what kind of person
+it is, and you're 90% of the way there. And then my last rule is this is the worst
+AI you're ever going to use. Ethan, you mentioned that
+one of the things that you do before you publish a paper is you ask,
+is there anything that I missed in here? So now I'm going to ask you, Ethan,
+is there anything that I missed, anything that you wanted to cover
+that we did not mention today? I would say that
+I think these were really good questions. I think that the real issue is this gap
+between individual and organizational. And my biggest concern
+is that organizational leaders aren't getting it, right? So there's huge transformation
+happening under their feet. Organizations are getting filled
+with secret cyborgs who are doing all their work
+with AI and not telling anyone. And if they don't realize that, that is
+both a huge risk and a huge opportunity, and if they only treat as a risk,
+they're going to lose. This has been such a tremendous
+conversation. And again,
+I really appreciate you for joining us. For those of you
+who are watching and listening along, please let us know your thoughts
+in the comments below. And absolutely stay tuned to this feed,
+because we've got new episodes biweekly on Tuesdays. We'll see you soon.

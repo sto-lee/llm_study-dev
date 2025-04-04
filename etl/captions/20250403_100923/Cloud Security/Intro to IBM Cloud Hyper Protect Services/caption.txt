@@ -1,0 +1,63 @@
+Hi, I'm Vivek Kinra from the IBM 
+Cloud Hyper Protect Services team.   Today, we're going to talk about Confidential 
+Computing as provided by Hyper Protect.   So, why Confidential Computing? 
+Data security and protection are by far the biggest inhibitors for organizations 
+seeking to move sensitive applications   and data to the public cloud. 
+In fact, 95% of our customers   in regulated industry cited security, privacy, 
+regulatory concerns and cloud provider having a   backdoor access to organizations sensitive data as 
+their main inhibitors for using a public cloud.  To address these concerns, we are talking 
+about three pillars of data security   when considering end-to-end data protection.  
+Data at rest and data in flight are the two pillars that historically have received the 
+most attention and addresses many concerns. However, when regulated industries clients 
+bring their sensitive workloads to the IBM Cloud   Hyper Protect Services, they want 
+to process their sensitive data with   highest level of data protection without 
+compromising the performance and latency. So, to complete the data protection 
+lifecycle, client wants to protect their data when it in use, or in memory.
+This is the focus of confidential computing. The IBM Cloud Hyper Protect Services, including 
+Crypto Services, Virtual Servers and DBaaS offer protection for all 3 pillars thereby providing 
+an end-to-end confidential computing environment   in the IBM Cloud.
+So, how does IBM provide this level of security?
+Well, the Hyper Protect Services leverage many years of IBM's security and
+privacy experience to the Cloud.  To do this, we deploy our services on 
+special LinuxONE hardware that utilizes what's known as a Secure Service Container.
+This is a protective boundary around the base operating system, management backend 
+and application interface to ensure no access by the unauthorized figures like system 
+administrators or the cloud providers.  
+   Secure Service Container ensures: 
+Data Integrity and self-attestation - There   is  tamper protection and verification through 
+signatures that the packaged software image is   deployed from a trusted source and not 
+been modified since leaving the vendor.  In case any tamper is detected, 
+Secure Service Container will not boot that image.  
+   There are several examples of client 
+segments from financial institutes,   automotive manufacturers to start-ups who are 
+currently using the Hyper Protect Services   to achieve confidential computing. 
+Today, we're going to explore one particular use case, the Digital Assets Platform.
+With this use case, clients are tokenizing and trading assets, similarly to 
+how the stock market works. However, the assets aren't shares of a company, 
+they can range from coins to commodities. With our digital assets platform, 
+you have the asset itself,   that is run by a combination of 3 things.  A base technology, Blockchain, 
+that provides the ledger. The Wallets, to protect keys.
+And Exchanges, or the digital marketplace.  To provide a confidential computing environment 
+for the Digital Assets Platform, first,   we utilize protected runtimes with Hyper Protect 
+Virtual Servers to actually run the application.  These run within a Secure Service Container that 
+automatically encrypts data and provides memory   protection to ensure that no unauthorized 
+person gets access to secure data.  Next, we work with the Hyper Protect Crypto 
+Services to utilize the Hardware Security Module,   or HSM, and Key Management Service.
+With this technology, built on FIPS 140-2 Level 4   certified hardware, clients can 
+lock down their storage, backups,   Secure Service Container, and applications.
+Finally, we work with other IBM Cloud offerings to provide backup and storage, also integrated 
+with Crypto Services, and holistically   locking down the entire environment.
+In this way, we protect from   malicious actors in several ways.
+They cannot SSH into the boundary, the wallets and ledgers are stored in Cold Storage, or offline, 
+with encrypted communications, and the Secure   Service Container is tamper-proof and will prevent 
+unauthorized access through these back doors. So, with that example in mind, there 
+are 2 reasons to choose Hyper Protect   for Confidential Computing:
+First, clients maintain complete authority   over their workloads. They have exclusive 
+control of who sees the data, what happens to that data and how that data is processed.
+Second, client data and applications are   protected from both insider and outsider 
+threats. There is technical assurance,   not just operational assurance.
+We go beyond the confidential computing environment to protect data at all stages, in 
+flight, at-rest, and in-use, plus the complete   authority that only comes with IBM Cloud.
+With that, thank you for listening to this   brief overview of IBM Cloud Hyper 
+Protect Services and their role   in the confidential computing environment.
+Do not forget to check us out at the links below.

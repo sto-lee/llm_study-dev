@@ -1,0 +1,71 @@
+Hey, what's up everyone? My name is Luv Aggarwal, and I’m a Data
+Platform Solution engineer for IBM.  Machine Learning. There's no doubt that this is an incredibly
+hot topic with significant interest from both business professionals as well as technologists.
+So let's talk about what machine learning, or ML, is. So, before we get too far into the details,
+I want to take a minute to talk about some terms that are often used interchangeably
+but have certain differences. Terms like “artificial intelligence”,
+“machine learning”, and even “deep learning”. So, at the highest level, AI is defined as
+leveraging computers or machines to mimic the problem-solving and the decision-making
+capabilities of the human mind.  And machine learning is a subset within AI that's more
+focused on the use of various self-learning algorithms that derive knowledge from data
+in order to predict outcomes. And then, finally, deep learning is a further
+subset within even machine learning, and deep learning is often thought of as scalable machine
+learning because it automates a lot of the feature extraction process away and eliminates
+the some of the human intervention involved to enable the use of some really, really big
+data sets. But for today we'll focus just on machine
+learning, so we'll get rid of the other two and dive one level deeper and talk about the
+different types of machine learning. Ok. So, the first type that we have is called
+“supervised learning”.  And this is when we use labeled data sets to train algorithms
+to classify data or predict outcomes. And when I say labeled, I mean that the rows
+in the data set are labeled, tagged, or classified in some interesting way that tells us something
+about that data. So, it could be a yes or a no, or it could
+be a particular category of some, you know, different attribute. OK, so how do we apply supervised machine
+learning techniques? Well, this really depends on your particular
+use-case. We could be using a classification model  which recognizes and groups ideas or objects into predefined categories. An example of this in the real world is with
+customer retention. So, if you're in the business of managing
+customers, one of your goals is typically minimizing and identifying customer churn,
+right, which are customers that no longer buy a particular product or service, and we
+want to avoid churn because it's almost always more costly to acquire a new customer than
+it is to retain an existing one, right? So, if we have historical data for the customer,
+like their activity - whether they churned or not, right - we can build a classification
+model using supervised machine learning, and our labeled data set that will help us identify
+customers that are about to churn, and then allow us to take action to retain them. OK, so the other type of supervised learning
+is regression. Now, this is when we build an equation using
+various input values with their specific weights determined by the overall value of their impact
+on the outcome. And we use these to generate an estimate for
+an output value. So, let me give you another example here. So, airlines rely heavily on machine learning,
+and they use regression techniques to accurately predict how much they should be charging for
+a particular flight, right? So, they use various input factors like, you
+know, days before departure, the day of the week, the departure, the destination to use
+these to predict an accurate dollar value for how much they should be charging for a
+specific flight that will maximize their revenue. OK, so now let's move on to the second type
+of machine learning which is  “unsupervised learning”. OK, so this is when we use machine learning
+algorithms to analyze and cluster unlabeled data sets, and this method helps us discover
+hidden patterns or groupings without the need for human intervention, right? So, we're using unlabeled data here. So, again, let's talk about the different
+techniques for unsupervised learning. One method is “clustering”.  And a real-world
+example of this is when organizations try to do  customer segmentation. Right.  So, when businesses try to do effective marketing
+it's really critical that they really understand who their customers are, right, so that they
+can connect with them in the most relevant way. And, oftentimes, it's not obvious or clear
+how certain customers are similar to or different from one another, right, and clustering algorithms
+can help take into account a variety of information on the customer like their purchase history, you know, their social media activity, or website activity,  could be their geography, and much more, to group similar customers into buckets so that we can send them more
+relevant offers, provide them better customer service, and be more targeted with our marketing
+efforts. Ok. And the last point I want to touch on
+for unsupervised learning is called “dimensionality reduction”. So, we won't discuss this in detail in this
+video, but this refers to techniques that reduce the number of input variables in a
+data set so we don't let some redundant parameters over represent the impact on the on the outcome. Ok. So the last type of machine learning I
+want to talk about today is called “reinforcement learning”. Now, this is a form of semi-supervised learning
+where we typically have an agent or system take actions  in an environment. Now the environment will then either reward
+the agent for correct moves,  or punish it for incorrect moves. Right. And, through many iterations of this, we can
+teach a system a particular task. Now a great example of this method in the
+real world is with self-driving cars. So, autonomous driving has several factors,
+right? There's the speed limit, there are drivable
+zones, there are collisions, and so on. So, we can use forms of reinforcement learning
+to teach a system how to drive by avoiding collisions, following the speed limit, and
+so on. OK, so we covered many topics today, but you know,  we've barely scratched the surface of each one. If you found any one particular aspect of
+machine learning interesting, I encourage you to dive deeper and learn more about it.
+And if you want to know what are some of the common machine learning algorithms and how
+to leverage them in data science, please check out some of the links in the description. Thank you. If you have questions please drop
+us a line below, and if you want to see more videos like this in the future, please like
+and subscribe. And don't forget, you can grow your skills
+and earn a badge with IBM Cloud Labs, which are free browser-based interactive Kubernetes
+labs.

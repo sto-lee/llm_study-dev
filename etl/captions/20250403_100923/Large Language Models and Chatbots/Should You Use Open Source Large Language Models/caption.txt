@@ -1,0 +1,50 @@
+There are over 325,000 models on Huggingface and 
+thousands more are being added. And why might   you choose to use AI models like these? Well, 
+let's start by getting a few things straight.   The models we're talking about in this video, 
+they're specifically LLMs, and that's large   language models, which are foundation models 
+that use artificial intelligence, deep learning   and massive datasets to generate text. We're 
+talking generative AI. And there are two types of   generative AI models: There's proprietary models, 
+and there are open source models. Now, proprietary   LLMs, those are owned by a company who can control 
+its usage. A proprietary LLM may include a license   that restricts how the LLM can be used. On 
+the other hand, open source LLMs are free and   available for anyone to access, and developers and 
+researchers are free to use, improve or otherwise   modify the model. Now look, it's not true in every 
+instance, but generally many proprietary LLMs are   far larger in size than open source models. And 
+specifically in terms of parameter size. Some of   the leading proprietary LLMs extend to thousands 
+of billions of parameters. Probably? Actually,   we don't necessarily know because, well, those 
+LLMs and that parameter counts are proprietary.   But bigger isn't necessarily better. And the 
+open source model ecosystem is showing promise   in challenging the proprietary LLM business model. 
+So let's discuss the benefits of open source LLMs.   Let's talk about the types of organizations 
+that are using them. Let's talk about some of   the leading open source models available today, 
+and we should talk about the risks associated   with using them. Now, clearly, one of the 
+benefits of a open source large language model,   that has to be transparency. Open source LLMs 
+may offer better insight into how they work,   their architecture, and the training data used to 
+develop them. Another big one is pre-trained open   source LLMs allow a process called fine tuning. 
+That means you can add features to the LLM that   benefit your specific use case and the LLMs 
+can be trained on specific data sets. So I can   fine tune an LLM with my own data. And community 
+contributions are a big plus. Using a proprietary   LLM means you're reliant on a single provider, 
+whereas open source models benefit from community   contributions and multiple service providers. You 
+can experiment and use contributions from people   with varying perspectives. And these benefits 
+have led to all sorts of organizations to use   open source LLMs. In another video, I addressed 
+how NASA and IBM developed an open source LLM   trained on geospatial data. Some healthcare 
+organizations use open source LLMs for diagnostic   tools and treatment optimization. There's an open 
+source LLM called FinGPT [fin / financial]. It was   developed for the financial industry. Which brings 
+us onto the topic of talking about some specific   open source LLMs that you might find of interest. 
+Now Huggingface maintains an open LLM leaderboard,   and that tracks , ranks, and evaluates open 
+source LLMs on various benchmarks like which LLM   is scoring highest on the Truthful AI Benchmark 
+series, which measures whether a language model   is truthful in generating answers to questions. So 
+it gives those answers a score. And the top spots   on this leaderboard, they change frequently. 
+And it's quite fun to watch the progress these   models are making. Many of the models on the 
+leaderboard are variations on the Llama 2 open   source LLM. That's the one provided by Meta 
+AI. And Llama 2 encompasses pre-trained and   fine tuned generative text models from 70 billion 
+all the way down to 7 billion parameters. And it's   licensed for commercial use. Vicuna was created 
+on top of the Llama model and fine tuned to follow   instructions. And then it's also Bloom by BigScience, which is a multilingual language model   created by more than 1000 AI researchers. Now, one 
+area that both proprietary and open source LLMs   share is their associated risks. Although LLM 
+outputs often sounds fluent and authoritative,   they can be confidently wrong. Hallucinations, 
+they can result from the LLM being trained on   incomplete, contradictory, or inaccurate data 
+from misunderstanding context. Bias happens   when the source of data is not diverse or not 
+representative. And security problems can include   leaking PII, and cybercriminals using the LLMs for 
+malicious tasks like phishing. Especially in these   early days of large language models, we do need to 
+mitigate risk. But open source LLMs are thriving   in business. Here at IBM, the Watsonx.ai Studio 
+makes available access to multiple Llama 2 models,   and IBM has released a series of foundation 
+models of its own called Granite. And this   space is changing rapidly, making open source 
+LLMs a field well-worth keeping a close eye on.

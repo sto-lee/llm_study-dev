@@ -1,0 +1,292 @@
+Everyone is under pressure to
+produce faster and to do more with less, which often means
+that programmers are behind the scenes reprograming millions of lines of code. And no biggie, but if they get it wrong,
+the whole house of cards might just collapse. So how can you use generative
+AI to modernize your applications and make sure you don't break
+anything in the process? Let's see today on AI in action. In this series, we're going to explore
+what generative AI can and can't do, how it actually gets built. Responsible ways to put it into practice
+and the real business problems and solutions
+we’ll encounter along the way. So welcome to AI in action,
+brought to you by IBM. I'm Albert Lawrence. Now today we're going to talk about
+how generative AI is transforming application development
+and making sure that what you spent years building doesn't break
+when you try to upgrade it. Today
+I'm joined by Miha Kralj and David Levy. Now, Miha is a senior partner
+of Cloud Build and Modernization at IBM and self-defined software
+engineering nerd. Welcome, Miha. Hey, Albert.
+How are you today? I'm so good. I'm excited to get into this. And our other guest is David Lev, an advisory technical engineer
+for IBM Client Engineering. He builds things, y'all. So why did I choose you to
+for today's episode? Well,
+because you both geek out about the build. And today I want to explore
+how to modernize your applications faster, at lower cost,
+and with less risk using generative AI. Plus, the different ways developers
+can use it to make life easier. . So we're going to get into all of that. Let's start off with our first question
+though. I want to direct this one to you, Miha. How does generative AI change
+the application development cycle? And for the folks who haven't dipped their
+toe in yet, what are they missing? Well,
+I typically compare how job of a software developer is changing the same way
+how the job of car manufacturing changed. If you remember, in 50s,
+car plants were typical conveyor belts and blue collar workers were welding on it
+and painting and putting glass in, and at the end, to have a human
+to do the inspection of the car. If you're looking at any modern car
+plant today, they're all robots, right? Robots are welding, robots are painting,
+robots are putting glass in there, and robots are doing the final inspection
+before car is sold off. Now the question is, where are humans now? Well, humans are making robots
+that make cars, and that's very similar to what's happening
+to a software development profession. Instead of directly making code,
+we are going to make instructions, prompts to make code in the future. The second part is we actually sees that
+you can use generative AI in the software development lifecycle, either
+for good things or for silly things. Let me explain. Generative AI can generate new code,
+but then if we let the generative AI to do that, somebody else probably needs to write the documentation,
+write the tests, do all of the things. And I saw in early stages
+that in a worst case scenario, developers
+just became butlers for generative AI. There were literally copy paste
+in one direction. Generative AI takes that as a prompt,
+spits out some code. You copy paste code back,
+you try to compile, doesn’t work. That’s not how we do it these days at all. In general,
+all of the tasks that developers have to do in a traditional life
+cycle because of, engineering excellence,
+coding standards and discipline, typically we prefer to offload those like let's
+call them the toil type of the tasks. Definitely, for example, a developer
+these days is just going to write the whole class or function
+or routine or whatever the language is, typically without massive amount
+of comments in there, and then ask generative
+AI to comment out the code, to actually explain in human language
+what the flow of the code is. Very, very frequently, we actually see
+that the lazy developer is going to use a single letter variable names, you know,
+not just iterators, but in general. Inside your class you’re going to
+just say, I don’t know C for a customer. And then at the end you say to generative
+AI, please rename all of that stuff, and it’s just going to go and put intelligent names
+to the variables, to the fields and so on. These are just a couple of examples
+where generative AI can be used as a very useful power tool, but is not replacing the creativity that we still expect from human developers
+to shine through. The creativity thing is huge. Like,
+you're not going to get the generative AI to be creative about a solution,
+but the documentation like that is, that's it for me
+because the documentation was tedious. And if you want to make something
+really well documented and you're sharing your code
+amongst a team, or you're making an asset for other people
+to use, and you have a complex pipeline. And when you look at the code, you're seeing a function call
+with a bunch of parameters. With modern IDEs, vim
+even, like you could just hover over it and get a detailed explanation
+of what that function does by writing good documentation. And that's what I use almost exclusively. Generative AI is unbelievable for that. It's such a boon for developers. So then with with all of this
+and with that tool truly being so useful. But now I'm curious about how do you actually use generative
+AI to transform an application. So there are languages that are performant
+but old like COBOL, right. And to modernize an application
+that uses COBOL and mainframe, you could have a plug in in your VS code
+where you're able to have two panes, one with the COBOL and one with, let's say
+they're converting it to Java, and you're able to do the whole suite
+of like transformation and testing and LPAR
+and all of this stuff. And it's just like Miha was saying,
+the human is still in the loop. You cannot you're not asking it to do it
+all on its own. You're doing it and you're testing it
+and you're making sure it's working and you're understanding what the COBOL
+programing language is doing, and then you're able to convert it
+to something in Java. And you just have like a first step
+in the transformation. And that is a huge leap forward
+from just trying to write it on your own. Well then is this a separate set of tooling
+then that's required in order to do this? Or does it integrate into somebody's
+current existing environment? You can integrate it into VS code. Most programmers are running
+some kind of IDE, and VS code is probably the most popular. And they're able to integrate
+this kind of tooling into VS code. So the way how toolchains work
+for developers, it's extremely hard to say what's a separate tool
+and what's integrated tool. So for all developers will use,
+let's say they open Visual Studio Code
+as a as their coding environment, and then they're going to load
+sometimes up to 20 plugins. And every plugin is a separate
+tool, sort of. You want the plugin
+that color codes your code. You want the plugin
+that is actually linting your code. So properly aligning it, you can have a plugin that is looking into
+your syntactical errors. Or you can have a plugin for AI. Okay, okay, I'm getting it now.
+It's all coming together. But but with all these different codes
+with the building, I'm kind of curious
+about some potential pitfalls. I actually want to give you an interesting example
+that is not necessarily code conversion. And it can start, let's say, with Java
+or with any of the current languages or JavaScript. Typically, developers are going to create a relatively simple flow of code. The way how brains work and the way
+how logical parser needs to be captured. And then typically after it works,
+then you start teasing AI and you’re asking,
+can you make that more performant? Can you optimize? Can you make it even more optimized? And if you do that too much, you actually
+get a very interesting side results. For example, I saw a couple of examples
+where a developer writes a fully functional class, the object
+in in object orientation programing. And when you start to push,
+a large language model to optimize one of the changes that LLM does, it turns the code
+into functional programing code. So it drops objects. Because functional programing
+is generally more optimized for speeds
+than the object oriented coding is. And when you keep pushing it further,
+suddenly it starts to do everything in async calls
+and it's just throwing awaits everywhere. So at the end, what I'm trying to explain
+is that you get a code that flies, but regular human brain can't even debug that properly
+because you now need to start to trace. If you have a paralyzed pass that is extremely hard
+for a regular developer to do the async programing, debugging,
+and especially in a functional programing paradigm, suddenly
+all of those things come together. And yes, it works,
+but it's no longer for human consumption. It looks like complete cryptic hieroglyphs
+that maybe you need to put it to another LLM
+and say rewrite for humans to understand. It's really interesting, like the
+I guess if you prompted to say to keep it class, keep it object oriented, and you could try to make it
+more performant that way. But I, I have seen that in action. Like exactly what you're saying, where it just starts
+converting a object oriented program that I'm writing into the async/await,
+not async/await, but like await chains like this
+callback insanity that I had to be like,
+all right, you know what? Let me just start over, write it myself,
+and then ask it to document it for me. The other example would be over going. It's not that it goes wrong, it just goes
+weird for regular humans to understand. To try to give you the analogy here,
+would it be like when you want to optimize some nice writing,
+some nice narrative in English, and you would get a complete legalese out
+that actually means the same, but you just can't choose for that specs. A good example would be where
+most of the LLMs. when you ask them to optimize regular
+if/then chain statements, it turns into ternary operators,
+which most languages support ternary operators,
+but they are really hard to comprehend gor a regular human,
+it just the syntax is not trivial, and once you start adding the whole lambda
+anonymous functions in it. So very much what I'm trying to say here
+is that LLM can almost start to write assembler level weird constructs,
+which yes, they will work, but they will make code
+unmaintainable uncomprehensible and it is not a good code to then actually
+commit. Code needs to be understandable
+for generations. It's not just something
+that one nerd puts together and then, you know, everybody’s
+going to admire that piece. Masterpiece, monument on GitHub or GitLab
+or wherever it's published. The code is extremely human
+collaborative thing. And if you use somebody that is smarter,
+not really, but makes code that looks smarter, that's actually
+a very, very bad anti-pattern. Well, then how do you keep the human in the loop
+then when you are coding with Gen AI? Is it possible? It is with a very long prompt,
+right? Okay. But even like like avoiding anti-patterns,
+avoiding relying on generative AI to write your code for you. And I have, you know, nephews who are interested in
+computer science or programing. They're young and with ChatGPT, they're like,
+oh, I'm just going to have this write this Lewis script for me in Roblox
+or whatever it is. And they're not understanding
+the principles of programing. Like there's like, you know, they didn't
+read the Art of computer program. They don't understand the principles
+of what they're doing. And so they're relying on, like Miha was saying, this really hard
+to understand, like complex solutions to problems that work well,
+but they're not understandable. And even learning from Gen
+AI in that way is pretty terrible. So you have to really go into it
+understanding what you're trying to do and then using Gen
+AI to augment your workflow, augment the stuff that you're writing documented
+in my case, and stuff like that, that that's where it really shines. And that's,
+I think its most profound benefit. It seems like the power of really learning
+and understanding is key here. It's about more than just being able to to make a thing
+or know a thing or quote a thing. It's about that understanding. Understandability is definitely the key. Yes. Well, look, here's something else
+I'm wondering about in terms of key. When I think about governance,
+when I think about monitoring, did those things have any sort of a place
+here in this conversation? Yes. And we didn't solve them all yet. And lots of a discussion how to do that. One of the projects that we are doing
+recently is repeatability. So we always expect in
+computer science industry that when we do something that it can be very much
+repeated again and again and again. And that's why very much infrastructures,
+code exist. And, you know, we commit all of those
+things into source control, the way how we actually code with generative AI,
+because it's generative, it makes things and it makes them
+slightly different each and every time. So when you give it a spec, let's say
+I want a class that is going to do blah and it will generate code
+that might be perfectly fine and it works. But every developer that I know
+is going to ask for another generation and another one and another one,
+and then it's going to stare at 4 or 5 of those different variations
+that came out. And all of them are slightly different
+or sometimes significantly different. And then human just kind of arbitrarily
+goes, oh, I like this one most, which is all great, right? Then the code goes into a commit
+and everything is fine. Here is the core problem
+when it comes to governance. How do you repeat that process? Because the next person,
+even if you feed it exactly the same prompt, was going
+to get another five different variations, and none of them is the one
+that is currently in our source control. So if somebody wants to rewalk the same steps again, it can't. We need to find
+a new way of governance to say, well when you asked it blah
+and it generated material based on your prompt,
+we need to start tracking these things. So we need to start tracking
+the temperature number or something that makes the process repeatable. Otherwise at the moment
+it just goes one direction. At the end you get the code,
+but you cannot repeat the process the same way again.
+That's really interesting. And it's also like a little bit
+philosophical, right? Like you're saying that it can't repeat
+exactly the same solution, but it gives you a solution. So you're trying to you're asking Gen AI to give you a solution,
+it succeeds in that. But it's not exactly the same. What's the benefit of having identical responses
+to the process, like understanding that there are many solutions
+in all computer science to figure out a solution for a problem? What's the benefit of having the same
+solution over and over again, though? Let's say that you want to add
+one feature into the code. Are you going to? As a typical modern processes
+go, you want to prevent the drift. So you are removing
+the current branch of the things. And you want to start
+with a new additional requirement. But you start from the beginning
+and you want to regenerate everything. You just can’t, right? Because you are not going
+to get the same thing out. When we're thinking about that, even with, you know, the difficulties
+with governance there, how can somebody get started
+with using Gen AI tools in the coding
+or in the modernization process then? If we're talking technical
+and we're talking computer science, data science, stuff like this, having
+a background, at least and a foundational understanding of what you're doing
+before you start using these tools, I think is necessary. Otherwise it's not a good way to learn. If you're given the answer to something
+that you don't understand how they got to like the process
+actually is really interesting. How do you how did you get to this? If you’re just taking a block of code
+that’s generated by, you know, an AI and then you’re plugging in and it works, but you don’t understand
+why, that is an issue in learning. And so having a fundamental understanding of programing in this use
+case is necessary. But to get started using it
+I mean easy peasy. It’s you could find you can find tools
+anywhere and good tools almost everywhere. You just have to learn how how to use it. And it’s simple. Just go into it, start doing it. It's almost a maturity scale. So I would say that once you install
+the generative AI tool of choice that is using the back end
+model of choice and, you know, different, models and different
+vendors are doing different things. We can talk about it later,
+but the usual step wise, the first thing that typically developers
+should start doing is doing a very simple slash explain, which is ask a generative
+AI what is this code? So through that, the generative
+AI typical is going to write in English language how it interprets
+whatever code you are pointing to. The next step is typically slash fix,
+which is find the error and fix that error. Third one would be slash test,
+which kind of, generates tests for me and make sure that all of the boundary conditions
+are properly validated and tested. And then the last one is of course
+generate new code. So if you're going through that, it's
+kind of almost the easiest one is just to ask,
+almost like some very senior developer. Can you tell me what this does? That is very much the easy first step
+for developers to start. So how do you even decide between the
+generative AI options that are out there? You actually try multiple models
+and that's one of that level of complexity and lack of governance
+that we are trying to address these days. If you're looking, for example,
+how developers and we interviewed a whole bunch of that, there is a joint project
+between IBM and Red Hat right now where we are really intently looking into
+how that is, how new software is created. With these tools, they're typically going
+to create the prompt and throw to 2 or 3 different LLMs
+and see results coming back. Based on that, change the prompt and maybe make a different selection of LLMs
+and then change the prompt again. And then maybe they're going to say to one
+LLM, can you test the output from the other LLM
+and then create the chain of those agents. And then at the end,
+very much using them like a power tools and agentic approach to, generative AI,
+which means that they become agents, that they start to talk to each other,
+one generates code, the next one does the semantic parsing. The third one does the static code
+analysis, and the last one, for example, does the full end to end blackbox testing. These are all different, potentially different LLM
+engines, different LLM models, each one specialized in being based
+in one of those specific tasks. We have models that are not great at all
+in generating new code, but they're absolutely amazing in verifying
+and testing existing code, for example. How to choose which one, at the moment
+it is still a little bit of, you know, dark arts. And that separates a good, advanced
+AI software developers from beginners. Okay. Well, look, we've been kind of talking
+about things, an ideal scenario. Right. So we've been kind of imagining
+that if you're that your organization has all the resources in the world
+and can test all these different tools on out and find the perfect one,
+that's for you. But what if your organization just doesn't
+have the tools that you need, or that you want to use? Are you just out of luck? It's a very typical approach. Until we understand it,
+we are not going to allow it. but there are two separate problems here
+that we need to address. Why are companies
+so, reserved and risk averse when it comes to using LLMs
+for, let's say, some, you know, important code,
+let's say mission critical system code. And so the first problem is, of course,
+as you mentioned, giving that code to LLM until there is a very thorough
+legal review, if you push code to some SaaS service or API endpoints
+that is outside of your organization, what happens with that data
+that you gave out from there? So the first problem is
+how are they going to treat the data. But the second problem is
+what was the model trained on. And that’s
+why those two things are super important. Where it runs, it could run
+inside the walls of a data center or in a trusted environment
+that has a very strict and very well defined legal limitations. But the other part,
+which is, is the model open sourced
+and published and fully vetted by broader audience and scientific community,
+or is it commercial, closed source, dark, arcane art
+and you should just trust it, right? So in closing for today, here's
+what I'm thinking. I've got a few takeaways here. Generative
+AI won't replace you as a coder, but it will seriously help you code. Code should be built
+to last for generations, not just for a moment in time. And having a fundamental
+understanding of code is still critical to code
+using generative AI. So basically, just keep playing with all of your approved options
+and emphasis on the approval. All right. So Miha, David, thank you so much
+for both of you for being here. This has been a fantastic conversation. That’s it for this episode. But everybody please keep on listening. Don't worry. There are a ton more good bites,
+good nuggets where these came from. And we'll see you again
+here soon. All right, friends.

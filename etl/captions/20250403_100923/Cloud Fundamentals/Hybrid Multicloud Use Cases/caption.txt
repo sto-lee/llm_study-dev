@@ -1,0 +1,69 @@
+Hi everyone, my name is Sai Vennam and I'm
+with the IBM Cloud team. Now, I know in previous videos we talked about
+technical concepts that always relate back to cloud-native computing in one way or another. Now, over the years I've seen businesses harness
+those concepts to create innovative solutions to real problems. In this era of Hybrid and Multicloud businesses
+need a way to run containerized applications in a way that they can run anywhere. In this video I want to touch on a few of
+those use cases for why a business may want to use Hybrid or Multicloud. Let's start with the basic one, Cloud Scaling. Now, most of us are probably familiar with
+this, it is one of the main reasons for adopting the cloud. Now, let's say we have a flower delivery service
+that is able to hit a certain bottom line of users. They have on-premise infrastructure
+and it can hit a certain amount of user load. So, visualizing this here throughout the calendar
+year you can imagine that their load maybe goes up and down in response to specific holidays. Now, to hit those peaks they could scale up
+their on-premise architecture but that's met with upfront costs and cost of upkeep. Now, instead we'll take advantage of cloud
+that allows them to scale up in response to that load and then automatically key provision
+resources when they no longer need them. Now, this concept is kind of general to cloud
+computing not just Hybrid or Multicloud, but that brings me to my next topic and here we're
+going to be talking about how it can be used to build a Composite Cloud. So, essentially this is going to be applications
+that are spread across multiple cloud environments. So, back to the flower delivery service let's
+say they have an on-premise architecture that allows them to run three major components
+of the app. So, let's say they have the web UI, they have
+some billing API's, as well as a rewards framework. Now, let's say that this service is actually
+based in the EU. And their European customers are happy but
+for their North American, or American customers, specifically around Veterans Day or Thanksgiving
+their noticing that the system is bogging down and so they decide to take advantage
+of a Hybrid Cloud or Multicloud architecture by composing their application across multiple
+cloud environments. So, they'll take advantage of data centers
+in America and essentially they've identified that although their rewards framework can
+stay on-prem in their European side they want to move the billing and the U. I. capabilities
+over. So, they'll move just those two to a cloud platform of their choice in a North
+American, or American datacenter. This kind of allows them to scale up portions in response
+to say American holidays while keeping their EU portions individually scaled. So, in this
+example the flower delivery service is able to take advantage of scaling at a global level
+by using the Hybrid or Multicloud architecture. Next let's talk about the airline or travel
+industry. So, we can first start with an example of
+Modernization. Now, in the past we've seen that reservation
+systems may have been difficult to work with or you might have had to call in, but almost
+all the airline companies now have a mobile application. So, most of the time of actually
+found that it's about in general not just in the travel industry but eighty percent
+of all enterprise applications are actually still on-prem. This likely the case in this
+industry as well. So, in this specific example, let's say they
+have a reservation system that's running on-premises, but to create new experiences for their end
+users, let's say they've created a mobile application. That mobile app of course has
+a mobile backend that's maybe running in a public cloud and that in turn works with the
+reservation service. So again, the mobile app can hit the mobile backend that in turn
+works with the reservation capabilities. So, in this case they modernized and new user
+experiences are possible, but let's take that a step further. Now, a source for a lot of
+dissatisfaction for users is whenever their flights are delayed. So, when a flight is
+delayed, they may have to re-book new flights. The solution is almost always the same, the
+traveler wants to get to his destination in the easiest way possible. So, what airline industries have been doing
+is taking advantage of the cloud to create maybe a recommendation feature. So, it allows them to book new flights as
+soon as the delay is recommended or as soon as the delay has ocurred and that's going
+to connect up to the mobile back in service allowing users to be able to book flights
+through their phone the second the flight is delayed. This not only improves the bottom
+line for the airline industry but leads to happier users. So, that's one way that modernization
+has been done. Next, let's take it even a step further and
+talk about Data and AI. For Data and AI, the airline industry has
+been taking advantage of lots of historical data. So, over the decades that a company
+has been around, let's say they have historical data of when unplanned maintenance has happened
+on their airline. In fact, thirty percent of all delay time
+in that in the airline industry is actually when unplanned maintenance happens. So, by taking advantage of let's say machine
+learning or AI capabilities, they could hook into all of the legacy data that they have,
+large volumes and connect them up to machine learning and AI capabilities. This allows airline industries to take advantage
+of predictive analytics and get insights before errors, or before that unplanned maintenance
+ever occurs. This again improves their bottom line, leading to happier users and a more
+efficient airline industry. Now, today we talked about four major use
+cases for Hybrid and Multicloud platforms. So, Cloud Scaling and Composite Cloud in the
+flower delivery service, as well as Modernize and Data and AI for the airline industry. Now, we really have only started to scratch
+the surface of the number of use cases for why you want to use a Hybrid or Multicloud
+platform. Now, if you like this video or have any questions
+be sure to drop a like or a comment below. Be sure to subscribe and stay tuned for more
+videos like this in the future.

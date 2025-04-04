@@ -1,0 +1,94 @@
+What are event-driven architectures? And how can 
+they enable real-time user interactions, pluggable   microservices, and extensible streaming and data 
+analytics? My name is Whitney, I'm on the Cloud   team here at IBM. Before I dig in on event driven 
+architecture, specifically I'd like to talk about   system design, more generally and specifically 
+the reactive manifesto. The reactive manifesto   is a set of community-driven guidelines that are 
+intended to give a cohesive approach to systems   design. So, at the core of the reactant manifesto 
+we have, we want our system to be message driven. And so, specifically asynchronous messaging. And then also, we want our our 
+system design to be scalable, and we want it to be resilient. So this implies distributed systems or Kubernetes. 
+So by scalable we mean that we want the   hardware used to expand as the workload 
+expands and contract as the workload contracts   and by resilient we mean we we don't 
+want any single point of failure   and if the system does fail we want it to be able 
+to tolerate tolerate that elegantly so with this   foundation in place we should be able to build a 
+system that is responsive responsive is the value on top of that we can expect 
+a system that is maintainable so it means it's easy to change easy to fix a bug 
+or do an update and we want one that is extensible so we should be able to expand the system easily   so now that we have the core of what we 
+want our systems designed to look like   now let's talk about let's level set 
+here and talk about like what is an event   so an event is a statement of fact an immutable 
+statement of fact about something that happened   in the past so let's give that some context 
+we'll talk about a retail application   so a retail application has a checkout service   and that checkout service is going to want 
+to communicate with an inventory service a shipping service and a contact service so with the messaging model if the inventory wants 
+to know what the checkout is doing the checkout   will send a message directly to inventory 
+to let the inventory know a checkout happen   and another one directly to shipping and directly 
+to contact so with messaging we have targeted delivery um not only that but inventory 
+can maybe send a message back to   checkout it can be a conversational 
+delivery conversational messaging   and then finally let's talk about where that 
+message lives before it's sent it's it's   lives on the host service or on the producing 
+service when it's received it lives on the um   it lives on the host service until it's received 
+by the consuming service or in the case of a   message broker it might sit on a machine in 
+between but regardless the the data persistence is transient now let's compare that to eventing so if 
+our checkout service is producing events   it's producing an event every time a checkout 
+happens without any concern to which service   is consuming that and so with that we have a 
+system that's highly scalable so we have um   three services here interested in the checkout 
+but even if we expand it to a hundred services   listening to check out that wouldn't affect 
+what the checkout service is doing in any way   not only that when we have all the checkouts 
+in a row we come up with an event log   and it can be replayable 
+so we have a stream history   and a history of everything that that 
+every checkout event that has happened and then our data persistence depending on how the 
+cluster is set up it can be set up to be immutable   it can be there forever as long as you have the 
+physical hardware to back it up so we have um   instead of having transient data persistent 
+so we have uh permanent or possibly permanent not immutable but permanent data persistence e and 
+t um so this is the foundation of our event driven   architecture so we have a resilient a reactive 
+responsive system design and then that message   driven element is is event messaging specifically 
+so when we go into our proper event design the   first thing we're going to consider are our event 
+producers so we might have a web application   that produces events and we 
+might have a a mobile application and let's say we also have an edge device that's 
+producing events so uh internet of things device and all of these are producing 
+events into our system so so this piece of the system here that 
+has all the events running through it   this is called the event backbone so what does this system enable   well first of all we have our event logs being 
+produced by all the producing applications so the event logs can do a few things first it 
+can trigger an action so if we have an internet   of things device let's say our internet of things 
+device is a robot vacuum cleaner and when we turn   on that robot vacuum cleaner it spins up a pod 
+on the infrastructure and that pod is a function   as a service so function as a service is a modular 
+piece of code often associated with an edge device   that doesn't exist on a server on the server until 
+it is turned on and that's when it is spun up so   that's called serverless function as a service 
+is sits on top of serverless infrastructure   but the point is that event triggers an action 
+of the with the robot vacuum cleaner to spin up   bounce all around the house make everything 
+squeaky clean and then when the function is   finished running it powers down and perhaps 
+that'll cause our function as a service to send   another event back into the system to let 
+it know that the the function is complete   another cool thing about the event log is it 
+can be used to help optimize and customize data   persistence so if our web application is our maybe 
+it's our retail application that we talked about   before and it's doing a stream of checkout events 
+well our inventory service can be reading from   that and it's keeping track of a local data 
+store that's keeping track of the inventory   so our inventory service will consume from 
+that data stream from the web application it'll   modify the local data and then it'll produce 
+again into the event backbone and so this new   stream is giving the most current inventory 
+to any other application in the system that   wants to consume from it and so while we're 
+talking about data another thing that happens   we can save all of the data that comes through the 
+system so all the raw data or all of the transform   data here at the end once it goes through the 
+system we'll save it all in a huge data lake and this is what's going to power 
+really data-heavy applications   like ai for example and the data lake is 
+accessible from anywhere in the system   that any service that you let consume from it so another thing that our event-driven 
+architectures can enable are a stream processing   so this is built on top of 
+the apache kafka streams api   so let's say that our mobile app is producing 
+let's say it's a music streaming service and   every time let's say up until your in your whole 
+life up until this point you've been listening to   only miley cyrus and britney spears but today you 
+decide you know what i want to see what jay-z is   about and you turn jay-z on well immediately 
+your streaming app is showing you kanye west   and lauren hill and giving you ideas about what 
+you might want to listen to next so that stream   processing is a really powerful and what gives 
+the gives real-time calculations like if it's a   ride share app you um that you know exactly how 
+far away your ride is but it can also be used to   implement business rules and business policies 
+and it can be used for real-time analytics and then let's also talk about with 
+our system the communications layer so specifically it's called pub sub communication   for publish subscribe so we could have any 
+microservice a containerized microservice and just like we talked about before with it being 
+extensible we can very easily plug it into we can   write a new microservice and plug it into our 
+system and immediately have it start consuming   from any stream and producing to a new stream or 
+even producing to a stream that already exists   and none of the other applications need 
+to be concerned with it at all so it's   highly plugable not only that but because 
+of the stream history we talked about before   when you plug it into the system you don't have 
+to have it start consuming from right this moment   it can be consuming from as long as from the 
+beginning of your application if you've been   saving your stream history for that long so 
+as long as that stream history persists when   you plug in a new system it can consume from 
+either the old data or can be consumed from   the present moment so with that we talked about 
+the major benefits of event driven architecture   that sit on top of the reactive manifesto ideas 
+for system design with eventing at its core

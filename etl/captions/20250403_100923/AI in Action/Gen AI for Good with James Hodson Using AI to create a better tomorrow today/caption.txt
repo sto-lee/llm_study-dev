@@ -1,0 +1,344 @@
+Do you know where to go to get medicine
+when your child gets sick? Do you know  where to go to recharge your devices
+when the power has been out for 20 hours?  Are you able to communicate
+with other people in your society?  How the hell do you find out
+what benefits you're entitled to from the international community
+or from your government? Because of the situation
+that you find yourself in when you've been in a blackout
+for three days? In a world where AI is a terrifying, culture changing behemoth,
+is there another side to the story? A side where AI is actually out there
+making positive change and impacting humanity for the better? My guest today, James
+Hodson, would like to believe so. He's a researcher, leader
+and entrepreneur, as well as the visionary behind
+AI for Good. James, thank you so much for being here. Welcome to AI in action. Fantastic pleasure to be here,
+to be with you today. Thank you so much for inviting me.
+For sure. We're going to really enjoy
+picking your brain, but first we're going to start
+with the elephant in the room. We know that
+AI is scary to a lot of people. So when did you start to think that
+instead it could also be a force for positive change and good? Fantastic question.
+It's been a really long journey. The foundation was started around
+ten years ago, but the idea that we need to use
+technology in society in more sustainable ways
+and to effectively attack kind of challenges that we face, is
+something that's age old, right? It's not something that we came up
+with. For us, it was in the late 90s. Over time, right during the 2000s,
+and you have to remember with AI, we've had multiple waves
+of the expectation of commercialization and the anticipation that AI
+is going to transform the universe. And it's been like that since the 50s,
+and now we're in a wave where we are actually seeing
+structural, transformative change with the technologies,
+and it's extremely exciting. It's also, for many people,
+seeing it in person, right, interacting with technologies that their parents
+even would not have been able to imagine or seeing a self-driving car stop for them at a crossroads in a city, it's a little bit,
+you know, takes them aback. And I can see why people would be anxious
+about what could happen next. For us, that's what, that vacuum in terms
+of the understanding of how technology interacts with society, was the reason
+for starting our organization. We wanted to be the providers
+of expertise, kind of a backbone for society to understand how to best utilize emerging technologies
+in a way that's going to strengthen our resilience, it's
+going to strengthen our communities. It's going to make us better
+problem solvers overall. It's going to make us better able to use
+the resources that we have on this earth, which are not infinite, in order
+to give our children a better future right, and live more harmoniously together
+so that we're actually building a positive, forward
+looking force in the world. I love that overall commitment. Give me some examples though. I want to hear what are some ways
+that you've really found that you can use
+AI for forces of positivity? Our mission
+as an organization can be best described as economic and community resilience through technology. And it's the through technology lens
+which changes kind of how we think about what we're doing. In the back,
+we are, yes, technologists, right. And I've been a researcher
+in AI for two decades, and I've worked across
+a whole variety of problems, and I've seen a lot of what can be done
+with the technologies. But we are also economists and economists
+are people who study human behavior. They study the structure of society
+and try to understand what kinds of changes
+will have the impact that we desire, and what's the most effective way
+of achieving that end result. You have to bring those two parts together
+in order to have an impact on the world. You can't just design a technology and expect that it's going to go out there
+and have good. You need to do it in context. You can't design a strategy
+for a whole nation state and their approach
+to technology and society, and how they can attack certain challenges
+that they're facing without actually
+being within that community. We prefer to strengthen the communities
+with the skills and the resources
+and the ideas that are required. So that they can build things
+for themselves that are going to have a long
+lasting impact on adoption. Now, let me dive into the examples
+that you asked for. A few years ago, we were approached
+by the Tony Blair Institute, based in London, to work with them
+and the government of Ethiopia in order to develop a forward thinking strategy for the next 10, 20 years of economic development
+and societal transformation in Ethiopia. We’ll detach this conversation from how Ethiopia has developed
+politically since that stage. So, for example, in Ethiopia,
+they have the same amount of internet bandwidth
+for the whole country. As a few blocks
+around my house in California. Imagine how that constrains your ability
+in the modern world to build an innovative society
+that's solving its own challenges. It's a massive bottleneck, right? People actually don't need much
+to be entrepreneurial problem solvers in the modern world, right? Laptop, good internet connection, and... good coffee, right? Right. When you are lacking
+one of these kind of foundational columns. Right.
+You need to start thinking about how can you quickly
+get infrastructure in place. It turns out the strong internet backbone
+and that kind of infrastructure is actually really important
+when it comes to health care. In a country that's as massive
+as Ethiopia, with you know, more than 100 million people, most of them living in
+rural areas, most of them farming, right? Most of them not really having
+any background in technology and not thinking about opportunity
+through a technological lens. You need to actually reach them
+as a first stage. So a lot of what we
+then ended up thinking about was, what's the basic infrastructure
+that you need to put in place first, and how do you get people on board
+with these ideas? So that's the first example
+that a lot of the work we do actually is kind of advocacy oriented in communities to make them understand
+that the transformative or the foundational layer
+that they need in order to be able to build with technology,
+be able to transform their society, it's not that far away from where they are now, but you do need some resources
+in order to enable that to take place. Another example on the other side,
+we're very involved in Ukraine. Now, you know, obviously
+some of the viewers will have seen that. I'm wearing a, rather bright outfit today. Right. Now, this is a traditional
+Ukrainian Vyshyvanka. Right. It's an ornate set of patterns
+related to particular regions of Ukraine. And for us, as an organization, we started to enable better solutions
+to these challenges. Right. 2014, they were ratified by the United Nations. And that's when we also started. And that's the taxonomy that we use
+for thinking about the problems
+that we want to solve in the world. And if there's one thing in the world
+right now which is causing us to fall even further behind on
+achieving these goals, it's the fact that we have massive conflicts
+that are liable to spill over and are already having deep
+economic effects around the world. So we use the fact that, we have the technology expertise,
+the scalability expertise to solve problems,
+to also help in Ukraine. We have 50 staff on the ground. We have about eight different locations
+that we work across, and we're active with the entire Ukrainian government and
+every municipal authority in the country, which means that we're developing technologies that are used by Ukrainians
+on a daily basis. We're developing strategies and policies
+based on data analysis and machine learning
+and and AI to enable the Ukrainian economy
+to withstand the invasion. In all of known history,
+whenever there's been an all out invasion of a country, there has been a collapse
+of the banking system, for instance. And you need banks in Ukraine
+because of the way that the economy was being managed. There was no run on the banks,
+there was no crisis in the banking system. It's one of the few examples of where
+good economic thinking actually was able
+to prevent something that could have then led to a much, much,
+much deeper set of problems. And as a result, you actually have
+a functioning society, right? Still. And that means that we're able to go in
+and use technology to advance that. Of course, if you didn't have that layer
+of well-operating, well-oiled society, then you would have challenges putting AI
+and other technologies into place. And all of this starts, of course, as you
+mentioned, with the strong foundation, you've got to have that infrastructure
+that’s set on up and then you can build. Can you give me some more ideas in terms of
+how can we think about AI outside of the the traditional scope of productivity
+and actually enhance that? I love this because, you know,
+we're, we're getting into conversations that impinge both upon
+kind of modern economic thinking and how we understand society and our relationship
+with productivity and growth. And so we use measures like GDP, right,
+and GDP is an economic measure. It shows you basically how money cycles
+through the economy, right. And how quickly it moves around
+right from the available pool of capital. It's not actually a very good measure of how productive human beings are. So we have these measures
+that are kind of divorced from, you know, how productive
+are we being sat here? Right. Maybe it's a net negative. We don't have good ways of
+knowing what accelerates our ability to solve the problems that are important,
+or reduce the amount of energy that we need to expend
+to solve the problem. Right? Or to make a sale or to develop
+a new product or to build infrastructure. We don't know actually what
+the relationship is between how many hours we work and how much we're paid,
+and what actually we're building in society, and how much closer
+we are to achieving what we want. So I try to step back from that and not worry
+too much about the productivity angle, because it's not useful
+for actually putting technology into the context where it can be used
+for societal transformation. So I'm going to take an example. Imagine that you have a war.
+There's a lot of uncertainty. How do you find the resources
+that you need in order to stay calm, stay productive, stay alive, and thrive as much as possible
+and in such a situation. So you might imagine, okay, do you know where to go to get medicine
+when your child gets sick? Do you know where to go to recharge your devices
+when the power has been out for 20 hours? Are you able to communicate
+with other people in your society? How the hell do you find out what benefits you're entitled
+to from the international community or from your government because of
+the situation that you find yourself in when you've been in a blackout
+for three days? However, also consider outside here, right in New York City. How do people find out about
+the opportunities that they're entitled to? How do they make good decisions
+about their plan, plans for the future? How do they make sure they're getting
+the training that they need and the support that they need
+psychologically? Right, in terms of family planning,
+in terms of their relationships with, with the community
+and how they actually interact. Can you give me some more examples
+of how AI for good works? Maybe on not as large of a scale,
+but a little bit more intimately. So we've,
+we've had the pleasure of working also on a very municipal level,
+right, around the world, including in Brazil and Canada,
+here in the US and Europe, looking at ways that we can understand
+and analyze the challenges that are being faced in the community
+and respond to challenges, but in a way that then
+we can take those solutions and potentially scale them to other places
+that that need them. For example, in British Columbia,
+we played a role in developing what is now an interconnected
+wildfire mitigation system, which allows all of the different agencies
+that are needed in order to respond to potential situations
+where fires get out of control in a way that's coordinated
+and in a way that gives them the information
+that they need in real time. This is the type of thing
+where it's not just about artificial intelligence,
+it's about the underlying infrastructure. It's about the hardware. Right. What are your ground observation beacons? How are you getting the overall view
+of the situation that's happening? How are you choosing where
+to put resources so that you can respond most quickly to a specific point
+where the flare up is most likely? Also, how do you maybe
+identify ahead of these situations where the risks are so that again, you're
+being proactive about mitigating risks rather than dealing with a fire,
+which is obviously much more costly, much more dangerous,
+and is going to lead to much more damage, to people's lives,
+by having to live through it. On the other hand, we can go to
+another example, which is workplace. So workplace equality. Right. We have as one of the Sustainable
+Development Goals, gender equality. And today, as a society, we're still very,
+very far behind on this goal. So for women in particular,
+it is very difficult to achieve the same career success as men. And it's more difficult today than it was
+ten years ago. How do you attack this kind of situation? We're not going to be able to get into
+the DNA of every single company and really solve it
+on an individual basis. But one thing we can do with technology
+is we can bring more transparency to the signals
+that people can use in order to understand the culture of a company, in order
+to understand the current structure and how that might be contributing
+to outcomes, and by doing that,
+by bringing transparency to an area, we can change the approach
+that corporate leaders take to managing their culture and make them
+focus on these questions more. So that's the economic idea behind it. With technology,
+well, AI is fantastic at aggregating data. It's also fantastic
+at identifying patterns that we might not be able to see, or precursors to patterns
+that we're not going to be able to associate, right,
+with kind of manual, old school traditional methods and so one thing that
+we do is we work with a variety of data partners, including organizations
+that have been collecting, you know, resumé and job applications
+for decades in order to look at the relationship
+between hiring and companies, the structure,
+the internal structure of those companies and how promotions happen
+and how people are rewarded for their work, and also how happy
+people are, within these organizations. One thing that we're now coming
+kind of to the to the point where we're going to be releasing it
+publicly is a scorecard of tens of thousands of companies
+in the US by metrics that are important to understanding whether this is
+a culturally good fit for somebody. So a culturally good fit
+from the perspective of an employee, culturally good fit
+from the perspective of an investor, and culturally good fit
+from the perspective of a customer. You shine a light
+and let the market show the way forward. Right. And so what we also try to do with
+technology is to bring more light to these areas. I'd say it's less about saying
+AI needs a special way of doing things than, well, let's look at, you know,
+how do other engineering disciplines
+cope with risk and risk mitigation? When we build a bridge, for instance,
+do we go out there, kind of stand right looking across the chasm and think,
+all right, you know, I think I need a piece of steel
+that's about 600ft long. All right, let's see,
+let's see what happens. Right?
+Usually we don't do it that way. It's not that we are saying
+that we should do something wildly different with AI, but computer
+science in general has avoided being pinned down
+as an engineering discipline for decades. Now, when we think of critical
+infrastructure in society, it's not highways,
+rail, electrical, water. You know, it's
+cyber and communications, right? That is pretty much the underpinning of everything else that we're doing now
+because it goes away. And you don't have a banking sector
+anymore, you're not going to have reliable water supply
+because it's all being basically managed by an interconnected information system. Right. The electrical grid
+is going to be able to balance your power. You're going to have surges that break
+all of your appliances at home. That backbone has been built
+by computer scientists, by AI scientists, by statisticians. And it's an engineering discipline. You know,
+we should have come to terms with the fact that it was a real engineering discipline and put proper procedures
+in place decades ago. But the reality is we've always treated it
+as ah, it's like an art, right? Programing is an art, right? It's an art
+that apparently we think is possible to just come out of a language model
+because it's artistic, right. So we're going to generate it and it will kind of approximate
+the thing that we want it to do. But we need to constrain that art, just
+like bridge building is an art now, right? We have many beautiful bridges,
+but it's also, at its core, a mathematical engineering
+based discipline that needs to have rules about
+how we go about identifying the problem that we're solving, ensuring
+that we know right and can trust all of our understanding of the base
+that we're building upon. Just like you wouldn't
+build a bridge on quicksand. Oh, it didn't look like quicksand
+when when I was observing it. We need to make sure
+that we're doing the right thing. We need to test things
+appropriately at scale. Right. So start small, build up. And we need to ensure that when we're
+educating people, when we're building the next generation of people
+who are going to work in this discipline, that we are not only giving them the mathematical scientific knowledge
+that they require, but that we're immersing them
+in how to solve problems in society. And when we have that type of thinking,
+you know, what else will happen? What's that? They're going to see other opportunities that go beyond
+what they're doing in their job. It won't just be,
+oh, I've got to deploy a chat bot today that responds to questions on behalf of,
+this podcast on our website. It's going to be, well, you know,
+when I was walking into work, I saw that, you know, there's clearly an inefficiency
+in how we're, you know, managing
+kind of pedestrian routes during construction
+or something like that. You know, we start to provide people with a basis for thinking more broadly
+about their skills and capabilities within the community and society,
+and we engage with them on this level. And, you know, people
+naturally want to solve problems. And I think that we need
+more of this approach. On a practical level, can an individual
+coder start to use AI for good today? I think
+we're at a really interesting time. So I started programing in, the mid 90s. Right. And there was magic
+when I started programing, and I realized that I was one individual with a toolset that could scale
+and touch people around the world. Once you internalize that, it's
+extremely empowering. And it was true in the 90s
+as well as it's true today. But today we can harness per person thousands of kilowatt hours
+more in electricity than I was able to harness in the 90s to solve problems,
+which means that we can solve problems now at an unprecedented scale,
+as an individual, right? We have ability to tap into resources
+that no single person would have been able to access with their idea
+at any point in history before. And ultimately, you know,
+if we put it in crude terms, innovation and the economy is about energy
+consumption, okay? And what we're doing right now with AI is we're consuming energy, which is allowing us to build solutions,
+right, with small teams that are extremely sophisticated
+and have far reaching potential. It sounds like you're placing
+a lot on intention, on focus in terms of how we can use AI. Businesses and nonprofits, sometimes
+their interests don't always align. So how can we think about AI for good? Both your organization,
+but then also the theory, the philosophy. If you're a business person
+who's listening to this right now, if you're a person
+who's really focused on the bottom line in the business right now,
+how can all of this make sense for them? Right now in the United States,
+because of the unequal access to technology
+and opportunity, education, health care, infrastructure, there is an enormous
+amount of untapped economic potential in the US from people that have been
+disenfranchized from the system. If as a corporation,
+you focus in on helping to solve the challenges in society
+that have impacted that, it will actually unlock
+an enormous amount of economic value. Because ultimately, what is a society if only half of it is contributing
+to solving a problem? Right? Without the private sector, governments
+today don't have the expertise
+or really the ability because of kind of political deadlock
+in some sense, to really fundamentally rethink
+how we solve problems. While in some sense corporate America,
+the NGOs, civil society
+more broadly has a level of flexibility that allows us to not be constrained
+by special interests. And employees
+at these corporations have even more power because ultimately
+they hold the keys to the engine, right? And the engine needs to work
+for everybody, right? Not not just for kind of a powerful elite
+at the top. There are benefits that come from
+operating in a community with an attitude of that community being consequential
+to your business in the future, right? Not a resource to be used, but an effective network in which we can operate
+to bring positive outcomes for all. Positive outcomes for all. I'm going to take that now, and I want to go back to where we started
+this conversation. There's a lot of fear surrounding AI. Why should we not be as afraid
+as we are excited? We are at a time where
+if we can invest more as a society in creating with, creating the precedents with technology
+that underpin big solutions to grand challenges
+like climate change. Which obviously is, you know, a framework problem
+that we all need to be thinking about, not just from, you know, how do we capture
+carbon in the atmosphere at scale, but also what are we doing every day
+in our own lives that's impacting this? And what technology can play a role
+in bringing that to the forefront of people's attention
+and so on. I've always been in a situation
+throughout my life and career where the technology that I'm using
+could have power to do good and power to do bad
+in catastrophic ways on both sides. And yet we have always chosen
+as society, eventually, the path of hope and positive outcomes from the technology
+rather than the path of destruction. And I think that we will continue
+to choose this in the future. Again, that doesn't mean that
+we don't need to be eternally vigilant. You can be pretty positive
+about the amazing things that we're going to be able to achieve
+over the coming years and decades. You know what? I kind of want to just keep that
+as a mantra now. So, James,
+thank you for such an enlightening but also a very encouraging conversation
+today. I believe,
+and I really hope, that everybody who's been joining us in this conversation
+has also found this equally empowering. So thank you again so much for joining us. It matters. Folks, AI for Good is a nonprofit,
+so their funding does come from people like you and me. So please go check out their website
+and consider donating at aiforgood.org. Again, thank you all for joining
+us. We'll see you next time.

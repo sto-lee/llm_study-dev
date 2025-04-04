@@ -1,0 +1,57 @@
+Hi I'm Jake Kitchener, I'm a Senior Technical 
+Staff Member here at IBM Cloud and the Lead   Architect for IBM Cloud Satellite, an exciting 
+product that we have available for you now in   IBM Cloud. What is IBM Cloud Satellite? IBM Cloud 
+Satellite is a platform service that allows us to   expand the reaches of IBM Cloud to infrastructure 
+outside of IBM Cloud data centers. A powerful   technology if you want to be able to consume 
+cloud services, but you need to be able to use it   closer to your data, whether that may be in your 
+on-premises data center, on another cloud provider   where you may have a data lake, or potentially 
+it's sitting on your desk like I have right here.   Today I've got three Intel NUCs that I'm going 
+to be using to set up a Satellite location   which I think is pretty cool. It's kind of like 
+any sort of store kiosk that you might need to   set up and it's a great example of the power of 
+using distributed cloud with IBM Cloud Satellite.   So to get started, the first thing I need to do is 
+log into the IBM Cloud console and navigate over   to IBM Cloud Satellite. Once I'm there, I'm going 
+to go ahead and create a new location to represent   my desk. I'm going to go ahead and click the 
+create location button, give this location a name,   and click create. Pretty straightforward. Now, 
+once that location is up and running what I need   to do is bring some of my infrastructure on board. 
+To do that I'm going to navigate over to the Hosts   section which is the concept that we use in IBM 
+Cloud Satellite to represent the idea of systems   that are outside of IBM Cloud as the host. The 
+first thing I need to do is click on Attach host.   I'm going to go ahead and download this post 
+provisioning script and then once I've got that   in my hand I can go apply that post provisioning 
+script to any system on the planet. That could be   in another cloud provider, it could be in your 
+on-premises data center, or in this case I want   to get it bootstrapped onto these Intel NUCs that 
+are sitting on my desk. Now to do that i've built   a custom image that will automatically carve up 
+these systems into virtual machines and bootstrap   them with my post provisioning script. So all 
+I need to do is get this onto that USB key,   insert it into my Intel NUCs, and go ahead 
+and power them on. Now I'm going to go ahead   and go through that process for all three 
+of these because I want a highly available   setup. So I can do maintenance by removing 
+these later on, but that's pretty much it. Now that those systems are online. We can see 
+they're all up here and ready for me to use in   my Satellite location and I'm going to go ahead 
+and get one from each of those systems assigned   to be my Satellite Control Plane. This is really 
+the heart of IBM Cloud Satellite that allows us   to build a secure way for us to go manage cloud 
+services into your IBM Cloud Satellite location.   Now I've got these hosts assigned, 
+my location is in a normal state,   and I'm ready to start using IBM Cloud Services. 
+Let's go ahead and take a look at what that   experience is like. I'm going to navigate over to 
+the IBM Cloud Catalog and I could choose any of   the IBM Cloud Satellite enabled services that we 
+have available. Today we're going to demonstrate   Red Hat OpenShift on IBM Cloud, but it could be 
+other services as well like our Postgres database   or potentially maybe some of our Cloud Pak for 
+Data as a Service options as well. So let's go   ahead into the catalog to Red Hat OpenShift 
+on IBM Cloud and we can see I still have my   traditional cloud service options where I can 
+provision into IBM Cloud data centers like a VCP,   but I've also got the Satellite option available 
+to me as well. So I'm going to go ahead and   choose Satellite. Choose my new location I 
+created and go ahead and give that a name, and then create that OpenShift cluster. Now, I can navigate over to my OpenShift clusters 
+in IBM Cloud and we can see I've got a number of   clusters in here, some of them are located in IBM 
+Cloud, some of them are in Satellite locations,   but this one is on my desk. Let's go ahead and 
+see what that looks like. I’m going to click   over to my cluster here and I can see I’ve got all 
+the normal service options that I would have for   Red Hat OpenShift and IBM Cloud, I can update the 
+version of this cluster to the latest version of   Red Hat OpenShift, or I can go in and perform 
+maintenance on my worker nodes as well like   providing updates to them. I’m going to click 
+over to my cluster here and I can see I’ve got   all the normal service options that I would have 
+for Red Hat OpenShift and IBM Cloud, I can update   the version of this cluster to the latest version 
+of Red Hat OpenShift, or I can go in and perform   maintenance on my worker nodes as well like 
+providing updates to them. I get the standard user   experience with single sign-on from IBM Cloud into 
+Red Hat OpenShift and all the usual tools that I   would find in in Red Hat OpenShift are available - 
+I’ve got all my logging tools my monitoring tools   the registry, all of the development tools that 
+are available to users of Red Hat OpenShift.  So, very powerful tool that we've got available to 
+us here that allows us to really expand the reach   of IBM Cloud and the powerful Cloud services 
+that we provide - in this case on my desk,   but remember, it could be on any infrastructure 
+in the world running Red Hat Enterprise Linux. Thank you for watching. If you have questions, please drop us a line below. If you want to see more video like this in the future, please like and subscribe. 

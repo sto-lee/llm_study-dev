@@ -1,0 +1,43 @@
+Hi, I'm Ryan Sumner and I'm with the IBM
+Cloud team. So, you're interested in VPC? Well today I'm going to tell you how IBM
+does VPC. Virtual Private Cloud, or VPC, allows the user of the cloud environment to define Virtual Private Networks, manipulate them, control them,
+tear them down, recreate them, and then deploy workloads into those definitions. So, why does that really matter to you? Why does it matter to the rest of the business? Well, agility, security, isolation, performance, scalability - I could go on and on. But first I want to take you
+through the building blocks that have broken out into a few key areas to help
+you understand truly what it is. The first building block is all about the
+core components that make up VPC. VPC is an isolated logical network that you create, but the first thing that defines it is where it's located. In IBM Cloud we call this location a Multizone Region, or an MZR. A Multizone Region consists
+of at least three zones that are completely fault tolerant locations
+within that region that have absolutely no dependence on the other zone and
+allow you to deploy your applications in a resilient fashion. A VPC also defines
+at a high level the IP addresses that will be used for private communication
+within that VPC, again across that region. These IP addresses are further
+used and broken down by allowing you to create one or more subnets within each
+zone. So, now you're starting to build an IP network. You have complete control
+over this, create one subnet for a flat network, or introduce segmentation with
+multiple subnets again in each zone. The next building block provides a component
+to allow you to secure your cloud deployments. Security Groups are a
+network function that allows you to create rules that will either allow or
+deny network communication in, out, and around the VPC. Now, that we've created
+our VPC and we've secured it, we need to get connectivity to it.
+IBM Cloud provides both public and private access and different components
+to provide connectivity for each of them. For internet or public access, we provide
+public gateway, that's your outbound access. We also provide a floating IP
+that you can tie to any of the cloud resources that you've deployed in your VPC, providing both inbound and outbound public access. For private connectivity,
+we provide VPN as a Service, or traditional direct link private circuits.
+This is so you can extend your enterprise into the IBM Cloud, or you can
+even connect your VPC to another VPC, or an outside resource. We're getting
+close to deploying our workload in VPC but first let's talk about what network
+functions exist to help us with acceleration and availability. IBM Cloud
+provides a Load Balancing as a Service, which is an application load balancer
+capable of both HTTP, HTTPS with SSL offload and traditional TCP load balancing.
+Now, that we've built our VPC we've secured it and we have connectivity in
+and out of it, we can hand it over to our application teams to deploy their
+workloads. IBM Cloud VPC is enabled today for virtual machines, deploy
+customizable infrastructure, or Kubernetes for those containerized
+workloads. There are other capabilities in VPC that provides security like
+encrypt a block storage, or flexibility like image import, and much more. I hope
+all these building blocks help you understand the value and benefits that
+IBM Cloud VPC brings to you in your public cloud journey. Thank you. If you
+have any questions please drop us a line below. If you want to see more videos
+like this in the future please like and subscribe and don't forget you can
+always get started on the cloud at no cost by signing up for a free IBM Cloud
+account.

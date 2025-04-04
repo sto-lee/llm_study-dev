@@ -1,0 +1,46 @@
+Hmm, let's see, let me make some first name Let's see, maybe last name Oh just .. oh, oh, hello! I'm just making some 
+JSON here! Now I've made this JSON object,   question comes to mind: if that's the format I 
+love to work in, what is the best data store to   handle JSON objects? Hello, my name is Jamil 
+Spain, Brand Technical Specialist with the   US Financial Services Market. Today I want 
+to talk through when making that decision,   not the front-end, not the back-end, but for the 
+database layer in your application architecture.   If you love working with JSON which database of 
+choice should you use? Today's topic is MongoDB   being that choice. Now as a technologist often when 
+we evaluate technology we ought to have some type   of criteria to make our decisions against. Here 
+I have my chosen 3 that I like to do when   it comes to evaluating technology - the flexibility, 
+how easy easy is it to implement, and also at some   point once we start having fun behind the keyboard 
+we got to consider the deployment aspect here. I've   already started here with the JSON object. So as 
+you can see and guess, MongoDB is great for storing   NoSQL data structures. Meaning it's not, you 
+know, built to be, I don't have to define the   structure up front, I can take a JSON object, 
+a document, that really has no structure   any number of fields, and it's great to 
+store that. Then it also is an in memory data store. So all the objects that I store are located 
+in memory processed there which means I have   relatively easy access to get to those as 
+well. These JSON documents can be any kind   of size here. One caveat that I have learned from 
+working with this and leveraging Mongo to store   my documents here is be conscious of sometimes 
+we have a tendency with JSON to not have a set   number of fields. And that can become a problem, 
+you may want to make placeholders for null values,   or define some type of consistency here as well. 
+One other great feature that I've noticed is if I   were to add a longitude, latitude to my JSON object, 
+Mongo is great for querying, doing geospatial   queries against these data sets as well. So, if I wanted to make my own type of let's say a food   delivery service and I wanted to determine which 
+locations were closest to you. If I have the users,   me Spain here, actual longitude latitude 
+coordinates I could compare that against   the other JSON documents that may also include 
+the same type of information here as well.   All right, I think we've covered this. Let's put 
+a check mark next to flexibility here as well.   Now when it comes to implementation, yes, you got 
+to make sure that all the SDKs are available, are   are there any limitations that you have to account for. 
+So of course, there is JavaScript, there's Java,   Golang, there's pretty much all the the value 
+pairs are there. Theres the popular languages are   are there for you to use, and easy examples 
+client libraries to actually access this as   well. So not a consideration from there. Let's 
+talk about deployment for a second after I do   that check mark on implementation here. Therefore 
+deployment, you can set up MongoDB relatively, I   want to say easily, but it does, there are easy 
+ways to facilitate, whether it's on containers or   maybe on your own Linux servers. You can set up an 
+easy instance without security, very easy to play   with. So for development, I would say yes it's very 
+easy to set up a single instance and prove out how   easy it is to implement into your architecture 
+whether you're architecting for web or mobile   and what you're working with. And for production 
+purposes, once you get that exciting architecture   set up here, you will have the ability, it works off 
+the same what I like to call "main and secondary   models". So you have a main node that you publish 
+to or interact with and it can do the replication to those secondaries. So scaling that way on more of a horizontal scale 
+to meet the demand of your actual architecture   there. So that can really be useful if 
+you want it to be your primary database   to function with, and as we know JSON is becoming 
+a pretty popular standard to to work with your   data structures there. So, we'll do the check mark 
+there. So, hopefully it's been useful. There's much,   much more, we're just touching the surface here, but 
+I want you to definitely go out to mongodb.org and   look out for more information. Thank you for your 
+time. If you have questions, please drop us a line   below. And if you want to see more videos like 
+this in the future, please like and subscribe.

@@ -1,0 +1,49 @@
+hey guys my name is Amy Blea on the
+offering team here with IBM cloud and today I want to talk to you about some
+traditional types of storage file and block storage kind of give you an
+overview of what they are and then give you some tips on how to decide when to
+use one over the other so let's get started with block storage block storage
+is storage where data is written and raw blocks on the storage and it's accessed
+by the servers that you have through a storage area network so you have all of
+your servers they can either be on the same network with each other and a
+different network but they all connect through the storage through this storage
+area network now some of the advantages of using block storage is that block
+storage provides the lowest possible latency for your applications and you
+can also use it for those applications that require high performance or lots of
+AI ops another thing you'll find with block storage is that in general it is
+highly redundant most block storage services provide a capability that's
+built-in where your data is redundant across the volume so that if so there
+should be either a volume should go down or a disk should go away and you can
+recover your data from another place without having any kind of impact to
+your application now file storage is connected to your service a little
+differently than block storages everything is connected on the same
+network so you have all of your files or your file share here those are all files
+and they can all be accessed on the same network by any of the servers on that
+network so it's network attached storage file storage is highly scalable so you
+can have a multiple file shares on your network and have all of your servers
+attached to that at one time it's accessible to multiple runtime so here
+in this illustration we have a single file share that has multiple servers
+accessing it all at once and you can also have multiple simultaneous reads
+and writes going to your file share all at one time without
+having to worry about your data being overwritten so how do you know when is
+the right time to choose either block storage or file storage for your
+application well first of all you need to think
+about what you're using it for so for example let's say you have a VMware
+configuration where you have multiple virtual servers with VMware on them and
+you need boot volumes well in that case you would use block storage if you have
+workloads such as transactional databases or relational databases that
+require very low latency and high performance you would choose block
+storage in situations where you have a mix of structured and unstructured data
+for example a web hosting server where you have both you know text files as
+well as media files then you would choose file storage and then if you have
+a collaborative space where you need to have multiple users accessing it all at
+one time working together doing you know reads and writes all at the same time
+you would choose a file storage so like I mentioned in the beginning block and
+file storage are very traditional types of storage they're not as flashy and
+sunshiny and exciting as some of the new storage services that have entered the
+market but they are still very relevant and useful for the different types of
+workloads that you have whether it's on premise or in the cloud thanks for
+checking out this video and the differences between file and block
+storage with me today and if you have any questions or comments or ideas for
+other videos just put something in the comments below and then if you'd like to
+see more videos like this in the future subscribe

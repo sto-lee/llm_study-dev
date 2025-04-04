@@ -1,0 +1,65 @@
+Hey there, my name is Bradley Knapp, and I
+am one of the product managers here at IBM Cloud and we've come together today to talk
+about what is a virtual server. And before we get into the video, I do want
+to encourage you, please do like and subscribe so you can get updates whenever we do new
+videos like this in the future. But with that, let's go ahead and get in. What is a virtual server? You see it everywhere. Everyone talks about it. And if you don't know, that's OK, because
+the tech press, as a rule, makes an assumption that everyone has a baseline of knowledge
+that is as old as theirs is. And the folks that have been in the tech press
+have been there for at least 10 years. They've been there for 15 years. And so, when you start out in your career
+in tech, you don't know the answers to all these questions. And there's nothing wrong with that. It's a perfectly legitimate question and it's
+one that we want to help you out with. So, if we think about hardware in a data center,
+in your house, in your car, but physical hardware, as a general rule, a computer is a box, right. It's a physical box. And inside that physical box, you're going
+to have one or more CPUs, that does compute. You're going to have some amount of RAM that
+does storage - I guess we could label these CPU, RAM - and that storage is directly attached
+to the CPU, the RAM is attach to the CPU, so it's very close. It's for the actual operation of the machine. And then you're going to have network, right? Because we're talking about virtual servers
+in cloud. So, network is important. That is how the box talks to everything else. And then you're going to have traditional
+storage. Want to put traditional storage over here
+for a moment because traditional storage can go inside the server, or it can be out on
+its own. But either way, those are kind of your four
+fundamental building blocks. So, a virtual server is a virtual compute,
+virtual RAM, virtual network, virtual storage, but it's presented in a way that it acts like
+a server does. So, if we consider a physical server to be
+a physical device, you can put your hands around, what a virtual server does is it takes
+this physical host and it divides it up into slices. Right. You've got slice one, slice two, slice three,
+slice four. Your slices take all of the aggregate resources
+on the physical server, and they present just a little bit. Now, you don't have to do it that way. If instead of these a little bitty slices,
+you want a great big, huge slice and then you want to fill the box up with a little
+slice at the end, that's fine, too. But at the end of the day, a virtual server
+is part of a physical server that you get access to. And inside that virtual server, or that VSI,
+you are going to have compute, you're going to have RAM, you're going to have network,
+and you're going to have storage. And it is presented to you, to the user, to
+the consumer, just like a physical box would be. But because it's virtualized, that virtualization,
+what that means is that we're taking and dividing these up, we can scale these resources up
+and down. So, if you need a lot of compute in just a
+little bit of RAM, that's fine, there's no problem with that. We can build the virtual server that way. If you need a little bit of compute in a little
+bit of RAM, but a lot of network, right. Like it's running a website where you're constantly
+sending data out. That's fine. We can scale a virtual server that way. Each of these metrics is independently scalable. So, you can have a little bit of compute,
+a little bit of RAM, a little bit of network and a ton of storage. That's fine because, again, a virtual server
+is designed to solve whatever your specific needs are, not the needs of the people who
+build the box. And so why is this important? Well, as time has gone on and very specifically
+over the last 10 years, our physical server boxes, right. The physical boxes that go into the data center
+have gotten more and more and more powerful. And that power is great, but single workloads
+can't take advantage of it. So, using my example before, just a normal
+basic Web server, right, a normal basic web server might need 4 VCPUs, 4 CPU's, it might
+need 64 GBs of RAM, it might need a 1 Gbit network connection and it might need, I don't
+know, 250 GBs of storage. Well, a physical server that meets those requirements
+takes up a lot of space in a data center. Right. Because our data center, if you go in there
+and you've got a data center rack, right, I've got my rack here, and the racks have
+shelves, and the shelves are 1U tall, 2U tall, 4U tall, 8U tall, you know. The smallest unit is a 1U. Now, there are 1/2-U and you can take 1U and
+make it into 3 servers, but just for our purposes, let's call it a physical slot in the data
+center rack, 1U. Well, this virtual server, if we were to put
+it in the physical server, would need that whole U of space. That's not space efficient, it's power efficient,
+it's not floor print efficient, and it's bad for general efficiency, not just of compute,
+but it's not great for the environment either. So, we want to drive density. So, what you do is you take that physical
+box that takes up that same 1U of space, right? So, 1U. So, we're going to have a physical box that
+takes up 1U of space, but we're going to make it super powerful so that it can hold 50 of
+these virtual servers because we have the ability to do that. With the advances in computing technology,
+we can pack 50 virtual servers of our little Web server into 1U of space. This is a great thing. It drives down the cost because these servers,
+if I can put 50 of them on one physical box, the cost for my physical box over here, I
+divide up 50 ways, makes it much less expensive for you. And it makes the compute resources that previously
+you'd have to go out in a data center space, get the power into it, bring the network in. Now, you don't have to do that anymore. The cloud provider takes care of all of that
+for you. And all you care about is that you're going
+to have your one little VSI over here that's going to cost you 20 cents an hour. So that's the beauty of a virtual server. That's how they work. Now, obviously, we didn't get into the great
+fine technical details. If you'd like to know more about that, please
+do drop us a note. Let us know. We're happy to give you more information. But that's a virtual server. That's how they work and that's why they're
+important.

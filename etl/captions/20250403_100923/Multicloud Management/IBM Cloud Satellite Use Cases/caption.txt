@@ -1,0 +1,58 @@
+Hi everyone, my name is Briana Frank 
+and I'm with the IBM Cloud team.   Let's talk about IBM Cloud Satellite. Today, many enterprises are benefiting from using 
+public cloud to build and run their applications.   Being able to consume IT as a service, through 
+APIs, at scale, and as needed has transformed how   applications are built. Public Cloud enabled 
+companies to innovate in new, faster ways. But the reality is only somewhere between   5% and 20% of enterprise workloads have moved 
+to the cloud. That first wave of applications   were focused mostly on new workloads 
+or workloads that can easily relocate.   Many applications have requirements around 
+security, compliance, latency, regulation,   and performance that mean those workloads can't 
+easily move into a public cloud. Enterprises need   an ability to gain the benefits of public cloud 
+anywhere they need their applications to run.     What would help these enterprises is 
+something called Distributed Cloud.  Distributed cloud is a new cloud computing 
+model that extends public cloud services   to any location. This means companies 
+can now run not only in their primary   cloud provider's infrastructure but on 
+premises, in other cloud providers',   in third party data centers or colocation 
+centers, or at the edge - in factories,   distribution centers, stores, hospitals 
+and ports - with everything managed from a   single control plane. IBM Cloud Satellite is 
+our new distributed cloud capability. With   Satellite you can take advantage of the 
+catalog of services from IBM cloud with   industry optimized security and compliance 
+and leading AI capabilities anywhere you   need it. All with a common API, user experience, 
+management dashboard and user consumption model.   To see how IBM Cloud Satellite works, let’s 
+take a look at a couple of real-world examples. We’ll start with the financial services 
+industry.  On the surface, the financial   services industry might seem like it's all about 
+money, but it's really all about technology. In   order to compete, financial institutions 
+need to create exceptional user experiences.    To do that, they leverage AI and trading 
+algorithms to stay ahead of the market. To be competitive financial services clients 
+need to iterate quickly and leverage cloud-native   tools and best practices. However, the financial 
+industry is heavily regulated. So, they need to   be able to keep that data secure and compliant 
+- which often means there are restrictions on   where that data can live. IBM Cloud Satellite 
+can help solve this conflict.  These financial   services companies can now extend public cloud 
+services in their data centers, allowing them   to leverage cloud native best practices and meet 
+their security and compliance obligations, all at   the same time. So, Satellite enables you to take 
+advantage of a public cloud consumption model,   but in many different locations - and you don't 
+have to be an expert in running these software   stacks to run them outside of the public 
+cloud. Let's take a look at another example,   this time in the construction 
+industry, where worker safety is key.   One of our clients is leveraging distributed 
+analytics to keep workers safe.   In this scenario, you might have a business, or 
+an office building that is under construction,   and you need to be able to leverage video 
+analytics to tell if someone is wearing a hard   hat or not - and warn them before they move into 
+a potentially dangerous area of that building.  They want to use video analytics to 
+automatically detect this situation,   but latency could be a real problem - if you 
+warn someone too late they could be injured. So, let's take a look at how 
+this scenario might work. To solve this safety problem, you need to be able 
+to analyze video data from many cameras all over   the office building, but it's impractical to send 
+all of that data back to the cloud to be processed   remotely. It would be better if the video 
+processing happened close to the actual device.   Traditionally, that would require you to install 
+servers and software and manage them on-prem.   With IBM Cloud Satellite, we can extend 
+the public cloud into the office,   so we can leverage cloud services to run 
+this application close to the device - and   that's critical in ensuring that we can 
+reduce latency and effectively warn someone   before they enter a dangerous 
+area.That same client in this   worker safety scenario had to adjust to 
+challenges brought by the Covid pandemic. They were able to quickly iterate on 
+their application and modify the use-case.   Now, instead of warning workers about 
+wearing hard hats, they can make sure   that workers are wearing masks and ensure 
+that the masks are being worn correctly.   They can even leverage thermal devices to 
+take temperatures. With IBM Cloud Satellite,   you can quickly address unforeseen challenges, 
+leverage cloud benefits in any location,   and innovate quickly. Anytime. Anywhere. thank you 
+for watching if you have questions please drop us   a line below if you want to see more videos like 
+this in the future please like and subscribe

@@ -1,0 +1,289 @@
+Hugging Face and watsonx: why open 
+source is the future of AI in business Malcolm Gladwell: Hello, hello. Welcome to Smart 
+Talks with IBM, a podcast from Pushkin Industries,   iHeartRadio and IBM. I’m Malcolm Gladwell.
+This season, we’re continuing our conversation   with New Creators – visionaries who 
+are creatively applying technology in   business to drive change — but with a focus 
+on the transformative power of artificial   intelligence and what it means to leverage AI as 
+a game- changing multiplier for YOUR business.  Our guest today is Jeff Boudier [BOO-dee-ay], 
+Head of Product and Growth at Hugging Face,   the leading open-source and open- 
+science artificial-intelligence   platform. Before getting into the world of 
+open-source AI, Jeff co-founded a company   called Stupeflix, a video-editing software which 
+was eventually acquired by GoPro. An engineer   by background, he has a self-professed 
+obsession with the business of technology.  Recently, IBM and Hugging Face 
+announced a collaboration,   bringing together Hugging Face’s repositories 
+of open-source AI models with IBM’s watsonx   platform. It’s a move that gives businesses 
+even more access to AI while staying true to   IBM’s long-standing philosophy of supporting 
+open-source technology. With open source,   businesses can build better AI models that 
+suit their specific needs, using their own   proprietary data, while browsing a 
+ready catalog of pretrained models.  In today’s episode, you’ll hear why open 
+source is so crucial to the advancement of AI,   how IBM’s watsonx interacts with open-source 
+AI, and Jeff’s thoughts on why the singular,   omnipotent AI model is a myth.
+Jeff spoke with Tim Harford,   host of the Pushkin podcast Cautionary Tales. 
+A longtime columnist at the Financial Times, where he writes the “Undercover Economist,” Tim is 
+also a BBC broadcaster with his show More or Less.  OK, let’s get to the interview.
+Jeff Boudier: Hi, I'm Jeff Boudier,   and I'm a Product Director at Hugging
+Face.  Tim Harford: So I'm immediately 
+intrigued. Hugging Face—is this a  reference to the Alien movie, or something else?
+Jeff Boudier: It is not. And it may be not obvious   to a listener, but “Hugging Face” is the name 
+of that cute emoji—you know, the one that's   smiling with his two hands extended like that 
+to give you a big hug? That's Hugging Face. So   basically we named the company after an emoji.
+Tim Harford: Okay. And it is—I saw your website,   and it is a very friendly emoji. So that's 
+nice. So tell us a little bit about Hugging   Face and, and about what you do there.
+Jeff Boudier: Of course. Well, Hugging   Face is the leading open platform for AI 
+builders, and it's the place that all of   the AI researchers use to share their work, 
+their new AI models, and collaborate around   them. It's the place where the data scientists 
+go and find those pretrained models and access   them and use them and work with them.
+And increasingly, it's the place where   developers are coming to turn all of 
+these AI models and datasets into their   own applications, their own features.
+Tim Harford: So like the Facebook group   or the Reddit or the Twitter for people who are 
+interested in, particularly, generative-language   AI, or all kinds of artificial intelligence?
+Jeff Boudier: All kinds of AI, really. And   of course generative AI is this new wave 
+that has caught the world by storm. But   on Hugging Face you can find any 
+kind of model. The new, sort of,   transformers models,to do anything from, 
+translation—or if you wanted to transcribe   what I'm saying into text, uh, then you would 
+use a transformer model. If you wanted to, then take that text and make a summary, 
+that would be another transformer model.  If you wanted to create a nice little thumbnail 
+for the, this podcast by typing a sentence,   that would be, uh, another type of model. So all 
+of these models you can find—there's actually,   300,000 that are free and publicly accessible—you 
+can find them on our website at huggingface.co,   and use them, using our open-source libraries.
+Tim Harford: And so this is—this is fascinating.   So, so there are 300,000 models. Now, when 
+you say “model,” I'm thinking in my head,   “Oh, it's kind of like, um, like a computer 
+program.” There were 300,000 computer programs.   Is that—is that roughly right? Or it—not really?
+Jeff Boudier: It's a general idea. A model is a   giant, set of numbers that are working together 
+to sift through some input that you're going to   give it. So think of it as a big black box 
+filled with numbers. And you give it as a,   as an input maybe some text, maybe a prompt.
+So you're asking—you're giving an instruction   to the model, or maybe you 
+give it an image as an input,   and then it will sift through that information, 
+thanks to all of these numbers, which we call,   in the field, “parameters,” and it will 
+produce an output. So when I told you, “Hey,   we can transcribe this conversation into text,” 
+the input would have been the conversation in   an audio file, and then the output would 
+have been the text of the transcription.  If you want to create a thumbnail for this 
+podcast episode, then the input would be   what we call the “prompt,” which is really 
+a text description— like, uh, “French man in   San Francisco talking about machine learning.”
+And the output would be a completely original   image. So that's how I think about what an AI 
+model is. And I think what we're starting to   realize is that this is becoming the new way of 
+building technology in the world. It has been—for   the field of dealing—understanding, 
+generating text—for quite some time.  But now it's sort of moving across every field 
+of technology. We have models to create images,   as I say, but also to generate new proteins, 
+to make predictions on numerical data. So   every kind of field of machine learning 
+is now using this new type of models. But what's interesting is that if you're,say, a 
+product manager at a tech company, and you say,   “Hey, I want to build a feature that does this,” 
+a few years ago the approach would have been to   ask a software developer to write a thousand 
+lines of code in order to build a prototype.  And a new way of doing things today is to go look 
+for an off-the-shelf, pretrained model that does a   pretty good job of solving exactly that problem. 
+So you can create a prototype of that feature   fast. So it's a new approach to building tech.
+Tim Harford: I'm not a programmer, but I'm aware   that there's this idea of open-source code, 
+and now we have open-source models. So what   does it mean for something to be “open source”?
+Jeff Boudier: Yes, “open-source AI” actually   means a lot of different, specific things. It's 
+the open-source implementation of the model. So   if you use the Hugging Face transformers 
+library to use a model, you're using an   open-source code library to use that model.
+Tim Harford: Just to interrupt on the   “transformers”—these are these, kind of, 
+ways of turning a picture of a dog into   a text output that says, “Hey, this is a 
+picture of a dog,” or “This is a French   text,” and—with the transformers helping you 
+turn it into English text. Or it's doing all   of these things that you've been describing.
+That's—the, the transformer is the—kind of   the engine at the, at the heart of that.
+Jeff Boudier: Yes, exactly. And we call   them “transformers” because they correspond 
+to this new way of building machine-learning   models that was introduced by Google, 
+actually, with a very important paper   called “Attention Is All You Need.” And it 
+was published in 2017 by researchers out   of Google DeepMind.
+Tim Harford: Wow,   that's just six years. That's so new.
+Jeff Boudier: It is very new, and ever since,   the pace of innovation has really, really 
+accelerated. But it really started from this   inflection point that came from this paper 
+and its implementation in what is now called   “transformer models.” The transformer—that has 
+conquered every area of machine learning since. Tim Harford: Okay. Sorry to interrupt. So, 
+so—you've got this library of transformer models,   and they're open source, and that means, that 
+means what? Anyone can use them for free? Or that,   or that anybody can implement 
+them for free? What does it mean?  Jeff Boudier: So again, there's, like, lots that 
+go into it, but the most important thing is for   the model itself to be available so that a 
+data scientist or an engineer can download   them and use them. And also there are a lot 
+of considerations about how you make them   accessible. And a very important one is whether or 
+not you give access to the training data—all the   information that went into training that model and 
+teaching it to do what, what it's trained to do.  That's, uh—
+Tim Harford: Have fed millions   of words into a, into a language transformer, or 
+I might have fed millions of photographs into a,   into a picture transformer. Yeah.
+Jeff Boudier: Yes. And the accessibility   of that training data is very, very important.
+TIM HARFORD: What's the relationship between the,   the Hugging Face libraries and, uh, GitHub? 
+Which, if I understand GitHub correctly,   it's this—the repository of open-source code, 
+lots and lots of lines of code and routines and   programs that are, that are shared and updated 
+and tracked, and they're all available on,   on GitHub. Which sounds similar to what you're 
+doing with Hugging Face for AI. So what,   what is the interaction or the relationship there?
+JEFF BOUDIER Yeah, I think you nailed it on the   head. So Hugging Face is to AI what GitHub is to 
+code, right? It's this central platform where AI   builders can go find, and collaborate around, AI 
+artifacts, which are models and datasets. So it's   quite—it's different than software, but we play 
+the central, the central role in the community to   share and collaborate and access all of those 
+artifacts for AI like GitHub offers for code.  Tim Harford: And that community must be incredibly 
+important. I mean, the—open source is nothing if   you don't have a community of people working 
+on it. So how have you been able to foster— Jeff Boudier: Well, I think it goes to the 
+origins of the transformer model, and, and   Hugging Face rolled into that. So when the first, 
+sort of, open model came out, it was called BERT,   and it came out of Google. The only way you could 
+access it was to use a tool called TensorFlow.  But it happened that most of the AI 
+community was using a different tool,   called PyTorch. And something that Hugging 
+Face did is to make that new model, BERT,   accessible to all PyTorch users. And they did it 
+in open source. It was a project called “BERT's   Pretrained PyTorch” or “BERT PyTorch Pretrained.”
+Tim Harford: So this is like being able to play my   Zelda game on, on an Xbox or a PlayStation, right? 
+Or am I not really understanding what's going on?  Jeff Boudier: No, that's exactly what it is. And 
+the thing is, everybody was using the Game Boy,   and so it became very popular. And from there, 
+the community sort of gathered to make all of   the other models that were then published by 
+AI researchers available through that library,   which was quickly renamed from “BERT’s Pretrained 
+PyTorch” into “transformers” to welcome, like,   all of these different, new models.
+And today, that's—open-source library   transformers is what all AI builders are 
+using when they want to access those models,   see how they work and build upon them.
+Tim Harford: What's striking about this field   is that it's changing so fast. It's improving so 
+quickly. So how do open-source models keep up with   that? How do they get iterated and improved?
+Jeff Boudier: Actually, it's not so much that   open source is keeping up with it; it's actually 
+open source that is driving that is driving this   pace of change. And that's because— with open 
+source and open research, data scientists’,   researchers can build upon each other's work.
+They can reproduce each other's work. They can   access each other's work using our 
+open-source libraries, et cetera.  So in a sense, it's not really that open-source AI 
+is a new idea. It's rather the opposite. There's   been a blip of time in which closed-source AI 
+seems to be the dominant way, but it's really a   blip. In fact, you know, none of the incredible 
+advances that we're marveling about today would be possible without open source. We're 
+standing upon the shoulders of 50 years   of research in open-source software. So 
+I think that that's really important;   if it wasn't for that, we'd probably be 50 
+years away from having this—amazing experiences   like ChatGPT or Stable Diffusion, et cetera.
+So it's really open source that is fueling this   pace of change—all, all these new models, all 
+these new capabilities. To give you an example:   so Meta released, uh, LLaMA large language 
+model just a few months ago. And ever since,   there's been this Cambrian explosion of 
+variations and improvements upon the original   models. And today there are over a thousand 
+of them that we host and track and evaluate.  So, yeah, open source is really 
+the gas and the engine for that. Malcolm Gladwell: Jeff just made it 
+clear that it is open source, not closed,   that sets the pace for AI innovation. If that’s 
+true, then forward-thinking businesses shouldn't   shy from leveraging open-source AI to solve 
+their own proprietary challenges. But how?   Businesses can face serious obstacles when 
+trying to adopt open-source technologies,   like complying with government regulation or 
+making sure their customers’ data stays protected.  In the next part of their conversation, Jeff 
+and Tim discuss how IBM’s collaboration with   Hugging Face empowers businesses to 
+tap into the open-source AI community,   and how the watsonx platform can enable them 
+to customize those AI models to their needs.  Tim Harford: I just wanted to ask 
+about the partnership between Hugging   Face and IBM. How did that come about?
+Jeff Boudier: Well, it came through a   conversation. A conversation between our CEO, 
+Clément Delangue, and Bill Higgins, IBM, who's   really, really close to all the amazing research 
+work and open-source work that's happening at   IBM. And that conversation sort of sparked the 
+evidence that we needed to do something together.  We share a lot of values in terms 
+of the importance of open source,   which is fundamental to us; with the 
+importance of doing things in a, an ethics-first way, to enable the community 
+to incorporate ethical considerations in   how they're building AI. And we sort of have 
+a different audience to start with, which is   all the AI builders use Hugging Face today.
+To access all the models we talked about;   to use them using our open source, and build 
+with them. And IBM has this incredible history   of working with enterprise companies 
+and enabling them to make use of that   technology in a way that's compliant with 
+everything that an enterprise requires.  And so being able to marry these two things 
+together is an amazing opportunity. And now   we can enable the largest corporations that 
+have, sort of, complex requirements in order   to deploy machine-learning systems and 
+give them an easy experience—to take   advantage of all the latest and greatest 
+that AI has to offer through our platform.  Tim Harford: Let's talk about this idea of a, of 
+a single model or a variety of models. Because   what I've been hearing you say—you've been saying, 
+“Oh, there are lots of models, there are hundreds   of thousands of models available on Hugging Face.”
+But you've also said “There's this single thing,   the transformer, and they're all transformers.” 
+So if they're all basically the same thing,   why can't you just build one super-clever 
+model that can do everything?  Jeff Boudier: That's a really interesting idea, 
+and very much a new idea. And the reason we have   over a million repositories, 300,000 free 
+and accessible models, on the Hugging Face   platform is that models are typically trained 
+to do one thing—and they're typically trained   to do one thing with specific types of data.
+And what became new and evident in the research   that came out over the last couple years is that 
+if you train a big enough model with enough data,   then those models start to have a—sort 
+of general capabilities. You can ask   them to do different things. You can even 
+train them to respond to instructions.  So with the same model you can say, “Hey, 
+summarize this paragraph, translate this   into English, start a conversation in French, and 
+then pivot to German.” And so these are general,   sort of, language capabilities. And I think when 
+ChatGPT came online, and the world, sort of, discovered these new capabilities, there was, 
+at least for a short period, this sort of idea,   this sort of myth, that “the end game of all 
+this is maybe one or a handful of models are   so much better than anything else that exists, 
+that they can do anything that we can ask them to   do. And that's the only model that we will need.”
+And I, for one—I think it is a myth. I don't think   it is practical, for a variety of reasons.
+Say you're writing an email and you have,   like, this great suggestion of text to, sort of, 
+complete your sentence. Well, that's AI. That's,   that's a large language model. That's 
+a transformer model that does that.  So there are a ton of existing use cases like 
+this, and these use cases are powered by specific   models that have been trained to do one thing well 
+and to do it fast. If you wanted to apply these,   sort of—all-knowing, powerful, Oracle type 
+of model, you would not be able to serve   millions of customers through a search engine.
+You would not be able to complete people's   sentences, because the amount of money that 
+you would need, the number of computers that   you would need, to run such a service—it just 
+exceeds what is available on the planet. So   one reason for which it's not a practical 
+scenario is that it's just very expensive   to run those very, very large models.
+Tim Harford: What I'm hearing is,   it's like, “Look, if you want to screw in 
+a screw, you need a screwdriver.” You don't   want an entire toolshed full of tools if the 
+task is to screw in—a screwdriver. And sure,   you could bring the toolshed. There are all 
+the tools; there's a screwdriver there. But   it's not necessary. It's incredibly 
+expensive. It's incredibly cumbersome,   and that cost exists even though, maybe, as the 
+user who's just typing in a, into a prompt box,   the user may not see it, but it's still very real.
+Jeff Boudier: That's right. And then another   one is performance. So, taking the 
+screwdriver example, so—and by the way,   like, we're not quite there at this moment where 
+we have this all-knowing, powerful Oracle; that   is still sort of a sci-fi scenario. But—we have 
+screwdrivers, but we also have the Leatherman,   right? The, the multitool—a Swiss Army knife, and 
+that's, sort of the moment that we are in today. But now if I'm trying to open up my computer, 
+it turns out that it requires a specific kind   of a screw, like these tiny little Torx screws, 
+and having a Torx screwdriver will get me   much further than trying to use my Leatherman, 
+where maybe I'll get the knife blade and it'll,   it will mess up the screw, and maybe eventually 
+I'll get to what I need—but my point is that if   you take a very specifically trained model for 
+a particular problem, it will work much better.  It will give you better results 
+than a very, very generalistic,   big model that can do a lot of things. And so 
+for things like search engines, for things like   translation, for things that are very specific, 
+companies are much better off using smaller,   more-efficient models that produce better results.
+Tim Harford: That's really interesting and   presumably then being able to know which model to 
+use, or being able to know who to ask which model   to use, becomes a very important capability.
+Jeff Boudier: Yes, and that's what we're   trying to make easy through our platform.
+Tim Harford: So tell me about how this works   with IBM's watsonx platform. How do you see 
+Hugging Faces’ customers benefiting from that?  Jeff Boudier: The end goal is to make it really 
+easy for watsonx customers to make use of all   the great models and libraries that we talked 
+about—all the, the, the 300,000 models that are   today on Hugging Face. And to do this, we need to 
+really collaborate deeply with the IBM teams that   build the watsonx platform, so that our libraries, 
+our open source, our models are well integrated   into the platform. If you're a single user, if 
+you are a data-science student, and you want to   use a model, we make it super easy, right? We 
+have our open-source library. You can download   the model on your computer and run with it then.
+But in enterprises, there is a vast complexity of   infrastructure and rules around what 
+people can do and how the data can   be accessed. And all this complexity is, 
+sort of, solved by the watsonx platform.  Tim Harford: This season of the 
+Smart Talks podcast features what   we're calling New Creators. Do you, do you 
+see yourself as being a creative person? Jeff Boudier: I think it's a requirement for 
+the job. I mean, we're in such a new and rapidly   evolving industry that we have to be creative 
+in order to invent the business models, the use   cases, of tomorrow. My role within the company 
+is really to create the business around all of   the great work of our science and open-source 
+and product team. And by and large the business   model of AI within the whole ecosystem is still 
+something that companies are trying to figure out.  So creativity is really, really important—to 
+really have the conversation with companies,   understand what they're trying to do and then 
+build the right kind of solution. So that's,   like, where creativity comes into play.
+Tim Harford: And one of the things that you've,   you've been talking about is just this, this 
+growing number of models, this growing number   of capabilities, this growing number of use 
+cases—enormously exciting. But also, I think,   completely bewildering for most people who are 
+trying to navigate their way through this, this   maze of possibilities that is, that is growing 
+faster than they can even learn about it. So   how are you helping people navigate and make 
+choices in that environment? And how does the   partnership with IBM help with that?
+Jeff Boudier: Hmm. Well, as I said,   like, our vision is that AI machine 
+learning is becoming the default way   of creating technology. And that 
+means, like, every product, app,   service that you're going to be using is going 
+to be using AI to do whatever it is better,   faster. And I guess there are two competing 
+visions of the world coming from that.  There is this vision of the Oracle all-powerful 
+model that can do everything. And our vision is   different. Our vision is that every single company 
+will be able to create their own models that they   own, uh, that they can use, that they control. 
+And that's the, the, the vision that we're trying   to bring to life through our open-source tools 
+that make this work easy, through our platform   where you can find all those pretrained 
+models that are shared by the community.  So we really want to empower companies to 
+build their own stuff, not to outsource all   the intelligence to a third party, and the 
+watsonx platform from IBM gives those tools   to enterprise companies. So that's—you can use 
+the open-source models that Hugging Face offers.   Then you can improve them with your own data 
+without sharing that data to a third party. And then you could do every—all of this work in 
+compliance with whatever governance requirements   you have for your company. Maybe you’re a finance 
+services company and you have a specific set of   rules. Maybe you’re a healthcare company and 
+you have very strong privacy requirements   for patients’ data. Maybe you’re a tech 
+company and you have your, your customers’,   your users’ personal information. So you need to 
+be able to do this work, respecting all of that.  Tim Harford: Jeff Boudier. Thank you very much. 
+Jeff Boudier: Thanks so much, Tim. It was fun. Malcolm Gladwell: To create the AI models of 
+the future, we are going to need open source.   That means there’s a place for business 
+in the open- source community to harness   the game-changing potential of AI innovation.
+Like Jeff said, businesses face unique challenges   they need to solve at scale. Without proper 
+support systems, tapping into open- source AI   at enterprise level is daunting: finding the 
+right-sized model for the job, fine-tuning   its purpose, all while addressing governance 
+requirements around data, privacy, and ethics.  So for businesses, IBM’s collaboration with 
+Hugging Face is a mark of progress because   it signifies that business can tap into open- 
+source AI while preserving enterprise-level   integrity. Businesses should embrace the 
+open-source community and the AI future,   much like Hugging Face (and 
+its emoji namesake) suggests.  I’m Malcolm Gladwell.
+This is a paid advertisement from IBM.  Smart Talks with IBM is produced by Matt 
+Romano, David Zha [JAH], Nisha [Nih-sha] Venkat,   and Royston Beserve, with Jacob Goldstein. We’re 
+edited by Lidia Jean Kott. Our engineers are   Jason Gambrell, Sarah Bruguiere [Brew-Ghare (hard 
+G!)], and Ben Tolliday. Theme song by Gramoscope. Special thanks to Carly Migliori, Andy Kelly, 
+Kathy Callaghan [Calla-Han], and the EightBar and   IBM teams, as well as the Pushkin marketing team.
+Smart Talks with IBM is a production of Pushkin   Industries and Ruby Studio at iHeartMedia. 
+To find more Pushkin podcasts, listen on   the iHeartRadio app, Apple Podcasts, 
+or wherever you listen to podcasts.

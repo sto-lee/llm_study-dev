@@ -1,0 +1,49 @@
+Hi, everyone. My name is Sai Vennam, and I'm with the IBM Cloud team. Today let's talk about multicloud. Multicloud is a cloud computing approach made
+up of 2 or more cloud environments. Let's get started. So, we've got a public environment here as
+well as a private cloud. There's an important distinction to be made here: multicloud is not exactly the same thing as hybrid cloud. Hybrid cloud implies that your workloads are
+working together across multiple clouds - so interoperability and portability of your workloads. Multicloud doesn't have that same requirement, but we are seeing that a lot of enterprise users and customers are using multi and hybrid cloud strategy together. I'd say that the growth of containers and
+Kubernetes technology has really enabled the growth of multicloud. So, we're seeing almost every big cloud provider
+out there providing managed Kubernetes, as well as it being used on-premises in the private sector to help modernize legacy applications. So, why would you want to use multicloud and
+the strategy for your cloud computing? Well, there's a number of reasons. For one, let's say that you want to hit that
+big three-nines number as far as availability goes. Multicloud strategy can help you hit that
+by ensuring that, you know, it's one thing when the clouds of one of your application
+workloads stops to work you still have another cloud that's supporting your applications. In addition, you can enable better user experience. So, let's say you have users on different
+sides of the globe. By routing them to the cloud that's nearest
+to them, you can ensure lower latency and better user experiences. Finally, what about specific integrations
+that only work on a particular clouds? Say you have some sensitive firewall data
+that you don't want to put in the public cloud, but you need to build integrations for. By taking advantage of a multicloud approach,
+you can build workloads on the private side that can take advantage of that private, sensitive,
+customer data. I'd say there's 3 major ways and things that
+you want to tackle when taking on a multicloud strategies, and I'm gonna introduce these
+as three pillars. The first one is gonna be automation. So, to do this I, let me introduce kind two
+different types of users: so, we've got Ops, as well as Devs. So, operations engineers are going to want
+to be able to spin up new clusters as well as manage and, kind of, see the different
+clusters that have been created. So, they're gonna want to take advantage of
+a unified, kind of, dashboard to do something like that. So, we'll have the control plane here. Let's say the ops engineers want to spin up
+two Kubernetes clusters. So, they'll essentially figure out that configuration,
+and then go to the control panel, and tell it to spin up those clusters. At that point you know they can specify where
+they want those clusters to be created. Let's say they spin up two. Kubernetes clusters, one in each of the clouds. On, the other side with devs, let's say that
+they've built out a new application, a Docker container, and they're ready to push it. So, they've got a container built, and they
+wanted to deploy it the same way to both of the clouds but you know it can be quite difficult
+if they didn't have a control plane to figure out the different authentications and configurations
+of the unique different clouds and kind of deploy that both times. In addition, this really gets in the way of
+traditional kind of CICD and DevOps workflows. So, by taking advantage of that control plane,
+they can spin up that container in both of the clouds with a single command. Say that it's application 'A'. So, I think that really hits this requirement
+for automation with multicloud. The next kind of requirement that I want to
+hit on here is visibility. Visibility is very important for working with
+multiple clouds because, you know, they each have their own unique dashboards but to have
+a single unified way of managing those things is very important. So, for operations engineers, by taking advantage
+of a single control dashboard, they can have access to a unified kind of approach and see
+all the different, you know, clusters that they've spun up and even drill down deeper
+and see things like pods and deployments in applications across multiple clouds. The last thing I want to touch on, the last
+pillar, is governance. These days regulatory and compliance policies
+are becoming increasingly strict and they differ from geography to geography. Let's say the operations team has a compliance
+policy that they want to push out across all of these clouds. So, first they'll have to, you know, write
+out that compliance policy, and then, you know, if they didn't have access to a control
+plane, this can be a very kind of painstaking, or rather time-consuming, approach. So, by taking advantage of the control plane
+they can push that compliance policy across multiple clusters with a single command and
+ensure those security policies for compliance are being met. I'd say that these are the 3 major things
+that you want to tackle when taking on a multicloud strategy. Multicloud has been a growing focus for us
+here at IBM. If you want to learn more about our multicloud
+management strategy, check out some of the links in the description below. If you like this video, or have any questions,
+be sure to drop a comment and subscribe for more videos like this in the future. Thank you.

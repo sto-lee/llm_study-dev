@@ -1,0 +1,38 @@
+Hey, everybody, my name is Bradley Knapp, and   we've come together today to talk 
+about what is a dedicated host? Dedicated host is a construct that 
+you see a lot in the world of cloud,   but it's a little confusing. What does this 
+dedicated host thing actually mean? Why does it   look like it's so expensive when you compare it 
+to buying a dedicated instance or just a normal   virtual server? And the answer is dedicated 
+hosts are a way to provide single tenancy.   Single tenancy means that no one else can 
+run on the compute that you are running on. So, if we think about a physical cloud host, 
+right, we've got our actual cloud server here.   This is the actual host that runs in the data 
+center. In a normal multitenant environment,   we would take, and we would divide that host up 
+into pieces, and every one of these pieces as a   virtual server that you would buy. I'll just mark 
+that as VSI. In a dedicated host, we still have   the same host, that same box that we were talking 
+about before. But instead, this is your box,   and you control all of the VSIs that schedule on 
+to it. So instead of this being customer A, and   this being customer B, and this being customer C, 
+this is all yours. And so you can choose to divide   it up however you want. You can have one third of 
+it go into one VSI and two thirds go into another.   You can divide it half and half, or you 
+can put lots of little bitty ones on it. And so, the question, of course, always 
+becomes, why would I do this, what is the   value of a dedicated host? Why would I purchase 
+this thing? And the answer is really twofold. First is that single tenancy that I mentioned 
+before. Single tenancy means that you don't   have to worry about anybody else being able 
+to crash through the hypervisor layer within   this host and get to your data. Even though it's 
+already incredibly secured in the world of cloud,   it's just one more layer of protection. This 
+is very important for health care workloads,   folks in banking and finance like that. But in addition to that single tenancy, 
+it also allows you to schedule workloads   that want to be close to be each other, close to 
+each other. So, if we think of our example here,   where we've got two VSIs of the same size, let's 
+imagine a high-performance compute workload,   something that in the world of HPC, where you 
+have lots of compute working on the same problem.   In order to minimize latency and maximize 
+performance, you want to pack these onto a few   physical hosts as possible because data transit 
+through a physical host is much faster than data   that goes across the network. If we think about 
+our example over here, where we've got our multi   tenancy, and we've got multiple multitenant 
+boxes, every one of these has to link together,   and that link together takes time. There is a 
+latency penalty that you pay. But in a dedicated   host like we have over on this side, because these 
+all run on the same physical box, you don't incur   that latency penalty and you can order multiple 
+dedicated hosts in order to make that happen. Thank you so much for your time 
+today. If you have any questions,   please drop us a line below. If you want 
+to see more videos like this in the future,   please do like and subscribe and 
+let us know. And don't forget,   you can grow your skills and earn a badge with 
+IBM Cloud Labs, which your free, browser-based   interactive Kubernetes labs that you can find more 
+information on by looking below. Thanks again.

@@ -1,0 +1,101 @@
+PyTorch has emerged as the de facto standard for 
+machine learning and deep learning. And I know a little bit about PyTorch, but I've brought in an 
+expert, Sahdev Zala, to teach us all more about PyTorch. So, Sahdev, what is PyTorch? Hi Brad! So it's a framework for machine learning and deep learning. And what I mean by that is you can use PyTorch to build your models because it provides you all of the building blocks. It provides you all the functionalities
+to run faster training on that model. And it's an open source project under PyTorch Foundation, 
+which is part of the Linux Foundation. So there is a dynamic community behind the project. Oh, great! So it's got an ecosystem and it's in the Foundation. So that means you're going to have open governance
+and a level playing field. That's wonderful. Well, Sahdev, can you tell 
+me about the key features of PyTorch? Yeah, sure. That's a great question. So let me just mention 
+the common steps of model training. So first, you need to prep your data, your data set for training. And, ideally you also want to do it for testing. And then, the other steps is you're 
+going to build your model. And you're going to train it. And as I mentioned, you're going to test. Okay. So those look like some
+pretty straightforward features. Why don't you tell me about the first one? 
+What do you mean by prepping the data? Right. So, the data says are you going to use 
+for your model, maybe small as you're learning it, but for larger models, these data sets can 
+be huge--10 terabytes, petabytes wide. So how do you use this data
+to train your model and then test it? So PyTorch provides you two things here. Data sets and data loader classes that help 
+you to easily feed this data for your training and testing. Okay. How does this help me?
+Does it speed things up? Well, that's a good question. So, it helps you to download 
+the data to make it accessible for your training and testing. And this data loader, it provides you iterator over this 
+data so that you can use them to train in a batch. Because you're not going to just feed one data 
+at a time. You're going to train using the batch sizes that you want. It also provides you other things like shuffling the data. You don't want to just feed the data in an order so that your model, 
+it's only memorizing the data versus versus it's learning. So this will shuffle for you as well. 
+It has other features as well. Very nice. Well, it also helps you to build models?  Absolutely. So, once you think you're ready with your preparation using PyTorch because it takes you all the takes 
+care of all the complexity, the next step would   be and building the model to define your models 
+and for that what you need is layers because it's   a deep learning, it's made of multiple layers. 
+So you need different layers like linear layer or   combination layer. And there are many others that 
+are provided by partners to you. And that are also   things like, besides layers, that are activation 
+functions that you'll be using to add nonlinearity   to your model-- that's also provided to you by 
+PyTorch. So you don't have to do anything but   just to call those functions.   What do you mean by nonlinearity? So, in general, when you train the model and then-- it's a 
+mathematical term, right, linear as well,   but it will if you don't get nonlinear, you 
+basically just get like a one straight line.   And in real life, not everything is just 
+changing in X will be same as changing your Y   output. So it adds you that nonlinearity for 
+you. And the next step would be training and there   basically I can talk more about the training side, Brad.  Well, so tell me about features-- 
+what  does it do to help you train?  So training will require to use the loss function. And loss function   is basically to find out the loss that you going 
+to have. As when you run this model like   a forward pass from the input and you get some 
+output. Well, I'm not going to have the correct output   every time magically, there's no magic there. So 
+you can have lots of parameters in between, you are just going to randomize them in the beginning, 
+you got some output, but then you're going to   have a loss function to calculate the loss from 
+the desired output. So your want your model to reach a certain expectation. 
+And typically during the training process that model's falling short   and you're seeing how much it's falling short 
+from where you want it to be. Exactly. So that loss functions, there are multiple loss
+functions and PyTorch provides it to you again. You again   you call them according to your need for 
+the model. Once you have the loss function used,   the next big thing is finding the gradient of this 
+loss with regards to your parameters. So PyTorch   provides the backward propagation for you, or, 
+auto-grade features. That is by far one of the   most popular feature of PyTorch, that it will 
+calculate the gradient for you.  So if we all think back from our calculus days, gradients are 
+this piece that helps you to tweak and   get the model the way you want it and it's got 
+it built-in for you.  Exactly. So once you got the gradient, you basically
+run the optimizer function just to step over, which is again   provided by PyTorch to you. And like you exactly 
+said, you're going to tweak the parameters, you're   going to optimize it to reach to a level in a 
+number of iterations. So that you basically define   those iterations. But the number of iterations 
+you're going to reach to a level where we're like,   you know what, that should be enough training. 
+I do like 3x, 5x iterations, and at that point   you are ready to test it.  And is that a big deal for these models to have to do testing or I just  test once I'm done? Or is it more more than that?  Yeah. So the next step would be no. From here to the test side. You need to test it. Ideally it's optional. But as part of testing, PyTorch provides   a function, an eval evaluation. So you can 
+evaluate your model. And at that point, you're not   going to calculate the gradient, you're not going 
+to find the loss function. You basically just do   the forward pass. You see what you're getting. And 
+if you're happy with it, then pretty much ready   to use the model. If you're not, then you're 
+going to do the further training. And again,   this data sets, which I mentioned earlier, that 
+would be used for training useful test, white or   black are two different datasets. So as part of the testing. I'm getting to decide, hey, 
+is my model good enough? I think I'm ready to go with it. Pretty much, yeah.  Well, it all seems a little complicated to me.
+Is PyTorch really easy to use?  Well, yes,  that's one of the best things I love about PyTorch. 
+It's easy to get started. It's easy to install.   It's easy to use because it's Pythonic; the "Py" 
+in PyTorch is for Python. So you know how much   data scientists just love Python. Absolutely. 
+PyTorch is in Python. And it's been easily I use   by data scientists. And if someone if they don't 
+know Python, they can learn it quickly as well.   PyTorch.org provides a lot of good documentation, 
+tutorials that will help you to get started very   quickly and it's also flexible. So I mentioned 
+the training on your right. You can run training,   you can run your PyTorch on CPU just 
+using the tensor that PyTorch uses in   data structure (multi-dimensional 
+arrays). They can be run on CPUs,   they can be run on GPUs, they can do the training 
+on multiple CPU and GPU on a single machine,   you can do that on a distributed environment on 
+multiple machines, multiple GPUs. And you can   like say part of that you can just run PyTorch on 
+your laptop and play with it. There is also like   a mobile development going on to to help PyTorch 
+on your mobile devices.  So yeah, it's a lot of  options. Supports a lot of platforms. GPUs. 
+CPUs. Well, what if I want to be a contributor?   Well, that's great question. Something I love as 
+an contributor myself, so it's actually very easy.   PyTorch is part of PyTorch Foundation as I 
+mentioned. There's a dynamic community behind it,   very friendly. Lots of people are going to help 
+you to get started, to contribute. As long as you   sign the CLA, follow the code of conduct, these 
+are things to do. You are ready to contribute.   The community also provides weekly office hours. 
+  Office hours, that's huge. I can come in as
+a new person and say, hey, could you help me out or can you give me an easy first item to work on?
+I could do that in an office hours.  Yes, exactly. And there are things like you can easily
+find the good first issues. You can find the document issues to 
+  get started with and you can ask questions. 
+And the office hours, through their Slack channel is another one.  And one of the classic tips is when you join a new project, 
+ask for a mentor and ask them to put you to work on something. Because   when they put you to work on something, they're 
+going to be very interested in what you're doing   and they're going to give you timely reviews and 
+answer all your questions. So tell me more about   how IBM is contributing to PyTorch. Yeah, sure. 
+Well, IBM is contributing to PyTorch in a big way, like IBM always do. By using PyTorch, so we are 
+going to contribute to help the community, grow   the community. And a part of that, we working on 
+many different things, something called like FSDP,   Fully Sharded Data Parallel, well, an advanced topic, 
+but it helps you to shard the model parameters   across multiple GPUs across multiple machines
+for fast training and for your   large models they may not fit in like a single GPU 
+or CPU. And so we are contributing there. There's   really good blog posts out there. Just search 
+for it, "IBM FSDP PyTorch" wiil find it quickly.   Highly recommend to read it. We also provide 
+improvements in the storage site for training,   compiler optimizations. And besides that benchmarking,
+ test side improvements and documentation.   And we have multiple developers working in the 
+community.  So it sounds like there's lots of nice features to help it
+support those large foundation models, supporting multiple GPUs   and running in a distributed fashion. And 
+a lot of work being done for benchmarking,   seeing how fast things are running and obviously 
+a lot of work in the documentation to help others   get started. It's a fabulous. It is. It's amazing. I'm so glad to be part of the community.  Well, thank you, Sahdev. I've learned a lot today. This 
+is fabulous. We hope that you've learned a lot   about PyTorch and we encourage you to come 
+join the community. We really enjoy working   on PyTorch and pushing forward with your deep 
+learning/machine learning initiatives.   Thanks for watching our video. And don't forget, if you 
+liked it, remember to hit like and subscribe.

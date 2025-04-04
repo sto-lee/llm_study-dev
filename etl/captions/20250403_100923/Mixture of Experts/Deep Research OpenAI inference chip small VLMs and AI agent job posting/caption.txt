@@ -1,0 +1,617 @@
+What was the last thing that
+you had to do deep research on? Kate Soule is Director of Technical
+Product Management for Granite. Uh, Kate, welcome back to the show. What have you been researching? I've been researching KV cache management. Volkmar Uhlig is Vice President,
+AI Infrastructure Portfolio Lead. Volkmar, welcome back to the show. What have you been looking into? Indices and vector databases. And last but not least is Shobhit
+Varshney, Senior Partner Consulting on AI for US, Canada, and Latin America. Uh, Shobhit, welcome to the show. What have you been looking into? Quantum computing, especially
+how it intersects with AI. All right, all that and more
+on today's Mixture of Experts. I'm Tim Hwang, and welcome
+to Mixture of Experts. Each week, MoE distills the
+biggest stories in the world of artificial intelligence and
+gets you what you need to know. As always, we have a lot to cover. We're going to talk a little bit about
+rumors on OpenAI's inference chip. We're going to talk about
+small vision models. We're going to talk about a job listing
+for an AI agent, but first, I really want to talk about Deep Research. Um, and it's kind of a funny
+phrase to use because, uh, it seems like nowadays, everybody has
+a feature called "deep research." Um, Google Gemini has a
+deep research function. ChatGPT announced the
+deep research feature. Even Perplexity announced a deep
+research feature and not to be left out, Grok has also launched a feature
+as of late called DeepSearch. And these are all kind of features
+where you can do a query to a model and get back what is effectively a
+very long research report that's kind of in depth um, and you know, this all
+really literally happened I think in the last month two months or so. Um, I
+guess, Kate, maybe I'll start with you. Why is everybody suddenly
+launching a deep research feature? Um, what are they trying to do and why
+is it suddenly all very competitive? Why is, why is deep
+research the new hot thing? Yeah. So I think it's helpful to understand
+some of the broader context and when all of these features were released. So, you know, back in January, DeepSeek
+came out with their R1 model demonstrating crazy reasoning capabilities, uh, OpenAI,
+you know, maybe in a bit of a response to a way to show that they're, you know,
+also innovating on reasoning and doing a lot of work in the space pretty much
+launched as a fast follow from what I've been able to tell their deep research
+capability, which leverages the o3 reasoning model behind the scenes. And I think ever since that model
+came out, we've been seeing a lot of, uh, following the market and a lot
+of other companies come out and yes, and and create their version to just
+to try and follow that broader trend and focus on reasoning models that
+have really taken the world by storm. Yeah, for sure. And Shobhit maybe I'll bring you in here. You know, one of the questions I have is
+like, how do you win in this competition? You know, it's like, it's like we're
+suddenly living in a world where there's like four or five search engines. And it's like, you know, it's
+the early two thousands again. And it's kind of really question
+about like, if you see see any kind of differentiation between all the
+companies and how they're trying to win on this particular feature. Um, so I think Google came up with this
+first in December, followed by OpenAI and then followed by, uh, Perplexity
+and now, uh, with, uh, with Grok-3. Uh, the overall intention is, given a
+complex ask, I want you to go research this across a whole multitude of
+different websites and then try to cluster them in different topics and
+then go, when you find something, you go find other things that are
+relevant, just the way humans do this. So you're trying to replicate the way
+a human would have otherwise open up 20 different browsers and try to simulate all
+of that into a topic and research, right? Now when companies like Google are
+doing this, they have a really good understanding of how web pages are
+structured and how things semantically connected and so on and so forth. So most of these deep research models
+will start first by creating a plan. They understand your query and
+they'll have a plan generated. In case of Google, I can go and hit edit
+and I can go change the plan if I need to. In case of ChatGPT, it'll go
+ask some follow up questions. So you can go modify that and understand
+that here's how we're going to execute. There are certain queries that need
+a little bit of disambiguation. Do you mean X versus Y? But I'd look for "Transformer"
+is that the movie or is that the model, things of that nature. In certain cases, you may need to narrow
+the field a little bit and go very, very deep in a particular topic, right? So you're first establishing here's the goals and
+here's the research plan. That's what a good research
+analyst would have done for you. Then it fires off and starts to go
+crawl the web and starts to find all the websites that are relevant, then extracts
+everything out of it and say, Hey, I found that this particular website
+was talking about a new, for example, we were looking at quantum last night. Microsoft released some new, a new
+model with some new matter altogether. So now all of a sudden you have a
+new topic that's coming up that I did not specify in my initial search. So that'll then spawn
+additional queries and so forth. So it's going and crawling all of
+that, bringing all the content back. So your question was around
+how do you win in this? On the more B2C side, me as an end
+customer, the person who can connect the dots between the websites and the
+content the best is likely going to win. Speed matters to an extent, whether it
+takes three minutes or four minutes. At the end of the day, I'm going to
+have to come back to this tab anyway. So I think I'm okay on the
+speed and the latency part. But understanding, grounding it, and
+being able to give the right citations. At least in my personal
+experience using Perplexity, I've been using Pro for a while. Perplexity Pro Deep Research was a little
+more hallucinating than I'm getting with Gemini and so far OpenAI has been
+the best for at least my experience on the topics that I researched. But there'll be some nuances of
+how you ground your content, you get all the responses back and
+then do visual interpretation of all those different websites. In the enterprise space...
+This is untapped right now. In an enterprise, when somebody gets a
+question saying: Why was my claim denied? Or if I want to say: Can I travel to X? And what will be my ATM charge? And what kind of benefits I have? There's a very unique set of
+documents that need to be looked at where a human researcher goes
+and looks at multiple systems. It's a combination of actually logging
+into a third party SaaS, figuring out information there, reading
+some documents, so on and so forth. We have not quite crossed the
+chasm yet on deep research coming to the enterprise space. I don't see a single vendor out
+there that's enabling us to go add enterprise data to it, be able
+to model how the reasoning steps work based on the topic at hand. I think 2025 towards the end
+of end, we'll start to see these models getting more open. There should be other layers on top
+that bring it into the enterprise space. I think that the company that's
+going to make billions of dollars. Versus somebody who's
+doing a B2C, uh, view. Yeah, I mean, I think that's kind
+of the interesting thing, is like, I feel like the use cases that I've
+seen online so far have been people who have pretty niche needs, right? Like, I think it's like, you know,
+researchers or kind of bloggers that need, you know, studies. Um, Volkmar, maybe I'll bring you in. I feel like over the last few episodes,
+you've increasingly become like the loud skeptic on the MoE expert panel. Um, are you kind of impressed
+by stuff like Deep Research? Do you use it at all? Like, it does feel to me that
+there's a bunch of problems. And I guess the question is like,
+also whether or not it's like technically that impressive either. It's like kind of a just
+combination of existing components. Is that the right way
+of thinking about it? I think it's a, it's a
+really interesting approach. I think it's incremental. Um, you know, we already
+had the ability to search. Now what we are doing is, you
+know, we are just extending the search, you know, scope. Uh, I think we already had
+the first iteration of, you know, go out, make a plan. Um, now I think what, and, you
+know, like, uh, do longer reasoning. You stayed out of the model. I think what, what's, changing now
+is that we are saying, you know, we go multi step reasoning and
+multi step document retrieval and extending, you know, the knowledge. I think the larger, uh, context
+window sizes allow it to do that. So that's what is one of the things
+which, you know, if you just have a 4k context window, you cannot do that. If you now have, you know, 128k, you can
+throw lots and lots of documents at it and you can start reasoning about it. So I think we are at this point. junction that, um, the
+aided data is available. So, I mean, this is also
+the other thing, right? So, OpenAI started having, you
+know, a call of the Internet accessible in a vector database. So, you needed search capabilities, you
+needed the long context window sizes, and you need to have the multi step reasoning. And so, all these things now are at a
+point where they are individually stable. And now we are getting into, okay,
+what can I build out of this? So, I think it's a really interesting uh,
+application and it, I think, shows the direction where we are heading, right? It's like multi minute, you
+know, processing with answers. Um, I think it also shows that we are at
+a point that the models, we are willing to not just babysit the models every,
+you know, a hundred characters, uh, but we are letting it run for a while. And, and, you know, the. The quality of the models is
+high enough that they don't just go off into a tangent. Totally. Yeah, it does feel like that's kind of
+like almost like the biggest thing is like less a technical thing and more just like
+a sociological thing is that like we just now have enough trust in these systems
+that we're willing to let them run like this, which is like pretty interesting. So Tim, on one of the challenges
+you see in deep research is you don't have a verifiable output
+to compare accuracy against. And we struggle with this
+even in organizations. So when you come back with a deep
+document on, say I'm looking at what are the, uh, milk regulations in Europe
+versus India versus the U. S., right? I don't know what good looks like, so it's
+difficult for you to verify the output. And a lot of these companies are
+struggling with the evaluations around these deep research, uh, files, right? There's some, uh, things that
+I can calculate, like how many, how many paths did you create? How long do you think? How many websites did you hit? And so forth. But there's not a good measure even in
+our real world, if I hire two different research companies to go research a
+particular topic, they will come back with different documents, but I won't have
+a good validation routine around that. So I think it's an order of magnitude
+tougher problem than say you are trying to write code or do some math
+where I can deterministically tell you whether the answer is correct or not. Yeah, no, I think it's like very evals
+question on this is like very hard. It's like how do you do good
+benchmarks on this kind of feature becomes like very quick, tricky. Yeah, maybe a final question. Um, Kate, maybe I'll turn to you is,
+um, you know, the four companies we have here, we have Google and OpenAI, right? Giants, you know, titans of the space. We have Perplexity, who has really
+spent a lot of time working on search. So it's no surprise
+that they would do this. What's kind of interesting here is,
+is Grok, which really has only hit the scene fairly recently, um, and is as
+yet kind of launching these features that are very much kind of at parity. And I don't know how you read that. I mean, you know, there's one point
+of view, which is, well, the space is more competitive than ever. Anyone can just kind of get in and
+launch these cutting edge features. I think there's also a view, which
+is, well, you know, Grok is just executing in an incredible way,
+but curious how you read that. It's like, is it easier and easier
+to launch some of these state of the art features, um, in, in
+with teams that are way smaller? I, it's one of the questions I have. We're benefiting from having so
+much of the innovation starting to be put into the open source. which is allowing, you know, a
+rising tide to, to float all boats. It's allowing less traditional
+players to enter the market. Uh, and we're seeing just, you know, a
+really rich ecosystem emerge from it. So it's exciting to see what, uh, you
+know, Grok and others can come out with. And as we talk about, you know, Deep
+Search and how that relates and Deep Research, you know, again, I really think
+right now, deep research is one of the more practical use cases for reasoning. Uh, if we're all innovating on
+reasoning and we're seeing a lot of that work in the open source, a
+lot of the benchmarks are on math. Like, I don't know that that is the
+killer use case that, you know, is why I pay for a bunch of reasoning tokens. But research is certainly an area
+where we're seeing some benefit. And, you know, I think
+this is just one of those. early use cases that we've
+identified where there's some clear demonstrable value
+that the reasoning is bringing. And so that's why we're seeing
+as new models come out, they're also coming out in parallel with a
+deep research type of capability. Well, I want to move us
+on to our next topic. Um, It's a story that I feel like we do
+every few episodes to be totally honest with you, which is every few weeks or
+months there's always rumors that OpenAI is working on its own chip. And the story
+this time was kind of a leak that you know OpenAI was kind of readying sort of an
+inference design with TSMC, which is kind of one of the lead, um, kind of chip fabs. And, uh, I think I wanted to kind
+of use it as a hook to talk a little bit and check in, I think, on
+sort of the state of like OpenAI's competition in the hardware space. And, you know, Volkmar, I guess
+you're the natural person to turn to for this sort of thing. You know, it's sort of interesting
+to me that at least what has been reported in the news is that OpenAI
+is investing first in inference chips. And I guess for our listeners, do you
+want to explain just like why this would be such a big priority for them? Because this is a very
+big bet they want to make. Um, and I guess the question is
+like what you think they, what you believe their upside to be, uh, in
+investing in this sort of thing versus using, you know, the established,
+uh, companies that are out there. OpenAI is building the chip
+not by themselves, right? They are partnering with Broadcom
+and Broadcom is one of the giants in chip manufacturing. So that's a, that's expected, I
+mean, they had to pick a partner if they don't want to become a chip company. And I don't feel that OpenAI, you know,
+wants to, wants to get into that market as a, as a primary business model. Now, if you look at, uh,
+training versus inferencing, the requirements are very different. Um, so in training, you know, if
+you, if you build a training cluster, it's a lot about, I mean, you have
+the basic GPUs, but then a good chunk of the money goes into the
+networking infrastructure and goes into storage system and having, you know,
+effectively a high performance computing system. So it's like very, like if you
+look at all the HPC people went, they all went into, into AI now and
+building these training cost us. So that, that's a, a critical
+category of, you know, system design. Then you go into inferencing and that
+is usually a much smaller problem. Now we have very large models and
+they don't fit on a single GPU. Uh, but often, you know,
+you're on like maybe eight. Kind of on the maximum. If you have a really, really large
+model, which is not necessarily what you're, you know, using to do inferencing
+to an end customer, but maybe, you know, for model verification for
+yourself, then you may go to 16 GPUs. So let's say two boxes, but
+you're not going much beyond that. And so, um, if you now look from a
+consumption perspective, you know, training this, we talked a lot about
+this huge training machines, but in the end, when you're scaling it to consumers,
+like the ratios of consumer hardware or consumer consumption capacity you need
+to put down is orders of, or at least an order of magnitude larger, right? And at the very beginning, everything,
+all the investment went into, uh, into training because, you
+know, we need to make the model. Now we have the model,
+now we want to use it. And now the growth
+actually inferencing side. So it's a natural conclusion. Um, from an OpenAI perspective
+to control your destiny. Now, the easiest one is, you
+know, you read the, uh, the profit statements of NVIDIA and
+there are around 69, 68, 69%. And so if you want to get eight,
+yeah, they're doing well and it shows in the stock price. So if you want to take a
+larger chunk of that revenue. Um, and of the profits, then,
+you know, you partner with a chip manufacturer, you get an exclusive deal. I'm sure, you know, like, NVIDIA
+and OpenAI, they have very specific deals where OpenAI probably pays
+less than the rest of the world. But still, it's, if you can control
+your supply chain for the product you're building, further, one step further down. You know, or two steps for that. And the first step is like,
+okay, I own my data center. The second step is I, I control the chip. Uh, now you can actually do chip
+manufacturing and you can design a chip for your protocol model. So you can co design a model for the
+chip and that's where you can probably get another three, four acts in, in
+cost reduction and I think OpenAI now at that scale they're operating at are
+doing the natural thing of any company, but just, you know, control your cost. Sure, but you want to talk a little
+bit about how this might impact kind of like the market for AI services,
+because it strikes me that in the past, you know, the way we've sold AI
+is that we go to customers and we say, look at this brand new shiny model. Look at all the things that
+it can do, um, work with us. Um, and presumably part of the pitch
+that OpenAI has here in the future will be well, it's also running on our chips. And as a result, things are way fast,
+like faster, or like way more performant. And kind of curious if you think
+that's going to shape sort of the sales pitch in this space, like sort
+of moving from selling the underlying infrastructure to like being the kind
+of primary focus versus the model per se, which I think we're seeing is just
+becoming more and more open source. Yeah, absolutely. And, uh, TSMC for the people who don't
+know is the hundred pound gorilla. Like they have like 65 percent plus of 100,000 pound gorillas, you know, and the world comes to a grinding halt
+if something happens to TSMC and we're talking about chips, my, my Tesla
+door handle has two sensors, right? Imagine thousands of sensors
+across the entire car. All of those are being, uh,
+coming in from TSMC outside of, uh, like, outside of Samsung. I don't think there's any other
+brand that, that comes in more than 10% of the marketplace. So TSMC is super critical. Everybody's designing the chips,
+but TSMC is the heart of the entire industry at this point. Now, uh, if you look at, uh, Amazon,
+that's a good, uh, a good analogy. Amazon has its own inference chips. They have built their own NOAA models that
+are super optimized for their own chips. So that combination, Anthropic
+is going to be using a lot of the Amazon chips as well. So when you optimize the architecture of
+the hardware to work with the architecture of the software itself, that does magic. The total cost and the throughput
+that you can get, the latency decreases, the cost of delivering
+that comes down significantly. So in the enterprise world, Uh,
+when we, when you go do these large projects with clients, you're
+looking at high volume use cases. For example, if I take a Llama
+model, the Llama 3 model could be running on, on Azure, AWS. It could be running on NVIDIA. It could be running on, on Watson. When you look at, uh, the inference stack,
+if you take that Llama model and you make a NIMS out of it and you put it on NVIDIA
+directly, that is particular now for that particular model, they have NIMIFIED it. It's going to run at 5x more throughput. You may pay 5 percent more extra cost,
+but now you have 5x more throughput. So that, uh, that brings up use
+cases where you're doing some inferences at massive scale. So as an example, if you're doing,
+say, fraud detection and you're looking at invoice coming in or you have
+an image that you're looking at and you want to do that today at scale. We've been using classical computing
+techniques for doing those today. Because the volume is very high. You need a very quick latency. You need to have do this at
+millions of times every day. So the cost would add
+up really very quickly. So this whole shift towards Amazon
+inference stack with their own models and Nvidia with NIMS on top. This is the trend that
+OpenAI is following as well. So that high volume use cases, the
+cost of doing this would go down. and be very effectively
+running in production at scale. So from an enterprise perspective,
+the use cases don't change. But now we start to go after
+the high volume ones where earlier the ROI didn't exist. So I'm generally very excited about
+people looking at inference and optimizing it so I can take more AI to my clients
+and and infuse that into more processes at scale and deliver higher ROI. Yeah, for sure. Kate, do you think, um, one thing that
+kind of occurs to me is... Does, do these structural changes create any,
+like, dangers, I think, for open source? So kind of what I'm thinking a little
+bit about is in a world where you've got models, but they run way better
+if you're using a particular kind of hardware, or they, they can only run
+on a particular kind of hardware. It actually changes kind of the dynamics
+of open source, where I think the dream of open source is you can take
+your model, you can run it everywhere. And that builds the largest possible
+open source community around our models. Um, do you worry at all about kind of
+this hardware fragmentation as like things get more sort of specialized
+and kind of like really optimized for particular families of models? I'm not sure that I worry so much. I mean, the model around open source
+has always been there are open source versions of technology and then there
+are optimized enterprise supported versions that, you know, end up
+being what gets deployed, right? And so we always need
+to have a bit of that. Balance, um, as a whole. So, you know, it's not something that
+immediately keeps me up at night, but I do think there's another really interesting
+thing that's going on here that, you know, 80 percent of the reason why, you know,
+anybody is doing this is probably exactly why, you know, Volkmar mentioned in terms
+of controlling costs, but I think there's uh, interesting part that also
+reflects that how these models are trained are is changing. And we're seeing a much larger emphasis
+on techniques like reinforcement learning, which require a huge amount
+of inference of really big models. And so being able to control your
+inference costs no longer is just being able to serve your models
+at a lower cost point to customers and run larger and longer jobs. It also is now a critical part of training
+so much so that you could easily start to see Reinforcement learning costs starting
+to outweigh the cost of pre training. Yeah, that's wild to consider. I haven't thought about that. And I think, uh, Tim, this is in line with
+what Google has been doing forever, right? Their tensor processing units, the
+TPUs are just so well designed. They are, they do an amazing job at doing
+this distributed across multiple centers. They don't need to build one big cluster. They're able to do this in a distributed
+center and connect them with very high fiber optic cables to do. Inferencing at scale. They have multiple products that are
+billion users plus every day, right? They've been deploying these AI
+models, deep learning models, transformer based models at scale
+at an insane pace across the world. So you'll see more and more of this. Inference time, optimized
+models, they're delivering great ROI and the right cost point. I'm very excited about this space. Yeah, for sure. Yeah, I was also going to comment,
+I feel like MoE is one of the few podcasts you can go on where a panelist
+literally does the chef kiss for GPUs. I'm going to move us on to our next topic. Um, you know, there's a joke that I
+always used to make when I was kind of, um, working at Google where we'd
+present, you know, oh, this is AI. And when we say AI, there's lots of
+different techniques, but really what we're talking about is deep learning. Right. And this was, you know,
+a decade plus ago now. Um, and I kind of feel like we've actually
+done a very similar thing now where we say, oh, well, when we say AI, we mean large language models. Um, but it actually just turns
+out there's like lots and lots of things happening in AI. And I think one of the most
+interesting things that's been popping off lately is kind of
+competition over vision models, right? Which I think, you know, have gotten
+short shrift, even though there's lots of exciting things happening there,
+but just because the LLMs have kind of taken up so much of the space. Um, and Kate, ideal for you to be on
+the show for this episode, because I understand Granite is out with a
+number of new small vision models. And so first, do you want to kind of walk
+us through that and what's been launched? And then I kind of more
+generally want to talk about like how this space is evolving. Absolutely. So a couple of things, first,
+uh, VLM, a vision language model, it's a little bit different than
+what folks might be familiar with. If they played with some of the
+earlier like stable diffusion models and a lot of the image generation
+models that we've seen to date. A VLM, which are these smaller models
+that are starting to get more popular, is all about image understanding. So it's a image and a prompt
+that gets sent as an input. Text is normally then returned as an
+output versus, you know, the, some of the original really popular DAL-E and
+other models that, um, you start with a prompt and you end up with an image. And the way these models work are you
+take a standard large language model often that's already trained to do
+language tasks and you do some additional training, uh, and to add a component on
+top that allows for an image to be, you know, basically expressed as an embedding
+that gets fed to your language model in addition to the embedding from the prompt
+and that information is together used from that language model to
+return the, the response. Um, so these are really,
+uh, becoming popular. We just saw a bunch of models drop. Uh, Granite released two
+weeks ago, our vision preview. Uh, and the full model
+is coming, uh, next week. So keep an eye out from the
+IBM Granite Hugging Face page. Uh, our model is only
+2 billion parameters. It's really small. You can run it locally. And what we're really excited about is
+we've taken a very specific approach focusing on document understanding tasks. So think of images from the perspective of a
+chart in a PDF or a poorly scanned PDF document, um, or a GUI or a dashboard
+where you like take a screenshot and put that into the chat box and
+start asking questions about it. So, you know, uh, Granite can
+do all sorts of general vision understanding tasks, but we've really optimised the performance around this
+document understanding, uh, thinking through from our, you know, our enterprise
+customer perspective, that's going to be where there's a lot of really valuable use
+cases, particularly as we look at some of our other projects that are going on in
+this space, like dockling, uh, and more broadly looking at use cases around areas
+like multimodal RAG. So, yeah, so Granite, uh, preview released two weeks ago, the
+full version is coming out next week. We just saw Qwen, uh, released, I think,
+earlier today or early last night. Their, uh, family of VLMs ranging
+from 3 billion to, I think, 72 billion parameters in size. And there's just a lot of other,
+uh, work going on in the space. You know, Pixtral, for example,
+is a common one that's been out for a little while. And we expect to see this
+type of capability only grow. Shobhit, do you want to give a little
+bit of a picture of kind of how the competition around this is evolving? I think, again, it's kind of like,
+you know, almost like a little bit like deep research, right? Which is, well, we've got this kind
+of interesting use case, and now people are trying to figure out where
+in the market it really belongs. For VLMs, it also seems similar,
+right, which is like suddenly you have this class of small vision models. What are enterprise people
+wanting to use it for? Absolutely. We've been working on vision models
+with clients for a while now. Earlier, this was a lot of
+the heavy lifting used to be done on a server on the cloud. So for example, if I take a Gemini  1.5 Pro model, it just chews through
+a whole video and can understand exactly what happened and has
+a really good understanding of what's, uh, what's going on. Those are very big, large models. There are a lot of use cases that
+we've been delivering for clients. As an example, large consumer goods
+company, distribution company, you have things around planograms where you walk
+into a store and you want to make sure the shelf has everything the right way. There are consumer goods companies
+where the label behind a particular product has to be, uh, relatively
+compliant to each region, right? If it's food versus, uh,
+some dresses and stuff. Then there are certain use cases around,
+uh, describing what's in the catalog. So for example, a large electronics
+manufacturer or a clothing apparel company or retailer, they would take
+images of what people are trying to sell. So when you upload a product, you
+want to describe that product. If you look at a big furniture store, when
+you take a piece of furniture, you need to create a lot of metadata so that it
+shows up in the research and stuff, right? Usually all of those tasks
+were very human driven. Now we're at a point where the
+images, as Kate was saying, they have evolved quite a bit, the VLMs, and
+they have a better understanding. Earlier they were able to just identify
+what's in this particular image. I could do some, some correlations
+and say this looks like a cat, this looks like a dog. Now it has evolved quite a bit. So for example, one of my clients, we
+have a camera that points at all the counters and you can see and tell which
+counter is more busy because it's also doing a people counting on the fly, right? So it understands which product
+is getting more popular. It has a better understanding of temporal. If I give you a few screenshots
+or video, it understands what's happening in the video, right? So from frame 2 to frame
+19, what changed delta? So it's trying to
+understand that even better. So OCR was the first wave of use cases
+that we found now we're getting into more and more semantic understanding
+of what's happening in the overall picture that starts unlocking even
+more use cases and to Kate's point, the models are getting much, much smaller now. That allows us to do two things. One, I can now run these on a device while the person is running around. So the person in the field in a
+manufacturing facility can take a picture of something can have
+a small camera that's running and things are running on device. This was supremely important for security. A lot of these use cases, you don't want the images to being
+streamed out for security reasons. You want to run these things near on prem. We're looking at defence use cases,
+drones running around in territories where you don't have control over the
+cellular network and stuff like that. All of those required us to
+do smaller models on the edge. The second category of things it's
+unlocking for us is high volume use cases. So, for example, the document processing
+that Kate mentioned, those are being done millions of times every day. The incremental cost difference
+between a 7 billion parameter model and a 15 or or 30 billion, billion
+parameter makes a difference to the end ROI of that use case. So we are now coming to a point where
+these small models deployed, either at scale or on device, are delivering the
+ROI that's so critical for us. Yeah, that's great. Volkmar, I'm gonna give you an
+impossible question for this segment, uh, to close out this segment. You know, to what Shobhit just
+said, right, there's these very interesting kind of pressures. And I don't think there is a clear
+answer just yet as to like how much of AI workloads will happen at the edge versus
+like, you know, in big data centers. But it does feel like kind of like the
+prominence of smaller models and the fact that they're actually like perfectly
+performant for most industrial tasks, means that we have a world where this is
+going to be more and more on the edge. But I don't know if you think like the
+trend is really going to be sort of 50/50 when this all kind of settles
+out, it's going to be all mostly on the edge, or just kind of curious
+about how you size up like where you think the models will live ultimately. So I think it will be a bit of everything
+from a bandwidth perspective, right? It's very cheap to
+transmit a couple of words. It's a very, very low bandwidth channel. The moment you go into vision,
+that's a high bandwidth channel. So you have a bandwidth issue. And so this is a traditionally, if
+you look at computation, it always has been the straight off between,
+you know, do I bring the computation to where the data is, or do I bring
+the data where the computation is? And so I think with, with text. Um, maybe ignoring latency, it was kind
+of in favor of bringing it to a data center so it can do the consolidation. It's like the argument of should I
+have a nuclear power plant or should I have a generator in my backyard, right? And so I think we have the same, and,
+and, you know, nuclear power plant in the end because it gets consolidation
+is more efficient, but now I need to have a power distribution network. And so I think we are in a similar
+situation here where, um, if I have a high bandwidth stream, uh, and I can
+actually solve this with a relatively small model at the edge that, you
+know, the economics work in that favor. And if you look at the trend, um,
+uh, like, you know, we, we are, we are now making decisions on, on based
+on the complexity of the question. Now for videos, that's really hard. Uh, but if you look at what, what
+the iPhone did and, you know, and we'll see this probably in all
+the phone manufacturers, like. You know, you have a model router
+at the beginning and the model router decides, this is an easy
+question or a complex question. If it's an easy question,
+I stay on device. If it's complex, I
+offload it into the cloud. And so I think from an, um, now flipping
+this, the cheapest input device, um, is effectively a camera, right? If you think about it, you capture, you
+know, 30 frames a second, uh, and you have millions of data points, right? And so now the, the, the entropy of
+millions of data points over time is very low, but you can capture, you
+know, a lot of information in one shot. Um, and, um, so the second one is audio. Would you want to transmit audio? That's probably more feasible. I think video is pushing it
+really to, to a point where you, you know, you will just
+process on the edge. And then I think what will happen
+is that the models will specialize. So, you know, what Shobit said, you know,
+you have these industrial use cases. Um, and if you're on a manufacturing
+plant, you may want to keep it as a record, but there's no reason for you to
+move it, you know, into a different data center on the cloud because you already
+have industrial scale installations, you already have data centers, et cetera. And so it makes much more sense
+to just do it, you know, locally. Now locally does not necessarily mean
+inside of the camera that may be required, you know, if you have a battery or so,
+but it could be inside of a building and, you know, may run a cable, which
+is a couple of hundred feet long. Yeah, that's right. Yeah, it's a good reminder that
+like where the edges is totally dependent on where you are. So... We kind of have this natural, you
+know, tendency because everybody carries an iPhone around. That it's the phone, right? And so, you know, it needs to be a package
+of a battery, a camera, and a processor, but that's not necessarily true. Um, maybe just a final question. I guess, Kate, if folks want to learn more
+about Granite's work, um, you know, where they should they go to get this new model. I know you said that there's a
+big announcement and there'll be a release next week, but, uh, anywhere. You know, online people should be paying
+attention to or anything like that. Yeah, I mean, we always post everything
+on our Hugging Face page, uh, under the IBM Granite org and then, uh,
+encourage folks to check out ibm.com/granite and you'll
+be able to find all the latest there. Um, I'm going to move us on to our
+last story of the day, really kind of more of a publicity stunt, if I can say
+that up front more than anything else. But I think it is kind of an
+interesting set of questions. The story is that Firecrawl, a Y
+Combinator startup, so very, very early company, got a little bit of
+attention on social media because they put out a job description. Um, and, uh, the job description
+was basically looking for someone who could assist in their open
+web, web crawler business. Um, but you know, the, the kind
+of listing specifically said, you know, humans need not apply. This is only for AI agents. Um, and you know, on interview, the
+founders of the company admitted, right? Like this is just kind of conceptual. It's kind of a funny experiment. You know, this is sort of a publicity
+stunt more than anything else, but it did get me sort of thinking about. you know, how far agents are going to
+go, particularly in the next year or so. Um, and whether or not for certain
+types of tasks, we really will start seeing kind of call for agents, right? To basically say, well, I could hire
+a human to do this job, or I've got an open call if anyone wants to produce
+an agent that will do the same job. Um, and so maybe Kate, I'll
+throw it to you first is like, are we living in that world? Are agents getting good enough,
+fast enough that, you know, we're going to start to see in 2025, 2026, some jobs really have
+listings for agents specifically. Well, look, I think what
+they did was clearly a bit of marketing tongue in cheek. Uh, but I think it's very realistic
+that to have a near future where we have catalogs of agents and people
+can also create, you know, specs for agents that types of behaviors
+that they want so others can build it and sell those agents, right? Um, I think that's very
+much where we're headed. I don't know that, uh, it's going to be
+a total job replacement, so to speak. I see a lot of opportunity for agents augmenting human roles and jobs. And I think that's much more realistic
+of, as we look at like, what will a job description look like next year? Having expertise and familiarity and,
+you know, part of the job description is helping manage agents and work
+with AI systems is I think, going to be increasingly a huge part of
+the, the new workforce, so to speak. Yeah, I think that'll be sort
+of an interesting bit of it. It reminds me a little bit of back in the
+day where it was like, you know, skills, you know, Microsoft Office Suite, Excel,
+Word, you know, whether or not kind of agents will be or experience with agents
+will be kind of like a relevant skill. Yeah, so I think this is not new. So if you look at what Dharmesh did
+from HubSpot CEO, he launched agent.ai last year. It's the largest network where you
+can create just like you would have gone to Fiverr to go hire people. You can go to agent.ai and find a catalog people are
+rating and you can hire that particular agent for a particular task and you
+pay by by different metrics, right? So I don't think this is new, having
+access to a variety of different agents who specialize in a particular domain. The way enterprises look at multi agent
+workflows, we spent the last 5, 10 years looking at structured, directional flows. We would go into an organization and
+say, let me find the workflows that are yucky and I'll reverse engineer them. We'll all create a new way of doing it
+and we'll codify it in a fixed flow. This was the RPA era. We got to only 10, 15 percent
+of the, of the flows that were deemed worthy of automation. The challenge there was when a human
+starts to trigger a flow, you go five, six steps in and you realize that, oh,
+there was a, there was something that went wrong and now you have to take
+over and now you start from scratch. So the human expert would just rather
+go into the whole step 10 steps by themselves so they have more control
+of what's going on so we could never go beyond 10-15 percent of the workflows
+that were automated using RPA robotic process automation. In this agent world,
+we have an opportunity for not having to define every deterministic step. So within very thin
+guidelines and guardrails. LLM can choose to figure out which LL-
+which API to call or which tool to, to choose, and how to pass in the parameters
+and create some sort of a plan, iterate through it, uh, and then make sure that we
+are heading towards the right direction. So very narrow task. Those will get automated with
+LLM agents fairly rapidly. You will see this from the native
+companies like Salesforce will have its own agent force, small pieces
+that are automated, but then you'll have external third party tools like
+Azure, uh, has its own copilots. Watson Orchestrate and others that'll
+sit outside and they'll orchestrate work across a gamut of these different agents. The technology is solved,
+is maturing pretty rapidly. The thing that is missing in
+the enterprises is ask to task. I should probably trademark this, but
+humans are incredibly good at this. We go from an overall ask to a series
+of tasks in our head really well. As soon as I get a question about, hey,
+why is my bill higher than last month? In my head, I'll trigger
+a few different tasks. Today, as a human, I'm
+doing them in sequence. Tomorrow, as LLM agents, I can
+just trigger these off on our own. The companies who can create a
+golden thread of ask to tasks are the ones who will win in this space. The agents themselves that are
+automating a small step, those will get commoditized really well. Once you have this golden record of
+ask to tasks, you can then create a planner agent that does that
+automatically for you, and that unlocks the multi agent workflows then. In order to get to multi agent, you
+have to solve for this ask to task. And the smaller LLM agents
+themselves, they will become fairly commoditized and you'll be able
+to go to a network like agent. ai or and go find agents that are doing
+that small task really, really well. Yeah, there's kind of a fun question
+here about sort of like effectively, like what's the paradigm on which agents
+will get integrated into organizations? Like I think one of the reasons why, you
+know, a job interview or a job listing for an agent is sort of silly is that. You know, we have B2B SaaS. If like we want to use an agent,
+we just like, you know, open up an account and click, click, click, and
+we've integrated it into our system. I think the only kind of weird world that
+is opened up by some of the multi agent stuff, um, there's this Google paper on AI
+scientists, uh, that came out yesterday. We're essentially the paradigm was
+almost like we're going to have an agent. That's the scientist. And then we're going to have some
+agents that run the experiment. And like, basically the, the kind of
+model for integrating agents was to basically create like a one to one
+analogy with like a laboratory and then have the, have the agents put in. Um, and that's the kind of world
+where you might want to hire, but I guess Kate and I guess, well, why
+you haven't spoken yet, but like, uh, we're not headed to that world. It just makes me cringe like this
+isn't preschool for agents, you know, like... There's got to be a better way Yeah, I think the the apis for that form
+of orchestration that is open, right? I mean we we went through centralized
+software to you know, SAS services, um, and you can just, you know,
+invoke an API, I think that is open. How that would work. I want to give it a different angle. We have something similar right now,
+which is Mechanical Turk at AWS, right? So I'm, I'm having micro
+tasks and I'm giving them out and then someone process it. So there's also an economic model of,
+do I have compute capacity available? And I'm not selling you a
+GPU, but I'm selling you. you know the work product and I may
+go to a centralized place picking up work items because I just have
+spare capacity or I have a model which is specialized in a particular
+way which produces better results. So right now you know this is more like
+a work queue management thing at a meta layer like you know not not saying hey
+I'm, you know, produce me a bunch of tokens or llama, but, you know, solve an
+actual problem for me and post a result. And so I think this is where it could go. And the other one is APIs, you know,
+like with the, with the baby agents, um, you could orchestrate something, but for
+example, you may not have data access. So someone may, you know, so
+let's say, you know, I'm going to run a chemistry experiment. I may not have all the data which is
+required to run the chemistry experiment. So I could imagine that, you know, I go to
+a company which actually sits on the data store, which it doesn't want to share,
+but it's happy to share the results of research or the summarisation of stuff. And then you may want to talk to an
+agent instead of talking to an API. So it's just the fact we're
+loving it one, one up. So your interface to that data set,
+maybe, maybe the large language model. So Tim, one of the things I would like
+to highlight just from a really hands on keyboards perspective, when we're
+deploying these large multi, multi agent networks for our clients, and we've had
+done quite a few of these in the last six months. A large pharma company,
+we're doing some content creation, authoring for compliance reporting,
+and there's another agent that will come audit it, so on and so forth. There's another healthcare client where
+we are working on a customer facing member multi agent where you can understand
+all other nuances and secondary intents that get triggered and come back. There's a telco where we're creating
+some software development, there's a BPO process where we're doing some three, four way matching quite a few of
+these examples where we have multi agent frameworks in the last five, six months
+that we've put in production for clients. One of the challenges we're running
+in, uh, is how do you describe the guidelines to these agents? We have as a society somehow figured
+out that English is the right way to talk to these LLM agents. Which I don't think will scale in
+enterprises when you get to agents, you're trying to go look at a complex
+workflow and saying that, hey, if you have a question about the status
+of the ticket, go use this tool and you're giving it a few short learning. So the actual context that we give to
+these LLM agents becomes 2, 3 pages for a small task because we have to add all
+these bandages and if then statements that essentially you're codifying in
+English and that's just one small agent. When you start to get to the planner,
+this is completely breaks down. You cannot possibly give a
+30 page context to a LLM. The latency is very high, there
+will be all kinds of overlapping rules, things of that nature. So I think as a community, we will need
+to make some progress, and I think IBM Research is doing quite a bit in this
+space too, to get to a way in, like, just the way Mechanical Turk works. We have a very structured contract between
+how you will go invoke a particular API or microservice or an agent. We'll need to get to a point where we can. We have solved this for
+software engineering. We need to bring some of those principles. It will no longer, I think, be
+national language in the way you go talk to these agents. There would have to be a little bit better
+software design principles that will need to be put in place for large scale. Enterprise deployments. So the hallucinations are lower. There's better auditability,
+evaluations, and things of that nature. Well, and I think there's
+two key points, right? It's like, how do I, as a developer
+working with an agent, express something in a very controllable,
+programmable fashion with very clear inputs and guarantees on the types
+of outputs I'm going to receive? And then, when we talk about agents
+potentially passing information back and forth and other ways to compress
+information and reserve it, there's no reason that has to be natural language. Or that is even efficient in any sense
+of the word and so what is the most effective way to actually bring that
+communication bridge some of that gaps. I again, I really hate the like nursery
+of agents all running around each with their own persona of I'm a critic agent
+and I'm a reflection agent and I'm a email writing agent and they all work together. Like how do we set this up? So it's much more of a program
+that gets operated, right? They're not people. They're not personas. There's instructions with
+very clear requirements. There's all sorts of agentic capabilities
+in this program, like reflection loops and validation loops and other
+things that happen, planning loops. But at the end of the day, it's a very
+clear program where information is passed from one program to another,
+and eventually a task is executed. Yeah, it's almost like we've
+gotten so carried away by like the dream of the agent that we're
+like, oh, it's a little person. But actually the optimal strategy is like,
+wait, is it just is it just programming? Like we just have to specify very clearly
+what we want the software to computer science is like we're saying,
+pretty please, I was looking at a prompt and an agent and part of
+the prompt said, be persistent. Like how is this how agent, like
+how the state of computer science has evolved to like this is the, our
+programming instructions to a model. There has to be a better way. Yeah, for sure. Well, great. Well, that's all the time we have today. Kate, Volkmar, Shobhit,
+thanks for joining us. And thanks to all you listeners. If you enjoyed what you heard, you
+can get us on Apple Podcasts, Spotify and podcast platforms everywhere. And we will see you next
+week on Mixture of Experts.

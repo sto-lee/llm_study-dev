@@ -1,0 +1,396 @@
+Fantasy football
+has exploded over the years, arguably becoming
+one of the most popular American pastimes. And as any fan knows, fantasy
+football is all about that data. So today I want to talk about how data
+and data preparation really make AI fly, how it makes it soar, but especially as
+it comes to fantasy football. So I'm thrilled to have the perfect folks
+for the job right here. Legendary ESPN anchor
+and host of ESPN's Get Up, Mike Greenberg and senior executive, sports and entertainment sponsorship
+marketing at IBM, Elizabeth O'Brien. Mike and Elizabeth,
+I'm stoked that you're here today. Well, thank you for having us. Yes.
+Thank you. Well, let's get into it. Okay. So, Mike, I want to start off with you
+and Elizabeth, of course, jump on in here, please. It feels like fantasy football might be an even bigger deal
+than football to some folks these days. It's, like, really woven itself
+into the fabric of society. So I'm curious about how you think
+that fantasy football has changed the relationship
+between fans and football. There are so many more people
+who are interested in football today, because they can have
+this direct involvement, because they can actually be
+a part of the game in a real and meaningful way
+than there would otherwise have been. When we look at the causes
+for the explosion of popularity of pro football in this country,
+I would put that right at or near the top. So I think it's important to say
+it's also become a business, right. And it's a business
+that's now a driver of business. Right. So for ESPN and the other fantasy
+football platforms, it drives consumption. It drives consumption of ESPN shows. It drives consumption of ESPN editorial
+and it drives consumption of NFL merch, watching on Sunday,
+all sorts of discussions. A whole cottage industry
+has grown up around fantasy football. And so for ESPN,
+it is an important business platform for them too, because it helps their other
+existing businesses. So we've heard some now about
+why it's important to ESPN that makes complete sense. How and why is it important to IBM though? How does IBM get in the mix with all this? Well, we have a partnership with ESPN. So ESPN is a business just like
+any other business we partner with. And their objective is to make
+their platform the best it can be. Make the best experience for ESPN fantasy
+football managers. And so we use technology
+to help them do that. And we've been doing that since 2017. And every year we build on top of what
+we did the previous year. So it is the first instance
+of AI in fantasy football. And every year
+there are developments in AI. And so we bring those developments
+to the ESPN fantasy platform. I've been lucky enough to be a part of this program
+with Elizabeth and all of the team at IBM. I think almost since its inception,
+and I have been flabbergasted. I mean, each year I sit as they go through
+all of the new technology, all of the new things that can be offered. I remember when we're starting
+to assess trades and then, I mean, I've watched
+all these things grow. And so the evolution of it
+has been remarkable. It's actually how I have learned
+about the growth of AI in our country, in a much more general macro way,
+because I am flabbergasted at the amount of information
+that is now available at your fingertips in the blink of an eye
+through ESPN and IBM's program, even versus what there was when we started
+doing this a few years ago. Yeah. Well, I mean, it's a good compliment
+because ESPN has so much information, so many experts, so much information
+printed, so much data, so many statistics that it actually almost creates an embarrassment of riches for people
+who are playing fantasy football. So what we're doing
+is we're using technology to say, hey, ESPN,
+there's all this great data out there. You have all these great experts. Let us help boil that down
+and make sort of a digestible experience for Fantasy Football Manager
+as they set their lineup week to week, or as they evaluate waiver
+wire pickups or trades. Well,
+with all that data, then, like you said, it seems like it's an embarrassment
+of riches, right? So that's a lot of work
+for y'all to do in order to boil it down, how is that impacting the fans? What are fans doing with all of this data,
+and how is that changing their relationship with football,
+but also with fantasy football? So I'll just start with what what we're doing specifically,
+when you think about your your fantasy football lineup, there are ways, you know,
+there are injuries there by weeks, etc. so you're constantly having to shift it
+over the 17 or 18 weeks of the season. And there are a few ways to alter your
+your roster. You can take someone off the bench,
+of course, and you want to know
+if they're likely to boom or bust. So Watsonx is helping to evaluate the boom
+and bust potential of players, so you can decide whether you're going
+to leave them on the bench or start them. But you can also pick up players
+through the waiver wire. If there's a player on the waiver, well, is that wide receiver really better
+than who I've got on my team? I need some help with that, right? And so if we can boil down,
+you know, millions of pieces of data into a single waiver
+grade, right, and say, you know what, this this wide receiver is an 89 and you're
+average wide receiver grade is a 77. So this is a pretty good pickup, right? So that's what we started doing
+and this year, what's new is we're saying here's why. We're sort of opening that black box
+and using generative AI to identify the contributing factors. Here's why that person got an 89 grade. Because they're facing this defense. Because they've boomed the last three games, because, you know,
+whatever the reasons are. So it's actually it's
+simplifying down to a grade, but then it's expanding and explaining itself
+through generative AI to fantasy managers. What they are doing is synthesizing
+an amount of information that is infinitely beyond anything
+my brain is capable of processing. And frankly,
+anyone's brain is capable of processing. The fascinating piece of this is
+they're not just looking at numbers that can be found in other places,
+but they are also synthesizing what people are saying
+they're taking into account what's being written in the columns,
+in the local newspapers, on the websites, what people on talk
+shows like mine are saying. All those get sort of mixed
+into this extraordinary stew and out
+come the probabilities of boom and bust. And is this player
+a good pick up for this week? But perhaps after that week you're going
+to want to make another change. The amount of information that you can receive from
+this is endless and extraordinary. And the comparison I would make to it. You know, when I was young and I first learned about the stock market, I first learned
+about the stock market was I thought, well, I really like this company
+and I really like this brand of car. So I'm going to buy those stocks. And what I quickly realized was,
+I don't know what the entire rest of the world likes
+and is going to like. So the comparison I would make to that is you can play fantasy football
+just to have fun if you want to. And there's nothing wrong with that. And if you want to do that
+and just pick players that you like because they're on your team
+and you want to root for them, there's nothing wrong with that. But if you want to play competitively,
+if you want to win, just as is the case in the stock market,
+then you would be very, very foolish not to take into account
+as much data as you possibly can. I think we were playing a couple years ago with Eli Manning
+when he learned that lesson. It was right after he retired
+and he drafted his former teammates and very quickly
+would drop to the bottom of our league. So he very he had to do some trades
+and waiver pickups. Those are hard lessons
+to learn even for fans. Like I started out,
+I'm a fan of the New York Jets. So I started out, I said I will not draft
+any New England Patriots no matter what happens. And I took as many Jets as I possibly
+could, and I had the worst team in the league
+our first year. And these are lessons
+you have to learn the hard way. Unless you listen to podcasts
+like this one and realize, oh, you're telling me that through Watsonx,
+there is an endless array of data? Again, if you just want to play to have
+fun, there's nothing wrong with that. But if you really want to try to compete,
+if that is important to you, then there's just no way in the world
+you can do it. If you're not using
+this kind of information and you're competing
+against people who are. And what's fantasy football without a little competition,
+a little friendly competition. Yeah. So, Greeny, you just said one thing that I just wanted to pick up on is,
+you know, the stock market. And I know that your example was sort of
+you with cars and stock prices, but it's fair to say that this is the same technology we're using
+for industries outside of sports. And fantasy football it’s basically
+how do you make decisions? How do you synthesize vast amounts of data to make the best possible decision
+in any industry? Because any business that you're running
+is going to require information,
+is going to require decisions. So for you, is trusting the data versus trusting your gut always a better thing? Where are we sitting on that spectrum? The gut is a big problem, okay? People who trust their
+gut are the ones who lose all the time. Here's what I will say. Let's line up ten people, okay? And five of them, five of them
+are going to play trusting the data. And the other five of them
+are going to play trusting their gut. And then you watch how that works out. And then ask me that question again. And it's really as simple as that. Look, Moneyball in some ways is the
+is the predecessor of this or it's they're they're from the same family.
+They're from the same tree. The teams themselves and the leagues
+themselves are using this information as well. It's, I mean Daryl Morey,
+I think is who's the general manager now of the Philadelphia 76ers from Northwestern University
+by the way quick plug my alma mater. But but but he is was one of the first. He is credited as being one of the first
+to really bring a the analytics heavily into the NBA. And the game has changed enormously. I know
+we're talking about fantasy football, but if you remember
+what basketball looked like 20 years ago,
+they weren't shooting threes all the time. Now that's all you do because they've
+recognized that threes and layups. It just makes sense mathematically. The data suggests that you will win
+far more often doing that than you will win if you play the way
+the game had always been played. Spin that directly to this. You could play with your gut,
+and if you play that over the course of a 17 week season,
+you'll win once. But you know you can also,
+if you're playing blackjack, hit on 18 and you might win once, but that doesn't
+make it the right thing to do. The point I'm making is I strongly discourage
+the use of the gut in decision making. When it comes to matters like this. Nine times out of ten, the gut will lose. I want to dig into a little bit
+about the importance of the speed. Like how quickly can
+all of this data get processed and why is that a relevant thing
+when it comes to fantasy football? Because people have
+to make these decisions rather quickly. It's more relevant
+now than it has ever been. And I mean that quite literally
+for this coming season, as they are now going to start playing games
+on almost every day of the week. So it used to be
+there was a time where you could, okay, I'll wait until Friday
+and I'll set my roster for this week because they're going to be games
+on Sunday and one on Monday night. Well, now we've added a Thursday
+night game every single week. Now there are a bunch of games
+that are going to be played on Saturdays. This year
+they're going to be Wednesday games. So this is information, injury updates,
+all those sorts of things. These are decisions that will have to be made almost
+in real time, almost in real time football is not quite like basketball
+or baseball where there are a game there's a game literally every day,
+but there is almost a game every day of the week in the NFL
+this coming year, and there will be some weeks
+where there practically are, so that I think that the value
+of getting that data and information quickly has never been more significant
+than it will be for this upcoming season. Right, and so stats don't update
+as quickly as natural language, right? Because there are pundits out there talking about, well, on Friday
+this might happen or this just happened. Right. And so it's the ability
+to get into language and to understand how that language translates
+to data translates to a decision factor. And that's what Watsonx and Granite are
+helping to do in ESPN fantasy football. When we started this partnership in 2017,
+I didn't know what Gen AI was. I mean, I'm sure it existed somewhere,
+but but not not in my world, you know? So we were just focusing on boom
+and bust, right? Is this person
+going to exceed their projection or are they going to fall short? And we were using AI just for that
+very simple decision making. Now we are evaluating trades
+which are complex, you know, exchanges of value basically. And we are evaluating waiver pickups
+and we're doing it in a personalized way. So it's not just that
+this wide receiver is great. It's this wide receiver is great for your team because your wide receivers
+are falling short. And so we think that's great. But Greeny might have
+all great wide receivers. And that same wide receiver
+would get a 50 grade for him. So it's personalization, it’s the use of
+large language models like Granite. It's the use of Watsonx to explain why, decisions
+and recommendations are being made. But Greeny, I don't know if... It's all well
+beyond my ability to comprehend. I enjoy seeing the data, I use it,
+I've come to use it religiously. And at this point,
+I would never make a decision in our league or any league that I might
+play in without using Watsonx. But for the life of me,
+I couldn't explain to you how they do it. And in fact, I have many times met
+the gentleman who actually was responsible or at least credited for having started
+all of this, and he's so smart that I can't even have
+a conversation with him. To be completely honest with you, if you've ever wanted to feel like
+the dumbest person in the room, have a conversation with him
+about the question you just asked. I think he uses some of that smarts
+to just confuse you two if you're playing. But he also won the league.
+I mean, that's the thing. Like he's not he's walking the walk. He's not just talking the talk. He wins every year
+because he knows what he's doing. But all kidding aside, to go back to what I was thinking about
+when Elizabeth was saying that is in a real way, these are business
+deals that we're making, right? I mean, they are actually business
+transactions. A trade is like a business transaction,
+and you would never make a business transaction without taking into account
+all of the factors that are involved. There's risk. There's there's what's my high
+end success here? What's my low end risk here? What am I giving up?
+What am I getting back in return? What is the probability of this
+working out best for me that's the information
+that you're getting. No one can tell you with certainty things
+that are going to happen. If you knew that,
+then you know you I would you would. I wouldn't be sitting here. I'd be living
+on an island of my own ownership. With all the watches that you want. Playing a golf course
+that only I can play. But what you are, what you are getting is the most educated guessing possible. Like,
+there is no more educated speculation that you can get literally anywhere else. And why wouldn't you utilize that
+in any business transaction? Yeah. I mean, it's just it's massive
+amounts of data and the data points to, you know, certain insights
+and certain conclusions. Of course, they're going to go and play
+the game anyway just to see what happens. But going in sort of understanding
+all the variables really helps you to be
+in the best possible position. So I'll give you another example. That's a non fantasy example
+from an IBM perspective. You know we partner
+with Augusta National at the Masters. And this year
+we had a feature called Hole Insights. And we were using Watsonx
+to identify zones on the course. And what usually happens
+when you land in the zone on the course. The odds of making birdie par
+bogey from certain locations, right. There is a lot of sort of feel in golf
+and sort of a lot of experience in golf. But we also heard from caddies,
+from players, from commentators that they were actually using our data
+to help them understand how the course might play, where to look
+for really exciting spots on the course, and outlooks for how the how the round
+on that particular day may play out. So it's a mix. It's a mix. It's art and science. It's wild to really see that
+mix happen in real time too, you know? And then, you know, as you mentioned,
+of course, it impacts how the fans are looking at things as they are
+truly looking at the seats. But I'm just imagine being a player
+and having a discussion with coach and understanding
+that there's actual data behind now what I'm supposed to put into,
+like my gut and my impulse. So what have you kind of heard
+from the player standpoint? Oh well, I mean,
+the players are very well aware of this and they have been ahead of this
+to at least some degree. So every coach has tendencies. If you're calling a defense. Now we're talking about
+about the actual football coaches here. If you're the opposing, you're Andy Reid,
+you're the coach of the Kansas City Chiefs. And I'm the defensive coordinator
+of another team. And I know that on third
+and three or shorter your tendencies, the probability is you're going to do A,
+and if it doesn't work then you're going to check it to B. And so I'm going to prepare myself for A
+and B. And those are things that they have been
+analyzing this kind of data with whatever they've had available to them for as long
+as these games have been played. And all of them are now every, every team in every sports league, including college,
+is using all of this data. I remember having a conversation
+with the football coach at Northwestern about this, when I was trying
+to understand why it is, if you are down a certain amount of points in a game,
+that we made a decision to go for two on, on a touchdown
+when I did not think it made sense, and he explained to me he went through
+all of the different probabilities. This is just data that is being run
+that Elizabeth might be able to explain to you
+that I most certainly could not. But the data suggests that far more often
+than not, your best scenario is down 14 with X amount of time
+left, you go for the two. Now your cognitive mind might say
+I'm much safer kicking the extra point to kick two extra points
+send the game to overtime. But the data says that
+if you play this out a thousand times or a million times, or perhaps Watsonx
+could tell you a trillion times, you will win more times
+by going for the two than not so. And almost all coaches do that. Now, there used to be coaches
+who would coach by the gut. They used to call it. I mean, they used to say I never read
+the book coaching by the book. I don't coach by the book.
+I don't read by the book. Those guys don't last anymore. There are almost none of those anymore. Data is making the decisions
+in all, in team building, in game strategy
+every bit as much as it is in fantasy. Yeah. And so when you think those are coaches
+with years of experience, right. Fantasy football
+managers are people like me, right? And I didn't play fantasy
+before we started this partnership. So I was relying very heavily on the data. Right. So you have to think,
+you know, fantasy is for everyday people and some of them are great sports experts
+and some of them are not, right? But by unlocking the amount of data
+that people with years of experience have, you even the playing field a little bit
+and you make it a lot more fun. Can you give us a little bit of insight
+in terms of how IBM crunches all of this data as quickly as it does? We work with ESPN year round. It's really a partnership where
+we understand sort of what their need is. You know, people aren't trading enough. You know, a fun league is an active league
+and trading really drives activity, right? And makes
+people want to come back for more and makes
+people want to set their lineups more. I mean, it's not good for anybody if you don't set your lineup week to week
+and you're not actively playing. So that's how we ended up using technology for the trade analyzer, saying,
+okay, there's all this data out there. I would have to get into calculus terms that I have not thought about for years,
+but there is a team led by a distinguished engineer at IBM,
+and they basically have a number of algorithms
+to pull in the data from ESPN. And again, I have to emphasize that
+unstructured data is really important. So that's language. It's not just stats. It's not just numbers and tables. It's you know what Greeny is saying on
+Get Up. It's what everyone else is saying
+on all of the other shows. And that's what's new,
+you know, it's using large language models to then turn that into data
+that we can now express in plain language for people
+who are playing fantasy football. And we can also express it
+in terms of numbers as well. So we use what's called a garage methodology,
+and we develop prototypes of the solution. And as the year goes on, we decide, okay, this is the one that's
+going to make a really good experience. And then we implement that every year. So it's really a year round process
+and starts with a business need or fan or fantasy manager experience need
+that will differentiate ESPN. Well Mike hearing that,
+how does it feel to know that you're a part of the unstructured
+data that's being pulled on in? I, I be honest with you, that's
+maybe two years now that we've been doing that or so I mean,
+that's a relatively new phenomenon. Yeah. When I first learned that,
+I was really surprised. I mean, I was I was taken aback
+just at the ability to synthesize that. Think about how many words
+are being written and spoken every single day
+about sports in this country. It boggles the mind. And somehow Watsonx is literally able
+to synthesize all of it. And not only that, but weigh the the value
+of some of it versus other of it. Well, that it's just
+I have to interrupt you for one second. That's really important
+because it has to be trusted data. And so that's
+sort of the strength of Watsonx, right. It's trusted data that is, you know,
+we can't take in data that's not vetted or trusted. And then we have to govern that data.
+We have to watch it. And we have to make sure that it doesn't
+it doesn't drift or start to hallucinate. There are humans involved
+to make sure that we're staying on track with the models throughout. And Greeny happens to be a trusted source. So he's back in that trusted data pile. So I'll let you continue. On and and but more to the point,
+the people who are on my show are the ones that we trust. So I sit there
+and I'm surrounded every single day by two or 3 or 4 legitimate football experts,
+people who played the game, who understand the dynamics of things that are going
+on, that even the most avid fan. And here's the point about how this
+information factors in with the numbers. Even someone who has access to all of the
+the hard data, whatever
+one would describe all the statistics as, someone who played
+the game will have an understanding of things that those people
+that that those numbers may not tell. So that's why I was really fascinated
+that it could do that. And I think
+the value of it is overwhelming. And I can tell you how much more important
+it has become just from a content standpoint,
+which is the area that I specialize in. So, I mean, I've been at ESPN for 28 years
+and I started out anchoring SportsCenters,
+and I can tell you that in the late 90s, we had I would say we devoted less than 1% of our content time
+to the coverage of the fantasy angle of sports
+of any sport, much less football. But any sport, as this has evolved and as society,
+as I mentioned before, has evolved. We're we're now spending
+probably closer to 20% of our content is is is aimed
+in that direction, aimed at people who are, specifically people
+who are playing fantasy football. I'm talking about one out
+of every five words I speak on the air. I'm thinking about that person because that has become such
+an incredibly important part of the audience, and that's what
+these people are looking for. I have a philosophy that the job of a talk show host is not to create
+interest, it's to reflect it. So I'm not doing this
+because I want people to be interested in in fantasy football
+and in the information that you can get from Watsonx, I'm doing it
+because those people are interested in it, and that's what they want from shows
+like mine. Well, I'm going to lean into something that I know that our listeners right now
+really want from this particular episode. We're going to play a little game of gut
+versus data. Mike, I want you to tell us how your gut thinks
+that your QB is going to do this season. By my QB, obviously
+you mean Aaron Rodgers. Absolutely. Well, so Aaron
+Rodgers is like a human madlib, right? Like he spent the offseason
+like running for vice president maybe and then missed minicamp
+because he was in Egypt. Like these are this is like you've just filled in a madlib
+and somehow came up with all of these. Having said all of that,
+now that the season is mercifully getting set to begin, if he is healthy,
+I think he is going to be terrific. He has and the Jets have all of the things that are required
+for a quarterback to be successful. They should have an outstanding
+running game with a great running back in Breece Hall, who I think is going to go
+2 or 3 or at latest four in most drafts. They have a dynamic
+young star wide receiver in Garrett Wilson that I think he will have excellent
+chemistry with and other good weapons. They have a rebuilt and hopefully much better offensive line,
+and they also have a really good defense. The only thing about a defense,
+and this is where all the AI comes into play, is if your defense is really good,
+then sometimes your offense is a little bit more conservative because your defense isn't giving up as many points, so
+you're not going to throw as many passes. So all those things get factored in. And this is why asking me my gut is not nearly as useful as asking Watsonx, because Watsonx will take into account,
+well, what if the Jets have the best defense in the NFL,
+which is a real possibility. How will that impact how many times a game
+Aaron Rodgers throws the ball, how many touchdowns he throws for, how much they will just be looking to run out the clock
+in the second halves of these games. So that's,
+I think, a perfect example of where the gut might say one thing oh he's good. He's back. He's healthy. We got good
+players. We're going to be winning. Let's go and Watsonx
+may very well tell you all those factors actually suggest that while the Jets will be good, Rodgers
+numbers will not be nearly as good as those of another quarterback
+whose team may stink on ice. But because they're losing all the time,
+he's going to throw two meaningless touchdowns
+in the fourth quarter of every game. And you're going to wind up
+winning your fantasy matchup that week. So that's again, another example of where
+the gut is is really to be ignored. Okay. So you just made this game
+really tough then Mike, because I was hoping then that Elizabeth
+could represent the data. Right. But you are so in alignment with the data at this point
+that you just checked your own gut. Well, I mean, I
+my gut has never gotten me anywhere. I mean, I was there was one year
+I mean the the legendary, on the old show on Mike and Mike,
+which I used to host. We had this thing called the KOD,
+I was the Kiss of Death, and it came up because there was one year
+in the playoffs. There were there used to be ten NFL
+playoff games before the Super Bowl. There are now more
+because they've added more wild cards. But in those days
+there were ten NFL playoff games. And you know,
+we would make predictions on them. And I went oh and ten against the spread. I defy you to do that on purpose. I defy anyone to go oh and ten against the
+spread through an entire NFL postseason. So if you listen to my gut,
+you deserve what you get. Well, this conversation has been
+just extraordinary. So thank you, Mike. Thank you, Elizabeth, for sharing your time
+with us today, for sharing your insights. And everyone
+who's been listening and watching. Thank you for being here as well. But please stay tuned for the next episode
+coming very soon. If you've got any thoughts, any comments? If you're upset about your lineup,
+do this for me. Just light up the comments section,
+drop them all in the chat. And until then, I'm Albert Lawrence
+and this has been AI in Action. See you soon.

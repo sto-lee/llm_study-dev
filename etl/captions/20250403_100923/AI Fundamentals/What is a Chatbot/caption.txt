@@ -1,0 +1,100 @@
+So most of us have at this point in our lives 
+have probably used a chatbot, maybe without   even knowing it. Have you ever wondered how does 
+a chatbot work? What powers it? How do I interact   with it? Let's dive in. My name is Morgan Carroll 
+with IBM Cloud. Let's say you're the owner of a   flower shop, this is you. And you're the only 
+employee, maybe you don't have time to respond   to common customer inquiries, such as what time 
+do you open, do you have yellow roses in stock,   how do I contact you. So you've got your customer 
+up here and they need to get in touch with you,   but you're busy you can't answer the phone. So 
+what can we do to solve this problem? This is   where Flora, the floral chatbot comes in. This is 
+Flora over here. Now if a customer has a simple   question, let's say they just want to know, um, 
+what time do you guys open. They can ask Flora   "hey what time do you all open?", and 
+then Flora is going to be able to respond   with the appropriate answer. She's going to say, 
+you know, maybe "we open Monday at 9 AM." All   without me having to interact with the chatbot, or 
+the customer, so that I'm free to do what I love   to do which is designing floral arrangements. 
+Now let's think of a more complex example.   Say you have the bank here, and you as the 
+customer you would like to check and see   what your balance is. So I just got paid I don't 
+know how much money is in the bank but I need   to go buy some socks. So rather than having to 
+call the bank and wait on hold, and wait for a   teller to pull up your information, and check your 
+account status, you could actually interact with   Birdie, the banking bot. So in this 
+case I'm going to ask Birdie, "Birdie,   what is my balance? How much money do I have 
+currently?" Bertie's going to come back and ask,   "I can help you with that, but what is your 
+account number, your pin number?", you know   some identifying information. So I'm going to be 
+able to provide this information back to Birdie.   My account number, maybe my date of 
+birth, a pin number, etc., etc. From there   all without any tellers or any employees having 
+to interact with Birdie, she's going to be able   to go and ask the bank, she's going to pass 
+along all this information, my account number,   my date of birth, and my pin number, and she's 
+going to say "hey bank, how much money does this   person have in their account?" The bank is going 
+to authorize me and say "okay this is all the   appropriate information that we need." The bank 
+is going to respond with "I'm sorry you only have   five dollars", maybe enough for socks, maybe not. 
+But then Birdie is going to be able to take that   response and pass it back to me, the customer, 
+all without having to interact with any humans   and it's very simple. So how does this really 
+work? Let's dive in. Going back to the floral shop   example. Let's say tomorrow is Mother's Day and 
+you forgot to order flowers like we normally do.   So here's you, my customer. Now like we mentioned 
+before, the floral shop owner is very busy,   she's putting together all these arrangements, 
+she doesn't really have time to answer the phone.   So luckily there are a few different 
+ways that you the user can interact   with our chatbot to actually automate 
+ordering some flowers for your mother.   So, on the floral shop website there could be a 
+little pop-up, maybe at the bottom that has Flora.   This is Flora, the floral bot, and she's here 
+and she's going to be able to pop-up and ask   me "what kind of flowers would you like to 
+order?" Obviously yellow roses because those   are my mother's favorite. If we don't want to 
+use the website, we could actually just call in.   So it can be either text based or voice based. 
+So, if I call the chatbot she says "Welcome to   Flower Supply 101, what would you like to place 
+your order for?" I would say "I would like a dozen   yellow roses", and it's just conversational. 
+And she's going to take my order and be able   to process it and you can also use various instant 
+messaging services, you know, for different social   media platforms you can integrate. So you have 
+all these different ways that you can interact   with the chatbot. Now let's think about how 
+that actually works, sort of on the backend.   So I think by now we're all familiar with the 
+cloud, it's the buzzword of the year. This is   actually where our chatbot is going to live. So 
+you'll have a chatbot service provider and this   chatbot is going to integrate with various 
+services to actually process whatever speech   it is that the user is saying. It's going to use 
+Natural Language Processing, as well as Artificial   Intelligence, to take what i'm saying and then 
+actually translate it into something that a   computer can understand. So, I'm saying whether 
+it's via phone or via instant messenger, or to   the webpage via text or voice, I would like to 
+purchase some yellow roses. So I'll say "purchase   yellow roses", and maybe I want to do a dozen. 
+Maybe next year I'll do two dozen, I should.   So then it's gonna pass this, I'm gonna pass this 
+information to either the web page or IM or voice.   This is actually, whatever this medium 
+is, it's going to send this information   up to the cloud. Now the cloud is going to take 
+this and it's going to process it. It's going to   say "I see that the user wants to purchase this 
+specific item", in this case 12 yellow roses.   Now we have to make sure that we actually have 
+these roses in stock, you know, if i try to place   an order and then I pay for it and then I get a 
+notice sorry we're out of stock well that's just   not a good user experience. So the way this is 
+going to work is we'll use various cloud services   and we're actually going to go over here and 
+connect to what I'm going to call floral systems.   And this is basically just going 
+to be our database on the backend,   and it's going to show, you know, maybe I 
+have 36 yellow roses in stock. I've also got,   let's say, 14 red tulips, and 3 succulents. Succulents. So, I've sent this information to 
+the webpage already as the user now the webpage   is going to say "all right, purchase", and then 
+12 roses, yellow roses. Now this is going to   send this information to the cloud to my chatbot 
+service provider, and then that is actually going   to go out here and check the database. So I'll 
+say "12 yellow roses is what we're looking for",   and then we can see we've actually got 36. 
+So we have plenty of roses, this is good.   So now we're going to send a 
+response back. We're going to say   "Yes, we have more than enough roses in stock. 
+So we can go ahead and place this order".   And the cloud is going to come back and say "Yes 
+let's place this order." And then the webpage is   going to come back to me and say "Absolutely, 
+you're in luck. You didn't wait too long. Maybe   next year try to do it a little quicker, 
+but we're going to be able to fulfill your   order." So then I'm over here the whole time as, 
+let's say I'm over here, the floral shop owner. And I'm just building floral arrangements. Maybe 
+I'll get a notification kind of off to the side,   but all in all the whole thing is automated so 
+I don't have to stop what I'm doing to actually   take care of this, and it's 
+going to save me a lot of time.   Now let's talk about the benefits of, you know, 
+why would we want to use a chatbot. I mean it   is it is nice to have that human interaction 
+whenever you're dealing with your customers, but   I think probably the number one reason that 
+someone may want to use a chatbot is to save   time. And what I mean by that is, you know, 
+not only are you saving time when it comes to   like interacting with your customers 
+and getting someone to place an order,   but again, you're leaving time off to 
+the side for you to go, and you know,   maybe you've got to do some bookkeeping, you've 
+got to put these floral arrangements together,   whatever it is, it's going to save you hours 
+and hours over the course of even just a month. Two. Simplicity. Chatbots believe it or not are surprisingly 
+simple to build. You don't have to know how   to write any code in most cases, if you want to do 
+more in-depth integrations, you might need to know   some code, but for the most part it's just natural 
+language based. You could say "Hey chatbot,   I want you to tell users that I'm open Monday 
+through Friday 9 AM to 6 PM", and it's going to be   able to relay that information without having to 
+know any Python, or JavaScript, or anything like that. Lastly, time to launch. So what that means 
+is that it does not take a lot of time to build   a chatbot. Like I said earlier, you don't have 
+to know any code, and since it's cloud-based   you don't have to build up any of the underlying 
+infrastructure. From the time you start building   the chatbot to the time it's completed could be 
+as quick as one hour. And so, these are some of   the reasons that you may want to build a chatbot 
+for your business. So I hope this helped explain   what a chatbot is, how it works, and why you 
+may want to use it. Thank you for watching.   If you have questions please drop us a line 
+below. If you want to see more videos like   this in the future, please like and 
+subscribe. And don't forget you can   grow your skills and earn a badge by creating 
+your own chatbot by clicking the link below.

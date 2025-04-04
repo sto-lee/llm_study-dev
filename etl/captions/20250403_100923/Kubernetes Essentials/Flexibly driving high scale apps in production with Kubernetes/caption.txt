@@ -1,0 +1,14 @@
+For an IBM Cloud customer it's imperative
+to be able to run those workloads in the geographies that are important to them. The Weather Company does 250 Billion forecasts
+daily. We complete 13 Billion API calls. We do 100 Million page views daily. There is a lot of overhead and upkeep. Red Hat OpenShift on IBM Cloud is fully managed
+native OpenShift environment where we are providing highly available masters, multizone
+clusters, integrating with platform services such as identity and access management, monitoring
+and logging, and key protect. It is the same OpenShift that I'm familiar
+with and love so much, but the moment we moved into the IBM Cloud all I had to worry about
+was my worker nodes. That was nice. In terms of DevOps, the key benefit of using
+a managed Kubernetes Service is that it allows our customers to focus on innovation
+and delivering software faster for their customers. Using a managed Kubernetes service has resulted
+in a 80% improvement in efficiency in my workloads and my team's workloads because now we are
+focused on what The Weather Company needs us to focus on instead of all this infrastructure
+that provided no direct benefit. Together Red Hat and IBM are dedicated to
+improving the DevOps experience of using Kubernetes.

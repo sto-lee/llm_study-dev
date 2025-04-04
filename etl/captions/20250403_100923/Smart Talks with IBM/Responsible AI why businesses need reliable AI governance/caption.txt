@@ -1,0 +1,260 @@
+Malcom Gladwell: Hello, hello. Welcome to Smart 
+Talks with IBM, a podcast from Pushkin Industries,   iHeartRadio and IBM. I’m Malcolm Gladwell.
+This season, we’re continuing our conversation   with New Creators— visionaries who 
+are creatively applying technology in   business to drive change—but with a focus 
+on the transformative power of artificial   intelligence and what it means to leverage AI as 
+a game- changing multiplier for your business.  Our guest today is Christina Montgomery, IBM’s 
+Chief Privacy & Trust Officer. She’s also chair of   IBM’s AI Ethics Board. In addition to overseeing 
+IBM’s privacy policy, a core part of Christina’s   job involves “AI governance”—making sure the way 
+AI is used complies with the international legal   regulations customized for each industry.
+In today’s episode, Christina will explain   why businesses need foundational principles when 
+it comes to using technology, why AI regulation   should focus on specific use cases over the 
+technology itself, and share a bit about her   landmark congressional testimony last May.
+Christina spoke with Dr. Laurie Santos,   host of the Pushkin podcast The Happiness 
+Lab. A cognitive scientist and psychology   professor at Yale University, Laurie is an 
+expert on human happiness and cognition.  Ok! Let’s get to the interview. Laurie Santos: So Christina, I'm so excited to talk to you today. So let's start by talking 
+a little bit about your role at IBM. What does   a chief privacy and trust officer actually do? Christina Montgomery: Yeah, it's a really dynamic profession. And it's not a new profession, but the  role has really changed. I mean, my role today is   broader than just helping to ensure compliance 
+with data-protection laws globally. I'm also   responsible for AI governance. I cochair our AI 
+Ethics Board here at IBM on—for data clearance,   and data governance as well, for the company.
+So I have both a compliance aspect to my   role—really important on a global basis—but also 
+help the business to competitively differentiate,   because really, trust is a strategic advantage 
+for IBM and a competitive differentiator, as a   company that's been responsibly managing the most- 
+sensitive data for our clients for more than a   century now, and helping to usher new technologies 
+into the world with trust and transparency. And   so that's also a key aspect of my role. Laurie Santos: And so—you joined us here on Smart Talks back in 2021, and you chatted with us about IBM's approach of building trust   and transparency with AI. And that was only two 
+years ago, but it almost feels like an eternity   has happened in the field of AI since then. And 
+so I'm curious: How much has changed since you   were here last time? The things you told us 
+before, are they still true? How are things—  Christina Montgomery: You're absolutely 
+right. It feels like the world has changed,   really, in the last two years. But the same 
+fundamental principles and the same overall   governance apply to the IBM program, for 
+data protection and responsible AI that we   talked about two years ago, and—not much 
+has changed there from our perspective.  And the good thing is, we've put these practices 
+and this governance approach into place,   and we have an established way of looking at these 
+emerging technologies as the technology evolves.   The tech is more powerful, for sure. Foundation 
+models are vastly larger and more capable,   and are creating, in some respects, new issues, 
+but that just makes it all the more urgent to   do what we've been doing and to put trust and
+transparency into place across the business—to   be accountable to those principles. Laurie Santos: And so our conversation today is really centered around this need for 
+new AI regulation. And part of that regulation   involves the mitigation of bias. And this is 
+something I think about a ton as a psychologist,   right? I know, my students and everyone who's 
+interacting with AI is, is assuming that the,   the kind of knowledge that they're getting 
+from this kind of learning is accurate, right?  But of course, AI is only as good as 
+the knowledge that's going in. And   so talk to me a little bit about, why 
+bias occurs in AI and the level of the   problem that we're really dealing with.
+Christina Montgomery: Yeah. I mean—well,   obviously AI is based on data, right? It's trained 
+with data, and that data could be biased in and of   itself. And that's where issues could come up. 
+They come up in the data. They could also come   up in the output of the models themselves.
+So it's really important that you build bias   consideration and bias testing into your product 
+development cycle. And so what we've been thinking   about here at IBM, and doing—we had—some of our 
+research teams, uh, delivered some of the very   first tool kits to help detect bias years ago 
+now, right? And deployed them to open source.  And we have put into place for our 
+developers here at IBM an “ethics by   design” playbook that's a sort of a step-by-step 
+approach, which also addresses very fully bias   considerations. And we provide not only, 
+like, “Here’s a point when you should test   for it and you consider it in the data.”
+You have to measure it both at the data   and the model level or the outcome level. And we 
+provide guidance with respect to what tools can   best be used to accomplish that. So it's a really 
+important issue. It's one you—you can't just talk   about. You have to provide, essentially, 
+the technology and the capabilities and   the guidance to enable people to test for it.
+Laurie Santos: Recently you had this wonderful   opportunity to head to Congress to talk about 
+AI. And in your testimony before Congress, you mentioned that it's often said that innovation 
+moves too fast for government to keep up.  And this is something that I also 
+worry about as a psychologist,   right? Are policymakers really understanding 
+the issues that they're dealing with? And so I'm   curious how you're approaching this challenge 
+of adapting AI policies to keep up with the   sort of rapid pace of all the advancements 
+we're seeing in the AI technology itself.  Christina Montgomery: It gets really critically 
+important that you have foundational principles   that apply to not only how you use 
+technology, but whether you're going   to use it in the first place and where you're 
+going to use and apply it across your company.  —and then your program, from a governance 
+perspective, has to be agile. It has to be   able to address emerging capabilities, 
+new training methods, et cetera. And   part of that involves helping to educate and 
+instill and empower a trustworthy culture at   a company so you can spot those issues—so you 
+can ask the right questions at the right time.  If we talked about, during the Senate hearing, 
+and—and IBM's been talking for years about   regulating the use, not the technology itself, 
+because if you try to regulate technology, you're   very quickly going to find out, um, regulation 
+will absolutely never keep up with that.  Laurie Santos: In your testimony to Congress, 
+you also talked about this idea of a “precision   regulation approach” for AI. Tell me more about 
+this. What is a precision regulation approach,   and why could that be so important?
+Christina Montgomery: It's funny,   because I was able to share with Congress our 
+precision regulation point of view in 2023,   but that precision regulation point of view was 
+published by IBM in 2020. So we have not changed   our position that you should apply the tightest 
+controls, the strictest regulatory requirements,   to the technology where the end use and 
+risk of societal harm is the greatest.  So that's essentially what it is. There's 
+lots of AI technology that's used today   that doesn't touch people—that's 
+very low risk in nature. And even when you think about AI that delivers a movie 
+recommendation versus AI that is used to diagnose   cancer, right? There's very different implications 
+associated with those two uses of the technology.  And so essentially what precision regulation 
+is “Apply different rules to different risks,”   right? More-stringent regulation to the use 
+cases with the greatest risk. And then also   we build that out, calling for things like 
+transparency. You see it today with content,   right? Misinformation and the like.
+We believe that consumers should always   know when they're interacting with an AI system. 
+So: be transparent. Don't hide your AI. Clearly   define the risks. So as a country, we need to have 
+some clear guidance, right? And globally as well,   in terms of which uses of AI are higher risk, 
+where we'll apply higher and stricter regulation,   and have sort of a common understanding 
+of what those high-risk uses are,   and then demonstrate the impact in 
+the cases of those higher-risk uses.  So companies who are using AI in spaces 
+where they can impact people's legal rights,   for example, should have to conduct an impact 
+assessment that demonstrates, you know, that   the technology isn't biased. So we've been 
+pretty clear about “Apply the most-stringent   regulation to the highest- risk uses of AI.”
+Laurie Santos: So far, we've been talking   about your congressional testimony in terms 
+of, you know, the specific content that you   talked about. But I'm just curious on a personal 
+level, what was that like, right? Like right now,   it feels like at a policy level, like there's a 
+kind of fever pitch going on with AI right now.  You know, what did that feel like, to kind 
+of really have the opportunity to talk to   policymakers and sort of influence what 
+they're thinking about AI technologies,   like in the coming century, perhaps?
+Christina Montgomery: It was really an   honor to be able to do that, and to be one of the 
+first set of invitees to the first hearing. And   what I learned from it essentially is, really 
+two things. The first is really the value of   authenticity. So both as an individual and as 
+a company, I was able to talk about what I do. I didn't need a lot of advance prep, 
+right? I, I talked about what my job is,   what IBM has been putting in place for years now. 
+So this isn't about creating something. This was   just about showing up and being authentic. And we 
+were invited for a reason. We were invited because   we were one of the earliest companies in the AI 
+technology space. We're the oldest technology   company, and we are trusted, and that's an honor.
+And then the second thing I came away with was   really how important this issue is to society. 
+I don't think I appreciated it as much until,   following that experience, I had outreach from 
+colleagues I hadn't worked with for years.  I had outreach from family members who 
+heard me on the radio, my mother and my   mother-in-law and my nieces and nephews and 
+my— friends of my kids were all like, “Oh,   I get it. I get what you do now. Wow. That's 
+pretty cool.” You know, so that was really,   the best and most impactful takeaway that I had. Malcom Gladwell: The mass adoption of generative AI happening at breakneck speed has spurred societies and governments   around the world to get serious 
+about regulating AI. For businesses,   compliance is complex enough already. But 
+throw an ever-evolving technology like AI   into the mix and compliance itself 
+becomes an exercise in adaptability.  As regulators seek greater accountability in 
+how AI is used, businesses need help creating   governance processes that are comprehensive enough 
+to comply with the law but agile enough to keep up   with the rapid rate of change in AI development.
+Regulatory scrutiny isn’t the only consideration,   either. Responsible AI governance—a business’s 
+ability to prove its AI models are transparent   and explainable—is also key to building 
+trust with customers, regardless of industry.  In the next part of their conversation, Laurie 
+asks Christina what businesses should consider   when approaching AI governance. Let’s listen.
+Laurie Santos: So what's the particular   role that businesses are playing in AI 
+governance? Like, why is it so critical   for businesses to be part of this? Christina Montgomery: I think it's really critically important that businesses understand the impacts that technology can have,   both in making them better businesses—but 
+the impacts that those technologies can   have on the consumers that they are supporting.
+Businesses need to be deploying AI technology   that is in alignment with the goals that 
+they set for it and that can be trusted.   I think for us and for our clients, a 
+lot of this comes back to trust in tech.  If you deploy something that doesn't work, 
+that hallucinates, that discriminates,   that isn't transparent, where decisions can't 
+be explained, then you are going to very rapidly   erode the trust—at best, right?—of your clients. 
+And at worst, for yourself; you're going to create   legal and regulatory issues for yourself as well.
+So trust in technology is really important.   And I think there's a lot of pressure on 
+businesses today to move very rapidly and   adopt technology. But if you do it without 
+having a program of governance in place,   you're really risking eroding that trust. Laurie Santos: And so this is really where I think a strong AI governance comes in. 
+You know—talk about, from your perspective,   how this really contributes to 
+maintaining the trust that customers   and stakeholders have in these technologies. Christina Montgomery: Yeah, absolutely. I mean, you need to have a governance program because  you need to understand, that the technology,   particularly in the AI space that you 
+are deploying, is explainable. You need   to understand why it's making decisions and 
+recommendations that it's making, and you   need to be able to explain that to your consumers.
+I mean, you can't do that if you don't know where   your data is coming from; what data you're using 
+to train those models; if you don't have a program that manages the alignment of your 
+AI models over time to make sure—as   AI learns and evolves over uses, which is in 
+large part what makes it so beneficial—that   it stays in alignment with the objectives 
+that you set for the technology over time.  So you can't do that without a robust governance 
+process in place. So we work with clients to share   our own story here at IBM in terms of how we 
+put that in place, but also in our consulting   practice, uh, to help clients work with these new 
+generative capabilities and foundation models and   the like, in order to put them to work for their 
+business in a way that's going to be impactful to   that business, but at the same time be trusted. Laurie Santos: And so now I wanted to turn a little bit towards watsonx.governance. And—so IBM recently announced their AI platform, watsonx,   which will include a governance 
+component. Could you tell us a   little bit more about watsonx.governance? Christina Montgomery: Yeah. I mean, before I do that, I'll just back up and talk about  the full platform, and then lean into watsonx,   because I think it's important to understand 
+the delivery of a full suite of capabilities.   To get data, to train models, and then to govern 
+them over their life cycle—all of these things   are really important. From the onset, you need 
+to make sure that you have—for our watsonx.ai,   for example; that's the studio to train 
+new foundation models and generative AI   and machine-learning capabilities, and we are 
+populating that studio with some IBM-trained   foundation models, which we're curating and 
+tailoring more specifically for enterprises.  So that's really important. It comes back to the 
+point I made earlier about business trust and   the need,to have enterprise-ready technologies 
+in the AI space. And then the watsonx.data is   a fit-for-purpose data store or a data lake, 
+and then watsonx.gov. So that's a particular   component of the platform that my team and the 
+AI Ethics Board has really worked closely with   the product team on developing. And we're using 
+it internally here in the chief privacy office   as well to help us govern our own uses of 
+AI technology and our compliance program   here. And it essentially helps to notify 
+you if a model becomes biased or gets out   of alignment as you're using it over time. So 
+companies are going to need these capabilities. I mean, they need them today 
+to deliver technologies with   trust. They'll need them tomorrow to comply 
+with regulation, which is on the horizon.  Laurie Santos: I think compliance becomes even 
+more complex when you consider international   data-protection laws and regulations. Honestly, 
+I don't know how anyone on any company's legal   team is keeping up with this these days. But my 
+question for you is really, “How can businesses   develop a strategy to maintain compliance and to 
+deal with it in this ever- changing landscape?”  Christina Montgomery: Increasingly more 
+challenging. In fact, I saw a statistic   just this morning that the regulatory obligations 
+on companies have increased something like 700   times in the last 20 years. So, it really is 
+a huge focus area for companies. You have to   have a process in place in order to do that.
+And it's not easy, particularly for a company   like IBM, that has a presence in over 170 
+countries around the world. There's more   than 150 comprehensive privacy regulations. 
+There are regulations of nonpersonal data.   There are AI regulations emerging. So you 
+really need an operational approach to it,   in order to stay compliant.
+But, but one of the things we do   is we set a baseline—and a lot of companies do 
+this as well. So we define a privacy baseline,   we define an AI baseline, and we ensure, then, 
+as a result of that, there are very few deviances   because it incorporates that baseline.
+So that's one of the ways we do it. Other   companies, I think, are similarly situated in 
+terms of doing that. But, again, it is a real   challenge for global companies. It's one of the 
+reasons why we advocate for as much alignment as   possible—in the international realm as well as 
+nationally here in the U.S.—as much alignment as   possible to make compliance—easier—and not just 
+because companies want an easy way to comply,   but the harder it is, the less likely 
+there will be compliance. And it's   not the objective of anybody—governments, 
+companies, consumers—to have to set legal   obligations that companies simply can't meet. Laurie Santos: So what advice would you give to other companies who are looking to rethink or strengthen their approach to AI governance? Christina Montgomery: I think you need to start 
+with, as we did, foundational principles. And   you need to start making decisions about 
+what technology you're going to deploy,   and what technology you're not, what are you 
+going to use it for and what aren't you going to   use it for. And then when you do use it, align 
+to those principles. That's really important.  Formalize a program. Have someone within 
+the organization—whether it's the Chief   Privacy Officer, whether it's some other 
+role, a Chief AI Ethics Officer—but have   an accountable individual, an accountable 
+organization. Do a maturity assessment,   figure out where you are and where you need to 
+be, and really start, putting it into place today.   Don't wait for regulation to apply directly 
+to your business because it'll be too late.  Laurie Santos: So as Smart 
+Talks features New Creators,   these visionaries like yourself who are creatively 
+applying technology in business to drive change,   I'm curious if you see yourself as creative. Christina Montgomery: I definitely do. I mean, you need to be creative when you're working in an industry that evolves so very quickly.   So you know, I started with IBM when 
+we were primarily a hardware company,   right? And we've changed our business 
+so significantly over the years. And   the issues that are raised with respect to 
+each new technology—whether it be cloud,   whether it be AI, now, where we're seeing a 
+ton of issues, or you look at emergent issues,   in the space of things like neuro technologies 
+and quantum computers—you have to be strategic   and you have to be creative and thinking about 
+how you can adapt agilely, quickly, a company to   an environment that is changing so quickly. Laurie Santos: And with this transformation happening at such a rapid pace, 
+do you think creativity plays a   role in how you think about and implement, 
+specifically, a trustworthy AI strategy?  Christina Montgomery: Yeah. I absolutely think 
+it does. Because again, it comes back to   these capabilities. And, there are ways, I guess how 
+you define “creativity” could be different,   right? But I'm thinking of creativity in the 
+sense of, sort of agility and strategic vision and   creative problem-solving. I think that's really 
+important in the world that we're in right now,   being able to creatively problem solve with 
+new issues that are rising sort of every day. Laurie Santos: And so how do you see the role 
+of Chief Privacy Officer evolving in the future   as AI technology continues to advance? Like, 
+what steps should CPOs take to stay ahead of   all these changes that are coming their way? Christina Montgomery: So the role is evolving, in most companies, I would say, pretty rapidly. Many companies are looking to   chief privacy officers, who already understand 
+the data that's being used in the organization   and have programs to ensure compliance with laws 
+that require you to manage that data in accordance   with data-protection laws and the like.
+It's a natural place and position for,   AI responsibility. And so I think what's 
+happening to a lot of chief privacy officers is   they're being asked to take on this AI-governance 
+responsibility for companies,—and if not take it   on, at least play a very key role working with 
+other parts of the business in AI governance.  So that really is changing. And if Chief 
+Privacy Officers are in companies who maybe   haven't started thinking about AI yet, 
+they should, so I would encourage them   to look at different resources that are available 
+already in the AI-governance space. For example,   the International Association of Privacy 
+Professionals—which is the 75,000-member   professional body for the profession of chief 
+privacy officers—just recently launched,   an AI- governance initiative on—an AI-governance 
+certification program. I sit on their advisory   board. But that's just emblematic of the 
+fact that the field is changing so rapidly.  Laurie Santos: And so, speaking of rapid 
+change—when you were back here on Smart Talks   in 2021, you said that the future of AI will 
+be more transparent and more trustworthy.What   do you see the next five to 10 years holding? 
+You know, when you're back on Smart Talks in,   you know, 2026, you know, 2030, you know, 
+what are we going to be talking about   when it comes to AI technology and governance? Christina Montgomery: So I try to be an optimist, right? And I said that two years ago, and I think we're seeing it now come into   fruition. And there will be requirements, 
+whether they're coming from the U.S.,   whether they're coming from Europe, whether 
+they're just coming from voluntary adoption by clients of things like the NIST risk-management 
+framework, a really important voluntary framework,   you're going to have to adopt transparent 
+and explainable practices in your uses of AI.  So I do see that happening. And in the next 
+five to 10 years, boy, I think we'll see more   research into trust in, in techniques, because we 
+don't really know for example, how to watermark.   We were calling for things like watermarking; 
+there'll be more research into how to do that.  I think you'll see regulation that's specifically 
+going to require those types of things. So I   think—again, I think the regulation is going 
+to drive research. It's going to drive research   into these areas that will help ensure that we can 
+deliver new capabilities, generative capabilities   and the like, with trust and explainability. Laurie Santos: Thank you so much, Christina, for joining me on Smart Talks to talk about AI and governance.  Christina Montgomery: Well, thank 
+you very much for having me.  Malcolm Gladwell: To unlock the transformative growth possible with artificial intelligence, businesses need to know   what they wish to grow into first. Like Christina 
+said, the best way forward in the AI future is for   businesses to figure out their own foundational 
+principles around using the technology,   drawing upon those principles to apply AI in 
+a way that’s ethically consistent with their   mission and complies with the legal frameworks 
+built to hold the technology accountable.  As AI adoption grows more and more widespread, 
+so too will the expectation from consumers and   regulators that businesses use it responsibly. 
+Investing in dependable AI governance is a way for   businesses to lay the foundations for technology 
+their customers can trust, while rising to the   challenge of increasing regulatory complexity.
+Though the emergence of AI does complicate   an already tough compliance landscape, 
+businesses now face a creative opportunity to set a precedent for what accountability in 
+AI looks like and to rethink what it means   to deploy trustworthy artificial intelligence.  I’m Malcolm Gladwell.
+This is a paid advertisement from IBM.  Smart talks with IBM will 
+be taking a short hiatus,   but look for new episodes in the coming weeks.
+Smart Talks with IBM is produced by Matt Romano,   David Zha, Nisha Venkat, and Royston 
+Beserve, with Jacob Goldstein. We’re   edited by Lidia Jean Kott. Our engineer is 
+Jason Gambrell. Theme song by Gramoscope.  Special thanks to Carly Migliori, Andy Kelly, 
+Kathy Callaghan, and the EightBar and IBM teams,   as well as the Pushkin marketing team.
+Smart Talks with IBM is a production   of Pushkin Industries and Ruby Studio at 
+iHeartMedia. To find more Pushkin podcasts,   listen on the iHeartRadio app, Apple 
+Podcasts, or wherever you listen to podcasts.

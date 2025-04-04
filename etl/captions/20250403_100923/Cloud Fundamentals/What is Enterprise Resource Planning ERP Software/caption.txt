@@ -1,0 +1,111 @@
+The acronym ERP stands for Enterprise Resource 
+Planning. An ERP system is a core enterprise   software and solution stack comprised of a 
+central database surrounded by multiple plug-in   services and software packages, each of which is 
+tailored to solve specific enterprise problems   and address specific challenges. At the core 
+of all ERP solutions is a master database.   This database houses all the records that a 
+company uses within all of its ERP solutions.   These records can be financial, like invoices and 
+purchase orders. They can be related to payments,   like accounts payable and payroll and taxes. 
+They can be related to inventory status so that   a company knows what its supply lines are and how 
+many of all finished goods are available in every   warehouse. That core database also stores all 
+of the sales data, what customers have ordered,   what products as well as details and specifics on 
+the internal processes to get that product from   the warehouse to the customer. But simply 
+storing the data by itself isn't useful.   The importance of an ERP system is to take all 
+the data that a company collects and use it   and integrate it so that that company can find 
+ways to increase efficiency and save on costs.   This is why there's always a data analytics piece 
+that wraps around the entirety of that core ERP,   database. This analytics engine is busy as it's 
+constantly creating reports on regular schedules   and updating the tables themselves. But it also 
+has to have the ability to provide data to users   on an ad hoc basis whenever a user has a specific 
+query that they need more information from. So for   all that data to flow correctly into the database 
+and for the core functions of the ERP system to   work correctly. Let's talk about the most commonly 
+implemented modules that you'll find within an ERP   system. So that first module, that's going to be 
+your sales module, that is all of your sales data,   your order data, your customer data, so what 
+customers buying, what things, where it's going,   shipping, tracking all of the PO information on 
+how it's getting paid for. In the payment status   you've got to track all of that sales data, 
+but in order to make sales happen you've   got to have product. In order to have product 
+that means that you've got to have procurement.   So, for procurement you've got to go out there, 
+you've got to track what materials am I buying,   who am I buying them from, where are they 
+coming from, am I getting the best deal,   am I doing all of the things that I need to do 
+to acquire what I need to make my product. But   procurement goes so much further than that, it's 
+not just what does it take to make your product,   it's also “are you procuring what you need in 
+order for your employees to keep up and running?   Are you buying things as complex 
+as servers to go into a data farm,   and as simple as packages of ballpoint pens 
+so that people have something to sign with?”.   All of those pieces go into that procurement 
+area. And then in addition to the procurement,   you've got to have your production systems, 
+right. Production is incredibly important   because you have to track that production from the 
+very beginning with your raw materials to the very   end with your finished product. And production is 
+going to track everything in between, it's going   to do the planning, the capacity management, 
+the maintenance, the materials management,   being sure that the right things are being 
+staged at the right place at the right time   particularly as we've moved into this 
+just in time manufacturing process   everywhere in the world so that we get as much 
+efficiency in our manufacturing process as we can.   And so, after we finish that procurement, we might 
+have a distribution module, that module is going   to be concerned with how do we get our finished 
+products from point A to the customer's door,   or just from point A to the loading dock door. 
+So that distribution model that's going to be   warehouse processes and staging goods, and 
+movement of finished goods, logistics control,   inventory control, stock levels trigger 
+levels all of those things that are necessary   from a logistics perspective because every 
+business runs with that logistics trail.   And so, your distribution modules have to keep 
+track of all of that. They've got to run all   of it for you or you're just going to run into 
+inefficiencies. And then related to manufacturing,   and still very important, you've got your asset 
+pieces, right. So, you've got your assets and you   have to track them. These are fixed assets, 
+capital assets, you have to know everything   about them. Not just the procedural information, 
+what do you have, who made it, how does it work,   what's its status, does it have any maintenance 
+coming up, is it still under a service contract,   those things are important. Don't get me wrong, 
+but your finance department is going to insist   that you also have all of that finance related 
+data, what's the valuation of your asset,   what's its depreciation status, what is it is its 
+expected useful life, should they be planning on   a capital expenditure in order to replace it in a 
+certain number of years. Tracking all of that is   key to the asset. Part because, again, this fits 
+in holistically and so all of these services,   these are all the back office ones. Back office 
+is important, but also important is front office,   and this is the point where we should cut back 
+to me doing this very nice scripted speech.   So, let's talk about these front office customer 
+facing or customer touching solutions, things like   customer relationship management, software, right. 
+That's your CRM piece. Why does CRM matter? Well   CRM matters because that's everything to do 
+with your relationship to that customer. It's   customer information, sales history, it's incoming 
+leads on people who are potentially interested in   buying your products, it's opportunity from 
+first identification to opportunity close,   it's all of your sales tracking data and your 
+pipeline information that you report out on.   All of that goes into that CRM system. That data 
+is essential to knowing the status of your company   and knowing what your revenue is going to be 
+as you track all of those opportunities from   open to close. And then in addition to your 
+CRM suite, you've also got your HCM suite,   right. Human capital management, or HR software, 
+there's lots of different names for it,   but the same general idea how are you going out 
+and sourcing new employees, how are you retaining   the ones that you already have, how are you being 
+sure that everybody is being judged appropriately,   that annual reviews are going well, that all of 
+the back end processes necessary to onboard and   hire and maintain and pay your employees happen. 
+All of that goes into that HCM suite. And while   that might not necessarily be part of your ERP 
+system it certainly falls within the umbrella   the larger category of what ERP is. And so, 
+while it might be a tightly coupled system,   it might also be integrated in. It really 
+just depends on which one you've picked.   And then also another tightly coupled system 
+that may or may not be part of the ERP suite   is your accounting system. Now some 
+companies obviously choose to put their ERP   and their accounting software together, 
+some of them choose to break it apart,   but that accounting piece that is always going 
+to be core because the data from the accounting   piece is going to feed back into everything else 
+that you're doing. Likewise, you're going to have   finance modules these are the ones that are more 
+tightly coupled and probably built into the ERP   that are going to track all of those 
+things like your company investments,   company’s financial status, it's going to ingest 
+all of that data we talked about before with your   assets and things like that. And it's going 
+to track the financial health of your company   at a very high level. And that high level is 
+probably the most important part of your ERP   system because everything that we've talked 
+about, everything on this wheel right now,   this is about running the business from a very 
+operational level. But the next step is not just   the operations piece it's the governance piece. 
+So we're going to remove this database and we're   going to remove these analytics engines, and we're 
+going to put governance right here in the middle   because every module that we have, every one 
+of these modules has to feed that data into the   holistic governance picture because executives 
+at the boardroom level, or one step down from   the boardroom level, these executives are going 
+to make the decisions that they have to make   about the future of the company. These are the 
+strategic level decisions based on inputs from   all of the modules within your ERP system. It's 
+how you look at the company health holistically,   and that's very different because it's a roll up 
+of all of the data from all of the modules that   are in that, that are feeding into that database. 
+And so, as we bring all of this data in we create   this roll-up reporting, we create this summary 
+reporting, we put that into dashboards, right,   so that companies can go out and the C-suite can 
+look at a dashboard every morning that's going to   show them the holistic health of the company from 
+every factory they had, every location they have,   every distribution point, what's going on 
+with shipping, what's going on with retail,   what's going on with procurement, all of that data 
+feeds into the ERP, and it gives the executives   involved the ability to do those strategic 
+level decisions. It's incredibly important,   all in all. Hopefully I've given you a good 
+overview of what an ERP system is and why it's so   critical to the successful operation of any modern 
+company. Your ERP system is always going to be   core to your daily operation and because of that 
+selecting the right cloud provider for running   your ERP system is also critical. Your business is 
+24/7, 365, and so must be the cloud on which you   run it. So if you'd like to talk more about how 
+to implement a new ERP system from the ground up,   or how to transition your existing ERP system into 
+a modern one, you can learn more at ibm.com cloud   SAP, or you can reach out to your IBM 
+Sales team, or your IBM Business Partner   and we'd love to engage with you on how to improve 
+your whole company by improving your ERP system.
